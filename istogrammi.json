@@ -1295,6 +1295,198 @@
         "Miss totali": 573764094
       },
       "max": 3000000000
+    },
+    {
+      "applicazione": "WC",
+      "coppia_test": 7,
+      "test": 1,
+      "CCX": "CCX8",
+      "titolo": "CCX-8 [src-fltm-rdc-src]",
+      "dati": {
+        "Accessi totali": 1206772873,
+        "Miss totali": 746292121
+      },
+      "max": 2000000000
+    },
+    {
+      "applicazione": "WC",
+      "coppia_test": 7,
+      "test": 1,
+      "CCX": "CCX9",
+      "titolo": "CCX-9 [rdc-src-fltm-rdc]",
+      "dati": {
+        "Accessi totali": 1622115852,
+        "Miss totali": 999358023
+      },
+      "max": 2000000000
+    },
+    {
+      "applicazione": "WC",
+      "coppia_test": 7,
+      "test": 1,
+      "CCX": "CCX10",
+      "titolo": "CCX-10 [rdc-src-fltm-rdc]",
+      "dati": {
+        "Accessi totali": 1684891467,
+        "Miss totali": 1049232073
+      },
+      "max": 2000000000
+    },
+    {
+      "applicazione": "WC",
+      "coppia_test": 7,
+      "test": 1,
+      "CCX": "CCX11",
+      "titolo": "CCX-11 [src-fltm-rdc-src]",
+      "dati": {
+        "Accessi totali": 865091177,
+        "Miss totali": 562633701
+      },
+      "max": 2000000000
+    },
+    {
+      "applicazione": "WC",
+      "coppia_test": 7,
+      "test": 1,
+      "CCX": "CCX12",
+      "titolo": "CCX-12 [fltm-rdc-src-fltm]",
+      "dati": {
+        "Accessi totali": 1670847102,
+        "Miss totali": 1025771141
+      },
+      "max": 2000000000
+    },
+    {
+      "applicazione": "WC",
+      "coppia_test": 7,
+      "test": 1,
+      "CCX": "CCX13",
+      "titolo": "CCX-13 [rdc-src-fltm-rdc]",
+      "dati": {
+        "Accessi totali": 1922823271,
+        "Miss totali": 1160212524
+      },
+      "max": 2000000000
+    },
+    {
+      "applicazione": "WC",
+      "coppia_test": 7,
+      "test": 1,
+      "CCX": "CCX14",
+      "titolo": "CCX-14 [snk-snk-snk-snk]",
+      "dati": {
+        "Accessi totali": 814042485,
+        "Miss totali": 616935812
+      },
+      "max": 2000000000
+    },
+    {
+      "applicazione": "WC",
+      "coppia_test": 7,
+      "test": 1,
+      "CCX": "CCX15",
+      "titolo": "CCX-15 [snk-snk-snk-snk]",
+      "dati": {
+        "Accessi totali": 760913866,
+        "Miss totali": 581173933
+      },
+      "max": 2000000000
+    },
+    {
+      "applicazione": "WC",
+      "coppia_test": 7,
+      "test": 2,
+      "CCX": "CCX8",
+      "titolo": "CCX-8 [src-fltm-rdc-snk]",
+      "dati": {
+        "Accessi totali": 1735640824,
+        "Miss totali": 764090326
+      },
+      "max": 2000000000
+    },
+    {
+      "applicazione": "WC",
+      "coppia_test": 7,
+      "test": 2,
+      "CCX": "CCX9",
+      "titolo": "CCX-9 [src-fltm-rdc-snk]",
+      "dati": {
+        "Accessi totali": 1982425268,
+        "Miss totali": 807528653
+      },
+      "max": 2000000000
+    },
+    {
+      "applicazione": "WC",
+      "coppia_test": 7,
+      "test": 2,
+      "CCX": "CCX10",
+      "titolo": "CCX-10 [src-fltm-rdc-snk]",
+      "dati": {
+        "Accessi totali": 1559934535,
+        "Miss totali": 731962203
+      },
+      "max": 2000000000
+    },
+    {
+      "applicazione": "WC",
+      "coppia_test": 7,
+      "test": 2,
+      "CCX": "CCX11",
+      "titolo": "CCX-11 [src-fltm-rdc-snk]",
+      "dati": {
+        "Accessi totali": 1508288281,
+        "Miss totali": 736643029
+      },
+      "max": 2000000000
+    },
+    {
+      "applicazione": "WC",
+      "coppia_test": 7,
+      "test": 2,
+      "CCX": "CCX12",
+      "titolo": "CCX-12 [src-fltm-rdc-snk]",
+      "dati": {
+        "Accessi totali": 1070938746,
+        "Miss totali": 581131048
+      },
+      "max": 2000000000
+    },
+    {
+      "applicazione": "WC",
+      "coppia_test": 7,
+      "test": 2,
+      "CCX": "CCX13",
+      "titolo": "CCX-13 [src-fltm-rdc-snk]",
+      "dati": {
+        "Accessi totali": 1999208759,
+        "Miss totali": 824316156
+      },
+      "max": 2000000000
+    },
+    {
+      "applicazione": "WC",
+      "coppia_test": 7,
+      "test": 2,
+      "CCX": "CCX14",
+      "titolo": "CCX-14 [src-fltm-rdc-snk]",
+      "dati": {
+        "Accessi totali": 1906125009,
+        "Miss totali": 921623094
+      },
+      "max": 2000000000
+    },
+    {
+      "applicazione": "WC",
+      "coppia_test": 7,
+      "test": 2,
+      "CCX": "CCX15",
+      "titolo": "CCX-15 [src-fltm-rdc-snk]",
+      "dati": {
+        "Accessi totali": 1423656088,
+        "Miss totali": 707419177
+      },
+      "max": 2000000000
     }
   ]
 }

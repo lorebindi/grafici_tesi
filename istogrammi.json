@@ -1487,6 +1487,1830 @@
         "Miss totali": 707419177
       },
       "max": 2000000000
+    },
+    {
+      "applicazione": "WC",
+      "coppia_test": 8,
+      "test": 1,
+      "CCX": "CCX8",
+      "titolo": "CCX-8 [src-rdc-src-rdc]",
+      "dati": {
+        "Accessi totali": 2702995166,
+        "Miss totali": 1434085214
+      },
+      "max": 4000000000
+    },
+    {
+      "applicazione": "WC",
+      "coppia_test": 8,
+      "test": 1,
+      "CCX": "CCX9",
+      "titolo": "CCX-9 [src-rdc-src-rdc]",
+      "dati": {
+        "Accessi totali": 2701724127,
+        "Miss totali": 1375945422
+      },
+      "max": 4000000000
+    },
+    {
+      "applicazione": "WC",
+      "coppia_test": 8,
+      "test": 1,
+      "CCX": "CCX10",
+      "titolo": "CCX-10 [fltm-snk-fltm-snk]",
+      "dati": {
+        "Accessi totali": 2213394364,
+        "Miss totali": 1302287361
+      },
+      "max": 4000000000
+    },
+    {
+      "applicazione": "WC",
+      "coppia_test": 8,
+      "test": 1,
+      "CCX": "CCX11",
+      "titolo": "CCX-11 [fltm-snk-fltm-snk]",
+      "dati": {
+        "Accessi totali": 1966842297,
+        "Miss totali": 1236833541
+      },
+      "max": 4000000000
+    },
+    {
+      "applicazione": "WC",
+      "coppia_test": 8,
+      "test": 1,
+      "CCX": "CCX12",
+      "titolo": "CCX-12 [src-rdc-src-rdc]",
+      "dati": {
+        "Accessi totali": 2282419402,
+        "Miss totali": 1202330418
+      },
+      "max": 4000000000
+    },
+    {
+      "applicazione": "WC",
+      "coppia_test": 8,
+      "test": 1,
+      "CCX": "CCX13",
+      "titolo": "CCX-13 [src-rdc-src-rdc]",
+      "dati": {
+        "Accessi totali": 3059877836,
+        "Miss totali": 1602462762
+      },
+      "max": 4000000000
+    },
+    {
+      "applicazione": "WC",
+      "coppia_test": 8,
+      "test": 1,
+      "CCX": "CCX14",
+      "titolo": "CCX-14 [fltm-snk-fltm-snk]",
+      "dati": {
+        "Accessi totali": 2003578810,
+        "Miss totali": 1182272739
+      },
+      "max": 4000000000
+    },
+    {
+      "applicazione": "WC",
+      "coppia_test": 8,
+      "test": 1,
+      "CCX": "CCX15",
+      "titolo": "CCX-15 [fltm-snk-fltm-snk]",
+      "dati": {
+        "Accessi totali": 1898042345,
+        "Miss totali": 1301305687
+      },
+      "max": 4000000000
+    },
+    {
+      "applicazione": "WC",
+      "coppia_test": 8,
+      "test": 2,
+      "CCX": "CCX8",
+      "titolo": "CCX-8 [src-fltm-rdc-snk]",
+      "dati": {
+        "Accessi totali": 2854685247,
+        "Miss totali": 1145497942
+      },
+      "max": 4000000000
+    },
+    {
+      "applicazione": "WC",
+      "coppia_test": 8,
+      "test": 2,
+      "CCX": "CCX9",
+      "titolo": "CCX-9 [src-fltm-rdc-snk]",
+      "dati": {
+        "Accessi totali": 3024744302,
+        "Miss totali": 1035195026
+      },
+      "max": 4000000000
+    },
+    {
+      "applicazione": "WC",
+      "coppia_test": 8,
+      "test": 2,
+      "CCX": "CCX10",
+      "titolo": "CCX-10 [src-fltm-rdc-snk]",
+      "dati": {
+        "Accessi totali": 2742364170,
+        "Miss totali": 1178572298
+      },
+      "max": 4000000000
+    },
+    {
+      "applicazione": "WC",
+      "coppia_test": 8,
+      "test": 2,
+      "CCX": "CCX11",
+      "titolo": "CCX-11 [src-fltm-rdc-snk]",
+      "dati": {
+        "Accessi totali": 2969605906,
+        "Miss totali": 1053873653
+      },
+      "max": 4000000000
+    },
+    {
+      "applicazione": "WC",
+      "coppia_test": 8,
+      "test": 2,
+      "CCX": "CCX12",
+      "titolo": "CCX-12 [src-fltm-rdc-snk]",
+      "dati": {
+        "Accessi totali": 2190495676,
+        "Miss totali": 808331546
+      },
+      "max": 4000000000
+    },
+    {
+      "applicazione": "WC",
+      "coppia_test": 8,
+      "test": 2,
+      "CCX": "CCX13",
+      "titolo": "CCX-13 [src-fltm-rdc-snk]",
+      "dati": {
+        "Accessi totali": 3049004695,
+        "Miss totali": 1069389569
+      },
+      "max": 4000000000
+    },
+    {
+      "applicazione": "WC",
+      "coppia_test": 8,
+      "test": 2,
+      "CCX": "CCX14",
+      "titolo": "CCX-14 [src-fltm-rdc-snk]",
+      "dati": {
+        "Accessi totali": 3355884776,
+        "Miss totali": 1438644463
+      },
+      "max": 4000000000
+    },
+    {
+      "applicazione": "WC",
+      "coppia_test": 8,
+      "test": 2,
+      "CCX": "CCX15",
+      "titolo": "CCX-15 [src-fltm-rdc-snk]",
+      "dati": {
+        "Accessi totali": 2618400603,
+        "Miss totali": 1088808229
+      },
+      "max": 4000000000
+    },
+    {
+      "applicazione": "WC",
+      "coppia_test": 9,
+      "test": 1,
+      "CCX": "CCX8",
+      "titolo": "CCX-8 [src-fltm-src-fltm]",
+      "dati": {
+        "Accessi totali": 1072791713,
+        "Miss totali": 521436799
+      },
+      "max": 4000000000
+    },
+    {
+      "applicazione": "WC",
+      "coppia_test": 9,
+      "test": 1,
+      "CCX": "CCX9",
+      "titolo": "CCX-9 [src-fltm-src-fltm]",
+      "dati": {
+        "Accessi totali": 1011456199,
+        "Miss totali": 505434439
+      },
+      "max": 4000000000
+    },
+    {
+      "applicazione": "WC",
+      "coppia_test": 9,
+      "test": 1,
+      "CCX": "CCX10",
+      "titolo": "CCX-10 [src-fltm-src-fltm]",
+      "dati": {
+        "Accessi totali": 1334573006,
+        "Miss totali": 653663468
+      },
+      "max": 4000000000
+    },
+    {
+      "applicazione": "WC",
+      "coppia_test": 9,
+      "test": 1,
+      "CCX": "CCX11",
+      "titolo": "CCX-11 [src-fltm-src-fltm]",
+      "dati": {
+        "Accessi totali": 1327305418,
+        "Miss totali": 679109842
+      },
+      "max": 4000000000
+    },
+    {
+      "applicazione": "WC",
+      "coppia_test": 9,
+      "test": 1,
+      "CCX": "CCX12",
+      "titolo": "CCX-12 [rdc-snk-rdc-snk]",
+      "dati": {
+        "Accessi totali": 1850779396,
+        "Miss totali": 	841135493
+      },
+      "max": 4000000000
+    },
+    {
+      "applicazione": "WC",
+      "coppia_test": 9,
+      "test": 1,
+      "CCX": "CCX13",
+      "titolo": "CCX-13 [rdc-snk-rdc-snk]",
+      "dati": {
+        "Accessi totali": 1796563553,
+        "Miss totali": 	814553057
+      },
+      "max": 4000000000
+    },
+    {
+      "applicazione": "WC",
+      "coppia_test": 9,
+      "test": 1,
+      "CCX": "CCX14",
+      "titolo": "CCX-14 [rdc-snk-rdc-snk]",
+      "dati": {
+        "Accessi totali": 1560199375,
+        "Miss totali": 	702602767
+      },
+      "max": 4000000000
+    },
+    {
+      "applicazione": "WC",
+      "coppia_test": 9,
+      "test": 1,
+      "CCX": "CCX15",
+      "titolo": "CCX-15 [rdc-snk-rdc-snk]",
+      "dati": {
+        "Accessi totali": 1913565099,
+        "Miss totali": 	840577777
+      },
+      "max": 4000000000
+    },
+    {
+      "applicazione": "FD",
+      "coppia_test": 1,
+      "test": 1,
+      "CCX": "CCX10",
+      "titolo": "CCX-10 [src-fltr-src-fltr]",
+      "dati": {
+        "Accessi totali": 2108059756,
+        "Miss totali": 	1133882948
+      },
+      "max": 3000000000
+    },
+    {
+      "applicazione": "FD",
+      "coppia_test": 1,
+      "test": 1,
+      "CCX": "CCX11",
+      "titolo": "CCX-11 [snk-snk-_-_ ]",
+      "dati": {
+        "Accessi totali": 331888872,
+        "Miss totali": 	211662992
+      },
+      "max": 3000000000
+    },
+    {
+      "applicazione": "FD",
+      "coppia_test": 1,
+      "test": 2,
+      "CCX": "CCX10",
+      "titolo": "CCX-10 [src-snk-src-snk]",
+      "dati": {
+        "Accessi totali": 1287509631,
+        "Miss totali": 	761354951
+      },
+      "max": 3000000000
+    },
+    {
+      "applicazione": "FD",
+      "coppia_test": 1,
+      "test": 2,
+      "CCX": "CCX11",
+      "titolo": "CCX-11 [fltr-fltr-_-_ ]",
+      "dati": {
+        "Accessi totali": 1095786721,
+        "Miss totali": 	747831527
+      },
+      "max": 3000000000
+    },
+    {
+      "applicazione": "FD",
+      "coppia_test": 2,
+      "test": 1,
+      "CCX": "CCX2",
+      "titolo": "CCX-2 [src-snk-src-snk]",
+      "dati": {
+        "Accessi totali": 868340694,
+        "Miss totali": 	409350877
+      },
+      "max": 2000000000
+    },
+    {
+      "applicazione": "FD",
+      "coppia_test": 2,
+      "test": 1,
+      "CCX": "CCX3",
+      "titolo": "CCX-3 [fltr-fltr-_-_ ]",
+      "dati": {
+        "Accessi totali": 1543073301,
+        "Miss totali": 	785305481
+      },
+      "max": 2000000000
+    },
+    {
+      "applicazione": "FD",
+      "coppia_test": 2,
+      "test": 2,
+      "CCX": "CCX2",
+      "titolo": "CCX-2 [src-fltr-sink-_ ]",
+      "dati": {
+        "Accessi totali": 1049925789,
+        "Miss totali": 	467664732
+      },
+      "max": 2000000000
+    },
+    {
+      "applicazione": "FD",
+      "coppia_test": 2,
+      "test": 2,
+      "CCX": "CCX3",
+      "titolo": "CCX-3 [src-fltr-sink-_ ]",
+      "dati": {
+        "Accessi totali": 1059959346,
+        "Miss totali": 	459681858
+      },
+      "max": 2000000000
+    },
+    {
+      "applicazione": "FD",
+      "coppia_test": 3,
+      "test": 1,
+      "CCX": "CCX2",
+      "titolo": "CCX-2 [src-src-_-_]",
+      "dati": {
+        "Accessi totali": 549101358,
+        "Miss totali": 353328787
+      },
+      "max": 2000000000
+    },
+    {
+      "applicazione": "FD",
+      "coppia_test": 3,
+      "test": 1,
+      "CCX": "CCX3",
+      "titolo": "CCX-3 [fltr-snk-fltr-snk]",
+      "dati": {
+        "Accessi totali": 1090972191,
+        "Miss totali": 732415453
+      },
+      "max": 2000000000
+    },
+    {
+      "applicazione": "FD",
+      "coppia_test": 3,
+      "test": 2,
+      "CCX": "CCX2",
+      "titolo": "CCX-2 [src-snk-src-snk]",
+      "dati": {
+        "Accessi totali": 639288317,
+        "Miss totali": 308526161
+      },
+      "max": 2000000000
+    },
+    {
+      "applicazione": "FD",
+      "coppia_test": 3,
+      "test": 2,
+      "CCX": "CCX3",
+      "titolo": "CCX-3 [fltr-fltr-_-_ ]",
+      "dati": {
+        "Accessi totali": 1065223617,
+        "Miss totali": 706923899
+      },
+      "max": 2000000000
+    },
+    {
+      "applicazione": "FD",
+      "coppia_test": 4,
+      "test": 1,
+      "CCX": "CCX8",
+      "titolo": "CCX-8 [src-src-src-src]",
+      "dati": {
+        "Accessi totali": 1630861782,
+        "Miss totali": 1289515836
+      },
+      "max": 3000000000
+    },
+    {
+      "applicazione": "FD",
+      "coppia_test": 4,
+      "test": 1,
+      "CCX": "CCX9",
+      "titolo": "CCX-9 [_-_-_-_]",
+      "dati": {
+        "Accessi totali": 2733345,
+        "Miss totali": 959249
+      },
+      "max": 3000000000
+    },
+    {
+      "applicazione": "FD",
+      "coppia_test": 4,
+      "test": 1,
+      "CCX": "CCX10",
+      "titolo": "CCX-10 [fltr-fltr-fltr-fltr]",
+      "dati": {
+        "Accessi totali": 1531221496,
+        "Miss totali": 967094484
+      },
+      "max": 3000000000
+    },
+    {
+      "applicazione": "FD",
+      "coppia_test": 4,
+      "test": 1,
+      "CCX": "CCX11",
+      "titolo": "CCX-11 [snk-snk-snk-snk]",
+      "dati": {
+        "Accessi totali": 608401862,
+        "Miss totali": 413853334
+      },
+      "max": 3000000000
+    },
+    {
+      "applicazione": "FD",
+      "coppia_test": 4,
+      "test": 2,
+      "CCX": "CCX8",
+      "titolo": "CCX-8 [snk-snk-snk-snk]",
+      "dati": {
+        "Accessi totali": 639115242,
+        "Miss totali": 442590635
+      },
+      "max": 3000000000
+    },
+    {
+      "applicazione": "FD",
+      "coppia_test": 4,
+      "test": 2,
+      "CCX": "CCX9",
+      "titolo": "CCX-9 [ _-_-_-_ ]",
+      "dati": {
+        "Accessi totali": 2497107,
+        "Miss totali": 815961
+      },
+      "max": 3000000000
+    },
+    {
+      "applicazione": "FD",
+      "coppia_test": 4,
+      "test": 2,
+      "CCX": "CCX10",
+      "titolo": "CCX-10 [src-fltr-src-fltr]",
+      "dati": {
+        "Accessi totali": 1757662925,
+        "Miss totali": 1397101082
+      },
+      "max": 3000000000
+    },
+    {
+      "applicazione": "FD",
+      "coppia_test": 4,
+      "test": 2,
+      "CCX": "CCX11",
+      "titolo": "CCX-11 [src-fltr-src-fltr]",
+      "dati": {
+        "Accessi totali": 1849872921,
+        "Miss totali": 1182462185
+      },
+      "max": 3000000000
+    },
+    {
+      "applicazione": "FD",
+      "coppia_test": 5,
+      "test": 1,
+      "CCX": "CCX8",
+      "titolo": "CCX-8 [snk-snk-snk-snk]",
+      "dati": {
+        "Accessi totali": 1018491421,
+        "Miss totali": 836263957
+      },
+      "max": 3000000000
+    },
+    {
+      "applicazione": "FD",
+      "coppia_test": 5,
+      "test": 1,
+      "CCX": "CCX9",
+      "titolo": "CCX-9 [ _-_-_-_ ]",
+      "dati": {
+        "Accessi totali": 5297371,
+        "Miss totali": 1262542
+      },
+      "max": 3000000000
+    },
+    {
+      "applicazione": "FD",
+      "coppia_test": 5,
+      "test": 1,
+      "CCX": "CCX10",
+      "titolo": "CCX-10 [src-fltr-src-fltr]",
+      "dati": {
+        "Accessi totali": 2003904549,
+        "Miss totali": 1373378070
+      },
+      "max": 3000000000
+    },
+    {
+      "applicazione": "FD",
+      "coppia_test": 5,
+      "test": 1,
+      "CCX": "CCX11",
+      "titolo": "CCX-11 [src-fltr-src-fltr]",
+      "dati": {
+        "Accessi totali": 266239202,
+        "Miss totali": 180888650
+      },
+      "max": 3000000000
+    },
+    {
+      "applicazione": "FD",
+      "coppia_test": 5,
+      "test": 2,
+      "CCX": "CCX8",
+      "titolo": "CCX-8 [src-src-src-src]",
+      "dati": {
+        "Accessi totali": 257164223,
+        "Miss totali": 177916300
+      },
+      "max": 3000000000
+    },
+    {
+      "applicazione": "FD",
+      "coppia_test": 5,
+      "test": 2,
+      "CCX": "CCX9",
+      "titolo": "CCX-9 [ _-_-_-_ ]",
+      "dati": {
+        "Accessi totali": 711522,
+        "Miss totali": 355719
+      },
+      "max": 3000000000
+    },
+    {
+      "applicazione": "FD",
+      "coppia_test": 5,
+      "test": 2,
+      "CCX": "CCX10",
+      "titolo": "CCX-10 [fltr-fltr-fltr-fltr]",
+      "dati": {
+        "Accessi totali": 1742282685,
+        "Miss totali": 1041543118
+      },
+      "max": 3000000000
+    },
+    {
+      "applicazione": "FD",
+      "coppia_test": 5,
+      "test": 2,
+      "CCX": "CCX11",
+      "titolo": "CCX-11 [snk-snk-snk-snk]",
+      "dati": {
+        "Accessi totali": 1345445708,
+        "Miss totali": 1012404790
+      },
+      "max": 3000000000
+    },
+    {
+      "applicazione": "FD",
+      "coppia_test": 6,
+      "test": 1,
+      "CCX": "CCX8",
+      "titolo": "CCX-8 [snk-snk-snk-snk]",
+      "dati": {
+        "Accessi totali": 150951162,
+        "Miss totali": 99340856
+      },
+      "max": 2000000000
+    },
+    {
+      "applicazione": "FD",
+      "coppia_test": 6,
+      "test": 1,
+      "CCX": "CCX9",
+      "titolo": "CCX-9 [ _-_-_-_ ]",
+      "dati": {
+        "Accessi totali": 866623,
+        "Miss totali": 555238
+      },
+      "max": 2000000000
+    },
+    {
+      "applicazione": "FD",
+      "coppia_test": 6,
+      "test": 1,
+      "CCX": "CCX10",
+      "titolo": "CCX-10 [src-src-src-src]",
+      "dati": {
+        "Accessi totali": 729982305,
+        "Miss totali": 453540746
+      },
+      "max": 2000000000
+    },
+    {
+      "applicazione": "FD",
+      "coppia_test": 6,
+      "test": 1,
+      "CCX": "CCX11",
+      "titolo": "CCX-11 [fltr-fltr-fltr-fltr]",
+      "dati": {
+        "Accessi totali": 1213407132,
+        "Miss totali": 763400143
+      },
+      "max": 2000000000
+    },
+    {
+      "applicazione": "FD",
+      "coppia_test": 6,
+      "test": 2,
+      "CCX": "CCX8",
+      "titolo": "CCX-8 [src-src-src-src]",
+      "dati": {
+        "Accessi totali": 699159001,
+        "Miss totali": 440520928
+      },
+      "max": 2000000000
+    },
+    {
+      "applicazione": "FD",
+      "coppia_test": 6,
+      "test": 2,
+      "CCX": "CCX9",
+      "titolo": "CCX-9 [ _-_-_-_ ]",
+      "dati": {
+        "Accessi totali": 298062,
+        "Miss totali": 204.995
+      },
+      "max": 2000000000
+    },
+    {
+      "applicazione": "FD",
+      "coppia_test": 6,
+      "test": 2,
+      "CCX": "CCX10",
+      "titolo": "CCX-10 [fltr-fltr-fltr-fltr]",
+      "dati": {
+        "Accessi totali": 1291862540,
+        "Miss totali": 805935664
+      },
+      "max": 2000000000
+    },
+    {
+      "applicazione": "FD",
+      "coppia_test": 6,
+      "test": 2,
+      "CCX": "CCX11",
+      "titolo": "CCX-11 [snk-snk-snk-snk]",
+      "dati": {
+        "Accessi totali": 166651645,
+        "Miss totali": 103292760
+      },
+      "max": 2000000000
+    },
+    {
+      "applicazione": "FD",
+      "coppia_test": 7,
+      "test": 1,
+      "CCX": "CCX8",
+      "titolo": "CCX-8 [src-fltr-snk-src]",
+      "dati": {
+        "Accessi totali": 1353155039,
+        "Miss totali": 882070085
+      },
+      "max": 2000000000
+    },
+    {
+      "applicazione": "FD",
+      "coppia_test": 7,
+      "test": 1,
+      "CCX": "CCX9",
+      "titolo": "CCX-9 [fltr-snk-src-fltr]",
+      "dati": {
+        "Accessi totali": 1659781075,
+        "Miss totali": 1004289862
+      },
+      "max": 2000000000
+    },
+    {
+      "applicazione": "FD",
+      "coppia_test": 7,
+      "test": 1,
+      "CCX": "CCX10",
+      "titolo": "CCX-10 [snk-src-fltr-snk]",
+      "dati": {
+        "Accessi totali": 1233443148,
+        "Miss totali": 802227141
+      },
+      "max": 2000000000
+    },
+    {
+      "applicazione": "FD",
+      "coppia_test": 7,
+      "test": 1,
+      "CCX": "CCX11",
+      "titolo": "CCX-11 [src-fltr-snk-src]",
+      "dati": {
+        "Accessi totali": 1450873786,
+        "Miss totali": 970252450
+      },
+      "max": 2000000000
+    },
+    {
+      "applicazione": "FD",
+      "coppia_test": 7,
+      "test": 1,
+      "CCX": "CCX12",
+      "titolo": "CCX-12 [fltr-snk-src-fltr]",
+      "dati": {
+        "Accessi totali": 1701151833,
+        "Miss totali": 1062113679
+      },
+      "max": 2000000000
+    },
+    {
+      "applicazione": "FD",
+      "coppia_test": 7,
+      "test": 1,
+      "CCX": "CCX13",
+      "titolo": "CCX-13 [snk-src-fltr-snk]",
+      "dati": {
+        "Accessi totali": 1214042689,
+        "Miss totali": 752822999
+      },
+      "max": 2000000000
+    },
+    {
+      "applicazione": "FD",
+      "coppia_test": 7,
+      "test": 2,
+      "CCX": "CCX8",
+      "titolo": "CCX-8 [src-src-src-src]",
+      "dati": {
+        "Accessi totali": 1515418607,
+        "Miss totali": 1201755544
+      },
+      "max": 2000000000
+    },
+    {
+      "applicazione": "FD",
+      "coppia_test": 7,
+      "test": 2,
+      "CCX": "CCX9",
+      "titolo": "CCX-9 [src-src-src-src]",
+      "dati": {
+        "Accessi totali": 1512904755,
+        "Miss totali": 1200590914
+      },
+      "max": 2000000000
+    },
+    {
+      "applicazione": "FD",
+      "coppia_test": 7,
+      "test": 2,
+      "CCX": "CCX10",
+      "titolo": "CCX-10 [fltr-fltr-fltr-fltr]",
+      "dati": {
+        "Accessi totali": 1764038191,
+        "Miss totali": 1024527810
+      },
+      "max": 2000000000
+    },
+    {
+      "applicazione": "FD",
+      "coppia_test": 7,
+      "test": 2,
+      "CCX": "CCX11",
+      "titolo": "CCX-11 [fltr-fltr-fltr-fltr]",
+      "dati": {
+        "Accessi totali": 1871019603,
+        "Miss totali": 1095440348
+      },
+      "max": 2000000000
+    },
+    {
+      "applicazione": "FD",
+      "coppia_test": 7,
+      "test": 2,
+      "CCX": "CCX12",
+      "titolo": "CCX-12 [snk-snk-snk-snk]",
+      "dati": {
+        "Accessi totali": 600525906,
+        "Miss totali": 429774706
+      },
+      "max": 2000000000
+    },
+    {
+      "applicazione": "FD",
+      "coppia_test": 7,
+      "test": 2,
+      "CCX": "CCX13",
+      "titolo": "CCX-13 [snk-snk-snk-snk]",
+      "dati": {
+        "Accessi totali": 594285467,
+        "Miss totali": 427735835
+      },
+      "max": 2000000000
+    },
+    {
+      "applicazione": "FD",
+      "coppia_test": 8,
+      "test": 1,
+      "CCX": "CCX8",
+      "titolo": "CCX-8 [src-fltr-src-fltr]",
+      "dati": {
+        "Accessi totali": 1210931605,
+        "Miss totali": 668481148
+      },
+      "max": 2000000000
+    },
+    {
+      "applicazione": "FD",
+      "coppia_test": 8,
+      "test": 1,
+      "CCX": "CCX9",
+      "titolo": "CCX-9 [src-fltr-src-fltr]",
+      "dati": {
+        "Accessi totali": 1231325389,
+        "Miss totali": 699376100
+      },
+      "max": 2000000000
+    },
+    {
+      "applicazione": "FD",
+      "coppia_test": 8,
+      "test": 1,
+      "CCX": "CCX10",
+      "titolo": "CCX-10 [src-fltr-src-fltr]",
+      "dati": {
+        "Accessi totali": 1252513177,
+        "Miss totali": 673686143
+      },
+      "max": 2000000000
+    },
+    {
+      "applicazione": "FD",
+      "coppia_test": 8,
+      "test": 1,
+      "CCX": "CCX11",
+      "titolo": "CCX-11 [src-fltr-src-fltr]",
+      "dati": {
+        "Accessi totali": 1247331547,
+        "Miss totali": 699206486
+      },
+      "max": 2000000000
+    },
+    {
+      "applicazione": "FD",
+      "coppia_test": 8,
+      "test": 1,
+      "CCX": "CCX12",
+      "titolo": "CCX-12 [snk-snk-snk-snk]",
+      "dati": {
+        "Accessi totali": 355347846,
+        "Miss totali": 235885389
+      },
+      "max": 2000000000
+    },
+    {
+      "applicazione": "FD",
+      "coppia_test": 8,
+      "test": 1,
+      "CCX": "CCX13",
+      "titolo": "CCX-13 [snk-snk-snk-snk]",
+      "dati": {
+        "Accessi totali": 323468878,
+        "Miss totali": 227055580
+      },
+      "max": 2000000000
+    },
+    {
+      "applicazione": "FD",
+      "coppia_test": 8,
+      "test": 2,
+      "CCX": "CCX8",
+      "titolo": "CCX-8 [src-fltr-snk-src]",
+      "dati": {
+        "Accessi totali": 950232941,
+        "Miss totali": 514935412
+      },
+      "max": 2000000000
+    },
+    {
+      "applicazione": "FD",
+      "coppia_test": 8,
+      "test": 2,
+      "CCX": "CCX9",
+      "titolo": "CCX-9 [fltr-snk-src-fltr]",
+      "dati": {
+        "Accessi totali": 1018088420,
+        "Miss totali": 585439901
+      },
+      "max": 2000000000
+    },
+    {
+      "applicazione": "FD",
+      "coppia_test": 8,
+      "test": 2,
+      "CCX": "CCX10",
+      "titolo": "CCX-10 [snk-src-fltr-snk]",
+      "dati": {
+        "Accessi totali": 793684218,
+        "Miss totali": 449426511
+      },
+      "max": 2000000000
+    },
+    {
+      "applicazione": "FD",
+      "coppia_test": 8,
+      "test": 2,
+      "CCX": "CCX11",
+      "titolo": "CCX-11 [src-fltr-snk-src]",
+      "dati": {
+        "Accessi totali": 972782922,
+        "Miss totali": 536951325
+      },
+      "max": 2000000000
+    },
+    {
+      "applicazione": "FD",
+      "coppia_test": 8,
+      "test": 2,
+      "CCX": "CCX12",
+      "titolo": "CCX-12 [fltr-snk-src-fltr]",
+      "dati": {
+        "Accessi totali": 1015449568,
+        "Miss totali": 559612266
+      },
+      "max": 2000000000
+    },
+    {
+      "applicazione": "FD",
+      "coppia_test": 8,
+      "test": 2,
+      "CCX": "CCX13",
+      "titolo": "CCX-13 [snk-src-fltr-snk]",
+      "dati": {
+        "Accessi totali": 754456960,
+        "Miss totali": 427717758
+      },
+      "max": 2000000000
+    },
+    {
+      "applicazione": "FD",
+      "coppia_test": 9,
+      "test": 1,
+      "CCX": "CCX8",
+      "titolo": "CCX-8 [src-fltr-src-fltr]",
+      "dati": {
+        "Accessi totali": 1444648703,
+        "Miss totali": 1027979144
+      },
+      "max": 2000000000
+    },
+    {
+      "applicazione": "FD",
+      "coppia_test": 9,
+      "test": 1,
+      "CCX": "CCX9",
+      "titolo": "CCX-9 [src-fltr-src-fltr]",
+      "dati": {
+        "Accessi totali": 1683986216,
+        "Miss totali": 1040869010
+      },
+      "max": 2000000000
+    },
+    {
+      "applicazione": "FD",
+      "coppia_test": 9,
+      "test": 1,
+      "CCX": "CCX10",
+      "titolo": "CCX-10 [src-fltr-src-fltr]",
+      "dati": {
+        "Accessi totali": 1338550484,
+        "Miss totali": 970834388
+      },
+      "max": 2000000000
+    },
+    {
+      "applicazione": "FD",
+      "coppia_test": 9,
+      "test": 1,
+      "CCX": "CCX11",
+      "titolo": "CCX-11 [src-fltr-src-fltr]",
+      "dati": {
+        "Accessi totali": 1910191644,
+        "Miss totali": 1042034113
+      },
+      "max": 2000000000
+    },
+    {
+      "applicazione": "FD",
+      "coppia_test": 9,
+      "test": 1,
+      "CCX": "CCX12",
+      "titolo": "CCX-12 [snk-snk-snk-snk]",
+      "dati": {
+        "Accessi totali": 420536913,
+        "Miss totali": 309152098
+      },
+      "max": 2000000000
+    },
+    {
+      "applicazione": "FD",
+      "coppia_test": 9,
+      "test": 1,
+      "CCX": "CCX13",
+      "titolo": "CCX-13 [snk-snk-snk-snk]",
+      "dati": {
+        "Accessi totali": 429121307,
+        "Miss totali": 322128154
+      },
+      "max": 2000000000
+    },
+    {
+      "applicazione": "FD",
+      "coppia_test": 9,
+      "test": 2,
+      "CCX": "CCX8",
+      "titolo": "CCX-8 [src-fltr-snk-_ ]",
+      "dati": {
+        "Accessi totali": 835509816,
+        "Miss totali": 465319842
+      },
+      "max": 2000000000
+    },
+    {
+      "applicazione": "FD",
+      "coppia_test": 9,
+      "test": 2,
+      "CCX": "CCX9",
+      "titolo": "CCX-9 [src-fltr-snk-_ ]",
+      "dati": {
+        "Accessi totali": 731889210,
+        "Miss totali": 464487955
+      },
+      "max": 2000000000
+    },
+    {
+      "applicazione": "FD",
+      "coppia_test": 9,
+      "test": 2,
+      "CCX": "CCX10",
+      "titolo": "CCX-10 [src-fltr-snk-_ ]",
+      "dati": {
+        "Accessi totali": 1069793169,
+        "Miss totali": 488774324
+      },
+      "max": 2000000000
+    },
+    {
+      "applicazione": "FD",
+      "coppia_test": 9,
+      "test": 2,
+      "CCX": "CCX11",
+      "titolo": "CCX-11 [src-fltr-snk-_ ]",
+      "dati": {
+        "Accessi totali": 1092202366,
+        "Miss totali": 559146116
+      },
+      "max": 2000000000
+    },
+    {
+      "applicazione": "FD",
+      "coppia_test": 9,
+      "test": 2,
+      "CCX": "CCX12",
+      "titolo": "CCX-12 [src-fltr-snk-_ ]",
+      "dati": {
+        "Accessi totali": 768658891,
+        "Miss totali": 463532359
+      },
+      "max": 2000000000
+    },
+    {
+      "applicazione": "FD",
+      "coppia_test": 9,
+      "test": 2,
+      "CCX": "CCX13",
+      "titolo": "CCX-13 [src-fltr-snk-_ ]",
+      "dati": {
+        "Accessi totali": 666506378,
+        "Miss totali": 444406982
+      },
+      "max": 2000000000
+    },
+    {
+      "applicazione": "TM",
+      "coppia_test": 1,
+      "test": 1,
+      "CCX": "CCX10",
+      "titolo": "CCX-10 [src-snk-src-snk]",
+      "dati": {
+        "Accessi totali": 62655904,
+        "Miss totali": 11809061
+      },
+      "max": 3000000000
+    },
+    {
+      "applicazione": "TM",
+      "coppia_test": 1,
+      "test": 1,
+      "CCX": "CCX11",
+      "titolo": "CCX-11 [fltm-map-fltm-map]",
+      "dati": {
+        "Accessi totali": 2503319156,
+        "Miss totali": 27586610
+      },
+      "max": 3000000000
+    },
+    {
+      "applicazione": "TM",
+      "coppia_test": 1,
+      "test": 2,
+      "CCX": "CCX10",
+      "titolo": "CCX-10 [src-map-src-map]",
+      "dati": {
+        "Accessi totali": 53364574,
+        "Miss totali": 15169730
+      },
+      "max": 3000000000
+    },
+    {
+      "applicazione": "TM",
+      "coppia_test": 1,
+      "test": 2,
+      "CCX": "CCX11",
+      "titolo": "CCX-11 [fltm-snk-fltm-snk]",
+      "dati": {
+        "Accessi totali": 2468942127,
+        "Miss totali": 20452878
+      },
+      "max": 3000000000
+    },
+    {
+      "applicazione": "TM",
+      "coppia_test": 2,
+      "test": 1,
+      "CCX": "CCX10",
+      "titolo": "CCX-10 [src-fltm-src-fltm]",
+      "dati": {
+        "Accessi totali": 6218788995,
+        "Miss totali": 123495090
+      },
+      "max": 7000000000
+    },
+    {
+      "applicazione": "TM",
+      "coppia_test": 2,
+      "test": 1,
+      "CCX": "CCX11",
+      "titolo": "CCX-11 [map-snk-map-snk]",
+      "dati": {
+        "Accessi totali": 119638837,
+        "Miss totali": 21569658
+      },
+      "max": 7000000000
+    },
+    {
+      "applicazione": "TM",
+      "coppia_test": 2,
+      "test": 2,
+      "CCX": "CCX10",
+      "titolo": "CCX-10 [src-fltm-map-snk]",
+      "dati": {
+        "Accessi totali": 3143412525,
+        "Miss totali": 44638118
+      },
+      "max": 7000000000
+    },
+    {
+      "applicazione": "TM",
+      "coppia_test": 2,
+      "test": 2,
+      "CCX": "CCX11",
+      "titolo": "CCX-11 [src-fltm-map-snk]",
+      "dati": {
+        "Accessi totali": 3079665770,
+        "Miss totali": 30298382
+      },
+      "max": 7000000000
+    },
+    {
+      "applicazione": "TM",
+      "coppia_test": 3,
+      "test": 1,
+      "CCX": "CCX8",
+      "titolo": "CCX-8 [src-src-src-src]",
+      "dati": {
+        "Accessi totali": 6772005,
+        "Miss totali": 3619097
+      },
+      "max": 5000000000
+    },
+    {
+      "applicazione": "TM",
+      "coppia_test": 3,
+      "test": 1,
+      "CCX": "CCX9",
+      "titolo": "CCX-9 [snk-snk-snk-snk]",
+      "dati": {
+        "Accessi totali": 2589776,
+        "Miss totali": 1413867
+      },
+      "max": 5000000000
+    },
+    {
+      "applicazione": "TM",
+      "coppia_test": 3,
+      "test": 1,
+      "CCX": "CCX10",
+      "titolo": "CCX-10 [fltm-fltm-fltm-fltm]",
+      "dati": {
+        "Accessi totali": 4961235716,
+        "Miss totali": 125541606
+      },
+      "max": 5000000000
+    },
+    {
+      "applicazione": "TM",
+      "coppia_test": 3,
+      "test": 1,
+      "CCX": "CCX11",
+      "titolo": "CCX-11 [map-map-map-map]",
+      "dati": {
+        "Accessi totali": 23124529,
+        "Miss totali": 7869183
+      },
+      "max": 5000000000
+    },
+    {
+      "applicazione": "TM",
+      "coppia_test": 3,
+      "test": 2,
+      "CCX": "CCX8",
+      "titolo": "CCX-8 [src-fltm-map-snk]",
+      "dati": {
+        "Accessi totali": 843121945,
+        "Miss totali": 272387508
+      },
+      "max": 5000000000
+    },
+    {
+      "applicazione": "TM",
+      "coppia_test": 3,
+      "test": 2,
+      "CCX": "CCX9",
+      "titolo": "CCX-9 [src-fltm-map-snk]",
+      "dati": {
+        "Accessi totali": 1215058175,
+        "Miss totali": 12123290
+      },
+      "max": 5000000000
+    },
+    {
+      "applicazione": "TM",
+      "coppia_test": 3,
+      "test": 2,
+      "CCX": "CCX10",
+      "titolo": "CCX-10 [src-fltm-map-snk]",
+      "dati": {
+        "Accessi totali": 1209196688,
+        "Miss totali": 19460269
+      },
+      "max": 5000000000
+    },
+    {
+      "applicazione": "TM",
+      "coppia_test": 3,
+      "test": 2,
+      "CCX": "CCX11",
+      "titolo": "CCX-11 [src-fltm-map-snk]",
+      "dati": {
+        "Accessi totali": 858674783,
+        "Miss totali": 275724766
+      },
+      "max": 5000000000
+    },
+    {
+      "applicazione": "TM",
+      "coppia_test": 4,
+      "test": 1,
+      "CCX": "CCX8",
+      "titolo": "CCX-8 [map-src-fltm-map]",
+      "dati": {
+        "Accessi totali": 18360746,
+        "Miss totali": 6493056
+      },
+      "max": 7000000000
+    },
+    {
+      "applicazione": "TM",
+      "coppia_test": 4,
+      "test": 1,
+      "CCX": "CCX9",
+      "titolo": "CCX-9 [snk-snk-snk-snk]",
+      "dati": {
+        "Accessi totali": 10403865,
+        "Miss totali": 4824660
+      },
+      "max": 7000000000
+    },
+    {
+      "applicazione": "TM",
+      "coppia_test": 4,
+      "test": 1,
+      "CCX": "CCX10",
+      "titolo": "CCX-10 [src-fltm-map-src]",
+      "dati": {
+        "Accessi totali": 3126724438,
+        "Miss totali": 	1118229020
+      },
+      "max": 7000000000
+    },
+    {
+      "applicazione": "TM",
+      "coppia_test": 4,
+      "test": 1,
+      "CCX": "CCX11",
+      "titolo": "CCX-11 [fltm-map-src-fltm]",
+      "dati": {
+        "Accessi totali": 6134809594,
+        "Miss totali": 1174587610
+      },
+      "max": 7000000000
+    },
+    {
+      "applicazione": "TM",
+      "coppia_test": 4,
+      "test": 2,
+      "CCX": "CCX8",
+      "titolo": "CCX-8 [fltm-snk-fltm-snk]",
+      "dati": {
+        "Accessi totali": 6044853893,
+        "Miss totali": 46079704
+      },
+      "max": 7000000000
+    },
+    {
+      "applicazione": "TM",
+      "coppia_test": 4,
+      "test": 2,
+      "CCX": "CCX9",
+      "titolo": "CCX-9 [fltm-snk-fltm-snk]",
+      "dati": {
+        "Accessi totali": 6082927729,
+        "Miss totali": 63065026
+      },
+      "max": 7000000000
+    },
+    {
+      "applicazione": "TM",
+      "coppia_test": 4,
+      "test": 2,
+      "CCX": "CCX10",
+      "titolo": "CCX-10 [src-map-src-map]",
+      "dati": {
+        "Accessi totali": 314029642,
+        "Miss totali": 77521987
+      },
+      "max": 7000000000
+    },
+    {
+      "applicazione": "TM",
+      "coppia_test": 4,
+      "test": 2,
+      "CCX": "CCX11",
+      "titolo": "CCX-11 [src-map-src-map]",
+      "dati": {
+        "Accessi totali": 204759186,
+        "Miss totali": 49355216
+      },
+      "max": 7000000000
+    },
+    {
+      "applicazione": "TM",
+      "coppia_test": 5,
+      "test": 1,
+      "CCX": "CCX8",
+      "titolo": "CCX-8 [src-fltm-map-src]",
+      "dati": {
+        "Accessi totali": 591013520,
+        "Miss totali": 252959503
+      },
+      "max": 5000000000
+    },
+    {
+      "applicazione": "TM",
+      "coppia_test": 5,
+      "test": 1,
+      "CCX": "CCX9",
+      "titolo": "CCX-9 [fltm-map-src-fltm]",
+      "dati": {
+        "Accessi totali": 1163354640,
+        "Miss totali": 496999971
+      },
+      "max": 5000000000
+    },
+    {
+      "applicazione": "TM",
+      "coppia_test": 5,
+      "test": 1,
+      "CCX": "CCX10",
+      "titolo": "CCX-10 [map-src-fltm-map]",
+      "dati": {
+        "Accessi totali": 653957340,
+        "Miss totali": 269791757
+      },
+      "max": 5000000000
+    },
+    {
+      "applicazione": "TM",
+      "coppia_test": 5,
+      "test": 1,
+      "CCX": "CCX11",
+      "titolo": "CCX-11 [src-fltm-map-src]",
+      "dati": {
+        "Accessi totali": 1240981867,
+        "Miss totali": 23018282
+      },
+      "max": 5000000000
+    },
+    {
+      "applicazione": "TM",
+      "coppia_test": 5,
+      "test": 1,
+      "CCX": "CCX12",
+      "titolo": "CCX-12 [fltm-map-src-fltm]",
+      "dati": {
+        "Accessi totali": 1173484279,
+        "Miss totali": 497460809
+      },
+      "max": 5000000000
+    },
+    {
+      "applicazione": "TM",
+      "coppia_test": 5,
+      "test": 1,
+      "CCX": "CCX13",
+      "titolo": "CCX-13 [map-src-fltm-map]",
+      "dati": {
+        "Accessi totali": 1234193823,
+        "Miss totali": 17348328
+      },
+      "max": 5000000000
+    },
+    {
+      "applicazione": "TM",
+      "coppia_test": 5,
+      "test": 1,
+      "CCX": "CCX14",
+      "titolo": "CCX-14 [snk-snk-snk-snk]",
+      "dati": {
+        "Accessi totali": 41674640,
+        "Miss totali": 16886347
+      },
+      "max": 5000000000
+    },
+    {
+      "applicazione": "TM",
+      "coppia_test": 5,
+      "test": 1,
+      "CCX": "CCX15",
+      "titolo": "CCX-15 [snk-snk-snk-snk]",
+      "dati": {
+        "Accessi totali": 29785896,
+        "Miss totali": 13457915
+      },
+      "max": 5000000000
+    },
+    {
+      "applicazione": "TM",
+      "coppia_test": 5,
+      "test": 2,
+      "CCX": "CCX8",
+      "titolo": "CCX-8 [src-src-src-src]",
+      "dati": {
+        "Accessi totali": 14138749,
+        "Miss totali": 6161006
+      },
+      "max": 5000000000
+    },
+    {
+      "applicazione": "TM",
+      "coppia_test": 5,
+      "test": 2,
+      "CCX": "CCX9",
+      "titolo": "CCX-9 [src-src-src-src]",
+      "dati": {
+        "Accessi totali": 25527278,
+        "Miss totali": 8424496
+      },
+      "max": 5000000000
+    },
+    {
+      "applicazione": "TM",
+      "coppia_test": 5,
+      "test": 2,
+      "CCX": "CCX10",
+      "titolo": "CCX-10 [fltm-fltm-fltm-fltm]",
+      "dati": {
+        "Accessi totali": 4666838300,
+        "Miss totali": 537427459
+      },
+      "max": 5000000000
+    },
+    {
+      "applicazione": "TM",
+      "coppia_test": 5,
+      "test": 2,
+      "CCX": "CCX11",
+      "titolo": "CCX-11 [fltm-fltm-fltm-fltm]",
+      "dati": {
+        "Accessi totali": 4620994376,
+        "Miss totali": 581018446
+      },
+      "max": 5000000000
+    },
+    {
+      "applicazione": "TM",
+      "coppia_test": 5,
+      "test": 2,
+      "CCX": "CCX12",
+      "titolo": "CCX-12 [map-map-map-map]",
+      "dati": {
+        "Accessi totali": 4840276,
+        "Miss totali": 2224068
+      },
+      "max": 5000000000
+    },
+    {
+      "applicazione": "TM",
+      "coppia_test": 5,
+      "test": 2,
+      "CCX": "CCX13",
+      "titolo": "CCX-13 [map-map-map-map]",
+      "dati": {
+        "Accessi totali": 23821801,
+        "Miss totali": 8159193
+      },
+      "max": 5000000000
+    },
+    {
+      "applicazione": "TM",
+      "coppia_test": 5,
+      "test": 2,
+      "CCX": "CCX14",
+      "titolo": "CCX-14 [snk-snk-snk-snk]",
+      "dati": {
+        "Accessi totali": 34241136,
+        "Miss totali": 14489783
+      },
+      "max": 5000000000
+    },
+    {
+      "applicazione": "TM",
+      "coppia_test": 5,
+      "test": 2,
+      "CCX": "CCX15",
+      "titolo": "CCX-15 [snk-snk-snk-snk]",
+      "dati": {
+        "Accessi totali": 58107525,
+        "Miss totali": 21336127
+      },
+      "max": 5000000000
+    },
+    {
+      "applicazione": "TM",
+      "coppia_test": 6,
+      "test": 1,
+      "CCX": "CCX8",
+      "titolo": "CCX-8 [src-fltm-map-snk]",
+      "dati": {
+        "Accessi totali": 3079638176,
+        "Miss totali": 30135603
+      },
+      "max": 13000000000
+    },
+    {
+      "applicazione": "TM",
+      "coppia_test": 6,
+      "test": 1,
+      "CCX": "CCX9",
+      "titolo": "CCX-9 [src-fltm-map-snk]",
+      "dati": {
+        "Accessi totali": 4278295852,
+        "Miss totali": 1388413923
+      },
+      "max": 13000000000
+    },
+    {
+      "applicazione": "TM",
+      "coppia_test": 6,
+      "test": 1,
+      "CCX": "CCX10",
+      "titolo": "CCX-10 [src-fltm-map-snk]",
+      "dati": {
+        "Accessi totali": 3351300641,
+        "Miss totali": 112910188
+      },
+      "max": 13000000000
+    },
+    {
+      "applicazione": "TM",
+      "coppia_test": 6,
+      "test": 1,
+      "CCX": "CCX11",
+      "titolo": "CCX-11 [src-fltm-map-snk]",
+      "dati": {
+        "Accessi totali": 3202972952,
+        "Miss totali": 95614639
+      },
+      "max": 13000000000
+    },
+    {
+      "applicazione": "TM",
+      "coppia_test": 6,
+      "test": 1,
+      "CCX": "CCX12",
+      "titolo": "CCX-12 [src-fltm-map-snk]",
+      "dati": {
+        "Accessi totali": 4490345076,
+        "Miss totali": 1486965330
+      },
+      "max": 13000000000
+    },
+    {
+      "applicazione": "TM",
+      "coppia_test": 6,
+      "test": 1,
+      "CCX": "CCX13",
+      "titolo": "CCX-13 [src-fltm-map-snk]",
+      "dati": {
+        "Accessi totali": 4399476377,
+        "Miss totali": 1461104486
+      },
+      "max": 13000000000
+    },
+    {
+      "applicazione": "TM",
+      "coppia_test": 6,
+      "test": 1,
+      "CCX": "CCX14",
+      "titolo": "CCX-14 [src-fltm-map-snk]",
+      "dati": {
+        "Accessi totali": 4347742991,
+        "Miss totali": 1442614690
+      },
+      "max": 13000000000
+    },
+    {
+      "applicazione": "TM",
+      "coppia_test": 6,
+      "test": 1,
+      "CCX": "CCX15",
+      "titolo": "CCX-15 [src-fltm-map-snk]",
+      "dati": {
+        "Accessi totali": 3153293719,
+        "Miss totali": 77254518
+      },
+      "max": 13000000000
+    },
+    {
+      "applicazione": "TM",
+      "coppia_test": 6,
+      "test": 2,
+      "CCX": "CCX8",
+      "titolo": "CCX-8 [src-src-src-src]",
+      "dati": {
+        "Accessi totali": 58593730,
+        "Miss totali": 27857053
+      },
+      "max": 13000000000
+    },
+    {
+      "applicazione": "TM",
+      "coppia_test": 6,
+      "test": 2,
+      "CCX": "CCX9",
+      "titolo": "CCX-9 [src-src-src-src]",
+      "dati": {
+        "Accessi totali": 20954863,
+        "Miss totali": 8749061
+      },
+      "max": 13000000000
+    },
+    {
+      "applicazione": "TM",
+      "coppia_test": 6,
+      "test": 2,
+      "CCX": "CCX10",
+      "titolo": "CCX-10 [fltm-fltm-fltm-fltm]",
+      "dati": {
+        "Accessi totali": 12298324602,
+        "Miss totali": 259354227
+      },
+      "max": 13000000000
+    },
+    {
+      "applicazione": "TM",
+      "coppia_test": 6,
+      "test": 2,
+      "CCX": "CCX11",
+      "titolo": "CCX-11 [fltm-fltm-fltm-fltm]",
+      "dati": {
+        "Accessi totali": 12222455758,
+        "Miss totali": 290371470
+      },
+      "max": 13000000000
+    },
+    {
+      "applicazione": "TM",
+      "coppia_test": 6,
+      "test": 2,
+      "CCX": "CCX12",
+      "titolo": "CCX-12 [map-map-map-map]",
+      "dati": {
+        "Accessi totali": 123469142,
+        "Miss totali": 43609648
+      },
+      "max": 13000000000
+    },
+    {
+      "applicazione": "TM",
+      "coppia_test": 6,
+      "test": 2,
+      "CCX": "CCX13",
+      "titolo": "CCX-13 [map-map-map-map]",
+      "dati": {
+        "Accessi totali": 55197270,
+        "Miss totali": 19958630
+      },
+      "max": 13000000000
+    },
+    {
+      "applicazione": "TM",
+      "coppia_test": 6,
+      "test": 2,
+      "CCX": "CCX14",
+      "titolo": "CCX-14 [snk-snk-snk-snk]",
+      "dati": {
+        "Accessi totali": 290657140,
+        "Miss totali": 104196302
+      },
+      "max": 13000000000
+    },
+    {
+      "applicazione": "TM",
+      "coppia_test": 6,
+      "test": 2,
+      "CCX": "CCX15",
+      "titolo": "CCX-15 [snk-snk-snk-snk]",
+      "dati": {
+        "Accessi totali": 121455051,
+        "Miss totali": 46533582
+      },
+      "max": 13000000000
     }
   ]
 }

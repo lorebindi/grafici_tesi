@@ -119,10 +119,11 @@ def crea_istogramma_ccx(applicatione, numero_coppia, numero_test, CCX, titolo, d
 
 def main():
     grafici = json_parse()
-    prova = grafici[0]
+    #prova = grafici[0]
     #crea_istogramma_ccx(prova["applicazione"], prova["coppia_test"], prova["test"], prova["CCX"],
     #                    prova["titolo"], prova["dati"], prova["max"])
     for grafico in grafici:
+        if grafico["applicazione"] == "FD":
          crea_istogramma_ccx(grafico["applicazione"], grafico["coppia_test"], grafico["test"], grafico["CCX"], grafico["titolo"], grafico["dati"], grafico["max"] )
 
 # Questa parte è importante: assicura che la funzione main() venga eseguita solo

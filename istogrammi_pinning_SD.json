@@ -1,0 +1,144 @@
+{
+  "grafici": [
+    {
+      "applicazione": "SD",
+      "parallelism": "1,1,1,1",
+      "batch": 0,
+      "ff_queue_length": 32786,
+      "titolo": "Parallelism: 1,1,1,1; Batch: 0",
+      "numanode": "1",
+      "dati": {
+        "Pinning ff": 5511759,
+        "Pipeline Grouping": 5583715
+      },
+      "max": 6000000
+    },
+    {
+      "applicazione": "SD",
+      "parallelism": "1,1,1,1",
+      "batch": 0,
+      "ff_queue_length": 16,
+      "titolo": "Parallelism: 1,1,1,1; Batch: 0",
+      "numanode": "1",
+      "dati": {
+        "Pinning ff": 5208295,
+        "Pipeline Grouping": 5212946
+      },
+      "max": 6000000
+    },
+    {
+      "applicazione": "SD",
+      "parallelism": "1,1,1,1",
+      "batch": 32,
+      "ff_queue_length": 32786,
+      "titolo": "Parallelism: 1,1,1,1; Batch: 32",
+      "numanode": "1",
+      "dati": {
+        "Pinning ff": 11202192,
+        "Pipeline Grouping": 11355570
+      },
+      "max": 13000000
+    },
+    {
+      "applicazione": "SD",
+      "parallelism": "1,1,1,1",
+      "batch": 32,
+      "ff_queue_length": 16,
+      "titolo": "Parallelism: 1,1,1,1; Batch: 32",
+      "numanode": "1",
+      "dati": {
+        "Pinning ff": 12459443,
+        "Pipeline Grouping": 12422703
+      },
+      "max": 13000000
+    },
+    {
+      "applicazione": "SD",
+      "parallelism": "2,2,2,2",
+      "batch": 0,
+      "ff_queue_length": 32786,
+      "titolo": "SpikeDetection, Parallelism: 2,2,2,2; Batch: 0",
+      "numanode": "1",
+      "dati": {
+        "Pinning ff": 3075691,
+        "A2A joined": 5912727,
+        "Src-Snk joined": 6803422,
+        "A2A splitted": 4821067,
+        "Pipeline grouped": 5094492
+      },
+      "max": 7000000
+    },
+    {
+      "applicazione": "SD",
+      "parallelism": "2,2,2,2",
+      "batch": 0,
+      "ff_queue_length": 16,
+      "titolo": "SD, Parallelism: 2,2,2,2; Batch: 0",
+      "numanode": "1",
+      "dati": {
+        "Pinning ff": 2278219,
+        "All-to-All joined": 4674961,
+        "Source-Sink joined": 4230805,
+        "All-to-All splitted": 4004016,
+        "Pipeline grouped": 4582913
+      },
+      "max": 7000000
+    },
+    {
+      "applicazione": "SD",
+      "parallelism": "2,2,2,2",
+      "batch": 32,
+      "ff_queue_length": 32786,
+      "titolo": "SD, Parallelism: 2,2,2,2; Batch: 32",
+      "numanode": "1",
+      "dati": {
+        "Pinning ff": 19192353,
+        "All-to-All joined": 14994931,
+        "Source-Sink joined": 21664131,
+        "All-to-All splitted": 14184306,
+        "Pipeline grouped": 21998665
+      },
+      "max": 25000000
+    },
+    {
+      "applicazione": "SD",
+      "parallelism": "2,2,2,2",
+      "batch": 32,
+      "ff_queue_length": 16,
+      "titolo": "SD, Parallelism: 2,2,2,2; Batch: 32",
+      "numanode": "1",
+      "dati": {
+        "Pinning ff": 12026534,
+        "All-to-All joined": 14135510,
+        "Source-Sink joined": 17647624,
+        "All-to-All splitted": 12994007,
+        "Pipeline grouped": 18106236
+      },
+      "max": 22000000
+    },
+
+
+
+
+
+
+
+    {
+      "applicazione": "SD",
+      "parallelism": "8,8,8,8",
+      "batch": 0,
+      "ff_queue_length": 32786,
+      "titolo": "SD, Parallelism: 8,8,8,8; Batch: 0",
+      "numanode": "5,6,7,8",
+      "dati": {
+        "Pinning ff": 5112293,
+        "Stage grouped": 7892825,
+        "All-to-All joined": 0,
+        "Source-Sink joined": 0,
+        "All-to-All splitted": 0,
+        "Pipeline grouped": 5544098
+      },
+      "max": 22000000
+    }
+  ]
+}

@@ -1,0 +1,130 @@
+{
+  "grafici": [
+    {
+      "applicazione": "WC",
+      "parallelism": "1,1,1,1",
+      "batch": 0,
+      "ff_queue_length": 32786,
+      "titolo": "Word Count, Parallelism: 1,1,1,1; Batch: 0",
+      "numanode": "1",
+      "dati": {
+        "Pinning ff": 15.2180,
+        "Pipeline Grouped": 15.5936
+      },
+      "max": 20.00
+    },
+    {
+      "applicazione": "WC",
+      "parallelism": "1,1,1,1",
+      "batch": 32,
+      "ff_queue_length": 32786,
+      "titolo": "Word Count, Parallelism: 1,1,1,1; Batch: 32",
+      "numanode": "1",
+      "dati": {
+        "Pinning ff": 35.5483,
+        "Pipeline Grouping": 362933
+      },
+      "max": 40.00
+    },
+    {
+      "applicazione": "WC",
+      "parallelism": "2,2,2,2",
+      "batch": 0,
+      "ff_queue_length": 32786,
+      "titolo": "Word Count, Parallelism: 2,2,2,2; Batch: 0",
+      "numanode": "1",
+      "dati": {
+        "Pinning ff": 14.0043,
+        "Stage grouped": 15.7378,
+        "A2A joined": 16.6167,
+        "A2A splitted": 12.4839,
+        "Pipeline grouped": 15.2393
+      },
+      "max": 20.00
+    },
+    {
+      "applicazione": "WC",
+      "parallelism": "2,2,2,2",
+      "batch": 32,
+      "ff_queue_length": 32786,
+      "titolo": "Word Count, Parallelism: 2,2,2,2; Batch: 32",
+      "numanode": "1",
+      "dati": {
+        "Pinning ff": 28.4236,
+        "Stage grouped": 37.4855,
+        "A2A joined": 59.7418,
+        "A2A splitted": 37.3896,
+        "Pipeline grouped": 41.8200
+      },
+      "max": 50.00
+    },
+    {
+      "applicazione": "WC",
+      "parallelism": "4,4,4,4",
+      "batch": 0,
+      "ff_queue_length": 32786,
+      "titolo": "Word Count, Parallelism: 4,4,4,4; Batch: 0",
+      "numanode": "4,5",
+      "dati": {
+        "Pinning ff": 20.9928,
+        "Stage grouped": 17.1070,
+        "A2A joined": 13.7234,
+        "A2A splitted": 14.1109,
+        "Pipeline grouped": 17.5341,
+        "Semipipeline grouped": 14.3128
+      },
+      "max": 30.00
+    },
+    {
+      "applicazione": "WC",
+      "parallelism": "4,4,4,4",
+      "batch": 32,
+      "ff_queue_length": 32786,
+      "titolo": "Word Count, Parallelism: 4,4,4,4; Batch: 32",
+      "numanode": "4,5",
+      "dati": {
+        "Pinning ff": 64.8495,
+        "Stage grouped": 73.4038,
+        "A2A joined": 68.4380,
+        "A2A splitted": 68.2014,
+        "Pipeline grouped": 94.2215,
+        "Semipipeline grouped": 0
+      },
+      "max": 100.00
+    },
+    {
+      "applicazione": "WC",
+      "parallelism": "8,8,8,8",
+      "batch": 0,
+      "ff_queue_length": 32786,
+      "titolo": "Word Count, Parallelism: 8,8,8,8; Batch: 0",
+      "numanode": "4,5,6,7",
+      "dati": {
+        "Pinning ff": 24.4495,
+        "Stage grouped": 18.3772,
+        "A2A joined": 18.5255,
+        "A2A splitted": 23.1951,
+        "Pipeline grouped": 25.7495,
+        "Semipipeline grouped": 17.9556
+      },
+      "max": 30.00
+    },
+    {
+      "applicazione": "WC",
+      "parallelism": "8,8,8,8",
+      "batch": 32,
+      "ff_queue_length": 32786,
+      "titolo": "Word Count, Parallelism: 8,8,8,8; Batch: 32",
+      "numanode": "4,5,6,7",
+      "dati": {
+        "Pinning ff": 129.4903,
+        "Stage grouped": 101.3592,
+        "A2A joined": 118.9585,
+        "A2A splitted": 122.3275,
+        "Pipeline grouped": 131.0595,
+        "Semipipeline grouped": 118.8985
+      },
+      "max": 140.00
+    }
+    ]
+}

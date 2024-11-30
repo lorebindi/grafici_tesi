@@ -8,10 +8,16 @@
       "titolo": "Fraud Detection, Parallelism: 1,1,1; Batch: 0",
       "numanode": "1",
       "dati": {
-        "Pinning ff": 547324,
-        "Pipeline Grouped": 546779
+        "Pinning ff": {
+          "media": 547324,
+          "dev_std": 4804
+        },
+        "Pipeline grouping": {
+          "media": 546779,
+          "dev_std": 9653
+        }
       },
-      "max": 600000
+      "max": 700000
     },
     {
       "applicazione": "FD",
@@ -21,10 +27,16 @@
       "titolo": "Fraud Detection, Parallelism: 1,1,1; Batch: 32",
       "numanode": "1",
       "dati": {
-        "Pinning ff": 581844,
-        "Pipeline Grouping": 544115
+        "Pinning ff": {
+          "media": 581844,
+          "dev_std": 4128
+        },
+        "Pipeline Grouping": {
+          "media": 544115,
+          "dev_std": 7804
+        }
       },
-      "max": 600000
+      "max": 800000
     },
     {
       "applicazione": "FD",
@@ -34,13 +46,28 @@
       "titolo": "Fraud Detection, Parallelism: 2,2,2; Batch: 0",
       "numanode": "1",
       "dati": {
-        "Pinning ff": 741970,
-        "A2A joined": 896054,
-        "A2A splitted": 827075,
-        "Src-Snk grouped": 929209,
-        "Pipeline grouped": 867371
+        "Pinning ff":{
+          "media": 741970,
+          "dev_std": 9025
+        },
+        "A2A grouping": {
+          "media": 896054,
+          "dev_std": 11948
+        },
+        "A2A splitting":{
+          "media": 827075,
+          "dev_std": 20821
+        },
+        "Src-Snk grouping":{
+          "media": 929209,
+          "dev_std": 23568
+        },
+        "Pipeline grouping": {
+          "media": 867371,
+          "dev_std": 9734
+        }
       },
-      "max": 1000000
+      "max": 1500000
     },
     {
       "applicazione": "FD",
@@ -50,11 +77,26 @@
       "titolo": "Fraud Detection, Parallelism: 2,2,2; Batch: 32",
       "numanode": "1",
       "dati": {
-        "Pinning ff": 1080005,
-        "A2A joined": 1096629,
-        "A2A splitted": 1100929,
-        "Src-Snk grouped": 1104455,
-        "Pipeline grouped": 1090791
+        "Pinning ff":{
+          "media": 1080005,
+          "dev_std": 10564
+        },
+        "A2A grouping": {
+          "media": 1096629,
+          "dev_std": 17039
+        },
+        "A2A splitting":{
+          "media": 1100929,
+          "dev_std": 13813
+        },
+        "Src-Snk grouping":{
+          "media": 1104455,
+          "dev_std": 21133
+        },
+        "Pipeline grouping":{
+          "media": 1090791,
+          "dev_std": 17793
+        }
       },
       "max": 1500000
     },
@@ -66,13 +108,28 @@
       "titolo": "Fraud Detection, Parallelism: 4,4,4; Batch: 0",
       "numanode": "4,5",
       "dati": {
-        "Pinning ff": 1451050,
-        "Stage grouped": 1671035,
-        "A2A joined": 1614775,
-        "Src-Snk grouped": 1463895,
-        "Pipeline grouped": 1491354
+        "Pinning ff":{
+          "media": 1451050,
+          "dev_std": 17588
+        },
+        "Stage grouping":{
+          "media": 1671035,
+          "dev_std": 38646
+        },
+        "A2A grouping": {
+          "media": 1614775,
+          "dev_std": 13707
+        },
+        "Src-Snk grouping": {
+          "media": 1463895,
+          "dev_std": 36078
+        },
+        "Pipeline grouping": {
+          "media": 1491354,
+          "dev_std": 42310
+        }
       },
-      "max": 2000000
+      "max": 2500000
     },
     {
       "applicazione": "FD",
@@ -82,11 +139,26 @@
       "titolo": "Fraud Detection, Parallelism: 4,4,4; Batch: 32",
       "numanode": "4,5",
       "dati": {
-        "Pinning ff": 2096165,
-        "Stage grouped": 2026263,
-        "A2A joined": 2016457,
-        "Src-Snk grouped": 1877575,
-        "Pipeline grouped": 1963609
+        "Pinning ff": {
+          "media": 2096165,
+          "dev_std": 19007
+        },
+        "Stage grouping":{
+          "media": 2026263,
+          "dev_std": 11905
+        },
+        "A2A grouping": {
+          "media": 2016457,
+          "dev_std": 28538
+        },
+        "Src-Snk grouping":{
+          "media": 1877575,
+          "dev_std": 6903
+        },
+        "Pipeline grouping":{
+          "media": 1963609,
+          "dev_std": 27015
+        }
       },
       "max": 3000000
     },
@@ -98,11 +170,26 @@
       "titolo": "Fraud Detection, Parallelism: 8,8,8; Batch: 0",
       "numanode": "4,5,6,7",
       "dati": {
-        "Pinning ff": 2530677,
-        "Stage grouped": 3039410,
-        "A2A joined": 2713523,
-        "Src-Snk grouped": 2485368,
-        "Pipeline grouped": 2705628
+        "Pinning ff": {
+          "media": 2530677,
+          "dev_std": 147992
+        },
+        "Stage grouping":{
+          "media": 3039410,
+          "dev_std": 58828
+        },
+        "A2A grouping": {
+          "media": 2713523,
+          "dev_std": 107101
+        },
+        "Src-Snk grouping":{
+          "media": 3920249,
+          "dev_std": 93675
+        },
+        "Pipeline grouping": {
+          "media": 2705628,
+          "dev_std": 102327
+        }
       },
       "max": 4000000
     },
@@ -114,13 +201,28 @@
       "titolo": "Fraud Detection, Parallelism: 8,8,8; Batch: 32",
       "numanode": "4,5,6,7",
       "dati": {
-        "Pinning ff": 3857314,
-        "Stage grouped": 3940851,
-        "A2A joined": 3938063,
-        "Src-Snk grouped": 3459605,
-        "Pipeline grouped": 3920249
+        "Pinning ff":{
+          "media": 3540991,
+          "dev_std": 119683
+        },
+        "Stage grouping":{
+          "media": 3714594,
+          "dev_std": 160738
+        },
+        "A2A grouping":{
+          "media": 3665852,
+          "dev_std": 188843
+        },
+        "Src-Snk grouping":{
+          "media": 3459605,
+          "dev_std": 140394
+        },
+        "Pipeline grouping": {
+          "media": 3588280,
+          "dev_std": 176083
+        }
       },
-      "max": 4000000
+      "max": 5000000
     }
   ]
 }

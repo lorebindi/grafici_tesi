@@ -8,10 +8,16 @@
       "titolo": "Spike Detection, Parallelism: 1,1,1,1; Batch: 0",
       "numanode": "1",
       "dati": {
-        "Pinning ff": 5511759,
-        "Pipeline grouped": 5583715
+        "Pinning ff": {
+          "media": 5511759,
+          "dev_std": 7742
+        },
+        "Pipeline grouping": {
+          "media": 5583715,
+          "dev_std": 34885
+        }
       },
-      "max": 6000000
+      "max": 7000000
     },
     {
       "applicazione": "SD",
@@ -21,66 +27,114 @@
       "titolo": "Spike Detection, Parallelism: 1,1,1,1; Batch: 0",
       "numanode": "1",
       "dati": {
-        "Pinning ff": 5208295,
-        "Pipeline grouped": 5212946
-      },
-      "max": 6000000
-    },
-    {
-      "applicazione": "SD",
-      "parallelism": "1,1,1,1",
-      "batch": 32,
-      "ff_queue_length": 32786,
-      "titolo": "Spike Detection, Parallelism: 1,1,1,1; Batch: 32",
-      "numanode": "1",
-      "dati": {
-        "Pinning ff": 11202192,
-        "Pipeline grouped": 11355570
-      },
-      "max": 13000000
-    },
-    {
-      "applicazione": "SD",
-      "parallelism": "1,1,1,1",
-      "batch": 32,
-      "ff_queue_length": 16,
-      "titolo": "Spike Detection, Parallelism: 1,1,1,1; Batch: 32",
-      "numanode": "1",
-      "dati": {
-        "Pinning ff": 12459443,
-        "Pipeline grouped": 12422703
-      },
-      "max": 13000000
-    },
-    {
-      "applicazione": "SD",
-      "parallelism": "2,2,2,2",
-      "batch": 0,
-      "ff_queue_length": 32786,
-      "titolo": "Spike Detection, Parallelism: 2,2,2,2; Batch: 0",
-      "numanode": "1",
-      "dati": {
-        "Pinning ff": 3075691,
-        "A2A joined": 5912727,
-        "Src-Snk joined": 6803422,
-        "A2A splitted": 4821067,
-        "Pipeline grouped": 5094492
+        "Pinning ff": {
+          "media": 5208295,
+          "dev_std": 33997
+        },
+        "Pipeline grouping": {
+          "media": 5212946,
+          "dev_std": 33109
+        }
       },
       "max": 7000000
     },
     {
       "applicazione": "SD",
+      "parallelism": "1,1,1,1",
+      "batch": 32,
+      "ff_queue_length": 32786,
+      "titolo": "Spike Detection, Parallelism: 1,1,1,1; Batch: 32",
+      "numanode": "1",
+      "dati": {
+        "Pinning ff": {
+          "media": 11202192,
+          "dev_std": 27.696
+        },
+        "Pipeline grouping": {
+          "media": 11355570,
+          "dev_std": 30364
+        }
+      },
+      "max": 16000000
+    },
+    {
+      "applicazione": "SD",
+      "parallelism": "1,1,1,1",
+      "batch": 32,
+      "ff_queue_length": 16,
+      "titolo": "Spike Detection, Parallelism: 1,1,1,1; Batch: 32",
+      "numanode": "1",
+      "dati": {
+        "Pinning ff": {
+          "media": 12459443,
+          "dev_std": 88666
+        },
+        "Pipeline grouping": {
+          "media": 12422703,
+          "dev_std": 102.196
+        }
+      },
+      "max": 16000000
+    },
+    {
+      "applicazione": "SD",
+      "parallelism": "2,2,2,2",
+      "batch": 0,
+      "ff_queue_length": 32786,
+      "titolo": "Spike Detection, Parallelism: 2,2,2,2; Batch: 0",
+      "numanode": "1",
+      "dati": {
+        "Pinning ff": {
+          "media": 3075691,
+          "dev_std": 660019
+        },
+        "A2A grouping": {
+          "media": 5912727,
+          "dev_std": 57396
+        },
+        "Src-Snk grouping": {
+          "media": 6803422,
+          "dev_std": 72606
+        },
+        "A2A splitting":{
+          "media": 4821067,
+          "dev_std": 46175
+        },
+        "Pipeline grouping": {
+          "media": 5094492,
+          "dev_std": 17346
+        }
+      },
+      "max": 9000000
+    },
+    {
+      "applicazione": "SD",
       "parallelism": "2,2,2,2",
       "batch": 0,
       "ff_queue_length": 16,
       "titolo": "Spike Detection, Parallelism: 2,2,2,2; Batch: 0",
       "numanode": "1",
       "dati": {
-        "Pinning ff": 2278219,
-        "A2A joined": 4674961,
-        "Src-Snk joined": 4230805,
-        "A2A splitted": 4004016,
-        "Pipeline grouped": 4582913
+        "Pinning ff": {
+          "media": 2278219,
+          "dev_std": 36555
+        },
+        "A2A grouping": {
+          "media": 4674961,
+          "dev_std": 78474
+        },
+        "Src-Snk grouping": {
+          "media": 4230805,
+          "dev_std": 85598
+        },
+        "A2A splitting": {
+          "media": 4004016,
+          "dev_std": 21737
+        },
+        "Pipeline grouping": {
+          "media": 4582913,
+          "dev_std": 35930
+        }
       },
       "max": 7000000
     },
@@ -92,13 +146,28 @@
       "titolo": "Spike Detection, Parallelism: 2,2,2,2; Batch: 32",
       "numanode": "1",
       "dati": {
-        "Pinning ff": 19192353,
-        "A2A joined": 14994931,
-        "Src-Snk joined": 21664131,
-        "A2A splitted": 14184306,
-        "Pipeline grouped": 21998665
+        "Pinning ff": {
+          "media": 19192353,
+          "dev_std": 505835
+        },
+        "A2A grouping":{
+          "media": 14994931,
+          "dev_std": 59217
+        },
+        "Src-Snk grouping": {
+          "media": 21664131,
+          "dev_std": 241812
+        },
+        "A2A splitting":{
+          "media": 14184306,
+          "dev_std": 284724
+        },
+        "Pipeline grouping": {
+          "media": 21998665,
+          "dev_std": 54427
+        }
       },
-      "max": 25000000
+      "max": 30000000
     },
     {
       "applicazione": "SD",
@@ -108,11 +177,26 @@
       "titolo": "Spike Detection, Parallelism: 2,2,2,2; Batch: 32",
       "numanode": "1",
       "dati": {
-        "Pinning ff": 12026534,
-        "A2A joined": 14135510,
-        "Src-Snk joined": 17647624,
-        "A2A splitted": 12994007,
-        "Pipeline grouped": 18106236
+        "Pinning ff": {
+          "media": 12026534,
+          "dev_std": 716242
+        },
+        "A2A grouping": {
+          "media": 14135510,
+          "dev_std": 243509
+        },
+        "Src-Snk grouping": {
+          "media": 17647624,
+          "dev_std": 351736
+        },
+        "A2A splitting":  {
+          "media": 12994007,
+          "dev_std": 201147
+        },
+        "Pipeline grouping": {
+          "media":18106236,
+          "dev_std": 455388
+        }
       },
       "max": 22000000
     },
@@ -124,16 +208,36 @@
       "titolo": "Spike Detection, Parallelism: 4,4,4,4; Batch: 0",
       "numanode": "4,5",
       "dati": {
-        "Pinning ff": 5216589,
-        "Stage grouped": 6615692,
-        "A2A joined": 5769372,
-        "A2A splitted": 5781776,
-        "Src-Snk joined": 5852165,
-        "Pipeline grouped": 5215193,
-        "Semipipeline grouped": 5595513
-
+        "Pinning ff": {
+          "media": 5216589,
+          "dev_std": 741025
+        },
+        "Stage grouping": {
+          "media": 6615692,
+          "dev_std": 61607
+        },
+        "A2A splitting": {
+          "media": 5781776,
+          "dev_std": 136005
+        },
+        "Src-Snk grouping": {
+          "media": 5852165,
+          "dev_std": 70785
+        },
+        "Pipeline grouping": {
+          "media": 5215193,
+          "dev_std": 43561
+        },
+        "A2A grouping": {
+          "media": 5769372,
+          "dev_std": 214058
+        },
+        "Semipipeline grouping": {
+          "media": 5595513,
+          "dev_std": 29559
+        }
       },
-      "max": 7000000
+      "max": 9000000
     },
     {
       "applicazione": "SD",
@@ -143,14 +247,34 @@
       "titolo": "Spike Detection, Parallelism: 4,4,4,4; Batch: 32",
       "numanode": "4,5",
       "dati": {
-        "Pinning ff": 20807184,
-        "Stage grouped": 19639829,
-        "A2A joined": 19628906,
-        "A2A splitted": 19406160,
-        "Src-Snk joined": 36613834,
-        "Pipeline grouped": 38509559,
-        "Semipipeline grouped": 19064453
-
+        "Pinning ff": {
+          "media": 20807184,
+          "dev_std": 367092
+        } ,
+        "Stage grouping": {
+          "media": 19639829,
+          "dev_std": 301636
+        },
+        "A2A splitting": {
+          "media": 19406160,
+          "dev_std": 300504
+        },
+        "Src-Snk grouping": {
+          "media": 36613834,
+          "dev_std": 241280
+        },
+        "Pipeline grouping": {
+          "media": 38509559,
+          "dev_std": 314879
+        },
+        "A2A grouping": {
+          "media": 19628906,
+          "dev_std": 73867
+        },
+        "Semipipeline grouping": {
+          "media": 19064453,
+          "dev_std": 646812
+        }
       },
       "max": 40000000
     },
@@ -162,13 +286,28 @@
       "titolo": "Spike Detection, Parallelism: 8,8,8,8; Batch: 0",
       "numanode": "5,6,7,8",
       "dati": {
-        "Pinning ff": 5112293,
-        "Stage grouped": 7892825,
-        "A2A joined": 6078640,
-        "Src-Snk joined": 6000086,
-        "Pipeline grouped": 5544098
+        "Pinning ff": {
+          "media": 5112293,
+          "dev_std": 108313
+        },
+        "Stage grouping": {
+          "media": 7892825,
+          "dev_std": 1694501
+        },
+        "A2A grouping": {
+          "media": 6078640,
+          "dev_std": 674095
+        },
+        "Src-Snk grouping": {
+          "media": 6000086,
+          "dev_std": 466197
+        },
+        "Pipeline grouping":{
+          "media": 5544098,
+          "dev_std": 837189
+        }
       },
-      "max": 8000000
+      "max": 12000000
     },
     {
       "applicazione": "SD",
@@ -178,11 +317,26 @@
       "titolo": "Spike Detection, Parallelism: 8,8,8,8; Batch: 32",
       "numanode": "5,6,7,8",
       "dati": {
-        "Pinning ff": 34078481,
-        "Stage grouped": 38565241,
-        "A2A joined": 35086567,
-        "Src-Snk joined": 64826798,
-        "Pipeline grouped": 64682194
+        "Pinning ff":{
+          "media": 34078481,
+          "dev_std": 4456902
+        },
+        "Stage grouping":{
+          "media": 38565241,
+          "dev_std": 1181994
+        },
+        "A2A grouping": {
+          "media": 35086567,
+          "dev_std": 1208191
+        },
+        "Src-Snk grouping":{
+          "media": 64826798,
+          "dev_std": 2143410
+        },
+        "Pipeline grouping": {
+          "media": 64682194,
+          "dev_std": 2085558
+        }
       },
       "max": 70000000
     }

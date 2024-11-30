@@ -1,0 +1,594 @@
+{
+  "grafici": [
+    {
+      "applicazione": "SD",
+      "parallelism": "1,1,1,1",
+      "max_batch": 32,
+      "titolo": "Spike Detection, Parallelism: 1,1,1,1",
+      "dati_ff": {
+        "batch0": {
+          "media": 5443218,
+          "dev_std": 29479
+        },
+        "batch2":{
+          "media": 5373152,
+          "dev_std": 71745
+        },
+        "batch4": {
+          "media": 7062441,
+          "dev_std": 44581
+        },
+        "batch8": {
+          "media": 8910455,
+          "dev_std": 28545
+        },
+        "batch16": {
+          "media": 10369432,
+          "dev_std": 30156
+        },
+        "batch32":{
+          "media": 11270070,
+          "dev_std": 27573
+        }
+      },
+      "dati_OS": {
+        "batch0": {
+          "media": 2323476,
+          "dev_std": 924664
+        },
+        "batch2": {
+          "media": 1409424,
+          "dev_std": 201943
+        },
+        "batch4": {
+          "media": 2121445,
+          "dev_std": 279023
+        },
+        "batch8": {
+          "media": 3844248,
+          "dev_std": 1071830
+        },
+        "batch16": {
+          "media": 4356466,
+          "dev_std": 882768
+        },
+        "batch32": {
+          "media": 4743801,
+          "dev_std": 630600
+        }
+      },
+      "max": 12000000
+    },
+    {
+      "applicazione": "SD",
+      "parallelism": "2,2,2,2",
+      "max_batch": 32,
+      "titolo": "Spike Detection, Parallelism: 2,2,2,2",
+      "dati_ff": {
+        "batch0": {
+          "media": 2275799,
+          "dev_std": 15735
+        },
+        "batch2": {
+          "media": 3338803,
+          "dev_std": 235106
+        },
+        "batch4":{
+          "media": 5380503,
+          "dev_std": 50158
+        },
+        "batch8": {
+          "media": 8687507,
+          "dev_std": 114367
+        },
+        "batch16": {
+          "media": 13298392,
+          "dev_std": 263261
+        },
+        "batch32": {
+          "media": 18752642,
+          "dev_std": 38021
+        }
+      },
+      "dati_OS": {
+        "batch0":{
+          "media": 2178176,
+          "dev_std": 155880
+        },
+        "batch2": {
+          "media": 2144197,
+          "dev_std": 258785
+        },
+        "batch4": {
+          "media": 3233401,
+          "dev_std": 291147
+        },
+        "batch8": {
+          "media": 4543532,
+          "dev_std": 332591
+        },
+        "batch16": {
+          "media": 5883612,
+          "dev_std": 300303
+        },
+        "batch32": {
+          "media": 7432406,
+          "dev_std": 456420
+        }
+      },
+      "max": 20000000
+    },
+    {
+      "applicazione": "SD",
+      "parallelism": "4,4,4,4",
+      "max_batch": 32,
+      "titolo": "Spike Detection, Parallelism: 4,4,4,4",
+      "dati_ff": {
+        "batch0": {
+          "media": 4810972,
+          "dev_std": 486007
+        },
+        "batch2": {
+          "media": 5175965,
+          "dev_std": 114658
+        },
+        "batch4": {
+          "media": 8098714,
+          "dev_std": 537057
+        },
+        "batch8": {
+          "media": 12336657,
+          "dev_std": 531240
+        },
+        "batch16": {
+          "media": 17488190,
+          "dev_std": 177726
+        },
+        "batch32": {
+          "media": 20874030,
+          "dev_std": 474883
+        }
+      },
+      "dati_OS": {
+        "batch0": {
+          "media": 2988472,
+          "dev_std": 288683
+        },
+        "batch2":{
+          "media": 3362248,
+          "dev_std": 176021
+        },
+        "batch4": {
+          "media": 5620761,
+          "dev_std": 122445
+        },
+        "batch8": {
+          "media": 8278232,
+          "dev_std": 294982
+        },
+        "batch16": {
+          "media": 10947921,
+          "dev_std": 317735
+        },
+        "batch32": {
+          "media": 11376125,
+          "dev_std": 325960
+        }
+      },
+      "max": 25000000
+    },
+    {
+      "applicazione": "SD",
+      "parallelism": "8,8,8,8",
+      "max_batch": 32,
+      "titolo": "Spike Detection, Parallelism: 8,8,8,8",
+      "dati_ff": {
+        "batch0": {
+          "media": 6718264,
+          "dev_std": 1614985
+        },
+        "batch2": {
+          "media": 8659216,
+          "dev_std": 920894
+        },
+        "batch4": {
+          "media": 14556719,
+          "dev_std": 1057281
+        },
+        "batch8": {
+          "media": 21903109,
+          "dev_std": 1482174
+        },
+        "batch16": {
+          "media": 33166182,
+          "dev_std": 1228294
+        },
+        "batch32": {
+          "media": 38777571,
+          "dev_std": 3289752
+        }
+      },
+      "dati_OS": {
+        "batch0":{
+          "media": 5086556,
+          "dev_std": 302363
+        },
+        "batch2": {
+          "media": 6316598,
+          "dev_std": 173721
+        },
+        "batch4": {
+          "media": 10671334,
+          "dev_std": 294603
+        },
+        "batch8": {
+          "media": 16217206,
+          "dev_std": 568705
+        },
+        "batch16": {
+          "media": 21337119,
+          "dev_std": 1133711
+        },
+        "batch32": {
+          "media": 26605440,
+          "dev_std": 746396
+        }
+      },
+      "max": 50000000
+    },
+    {
+      "applicazione": "SD",
+      "parallelism": "16,16,16,16",
+      "max_batch": 32,
+      "titolo": "Spike Detection, Parallelism: 16,16,16,16",
+      "dati_ff": {
+        "batch0": {
+          "media": 7157431,
+          "dev_std": 88832
+        },
+        "batch2": {
+          "media": 11859329,
+          "dev_std": 337825
+        },
+        "batch4": {
+          "media": 20547032,
+          "dev_std": 451993
+        },
+        "batch8": {
+          "media": 32754476,
+          "dev_std": 815924
+        },
+        "batch16": {
+          "media": 43807028,
+          "dev_std": 1181260
+        },
+        "batch32": {
+          "media": 53756609,
+          "dev_std": 2733913
+        }
+      },
+      "dati_OS": {
+        "batch0": {
+          "media": 7234596,
+          "dev_std": 302629
+        },
+        "batch2": {
+          "media": 9412725,
+          "dev_std": 352867
+        },
+        "batch4": {
+          "media": 16040569,
+          "dev_std": 1324692
+        },
+        "batch8": {
+          "media": 24930530,
+          "dev_std": 567587
+        },
+        "batch16": {
+          "media": 34465873,
+          "dev_std": 1079010
+        },
+        "batch32": {
+          "media": 43281817,
+          "dev_std": 1703381
+        }
+      },
+      "max": 60000000
+    },
+    {
+      "applicazione": "WC",
+      "parallelism": "1,1,1,1",
+      "max_batch": 32,
+      "titolo": "Word Count, Parallelism: 1,1,1,1",
+      "dati_ff": {
+        "batch0":{
+          "media": 15.5545,
+          "dev_std": 0.0696
+        },
+        "batch2": {
+          "media": 20.7603,
+          "dev_std": 0.0711
+        },
+        "batch4": {
+          "media": 26.1771,
+          "dev_std": 0.0778
+        },
+        "batch8": {
+          "media": 31.9237,
+          "dev_std": 0.3856
+        },
+        "batch16": {
+          "media": 35.5857,
+          "dev_std": 0.4628
+        },
+        "batch32": {
+          "media": 36.5821,
+          "dev_std": 0.3208
+        }
+      },
+      "dati_OS": {
+        "batch0": {
+          "media": 6.2240,
+          "dev_std": 1.1060
+        },
+        "batch2": {
+          "media": 9.0575,
+          "dev_std": 2.0774
+        },
+        "batch4": {
+          "media": 17.6156,
+          "dev_std": 5.7126
+        },
+        "batch8": {
+          "media": 17.0568,
+          "dev_std": 2.9253
+        },
+        "batch16": {
+          "media": 19.9384,
+          "dev_std": 5.0983
+        },
+        "batch32": {
+          "media": 22.9595,
+          "dev_std": 4.1871
+        }
+      },
+      "max": 40
+    },
+    {
+      "applicazione": "WC",
+      "parallelism": "2,2,2,2",
+      "max_batch": 32,
+      "titolo": "Word Count, Parallelism: 2,2,2,2",
+      "dati_ff": {
+        "batch0": {
+          "media": 14.0806,
+          "dev_std": 0.0790
+        },
+        "batch2": {
+          "media": 16.8556,
+          "dev_std": 0.1125
+        },
+        "batch4": {
+          "media": 20.4348,
+          "dev_std": 0.2764
+        },
+        "batch8": {
+          "media": 24.0670,
+          "dev_std": 0.2314
+        },
+        "batch16": {
+          "media": 26.9227,
+          "dev_std": 0.1622
+        },
+        "batch32": {
+          "media": 28.5755,
+          "dev_std": 0.1917
+        }
+      },
+      "dati_OS": {
+        "batch0": {
+          "media": 6.6816,
+          "dev_std": 0.6643
+        },
+        "batch2": {
+          "media": 9.5339,
+          "dev_std": 0.3916
+        },
+        "batch4": {
+          "media": 15.0624,
+          "dev_std": 1.2065
+        },
+        "batch8": {
+          "media": 21.4381,
+          "dev_std": 0.7285
+        },
+        "batch16": {
+          "media": 25.7488,
+          "dev_std": 3.9450
+        },
+        "batch32": {
+          "media": 28.4748,
+          "dev_std": 4.7164
+        }
+      },
+      "max": 40
+    },
+    {
+      "applicazione": "WC",
+      "parallelism": "4,4,4,4",
+      "max_batch": 32,
+      "titolo": "Word Count, Parallelism: 4,4,4,4",
+      "dati_ff": {
+        "batch0": {
+          "media": 21.3712,
+          "dev_std": 0.4179
+        },
+        "batch2": {
+          "media": 34.3588,
+          "dev_std": 0.4495
+        },
+        "batch4": {
+          "media": 46.5770,
+          "dev_std": 0.2800
+        },
+        "batch8": {
+          "media": 55.3217,
+          "dev_std": 3.1577
+        },
+        "batch16": {
+          "media": 62.2170,
+          "dev_std": 11.55551
+        },
+        "batch32": {
+          "media": 64.0113,
+          "dev_std": 10.0213
+        }
+      },
+      "dati_OS": {
+        "batch0": {
+          "media": 10.0448,
+          "dev_std": 0.3133
+        },
+        "batch2": {
+          "media": 15.7568,
+          "dev_std": 1.4026
+        },
+        "batch4": {
+          "media": 24.4723,
+          "dev_std": 0.9841
+        },
+        "batch8": {
+          "media": 37.5147,
+          "dev_std": 0.9601
+        },
+        "batch16": {
+          "media": 50.4655,
+          "dev_std": 2.4193
+        },
+        "batch32": {
+          "media": 50.3202,
+          "dev_std": 5.1770
+        }
+      },
+      "max": 70
+    },
+    {
+      "applicazione": "WC",
+      "parallelism": "8,8,8,8",
+      "max_batch": 32,
+      "titolo": "Word Count, Parallelism: 8,8,8,8",
+      "dati_ff": {
+        "batch0": {
+          "media": 23.2285,
+          "dev_std": 0.9486
+        },
+        "batch2": {
+          "media": 42.3867,
+          "dev_std": 0.8722
+        },
+        "batch4": {
+          "media": 68.2707,
+          "dev_std": 3.1805
+        },
+        "batch8": {
+          "media": 93.8283,
+          "dev_std": 7.0032
+        },
+        "batch16": {
+          "media": 117.4135,
+          "dev_std": 10.4394
+        },
+        "batch32": {
+          "media": 120.5090,
+          "dev_std": 13.0518
+        }
+      },
+      "dati_OS": {
+        "batch0": {
+          "media": 16.3741,
+          "dev_std": 0.4088
+        },
+        "batch2": {
+          "media": 24.7760,
+          "dev_std": 1.0153
+        },
+        "batch4": {
+          "media": 38.4460,
+          "dev_std": 1.6476
+        },
+        "batch8": {
+          "media": 63.9280,
+          "dev_std": 4.8718
+        },
+        "batch16": {
+          "media": 81.1628,
+          "dev_std": 5.1021
+        },
+        "batch32": {
+          "media": 101.8931,
+          "dev_std": 5.1061
+        }
+      },
+      "max": 140
+    },
+    {
+      "applicazione": "WC",
+      "parallelism": "16,16,16,16",
+      "max_batch": 32,
+      "titolo": "Word Count, Parallelism: 16,16,16,16",
+      "dati_ff": {
+        "batch0": {
+          "media": 27.7926,
+          "dev_std": 1.7265
+        },
+        "batch2": {
+          "media": 43.3429,
+          "dev_std": 1.6840
+        },
+        "batch4": {
+          "media": 86.8860,
+          "dev_std": 6.3644
+        },
+        "batch8": {
+          "media": 129.7705,
+          "dev_std": 6.0178
+        },
+        "batch16": {
+          "media": 141.4431,
+          "dev_std": 8.1784
+        },
+        "batch32": {
+          "media": 154.5908,
+          "dev_std": 8.8221
+        }
+      },
+      "dati_OS": {
+        "batch0": {
+          "media": 26.4588,
+          "dev_std": 1.0338
+        },
+        "batch2": {
+          "media": 41.2410,
+          "dev_std": 1.6306
+        },
+        "batch4": {
+          "media": 66.5137,
+          "dev_std": 2.7290
+        },
+        "batch8": {
+          "media": 99.7652,
+          "dev_std": 4.7846
+        },
+        "batch16": {
+          "media": 123.6964,
+          "dev_std": 3.7439
+        },
+        "batch32": {
+          "media": 171.5567,
+          "dev_std": 15.1620
+        }
+      },
+      "max": 200
+    }
+  ]
+}

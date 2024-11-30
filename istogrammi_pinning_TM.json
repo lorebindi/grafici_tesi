@@ -8,10 +8,16 @@
       "titolo": "Traffic Monitoring, Parallelism: 1,1,1,1; Batch: 0",
       "numanode": "1",
       "dati": {
-        "Pinning ff": 856,
-        "Pipeline Grouped": 861
+        "Pinning ff": {
+          "media": 856,
+          "dev_std": 12
+        },
+        "Pipeline grouping":{
+          "media": 861,
+          "dev_std": 10
+        }
       },
-      "max": 1000
+      "max": 1500
     },
     {
       "applicazione": "TM",
@@ -21,8 +27,14 @@
       "titolo": "Traffic Monitoring, Parallelism: 1,1,1,1; Batch: 32",
       "numanode": "1",
       "dati": {
-        "Pinning ff": 725,
-        "Pipeline Grouped": 740
+        "Pinning ff":{
+          "media": 725,
+          "dev_std": 17
+        },
+        "Pipeline grouping":{
+          "media": 740,
+          "dev_std": 18
+        }
       },
       "max": 1000
     },
@@ -34,12 +46,24 @@
       "titolo": "Traffic Monitoring, Parallelism: 2,2,2,2; Batch: 0",
       "numanode": "1",
       "dati": {
-        "Pinning ff": 1700,
-        "A2A joined": 1723,
-        "A2A splitted": 1737,
-        "Pipeline grouped": 1727
+        "Pinning ff":{
+          "media": 1700,
+          "dev_std": 21
+        },
+        "A2A grouping": {
+          "media": 1723,
+          "dev_std": 26
+        },
+        "A2A splitting":{
+          "media": 1737,
+          "dev_std": 14
+        },
+        "Pipeline grouping":{
+          "media": 1727,
+          "dev_std": 21
+        }
       },
-      "max": 2000
+      "max": 3000
     },
     {
       "applicazione": "TM",
@@ -49,12 +73,24 @@
       "titolo": "Traffic Monitoring, Parallelism: 2,2,2,2; Batch: 32",
       "numanode": "1",
       "dati": {
-        "Pinning ff": 1457,
-        "A2A joined": 1463,
-        "A2A splitted": 1484,
-        "Pipeline grouped": 1471
+        "Pinning ff": {
+          "media": 1457,
+          "dev_std": 27
+        },
+        "A2A grouping": {
+          "media": 1463,
+          "dev_std": 59
+        },
+        "A2A splitting":{
+          "media": 1484,
+          "dev_std": 41
+        },
+        "Pipeline grouping": {
+          "media": 1471,
+          "dev_std": 49
+        }
       },
-      "max": 1500
+      "max": 2000
     },
     {
       "applicazione": "TM",
@@ -64,14 +100,32 @@
       "titolo": "Traffic Monitoring, Parallelism: 4,4,4,4; Batch: 0",
       "numanode": "4,5",
       "dati": {
-        "Pinning ff": 3468,
-        "Stage grouped": 3386,
-        "A2A joined": 3408,
-        "A2A splitted": 2974,
-        "Pipeline grouped": 2974,
-        "Semipipeline grouped": 2944
+        "Pinning ff": {
+          "media": 3468,
+          "dev_std": 28
+        },
+        "Stage grouping":{
+          "media": 3386,
+          "dev_std": 47
+        },
+        "A2A grouping":{
+          "media": 3408,
+          "dev_std": 57
+        },
+        "A2A splitting":{
+          "media": 2974,
+          "dev_std": 495
+        },
+        "Pipeline grouping":{
+          "media": 2974,
+          "dev_std": 567
+        },
+        "Semipipeline grouping":{
+          "media": 2944,
+          "dev_std": 472
+        }
       },
-      "max": 4000
+      "max": 5000
     },
     {
       "applicazione": "TM",
@@ -81,14 +135,32 @@
       "titolo": "Traffic Monitoring, Parallelism: 4,4,4,4; Batch: 32",
       "numanode": "4,5",
       "dati": {
-        "Pinning ff": 2981,
-        "Stage grouped": 2769,
-        "A2A joined": 2803,
-        "A2A splitted": 2925,
-        "Pipeline grouped": 1758,
-        "Semipipeline grouped":  2356
+        "Pinning ff":{
+          "media": 2981,
+          "dev_std": 28
+        },
+        "Stage grouping": {
+          "media": 2769,
+          "dev_std": 304
+        },
+        "A2A grouping":{
+          "media": 2803,
+          "dev_std": 305
+        },
+        "A2A splitting":{
+          "media": 2925,
+          "dev_std": 70
+        },
+        "Pipeline grouping":{
+          "media": 1758,
+          "dev_std": 977
+        },
+        "Semipipeline grouping": {
+          "media": 2356,
+          "dev_std": 790
+        }
       },
-      "max": 3000
+      "max": 4000
     },
     {
       "applicazione": "TM",
@@ -98,13 +170,28 @@
       "titolo": "Traffic Monitoring, Parallelism: 8,8,8,8; Batch: 0",
       "numanode": "4,5,6,7",
       "dati": {
-        "Pinning ff": 3338,
-        "Stage grouped": 4480,
-        "A2A joined": 3190,
-        "Pipeline grouped": 4397,
-        "Semipipeline grouped":  2938
+        "Pinning ff":{
+          "media": 3338,
+          "dev_std": 1004
+        },
+        "Stage grouping": {
+          "media": 4480,
+          "dev_std": 1000
+        },
+        "A2A grouping":{
+          "media": 3190,
+          "dev_std": 628
+        },
+        "Pipeline grouping":{
+          "media": 4397,
+          "dev_std": 2146
+        },
+        "Semipipeline grouping":{
+          "media": 2938,
+          "dev_std": 371
+        }
       },
-      "max": 5000
+      "max": 7000
     },
     {
       "applicazione": "TM",
@@ -114,13 +201,28 @@
       "titolo": "Traffic Monitoring, Parallelism: 8,8,8,8; Batch: 32",
       "numanode": "4,5,6,7",
       "dati": {
-        "Pinning ff": 1661,
-        "Stage grouped": 2354,
-        "A2A joined": 1883,
-        "Pipeline grouped": 1795,
-        "Semipipeline grouped":  1319
+        "Pinning ff": {
+          "media": 1661,
+          "dev_std": 319
+        },
+        "Stage grouping":{
+          "media": 2354,
+          "dev_std": 240
+        },
+        "A2A grouping": {
+          "media": 1883,
+          "dev_std": 1448
+        },
+        "Pipeline grouping":{
+          "media": 1795,
+          "dev_std": 1249
+        },
+        "Semipipeline grouping": {
+          "media": 1319,
+          "dev_std": 369
+        }
       },
-      "max": 3000
+      "max": 4000
     }
   ]
 }

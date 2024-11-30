@@ -8,10 +8,16 @@
       "titolo": "Word Count, Parallelism: 1,1,1,1; Batch: 0",
       "numanode": "1",
       "dati": {
-        "Pinning ff": 15.2180,
-        "Pipeline Grouped": 15.5936
+        "Pinning ff": {
+          "media": 15.2180,
+          "dev_std": 0.1587
+        },
+        "Pipeline grouping": {
+          "media": 15.5936,
+          "dev_std": 0.2489
+        }
       },
-      "max": 20.00
+      "max": 20
     },
     {
       "applicazione": "WC",
@@ -21,10 +27,16 @@
       "titolo": "Word Count, Parallelism: 1,1,1,1; Batch: 32",
       "numanode": "1",
       "dati": {
-        "Pinning ff": 35.5483,
-        "Pipeline Grouping": 362933
+        "Pinning ff": {
+          "media": 35.5483,
+          "dev_std": 0.4989
+        },
+        "Pipeline Grouping": {
+          "media": 36.2933,
+          "dev_std": 0.4354
+        }
       },
-      "max": 40.00
+      "max": 50
     },
     {
       "applicazione": "WC",
@@ -34,13 +46,28 @@
       "titolo": "Word Count, Parallelism: 2,2,2,2; Batch: 0",
       "numanode": "1",
       "dati": {
-        "Pinning ff": 14.0043,
-        "Stage grouped": 15.7378,
-        "A2A joined": 16.6167,
-        "A2A splitted": 12.4839,
-        "Pipeline grouped": 15.2393
+        "Pinning ff": {
+          "media": 14.0043,
+          "dev_std": 0.1058
+        },
+        "Stage grouping": {
+          "media": 15.7378,
+          "dev_std": 0.0909
+        },
+        "A2A grouping": {
+          "media": 16.6167,
+          "dev_std": 0.1510
+        },
+        "A2A splitting": {
+          "media": 12.4839,
+          "dev_std": 0.1262
+        },
+        "Pipeline grouping": {
+          "media": 15.2393,
+          "dev_std": 0.1108
+        }
       },
-      "max": 20.00
+      "max": 25
     },
     {
       "applicazione": "WC",
@@ -50,13 +77,28 @@
       "titolo": "Word Count, Parallelism: 2,2,2,2; Batch: 32",
       "numanode": "1",
       "dati": {
-        "Pinning ff": 28.4236,
-        "Stage grouped": 37.4855,
-        "A2A joined": 59.7418,
-        "A2A splitted": 37.3896,
-        "Pipeline grouped": 41.8200
+        "Pinning ff": {
+          "media": 28.4236,
+          "dev_std": 0.4864
+        },
+        "Stage grouping": {
+          "media": 37.4855,
+          "dev_std": 0.3552
+        },
+        "A2A grouping": {
+          "media": 59.7418,
+          "dev_std": 1.1679
+        },
+        "A2A splitting": {
+          "media": 37.3896,
+          "dev_std": 0.3920
+        },
+        "Pipeline grouping": {
+          "media": 41.8200,
+          "dev_std": 0.3043
+        }
       },
-      "max": 50.00
+      "max": 60
     },
     {
       "applicazione": "WC",
@@ -66,14 +108,32 @@
       "titolo": "Word Count, Parallelism: 4,4,4,4; Batch: 0",
       "numanode": "4,5",
       "dati": {
-        "Pinning ff": 20.9928,
-        "Stage grouped": 17.1070,
-        "A2A joined": 13.7234,
-        "A2A splitted": 14.1109,
-        "Pipeline grouped": 17.5341,
-        "Semipipeline grouped": 14.3128
+        "Pinning ff": {
+          "media": 20.9928,
+          "dev_std": 0.5060
+        },
+        "Stage grouping": {
+          "media": 17.1070,
+          "dev_std": 0.6700
+        },
+        "A2A grouping": {
+          "media": 13.7234,
+          "dev_std": 0.8350
+        },
+        "A2A splitting": {
+          "media": 14.1109,
+          "dev_std": 0.7161
+        },
+        "Pipeline grouping": {
+          "media": 17.5341,
+          "dev_std": 0.2024
+        },
+        "Semipipeline grouping": {
+          "media": 14.3128,
+          "dev_std": 0.6486
+        }
       },
-      "max": 30.00
+      "max": 30
     },
     {
       "applicazione": "WC",
@@ -83,14 +143,32 @@
       "titolo": "Word Count, Parallelism: 4,4,4,4; Batch: 32",
       "numanode": "4,5",
       "dati": {
-        "Pinning ff": 64.8495,
-        "Stage grouped": 73.4038,
-        "A2A joined": 68.4380,
-        "A2A splitted": 68.2014,
-        "Pipeline grouped": 94.2215,
-        "Semipipeline grouped": 0
+        "Pinning ff": {
+          "media": 64.8495,
+          "dev_std": 7.5277
+        },
+        "Stage grouping": {
+          "media": 73.4038,
+          "dev_std": 7.1006
+        },
+        "A2A grouping": {
+          "media": 68.4380,
+          "dev_std": 12.0727
+        },
+        "A2A splitting": {
+          "media": 68.2014,
+          "dev_std": 16.8561
+        },
+        "Pipeline grouping": {
+          "media": 94.2215,
+          "dev_std": 20.3676
+        },
+        "Semipipeline grouping": {
+          "media": 71.9207,
+          "dev_std": 10.7843
+        }
       },
-      "max": 100.00
+      "max": 120
     },
     {
       "applicazione": "WC",
@@ -100,14 +178,32 @@
       "titolo": "Word Count, Parallelism: 8,8,8,8; Batch: 0",
       "numanode": "4,5,6,7",
       "dati": {
-        "Pinning ff": 24.4495,
-        "Stage grouped": 18.3772,
-        "A2A joined": 18.5255,
-        "A2A splitted": 23.1951,
-        "Pipeline grouped": 25.7495,
-        "Semipipeline grouped": 17.9556
+        "Pinning ff": {
+          "media": 24.4495,
+          "dev_std": 1.5913
+        },
+        "Stage grouping": {
+          "media": 18.3772,
+          "dev_std": 1.0249
+        },
+        "A2A grouping": {
+          "media": 18.5255,
+          "dev_std": 0.8542
+        },
+        "A2A splitting":{
+          "media": 23.1951,
+          "dev_std": 1.1131
+        },
+        "Pipeline grouping": {
+          "media": 25.7495,
+          "dev_std": 0.5209
+        },
+        "Semipipeline grouping": {
+          "media": 17.9556,
+          "dev_std": 0.8043
+        }
       },
-      "max": 30.00
+      "max": 40
     },
     {
       "applicazione": "WC",
@@ -117,14 +213,32 @@
       "titolo": "Word Count, Parallelism: 8,8,8,8; Batch: 32",
       "numanode": "4,5,6,7",
       "dati": {
-        "Pinning ff": 129.4903,
-        "Stage grouped": 101.3592,
-        "A2A joined": 118.9585,
-        "A2A splitted": 122.3275,
-        "Pipeline grouped": 131.0595,
-        "Semipipeline grouped": 118.8985
+        "Pinning ff": {
+          "media": 129.4903,
+          "dev_std": 15.8526
+        },
+        "Stage grouping": {
+          "media": 101.3592,
+          "dev_std": 2.5960
+        },
+        "A2A grouping":{
+          "media": 118.9585,
+          "dev_std": 2.5147
+        },
+        "A2A splitting": {
+          "media": 122.3275,
+          "dev_std": 17.7196
+        },
+        "Pipeline grouping": {
+          "media": 131.0595,
+          "dev_std": 24.4024
+        },
+        "Semipipeline grouping": {
+          "media": 118.8985,
+          "dev_std": 3.6902
+        }
       },
-      "max": 140.00
+      "max": 180
     }
     ]
 }

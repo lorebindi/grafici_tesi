@@ -1,0 +1,357 @@
+{
+  "grafici": [
+    {
+      "applicazione": "SD",
+      "parallelism": "2,2,2,2",
+      "batch": 0,
+      "ff_queue_length": 32786,
+      "titolo": "Spike Detection, Parallelism: 2,2,2,2; Batch: 0",
+      "strategy": "Pipeline grouping",
+      "dati": {
+        "NUMAnode 0": {
+          "media": 4184236,
+          "dev_std": 49307
+        },
+        "NUMAnode 1": {
+          "media": 6803422,
+          "dev_std": 72606
+        }
+      },
+      "max": 7000000
+    },
+    {
+      "applicazione": "SD",
+      "parallelism": "2,2,2,2",
+      "batch": 32,
+      "ff_queue_length": 32786,
+      "titolo": "Spike Detection, Parallelism: 2,2,2,2; Batch: 32",
+      "strategy": "A2A splitting",
+      "dati": {
+        "NUMAnode 0": {
+          "media": 17852861,
+          "dev_std": 342529
+        },
+        "NUMAnode 1": {
+          "media": 21664131,
+          "dev_std": 241812
+        }
+      },
+      "max": 25000000
+    },
+    {
+      "applicazione": "SD",
+      "parallelism": "4,4,4,4",
+      "batch": 0,
+      "ff_queue_length": 32786,
+      "titolo": "Spike Detection, Parallelism: 4,4,4,4; Batch: 32",
+      "strategy": "Stage grouping",
+      "dati": {
+        "NUMAnode 0,1": {
+          "media": 6470012,
+          "dev_std": 168939
+        },
+        "NUMAnode 4,5": {
+          "media": 6615692,
+          "dev_std": 61607
+        },
+        "NUMAnode 1,5": {
+          "media": 4500117,
+          "dev_std": 118929
+        }
+      },
+      "max": 9000000
+    },
+    {
+      "applicazione": "SD",
+      "parallelism": "4,4,4,4",
+      "batch": 32,
+      "ff_queue_length": 32786,
+      "titolo": "Spike Detection, Parallelism: 4,4,4,4; Batch: 32",
+      "strategy": "Pipeline grouping",
+      "dati": {
+        "NUMAnode 0,1": {
+          "media": 35613884,
+          "dev_std": 694434
+        },
+        "NUMAnode 4,5": {
+          "media": 38509559,
+          "dev_std": 314879
+        },
+        "NUMAnode 1,5": {
+          "media": 29130140,
+          "dev_std": 613879
+        }
+      },
+      "max": 50000000
+    },
+    {
+      "applicazione": "SD",
+      "parallelism": "8,8,8,8",
+      "batch": 32,
+      "ff_queue_length": 32786,
+      "titolo": "Spike Detection, Parallelism: 8,8,8,8; Batch: 32",
+      "strategy": "Pipeline grouping",
+      "dati": {
+        "NUMAnode 0,1,4,5": {
+          "media": 59206218,
+          "dev_std": 789988
+        },
+        "NUMAnode 0,1,2,3": {
+          "media": 62576572,
+          "dev_std": 1549091
+        },
+        "NUMAnode 4,5,6,7": {
+          "media": 64682194,
+          "dev_std": 2085558
+        }
+      },
+      "max": 70000000
+    },
+    {
+      "applicazione": "WC",
+      "parallelism": "2,2,2,2",
+      "batch": 0,
+      "ff_queue_length": 32786,
+      "titolo": "Word Count, Parallelism: 2,2,2,2; Batch: 0",
+      "strategy": "A2A splitting",
+      "dati": {
+        "NUMAnode 0": {
+          "media": 12.3560,
+          "dev_std": 0.0942
+        },
+        "NUMAnode 1": {
+          "media": 15.7378,
+          "dev_std": 0.0909
+        },
+        "NUMAnode 4": {
+          "media": 10.2689,
+          "dev_std": 0.0871
+        },
+        "NUMAnode 5": {
+          "media": 15.6099,
+          "dev_std": 0.2309
+        }
+      },
+      "max": 20
+    },
+    {
+      "applicazione": "WC",
+      "parallelism": "2,2,2,2",
+      "batch": 32,
+      "ff_queue_length": 32786,
+      "titolo": "Word Count, Parallelism: 2,2,2,2; Batch: 32",
+      "strategy": "A2A grouping",
+      "dati": {
+        "NUMAnode 0": {
+          "media": 46.7126,
+          "dev_std": 0.5367
+        },
+        "NUMAnode 1": {
+          "media": 59.7418,
+          "dev_std": 1.1679
+        },
+        "NUMAnode 4": {
+          "media": 48.1270,
+          "dev_std": 0.5735
+        },
+        "NUMAnode 5": {
+          "media": 60.1998,
+          "dev_std": 0.6930
+        }
+      },
+      "max": 70
+    },
+    {
+      "applicazione": "WC",
+      "parallelism": "4,4,4,4",
+      "batch": 32,
+      "ff_queue_length": 32786,
+      "titolo": "Word Count, Parallelism: 4,4,4,4; Batch: 32",
+      "strategy": "Pipeline grouping",
+      "dati": {
+        "NUMAnode 0,1": {
+          "media": 100.9578,
+          "dev_std": 17.6163
+        },
+        "NUMAnode 4,5": {
+          "media": 94.2215,
+          "dev_std": 20.3676
+        },
+        "NUMAnode 1,5": {
+          "media": 71.0786,
+          "dev_std": 15.8053
+        }
+      },
+      "max": 140
+    },
+    {
+      "applicazione": "FD",
+      "parallelism": "2,2,2",
+      "batch": 0,
+      "ff_queue_length": 32786,
+      "titolo": "Fraud Detection, Parallelism: 2,2,2; Batch: 0",
+      "strategy": "A2A grouping",
+      "dati": {
+        "NUMAnode 0": {
+          "media": 794312,
+          "dev_std": 33234
+        },
+        "NUMAnode 1": {
+          "media": 896054,
+          "dev_std": 11948
+        },
+        "NUMAnode 4": {
+          "media": 799800,
+          "dev_std": 9273
+        },
+        "NUMAnode 5": {
+          "media": 907461,
+          "dev_std": 10325
+        }
+      },
+      "max": 1000000
+    },
+    {
+      "applicazione": "FD",
+      "parallelism": "4,4,4",
+      "batch": 0,
+      "ff_queue_length": 32786,
+      "titolo": "Fraud Detection, Parallelism: 4,4,4; Batch: 0",
+      "strategy": "A2A grouping",
+      "dati": {
+        "NUMAnode 0,1": {
+          "media": 1643474,
+          "dev_std": 18350
+        },
+        "NUMAnode 4,5": {
+          "media": 1614775,
+          "dev_std": 13707
+        },
+        "NUMAnode 1,5": {
+          "media": 1520757,
+          "dev_std": 19675
+        },
+        "NUMAnode 1,4": {
+          "media": 1545727,
+          "dev_std": 13800
+        }
+      },
+      "max": 3000000
+    },
+    {
+      "applicazione": "FD",
+      "parallelism": "4,4,4",
+      "batch": 0,
+      "ff_queue_length": 32786,
+      "titolo": "Fraud Detection, Parallelism: 4,4,4; Batch: 0",
+      "strategy": "A2A grouping",
+      "dati": {
+        "NUMAnode 0,1": {
+          "media": 1643474,
+          "dev_std": 18350
+        },
+        "NUMAnode 4,5": {
+          "media": 1614775,
+          "dev_std": 13707
+        }
+      },
+      "max": 3000000
+    },
+    {
+      "applicazione": "FD",
+      "parallelism": "8,8,8",
+      "batch": 0,
+      "ff_queue_length": 32786,
+      "titolo": "Fraud Detection, Parallelism: 8,8,8; Batch: 0",
+      "strategy": "A2A grouping",
+      "dati": {
+        "NUMAnode 0,1,2,3": {
+          "media": 2640151,
+          "dev_std": 143746
+        },
+        "NUMAnode 4,5,6,7": {
+          "media": 2713523,
+          "dev_std": 107101
+        },
+        "NUMAnode 0,1,4,5": {
+          "media": 2503704,
+          "dev_std": 97476
+        }
+      },
+      "max": 4000000
+    },
+    {
+      "applicazione": "TM",
+      "parallelism": "2,2,2,2",
+      "batch": 0,
+      "ff_queue_length": 32786,
+      "titolo": "Traffic Monitoring, Parallelism: 2,2,2,2; Batch: 0",
+      "strategy": "A2A grouping",
+      "dati": {
+        "NUMAnode 0": {
+          "media": 1697,
+          "dev_std": 31
+        },
+        "NUMAnode 1": {
+          "media": 1723,
+          "dev_std": 26
+        },
+        "NUMAnode 4": {
+          "media": 1710,
+          "dev_std": 27
+        },
+        "NUMAnode 5": {
+          "media": 1712,
+          "dev_std": 12
+        }
+      },
+      "max": 3000
+    },
+    {
+      "applicazione": "TM",
+      "parallelism": "4,4,4,4",
+      "batch": 0,
+      "ff_queue_length": 32786,
+      "titolo": "Traffic Monitoring, Parallelism: 4,4,4,4; Batch: 0",
+      "strategy": "Pipeline grouping",
+      "dati": {
+        "NUMAnode 1,5": {
+          "media": 2701,
+          "dev_std": 741
+        },
+        "NUMAnode 0,1": {
+          "media": 3064,
+          "dev_std": 558
+        },
+        "NUMAnode 4,5": {
+          "media": 2974,
+          "dev_std": 567
+        }
+      },
+      "max": 4000
+    },
+    {
+      "applicazione": "TM",
+      "parallelism": "4,4,4,4",
+      "batch": 32,
+      "ff_queue_length": 32786,
+      "titolo": "Traffic Monitoring, Parallelism: 4,4,4,4; Batch: 32",
+      "strategy": "Pipeline grouping",
+      "dati": {
+        "NUMAnode 0,1": {
+          "media": 1600,
+          "dev_std": 841
+        },
+        "NUMAnode 4,5": {
+          "media": 1758,
+          "dev_std": 977
+        },
+        "NUMAnode 1,5": {
+          "media": 1406,
+          "dev_std": 1.044
+        }
+      },
+      "max": 4000
+    }
+  ]
+}

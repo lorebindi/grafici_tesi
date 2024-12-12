@@ -223,16 +223,18 @@ def calcola_etichette_assey_app(app, max_value, min_value=0, step=1000000):
     match app:
         case "SD":
             # Cambia step a seconda del max_value
-            if max_value > 30_000_000:
+            if max_value-min_value >= 30_000_000:
                 step = 10_000_000
-            elif max_value > 20_000_000:
+            elif max_value-min_value >= 20_000_000:
                 step = 5_000_000
-            elif max_value > 10_000_000:
+            elif max_value-min_value >= 10_000_000:
                 step = 2_000_000
-            elif min_value % 5 == 0 or max_value % 5 == 0:
-                step = 500_000
-            else:
+            elif max_value-min_value > 2_000_000:
                 step = 1_000_000
+            elif max_value-min_value >= 1_500_000:
+                step = 500_000
+            elif max_value - min_value <= 1_000_000:
+                step = 200_000
 
             # Aggiungi il primo valore (min_value) e continua fino a max_value
             value = min_value
@@ -245,13 +247,13 @@ def calcola_etichette_assey_app(app, max_value, min_value=0, step=1000000):
 
         case "WC":
             # Cambia step a seconda del max_value
-            if max_value > 100:
+            if max_value-min_value >= 100:
                 step = 20
-            elif max_value > 30:
+            elif max_value-min_value >= 30:
                 step=10
-            elif max_value > 20:
+            elif max_value-min_value >= 20:
                 step = 5
-            elif max_value > 10:
+            elif max_value-min_value >= 10:
                 step = 2
             else:
                 step=1
@@ -262,14 +264,13 @@ def calcola_etichette_assey_app(app, max_value, min_value=0, step=1000000):
 
         case "FD":
             # Cambia step a seconda del max_value
-            if max_value < 1000000:
-                step = 100000
-            elif max_value == 1000000:
-                step = 200000
-            elif 1000000 < max_value <= 2000000:
-                step = 500000
-            elif max_value%1000 == 0:
-                step = 1000000
+            if max_value-min_value > 2_000_000:
+                step = 1_000_000
+            elif max_value-min_value > 1_000_000:
+                step = 500_000
+            elif max_value-min_value <= 1_000_000:
+                step = 100_000
+
             # Crea la lista dei valori dei tick sull'asse Y
             yticks_values = [i * step for i in range(min_value // step, max_value // step + 1)]
             # Crea le etichette formattate per i tick sull'asse Y
@@ -301,7 +302,7 @@ def crea_istogramma_scelta_numanode(applicazione, parallelism, batch, ff_queue_l
     rapporto_soglia = 0.01
 
     #dati_asse_x = [1_000_000, 2_000_000, 3_000_000, 4_000_000, 5_000_000, 6_000_000, 6_999_999]
-    save_dir = '/home/lorenzo/Scrivania/Grafici_Tesi/Scelta_Numanode'
+    save_dir = '/home/lorenzo/Desktop/Grafici_Tesi/Scelta_Numanode'
 
     # calcola il path completo
     complete_path = os.path.join(save_dir,applicazione,parallelism,"batch="+str(batch), "ff_queue_length="+str(ff_queue_length))
@@ -455,7 +456,7 @@ def crea_grafo_linee_ffvsOS(applicazione, parallelism, max_batch, titolo, datiff
     #dati_asse_x = [1_000_000, 2_000_000, 3_000_000, 4_000_000, 5_000_000, 6_000_000, 6_999_999]
     # Calcolo del rapporto media/deviazione standard
     rapporto_soglia = 0.008
-    save_dir = '/home/lorenzo/Scrivania/Grafici_Tesi/ffvsOS'
+    save_dir = '/home/lorenzo/Desktop/Grafici_Tesi/ffvsOS'
 
     # Creazione del grafico
     plt.figure(figsize=(11, 6))
@@ -529,7 +530,7 @@ def crea_grafo_linee_ffvsOS(applicazione, parallelism, max_batch, titolo, datiff
 def crea_grafo_linee_WinKey(applicazione, parallelism, batch, titolo, dati, max_y, min_y):
     if not dati:
         raise ValueError("Il parametro 'dati' è vuoto o non valido.")
-    save_dir = '/home/lorenzo/Scrivania/Grafici_Tesi/WinKey'
+    save_dir = '/home/lorenzo/Desktop/Grafici_Tesi/WinKey'
 
     #etichette asse x
     etichette_asse_x = ['Win=10k \n Key=10k', 'Win=10k \n Key=50k', 'Win=10k \n Key=100k', 'Win=100k \n Key=10k', 'Win=100k \n Key=50k', 'Win=100k \n Key=100k', 'Win=500k \n Key=10k', 'Win=500k \n Key=50k', 'Win=500k \n Key=100k' ]
@@ -615,6 +616,179 @@ def crea_grafo_linee_WinKey(applicazione, parallelism, batch, titolo, dati, max_
     # Mostra il grafico
     plt.show()
 
+def crea_grafo_linee_copyDataset(applicazione, parallelism, batch, titolo, dati, max_y, min_y):
+    if not dati:
+        raise ValueError("Il parametro 'dati' è vuoto o non valido.")
+    save_dir = '/home/lorenzo/Desktop/Grafici_Tesi/copyDataset'
+
+    #etichette asse x
+    etichette_asse_x = list(dati['ff_queue_len=32786']['constructor'].keys())
+
+    fullLen_constructor = list(dati['ff_queue_len=32786']['constructor'].values())
+    fullLen_operator = list(dati['ff_queue_len=32786']['operator'].values())
+    smallLen_constructor = list(dati['ff_queue_len=16']['constructor'].values())
+    smallLen_operator = list(dati['ff_queue_len=16']['operator'].values())
+
+    # Creazione del grafico
+    plt.figure(figsize=(12, 6))
+
+    # Calcola le etichette e i valori dei ticks per l'asse Y
+    yticks_values, yticks_labels = calcola_etichette_assey_app(applicazione, max_y, min_y)
+    if(yticks_values == [] or yticks_labels == []):
+        raise ValueError("yticks vuoti")
+    plt.yticks(yticks_values, yticks_labels, fontsize=12)
+
+    # Aggiungere un margine extra al limite dell'asse Y
+    plt.ylim(min(yticks_values), max(yticks_values))
+
+    # Impostiamo i limiti dell'asse X in modo che parta da 0 e arrivi al massimo valore dei dati
+    plt.xlim(-0.5,
+             len(etichette_asse_x) - 0.5)  # L'asse X avrà solo 2 etichette, quindi va da -0.5 a 1.5 per centrare le barre
+
+    #Disegnare le linee orizzontali per ogni valore di yticks_values
+    for ytick in yticks_values:
+        plt.hlines(ytick, -0.5, len(etichette_asse_x) - 0.5, colors='gray', linestyles='--', linewidth=0.6,
+                   zorder=1)  # Linea tratteggiata, zorder basso per metterle sotto le barre
+    # Aggiungere linee a metà tra ogni intervallo
+    for i in range(1, len(yticks_values)):
+        halfway = (yticks_values[i] + yticks_values[i - 1]) / 2  # Calcolare il punto centrale tra i tick
+        plt.hlines(halfway, -0.5, len(etichette_asse_x) - 0.5, colors='lightgray', linestyles='--',
+                   linewidth=0.8)  # Linea leggera tra i tick
+
+    sns_colors = sns.color_palette("deep", 4)
+
+    # Tracciare una linea per ogni strategia con barre di errore
+    plt.errorbar(
+        range(len(etichette_asse_x)),
+        [d['media'] for d in fullLen_constructor],
+        yerr=[d['dev_std'] for d in fullLen_constructor],
+        label='code ff=32786, copia dataset-->costruttore',
+        marker='s', capsize=2, color=sns_colors[0], linestyle='-', linewidth=1.5
+        )
+    plt.errorbar(
+        range(len(etichette_asse_x)),
+        [d['media'] for d in fullLen_operator],
+        yerr=[d['dev_std'] for d in fullLen_operator],
+        label='code ff=32786, copia dataset-->operator',
+        marker='o', capsize=2, color=sns_colors[0], linestyle='--', linewidth=1.5
+    )
+    plt.errorbar(
+        range(len(etichette_asse_x)),
+        [d['media'] for d in smallLen_constructor],
+        yerr=[d['dev_std'] for d in smallLen_constructor],
+        label='code ff=16, copia dataset-->costruttore',
+        marker='o', capsize=2, color=sns_colors[3], linestyle='-', linewidth=1.5
+    )
+    plt.errorbar(
+        range(len(etichette_asse_x)),
+        [d['media'] for d in smallLen_operator],
+        yerr=[d['dev_std'] for d in smallLen_operator],
+        label='code ff=16, copia dataset-->operator',
+        marker='o', capsize=2, color=sns_colors[3], linestyle='--', linewidth=1.5
+    )
+
+    # Titoli e etichette
+    plt.title(titolo, fontsize=16)
+    plt.xlabel('Strategie di pinning', fontsize=14)
+    plt.ylabel('Throughput', fontsize=14)
+    plt.xticks(fontsize=12)
+    plt.xticks(range(len(etichette_asse_x)), etichette_asse_x, fontsize=11, rotation=0)
+    plt.yticks(fontsize=12)
+
+    # Legenda
+    plt.legend(fontsize=12, loc='upper left', ncol=2)
+
+    # Griglia
+    #plt.grid(visible=True, linestyle='--', alpha=0.6)
+
+    # Salvataggio del grafico
+    save_path = os.path.join(save_dir, f"{applicazione+"_-p"+parallelism+"_-b"+str(batch)}.png")
+    plt.tight_layout()
+    print(f"Grafico salvato in: {save_path}")
+    plt.savefig(save_path)
+    print(f"Grafico salvato in: {save_path}")
+
+    # Mostra il grafico
+    plt.show()
+
+def crea_grafo_linee_ff_queue_length(applicazione, parallelism, batch, titolo, dati, max_y, min_y):
+    if not dati:
+        raise ValueError("Il parametro 'dati' è vuoto o non valido.")
+    save_dir = '/home/lorenzo/Desktop/Grafici_Tesi/ff_queue_length/'
+
+    #etichette asse x
+    etichette_asse_x = list(dati['ff_queue_len=32786'].keys())
+
+    fullLen = list(dati['ff_queue_len=32786'].values())
+    smallLen= list(dati['ff_queue_len=16'].values())
+
+    # Creazione del grafico
+    plt.figure(figsize=(12, 6))
+
+    # Calcola le etichette e i valori dei ticks per l'asse Y
+    yticks_values, yticks_labels = calcola_etichette_assey_app(applicazione, max_y, min_y)
+    if(yticks_values == [] or yticks_labels == []):
+        raise ValueError("yticks vuoti")
+    plt.yticks(yticks_values, yticks_labels, fontsize=12)
+
+    # Aggiungere un margine extra al limite dell'asse Y
+    plt.ylim(min(yticks_values), max(yticks_values))
+
+    # Impostiamo i limiti dell'asse X in modo che parta da 0 e arrivi al massimo valore dei dati
+    plt.xlim(-0.5,
+             len(etichette_asse_x) - 0.5)  # L'asse X avrà solo 2 etichette, quindi va da -0.5 a 1.5 per centrare le barre
+
+    #Disegnare le linee orizzontali per ogni valore di yticks_values
+    for ytick in yticks_values:
+        plt.hlines(ytick, -0.5, len(etichette_asse_x) - 0.5, colors='gray', linestyles='--', linewidth=0.6,
+                   zorder=1)  # Linea tratteggiata, zorder basso per metterle sotto le barre
+    # Aggiungere linee a metà tra ogni intervallo
+    for i in range(1, len(yticks_values)):
+        halfway = (yticks_values[i] + yticks_values[i - 1]) / 2  # Calcolare il punto centrale tra i tick
+        plt.hlines(halfway, -0.5, len(etichette_asse_x) - 0.5, colors='lightgray', linestyles='--',
+                   linewidth=0.8)  # Linea leggera tra i tick
+
+    sns_colors = sns.color_palette("deep", 4)
+
+    # Tracciare una linea per ogni strategia con barre di errore
+    plt.errorbar(
+        range(len(etichette_asse_x)),
+        [d['media'] for d in fullLen],
+        yerr=[d['dev_std'] for d in fullLen],
+        label='code ff=32786',
+        marker='s', capsize=2, color=sns_colors[0], linestyle='-', linewidth=1.5
+        )
+    plt.errorbar(
+        range(len(etichette_asse_x)),
+        [d['media'] for d in smallLen],
+        yerr=[d['dev_std'] for d in smallLen],
+        label='code ff=16',
+        marker='s', capsize=2, color=sns_colors[3], linestyle='-', linewidth=1.5
+    )
+
+    # Titoli e etichette
+    plt.title(titolo, fontsize=16)
+    plt.xlabel('Strategie di pinning', fontsize=14)
+    plt.ylabel('Throughput', fontsize=14)
+    plt.xticks(fontsize=12)
+    plt.xticks(range(len(etichette_asse_x)), etichette_asse_x, fontsize=11, rotation=0)
+    plt.yticks(fontsize=12)
+
+    # Legenda
+    plt.legend(fontsize=12, loc='upper left', ncol=2)
+
+    # Griglia
+    #plt.grid(visible=True, linestyle='--', alpha=0.6)
+
+    # Salvataggio del grafico
+    save_path = os.path.join(save_dir, f"{applicazione+"_-p"+parallelism+"_-b"+str(batch)}.png")
+    plt.tight_layout()
+    plt.savefig(save_path)
+    print(f"Grafico salvato in: {save_path}")
+
+    # Mostra il grafico
+    plt.show()
+
 def crea_istogramma_app(applicazione, parallelism, batch, ff_queue_length, titolo, numanode, dati, max_y):
     if not dati:
         raise ValueError("Il parametro 'dati' è vuoto o non valido.")
@@ -626,7 +800,7 @@ def crea_istogramma_app(applicazione, parallelism, batch, ff_queue_length, titol
     rapporto_soglia = 0.01
 
     #dati_asse_x = [1_000_000, 2_000_000, 3_000_000, 4_000_000, 5_000_000, 6_000_000, 6_999_999]
-    save_dir = '/home/lorenzo/Scrivania/Grafici_Tesi/Pinning'
+    save_dir = '/home/lorenzo/Desktop/Grafici_Tesi/Pinning'
 
     # calcola il path completo
     complete_path = os.path.join(save_dir,applicazione,parallelism,"batch="+str(batch), "ff_queue_length="+str(ff_queue_length))
@@ -770,7 +944,7 @@ def crea_istogramma_ccx(applicazione, numero_coppia, numero_test, CCX, titolo, d
     etichette_asse_x = dati.keys()
     #plt.legend(etichette_asse_x)
     dati_asse_x = dati.values()
-    save_dir = '/home/lorenzo/Scrivania/Grafici_Tesi/Profiling'
+    save_dir = '/home/lorenzo/Desktop/Grafici_Tesi/Profiling'
 
     # calcola il path completo
     complete_path = os.path.join(save_dir, applicazione, "coppia_test_" + str(numero_coppia), str(numero_test))
@@ -837,6 +1011,18 @@ def crea_grafi_linee_ffvsOS():
         crea_grafo_linee_ffvsOS(grafico["applicazione"], grafico["parallelism"], grafico["max_batch"], grafico["titolo"],
                             grafico["dati_ff"], grafico["dati_OS"], grafico["max"])
 
+def crea_grafi_linee_copyDataset():
+    grafici = json_parse_WinKey('copy_of_the_dataset.json')
+    for grafico in grafici:
+        crea_grafo_linee_copyDataset(grafico["applicazione"], grafico["parallelism"], grafico["batch"],
+                                grafico["titolo"], grafico["dati"], grafico["max"], grafico["min"])
+
+def crea_grafi_linee_ff_queue_length():
+    grafici = json_parse_WinKey('ff_queue_lenght.json')
+    for grafico in grafici:
+        crea_grafo_linee_ff_queue_length(grafico["applicazione"], grafico["parallelism"], grafico["batch"],
+                                grafico["titolo"], grafico["dati"], grafico["max"], grafico["min"])
+
 def crea_grafi_linee_WinKey():
     grafici = json_parse_WinKey('SD_key_window.json')
     for grafico in grafici:
@@ -875,8 +1061,9 @@ def crea_istogrammi_pinning_TM():
 def main():
 
     #crea_grafi_linee_WinKey()
-    #crea_istogrammi_pinning_FD()
-    crea_istogrammi_profiling()
+    #crea_istogrammi_pinning_SD()
+    #crea_istogrammi_profiling()
+    crea_grafi_linee_ff_queue_length()
 
 # Questa parte è importante: assicura che la funzione main() venga eseguita solo
 # quando il file viene eseguito come script, non quando viene importato come modulo

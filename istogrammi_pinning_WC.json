@@ -183,8 +183,8 @@
           "dev_std": 1.5913
         },
         "Stage grouping": {
-          "media": 18.3772,
-          "dev_std": 1.0249
+          "media": 21.0172,
+          "dev_std": 0.9745
         },
         "A2A grouping": {
           "media": 18.5255,
@@ -218,8 +218,8 @@
           "dev_std": 15.8526
         },
         "Stage grouping": {
-          "media": 101.3592,
-          "dev_std": 2.5960
+          "media": 112.3819,
+          "dev_std": 6.4477
         },
         "A2A grouping":{
           "media": 118.9585,

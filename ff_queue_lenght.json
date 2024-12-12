@@ -1,0 +1,1166 @@
+{
+  "grafici": [
+    {
+      "applicazione": "SD",
+      "parallelism": "1,1,1,1",
+      "batch": 0,
+      "titolo": "Spike Detection, Parallelism: 1,1,1,1; Batch: 0",
+      "dati": {
+        "ff_queue_len=32786": {
+          "pinning ff": {
+            "media": 5511759,
+            "dev_std": 7742
+          },
+          "Pipeline Grouping": {
+            "media": 5583715,
+            "dev_std": 34885
+          }
+        },
+        "ff_queue_len=16": {
+          "pinning ff": {
+            "media": 5208295,
+            "dev_std": 33997
+          },
+          "Pipeline Grouping": {
+            "media": 5212946,
+            "dev_std": 33109
+          }
+        }
+      },
+      "max": 5800000,
+      "min": 5000000
+    },
+    {
+      "applicazione": "SD",
+      "parallelism": "1,1,1,1",
+      "batch": 32,
+      "titolo": "Spike Detection, Parallelism: 1,1,1,1; Batch: 32",
+      "dati": {
+        "ff_queue_len=32786": {
+          "Pinning ff": {
+            "media": 11202192,
+            "dev_std": 27696
+          },
+          "Pipeline grouping": {
+            "media": 11355570,
+            "dev_std": 30364
+          }
+        },
+        "ff_queue_len=16": {
+          "pinning ff": {
+            "media": 12459443,
+            "dev_std": 88666
+          },
+          "Pipeline Grouping": {
+            "media": 12422703,
+            "dev_std": 102196
+          }
+        }
+      },
+      "max": 13000000,
+      "min": 11000000
+    },
+    {
+      "applicazione": "SD",
+      "parallelism": "2,2,2,2",
+      "batch": 0,
+      "titolo": "Spike Detection, Parallelism: 2,2,2,2; Batch: 0",
+      "dati": {
+        "ff_queue_len=32786": {
+          "Pinning ff": {
+            "media": 3075691,
+            "dev_std": 660019
+          },
+          "A2A grouping": {
+            "media": 5912727,
+            "dev_std": 57396
+          },
+          "Src-Snk grouping": {
+            "media": 6803422,
+            "dev_std": 72606
+          },
+          "A2A splitting":{
+            "media": 4821067,
+            "dev_std": 46175
+          },
+          "Pipeline grouping": {
+            "media": 5094492,
+            "dev_std": 17346
+          }
+        },
+        "ff_queue_len=16": {
+          "Pinning ff": {
+            "media": 2278219,
+            "dev_std": 36555
+          },
+          "A2A grouping": {
+            "media": 4674961,
+            "dev_std": 78474
+          },
+          "Src-Snk grouping": {
+            "media": 4230805,
+            "dev_std": 85598
+          },
+          "A2A splitting":{
+            "media": 4004016,
+            "dev_std": 21737
+          },
+          "Pipeline grouping": {
+            "media": 4582913,
+            "dev_std": 35930
+          }
+        }
+      },
+      "max": 7500000,
+      "min": 1500000
+    },
+    {
+      "applicazione": "SD",
+      "parallelism": "2,2,2,2",
+      "batch": 32,
+      "titolo": "Spike Detection, Parallelism: 2,2,2,2; Batch: 32",
+      "dati": {
+        "ff_queue_len=32786": {
+          "Pinning ff": {
+            "media": 19192353,
+            "dev_std": 505835
+          },
+          "A2A grouping":{
+            "media": 14994931,
+            "dev_std": 59217
+          },
+          "Src-Snk grouping": {
+            "media": 21664131,
+            "dev_std": 241812
+          },
+          "A2A splitting":{
+            "media": 14184306,
+            "dev_std": 284724
+          },
+          "Pipeline grouping": {
+            "media": 21998665,
+            "dev_std": 54427
+          }
+        },
+        "ff_queue_len=16": {
+          "Pinning ff": {
+            "media": 19313510,
+            "dev_std": 100395
+          },
+          "A2A grouping": {
+            "media": 14884730,
+            "dev_std": 61175
+          },
+          "Src-Snk grouping": {
+            "media": 21830497,
+            "dev_std": 198096
+          },
+          "A2A splitting":{
+            "media": 14168987,
+            "dev_std": 92729
+          },
+          "Pipeline grouping": {
+            "media": 21964521,
+            "dev_std": 64371
+          }
+        }
+      },
+      "max": 24500000,
+      "min": 12500000
+    },
+    {
+      "applicazione": "SD",
+      "parallelism": "4,4,4,4",
+      "batch": 0,
+      "titolo": "Spike Detection, Parallelism: 4,4,4,4; Batch: 0",
+      "dati": {
+        "ff_queue_len=32786": {
+           "Pinning ff": {
+            "media": 5216589,
+            "dev_std": 741025
+          },
+          "Stage grouping": {
+            "media": 6615692,
+            "dev_std": 61607
+          },
+          "A2A splitting": {
+            "media": 5781776,
+            "dev_std": 136005
+          },
+          "Src-Snk grouping": {
+            "media": 5852165,
+            "dev_std": 70785
+          },
+          "Pipeline grouping": {
+            "media": 5215193,
+            "dev_std": 43561
+          },
+          "A2A grouping": {
+            "media": 6017903,
+            "dev_std": 240134
+          },
+          "Semipipeline grouping": {
+            "media": 5595513,
+            "dev_std": 29559
+          }
+        },
+        "ff_queue_len=16": {
+          "Pinning ff": {
+            "media": 4453060,
+            "dev_std": 633028
+          },
+          "Stage grouping": {
+            "media": 5517418,
+            "dev_std": 304229
+          },
+          "A2A splitting": {
+            "media": 4272014,
+            "dev_std": 278333
+          },
+          "Src-Snk grouping": {
+            "media": 4781634,
+            "dev_std": 130239
+          },
+          "Pipeline grouping": {
+            "media": 4252275,
+            "dev_std": 469657
+          },
+          "A2A grouping": {
+            "media": 5220218,
+            "dev_std": 602526
+          },
+          "Semipipeline grouping": {
+            "media": 5610989,
+            "dev_std": 22087
+          }
+        }
+      },
+      "max": 7500000,
+      "min": 3500000
+    },
+    {
+      "applicazione": "SD",
+      "parallelism": "4,4,4,4",
+      "batch": 32,
+      "titolo": "Spike Detection, Parallelism: 4,4,4,4; Batch: 32",
+      "dati": {
+        "ff_queue_len=32786": {
+          "Pinning ff": {
+            "media": 20807184,
+            "dev_std": 367092
+          },
+          "Stage grouping": {
+            "media": 19639829,
+            "dev_std": 301636
+          },
+          "A2A splitting": {
+            "media": 19406160,
+            "dev_std": 300504
+          },
+          "Src-Snk grouping": {
+            "media": 36613834,
+            "dev_std": 241280
+          },
+          "Pipeline grouping": {
+            "media": 38509559,
+            "dev_std": 314879
+          },
+          "A2A grouping": {
+            "media": 18936623,
+            "dev_std": 509816
+          },
+          "Semipipeline grouping": {
+            "media": 19064453,
+            "dev_std": 646812
+          }
+        },
+        "ff_queue_len=16": {
+          "Pinning ff": {
+            "media": 17201153,
+            "dev_std": 424571
+          },
+          "Stage grouping": {
+            "media": 18353744,
+            "dev_std": 425211
+          },
+          "A2A splitting": {
+            "media": 17341654,
+            "dev_std": 311074
+          },
+          "Src-Snk grouping": {
+            "media": 24058690,
+            "dev_std": 731426
+          },
+          "Pipeline grouping": {
+            "media": 22815003,
+            "dev_std": 1232105
+          },
+          "A2A grouping": {
+            "media": 17838778,
+            "dev_std": 599684
+          },
+          "Semipipeline grouping": {
+            "media": 17410761,
+            "dev_std": 271824
+          }
+        }
+      },
+      "max": 45000000,
+      "min": 15000000
+    },
+    {
+      "applicazione": "SD",
+      "parallelism": "8,8,8,8",
+      "batch": 0,
+      "titolo": "Spike Detection, Parallelism: 8,8,8,8; Batch: 0",
+      "dati": {
+        "ff_queue_len=32786": {
+          "Pinning ff": {
+            "media": 5112293,
+            "dev_std": 108313
+          },
+          "Stage grouping": {
+            "media": 7892825,
+            "dev_std": 1694501
+          },
+          "A2A grouping": {
+            "media": 6078640,
+            "dev_std": 674095
+          },
+          "Src-Snk grouping": {
+            "media": 6000086,
+            "dev_std": 466197
+          },
+          "Pipeline grouping": {
+            "media": 5544098,
+            "dev_std": 837189
+          }
+        },
+        "ff_queue_len=16": {
+          "Pinning ff": {
+            "media": 5729488,
+            "dev_std": 1043099
+          },
+          "Stage grouping": {
+            "media": 6960775,
+            "dev_std": 849895
+          },
+          "A2A grouping": {
+            "media": 6030595,
+            "dev_std": 943956
+          },
+          "Src-Snk grouping": {
+            "media": 6456400,
+            "dev_std": 593573
+          },
+          "Pipeline grouping": {
+            "media": 4408270,
+            "dev_std": 334314
+          }
+        }
+      },
+      "max": 10500000,
+      "min": 3500000
+    },
+    {
+      "applicazione": "WC",
+      "parallelism": "1,1,1,1",
+      "batch": 0,
+      "titolo": "Word Count, Parallelism: 1,1,1,1; Batch: 0",
+      "dati": {
+        "ff_queue_len=32786": {
+          "Pinning ff": {
+            "media": 15.2180,
+            "dev_std": 0.1587
+          },
+          "Pipeline grouping": {
+            "media": 15.5936,
+            "dev_std": 0.2489
+          }
+        },
+        "ff_queue_len=16": {
+          "Pinning ff": {
+            "media": 13.7256,
+            "dev_std": 0.2107
+          },
+          "Pipeline grouping": {
+            "media": 14.0657,
+            "dev_std": 0.1596
+          }
+        }
+      },
+      "max": 18,
+      "min": 12
+    },
+    {
+      "applicazione": "WC",
+      "parallelism": "1,1,1,1",
+      "batch": 32,
+      "titolo": "Word Count, Parallelism: 1,1,1,1; Batch: 32",
+      "dati": {
+        "ff_queue_len=32786": {
+          "Pinning ff": {
+            "media": 35.5483,
+            "dev_std": 0.4989
+          },
+          "Pipeline grouping": {
+            "media": 36.2933,
+            "dev_std": 0.4354
+          }
+        },
+        "ff_queue_len=16": {
+          "Pinning ff": {
+            "media": 35.5133,
+            "dev_std": 0.5934
+          },
+          "Pipeline grouping": {
+            "media": 35.3833,
+            "dev_std": 0.1611
+          }
+        }
+      },
+      "max": 38,
+      "min": 32
+    },
+    {
+      "applicazione": "WC",
+      "parallelism": "2,2,2,2",
+      "batch": 0,
+      "titolo": "Word Count, Parallelism: 2,2,2,2; Batch: 0",
+      "dati": {
+        "ff_queue_len=32786": {
+          "Pinning ff": {
+            "media": 14.0043,
+            "dev_std": 0.1058
+          },
+          "Stage grouping": {
+            "media": 15.7378,
+            "dev_std": 0.0909
+          },
+          "A2A grouping": {
+            "media": 16.6167,
+            "dev_std": 0.1510
+          },
+          "A2A splitting": {
+            "media": 12.4839,
+            "dev_std": 0.1262
+          },
+          "Pipeline grouping": {
+            "media": 15.2393,
+            "dev_std": 0.1108
+          }
+        },
+        "ff_queue_len=16": {
+          "Pinning ff": {
+            "media": 11.1189,
+            "dev_std": 0.0996
+          },
+          "Stage grouping": {
+            "media": 14.5575,
+            "dev_std": 0.0824
+          },
+          "A2A grouping": {
+            "media": 12.3756,
+            "dev_std": 0.0934
+          },
+          "A2A splitting": {
+            "media": 10.1922,
+            "dev_std": 0.0976
+          },
+          "Pipeline grouping": {
+            "media": 12.6557,
+            "dev_std": 0.1109
+          }
+        }
+      },
+      "max": 18,
+      "min": 9
+    },
+    {
+      "applicazione": "WC",
+      "parallelism": "2,2,2,2",
+      "batch": 32,
+      "titolo": "Word Count, Parallelism: 2,2,2,2; Batch: 32",
+      "dati": {
+        "ff_queue_len=32786": {
+          "Pinning ff": {
+            "media": 28.4236,
+            "dev_std": 0.4864
+          },
+          "Stage grouping": {
+            "media": 37.4855,
+            "dev_std": 0.3552
+          },
+          "A2A grouping": {
+            "media": 59.7418,
+            "dev_std": 1.1679
+          },
+          "A2A splitting": {
+            "media": 37.3896,
+            "dev_std": 0.3920
+          },
+          "Pipeline grouping": {
+            "media": 41.8200,
+            "dev_std": 0.3043
+          }
+        },
+        "ff_queue_len=16": {
+          "Pinning ff": {
+            "media": 26.6575,
+            "dev_std": 0
+          },
+          "Stage grouping": {
+            "media": 36.6452,
+            "dev_std": 0.3087
+          },
+          "A2A grouping": {
+            "media": 60.3263,
+            "dev_std": 0.6551
+          },
+          "A2A splitting": {
+            "media": 36.2600,
+            "dev_std": 0.4723
+          },
+          "Pipeline grouping": {
+            "media": 41.3750,
+            "dev_std": 0.2964
+          }
+        }
+      },
+      "max": 70,
+      "min": 20
+    },
+    {
+      "applicazione": "WC",
+      "parallelism": "4,4,4,4",
+      "batch": 0,
+      "titolo": "Word Count, Parallelism: 4,4,4,4; Batch: 0",
+      "dati": {
+        "ff_queue_len=32786": {
+          "Pinning ff": {
+            "media": 20.9928,
+            "dev_std": 0.5060
+          },
+          "Stage grouping": {
+            "media": 17.1070,
+            "dev_std": 0.6700
+          },
+          "A2A grouping": {
+            "media": 13.7234,
+            "dev_std": 0.8350
+          },
+          "A2A splitting": {
+            "media": 14.1109,
+            "dev_std": 0.7161
+          },
+          "Pipeline grouping": {
+            "media": 17.5341,
+            "dev_std": 0.2024
+          },
+          "Semipipeline grouping": {
+            "media": 14.3128,
+            "dev_std": 0.6486
+          }
+        },
+        "ff_queue_len=16": {
+          "Pinning ff": {
+            "media": 15.1478,
+            "dev_std": 0.5445
+          },
+          "Stage grouping": {
+            "media": 12.5859,
+            "dev_std": 0.3818
+          },
+          "A2A grouping": {
+            "media": 9.4939,
+            "dev_std": 0.4714
+          },
+          "A2A splitting": {
+            "media": 11.6873,
+            "dev_std": 0.7060
+          },
+          "Pipeline grouping": {
+            "media": 12.1224,
+            "dev_std": 1.0154
+          },
+          "Semipipeline grouping": {
+            "media": 9.6389,
+            "dev_std": 0.5101
+          }
+        }
+      },
+      "max": 30,
+      "min": 0
+    },
+    {
+      "applicazione": "WC",
+      "parallelism": "4,4,4,4",
+      "batch": 32,
+      "titolo": "Word Count, Parallelism: 4,4,4,4; Batch: 32",
+      "dati": {
+        "ff_queue_len=32786": {
+          "Pinning ff": {
+            "media": 64.8495,
+            "dev_std": 7.5277
+          },
+          "Stage grouping": {
+            "media": 73.4038,
+            "dev_std": 7.1006
+          },
+          "A2A grouping": {
+            "media": 68.4380,
+            "dev_std": 12.0727
+          },
+          "A2A splitting": {
+            "media": 68.2014,
+            "dev_std": 16.8561
+          },
+          "Pipeline grouping": {
+            "media": 94.2215,
+            "dev_std": 20.3676
+          },
+          "Semipipeline grouping": {
+            "media": 71.9207,
+            "dev_std": 10.7843
+          }
+        },
+        "ff_queue_len=16": {
+          "Pinning ff": {
+            "media": 51.2403,
+            "dev_std": 0.7889
+          },
+          "Stage grouping": {
+            "media": 65.5823,
+            "dev_std": 2.1706
+          },
+          "A2A grouping": {
+            "media": 46.7150,
+            "dev_std": 1.9946
+          },
+          "A2A splitting": {
+            "media": 26.4243,
+            "dev_std": 0.7550
+          },
+          "Pipeline grouping": {
+            "media": 53.4001,
+            "dev_std": 2.5876
+          },
+          "Semipipeline grouping": {
+            "media": 58.0210,
+            "dev_std": 1.4264
+          }
+        }
+      },
+      "max": 120,
+      "min": 20
+    },
+    {
+      "applicazione": "WC",
+      "parallelism": "8,8,8,8",
+      "batch": 0,
+      "titolo": "Word Count, Parallelism: 8,8,8,8; Batch: 0",
+      "dati": {
+        "ff_queue_len=32786": {
+          "Pinning ff": {
+            "media": 24.4495,
+            "dev_std": 1.5913
+          },
+          "Stage grouping": {
+            "media": 21.0172,
+            "dev_std": 0.9745
+          },
+          "A2A grouping": {
+            "media": 18.5255,
+            "dev_std": 0.8542
+          },
+          "A2A splitting":{
+            "media": 23.1951,
+            "dev_std": 1.1131
+          },
+          "Pipeline grouping": {
+            "media": 25.7495,
+            "dev_std": 0.5209
+          },
+          "Semipipeline grouping": {
+            "media": 17.9556,
+            "dev_std": 0.8043
+          }
+        },
+        "ff_queue_len=16": {
+          "Pinning ff": {
+            "media": 17.7971,
+            "dev_std": 0.7921
+          },
+          "Stage grouping": {
+            "media": 16.0955,
+            "dev_std": 0.3584
+          },
+          "A2A grouping": {
+            "media": 15.6249,
+            "dev_std": 0.9962
+          },
+          "A2A splitting":{
+            "media": 17.7273,
+            "dev_std": 0.7817
+          },
+          "Pipeline grouping": {
+            "media": 17.6337,
+            "dev_std": 1.4334
+          },
+          "Semipipeline grouping": {
+            "media": 13.7417,
+            "dev_std": 0.6344
+          }
+        }
+      },
+      "max": 40,
+      "min": 10
+    },
+    {
+      "applicazione": "WC",
+      "parallelism": "8,8,8,8",
+      "batch": 32,
+      "titolo": "Word Count, Parallelism: 8,8,8,8; Batch: 32",
+      "dati": {
+        "ff_queue_len=32786": {
+          "Pinning ff": {
+            "media": 129.4903,
+            "dev_std": 15.8526
+          },
+          "Stage grouping": {
+            "media": 112.3819,
+            "dev_std": 6.4477
+          },
+          "A2A grouping":{
+            "media": 118.9585,
+            "dev_std": 2.5147
+          },
+          "A2A splitting": {
+            "media": 122.3275,
+            "dev_std": 17.7196
+          },
+          "Pipeline grouping": {
+            "media": 131.0595,
+            "dev_std": 24.4024
+          },
+          "Semipipeline grouping": {
+            "media": 118.8985,
+            "dev_std": 3.6902
+          }
+        },
+        "ff_queue_len=16": {
+          "Pinning ff": {
+            "media": 85.5941,
+            "dev_std": 1.2390
+          },
+          "Stage grouping": {
+            "media": 87.1040,
+            "dev_std": 1.9361
+          },
+          "A2A grouping": {
+            "media": 103.0143,
+            "dev_std": 3.9504
+          },
+          "A2A splitting":{
+            "media": 83.2944,
+            "dev_std": 5.0926
+          },
+          "Pipeline grouping": {
+            "media": 96.7722,
+            "dev_std": 4.4850
+          },
+          "Semipipeline grouping": {
+            "media": 88.9603,
+            "dev_std": 2.2134
+          }
+        }
+      },
+      "max": 160,
+      "min": 60
+    },
+    {
+      "applicazione": "FD",
+      "parallelism": "1,1,1,1",
+      "batch": 0,
+      "titolo": "Fraud Detection, Parallelism: 1,1,1,1; Batch: 0",
+      "dati": {
+        "ff_queue_len=32786": {
+          "Pinning ff": {
+            "media": 547324,
+            "dev_std": 4804
+          },
+          "Pipeline grouping": {
+            "media": 546779,
+            "dev_std": 9653
+          }
+        },
+        "ff_queue_len=16": {
+          "Pinning ff": {
+            "media": 540609,
+            "dev_std": 6510
+          },
+          "Pipeline grouping": {
+            "media": 581257,
+            "dev_std": 7829
+          }
+        }
+      },
+      "max": 700000,
+      "min": 400000
+    },
+    {
+      "applicazione": "FD",
+      "parallelism": "1,1,1,1",
+      "batch": 32,
+      "titolo": "Fraud Detection, Parallelism: 1,1,1,1; Batch: 32",
+      "dati": {
+        "ff_queue_len=32786": {
+          "Pinning ff": {
+            "media": 581844,
+            "dev_std": 4128
+          },
+          "Pipeline Grouping": {
+            "media": 544115,
+            "dev_std": 7804
+          }
+        },
+        "ff_queue_len=16": {
+          "Pinning ff": {
+            "media": 587793,
+            "dev_std": 5199
+          },
+          "Pipeline grouping": {
+            "media": 582183,
+            "dev_std": 8281
+          }
+        }
+      },
+      "max": 700000,
+      "min": 400000
+    },
+    {
+      "applicazione": "FD",
+      "parallelism": "2,2,2,2",
+      "batch": 0,
+      "titolo": "Fraud Detection, Parallelism: 2,2,2,2; Batch: 0",
+      "dati": {
+        "ff_queue_len=32786": {
+          "Pinning ff":{
+            "media": 741970,
+            "dev_std": 9025
+          },
+          "A2A grouping": {
+            "media": 896054,
+            "dev_std": 11948
+          },
+          "A2A splitting":{
+            "media": 827075,
+            "dev_std": 20821
+          },
+          "Src-Snk grouping":{
+            "media": 929209,
+            "dev_std": 23568
+          },
+          "Pipeline grouping": {
+            "media": 867371,
+            "dev_std": 9734
+          }
+        },
+        "ff_queue_len=16": {
+          "Pinning ff":{
+            "media": 715867,
+            "dev_std": 6601
+          },
+          "A2A grouping": {
+            "media": 928908,
+            "dev_std": 12147
+          },
+          "A2A splitting":{
+            "media": 818529,
+            "dev_std": 9742
+          },
+          "Src-Snk grouping":{
+            "media": 852243,
+            "dev_std": 8470
+          },
+          "Pipeline grouping": {
+            "media": 863973,
+            "dev_std": 8181
+          }
+        }
+      },
+      "max": 1200000,
+      "min": 500000
+    },
+    {
+      "applicazione": "FD",
+      "parallelism": "2,2,2,2",
+      "batch": 32,
+      "titolo": "Fraud Detection, Parallelism: 2,2,2,2; Batch: 32",
+      "dati": {
+        "ff_queue_len=32786": {
+          "Pinning ff":{
+            "media": 1080005,
+            "dev_std": 10564
+          },
+          "A2A grouping": {
+            "media": 1096629,
+            "dev_std": 17039
+          },
+          "A2A splitting":{
+            "media": 1100929,
+            "dev_std": 13813
+          },
+          "Src-Snk grouping":{
+            "media": 1104455,
+            "dev_std": 21133
+          },
+          "Pipeline grouping":{
+            "media": 1090791,
+            "dev_std": 17793
+          }
+        },
+        "ff_queue_len=16": {
+          "Pinning ff":{
+            "media": 1076539,
+            "dev_std": 22237
+          },
+          "A2A grouping": {
+            "media": 1120462,
+            "dev_std": 14665
+          },
+          "A2A splitting":{
+            "media": 1095238,
+            "dev_std": 14903
+          },
+          "Src-Snk grouping":{
+            "media": 1112418,
+            "dev_std": 8235
+          },
+          "Pipeline grouping": {
+            "media": 1111660,
+            "dev_std": 18044
+          }
+        }
+      },
+      "max": 1300000,
+      "min": 800000
+    },
+    {
+      "applicazione": "FD",
+      "parallelism": "4,4,4,4",
+      "batch": 0,
+      "titolo": "Fraud Detection, Parallelism: 4,4,4,4; Batch: 0",
+      "dati": {
+        "ff_queue_len=32786": {
+          "Pinning ff":{
+            "media": 1451050,
+            "dev_std": 17588
+          },
+          "Stage grouping":{
+            "media": 1671035,
+            "dev_std": 38646
+          },
+          "A2A grouping": {
+            "media": 1614775,
+            "dev_std": 13707
+          },
+          "Src-Snk grouping": {
+            "media": 1463895,
+            "dev_std": 36078
+          },
+          "Pipeline grouping": {
+            "media": 1491354,
+            "dev_std": 42310
+          }
+        },
+        "ff_queue_len=16": {
+          "Pinning ff":{
+            "media": 1410521,
+            "dev_std": 36117
+          },
+          "Stage grouping":{
+            "media": 1579547,
+            "dev_std": 16870
+          },
+          "A2A grouping": {
+            "media": 1633597,
+            "dev_std": 13274
+          },
+          "Src-Snk grouping": {
+            "media": 1364111,
+            "dev_std": 23871
+          },
+          "Pipeline grouping": {
+            "media": 1482958,
+            "dev_std": 43707
+          }
+        }
+      },
+      "max": 2000000,
+      "min": 1000000
+    },
+    {
+      "applicazione": "FD",
+      "parallelism": "4,4,4,4",
+      "batch": 32,
+      "titolo": "Fraud Detection, Parallelism: 4,4,4,4; Batch: 32",
+      "dati": {
+        "ff_queue_len=32786": {
+          "Pinning ff": {
+            "media": 2096165,
+            "dev_std": 19007
+          },
+          "Stage grouping":{
+            "media": 2026263,
+            "dev_std": 11905
+          },
+          "A2A grouping": {
+            "media": 2016457,
+            "dev_std": 28538
+          },
+          "Src-Snk grouping":{
+            "media": 1877575,
+            "dev_std": 6903
+          },
+          "Pipeline grouping":{
+            "media": 1963609,
+            "dev_std": 27015
+          }
+        },
+        "ff_queue_len=16": {
+          "Pinning ff":{
+            "media": 2102484,
+            "dev_std": 8452
+          },
+          "Stage grouping":{
+            "media": 2092303,
+            "dev_std": 10767
+          },
+          "A2A grouping": {
+            "media": 2110441,
+            "dev_std": 6716
+          },
+          "Src-Snk grouping": {
+            "media": 1968413,
+            "dev_std": 25415
+          },
+          "Pipeline grouping": {
+            "media": 2088041,
+            "dev_std": 17296
+          }
+        }
+      },
+      "max": 3000000,
+      "min": 1000000
+    },
+    {
+      "applicazione": "FD",
+      "parallelism": "8,8,8,8",
+      "batch": 0,
+      "titolo": "Fraud Detection, Parallelism: 8,8,8,8; Batch: 0",
+      "dati": {
+        "ff_queue_len=32786": {
+          "Pinning ff": {
+            "media": 2530677,
+            "dev_std": 147992
+          },
+          "Stage grouping":{
+            "media": 3039410,
+            "dev_std": 58828
+          },
+          "A2A grouping": {
+            "media": 2713523,
+            "dev_std": 107101
+          },
+          "Src-Snk grouping":{
+            "media": 3920249,
+            "dev_std": 93675
+          },
+          "Pipeline grouping": {
+            "media": 2705628,
+            "dev_std": 102327
+          }
+        },
+        "ff_queue_len=16": {
+          "Pinning ff":{
+            "media": 2594312,
+            "dev_std": 93905
+          },
+          "Stage grouping":{
+            "media": 2584125,
+            "dev_std": 110835
+          },
+          "A2A grouping": {
+            "media": 2610649,
+            "dev_std": 77403
+          },
+          "Src-Snk grouping": {
+            "media": 2532716,
+            "dev_std": 77883
+          },
+          "Pipeline grouping": {
+            "media": 2726875,
+            "dev_std": 50167
+          }
+        }
+      },
+      "max": 5000000,
+      "min": 2000000
+    },
+    {
+      "applicazione": "FD",
+      "parallelism": "8,8,8,8",
+      "batch": 32,
+      "titolo": "Fraud Detection, Parallelism: 8,8,8,8; Batch: 32",
+      "dati": {
+        "ff_queue_len=32786": {
+          "Pinning ff":{
+            "media": 3540991,
+            "dev_std": 119683
+          },
+          "Stage grouping":{
+            "media": 3714594,
+            "dev_std": 160738
+          },
+          "A2A grouping":{
+            "media": 3665852,
+            "dev_std": 188843
+          },
+          "Src-Snk grouping":{
+            "media": 3459605,
+            "dev_std": 140394
+          },
+          "Pipeline grouping": {
+            "media": 3588280,
+            "dev_std": 176083
+          }
+        },
+        "ff_queue_len=16": {
+          "Pinning ff":{
+            "media": 3857314,
+            "dev_std": 177712
+          },
+          "Stage grouping":{
+            "media": 3940851,
+            "dev_std": 86187
+          },
+          "A2A grouping": {
+            "media": 3938063,
+            "dev_std": 69535
+          },
+          "Src-Snk grouping": {
+            "media": 3831652,
+            "dev_std": 35915
+          },
+          "Pipeline grouping": {
+            "media": 3897110,
+            "dev_std": 122490
+          }
+        }
+      },
+      "max": 5000000,
+      "min": 2000000
+    }
+  ]
+}

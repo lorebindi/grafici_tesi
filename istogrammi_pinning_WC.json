@@ -17,7 +17,7 @@
           "dev_std": 0.2489
         }
       },
-      "max": 20
+      "max": 30
     },
     {
       "applicazione": "WC",
@@ -98,7 +98,7 @@
           "dev_std": 0.3043
         }
       },
-      "max": 60
+      "max": 90
     },
     {
       "applicazione": "WC",

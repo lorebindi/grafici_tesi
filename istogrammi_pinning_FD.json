@@ -17,7 +17,7 @@
           "dev_std": 9653
         }
       },
-      "max": 800000
+      "max": 900000
     },
     {
       "applicazione": "FD",
@@ -36,7 +36,7 @@
           "dev_std": 7804
         }
       },
-      "max": 800000
+      "max": 900000
     },
     {
       "applicazione": "FD",
@@ -98,7 +98,7 @@
           "dev_std": 17793
         }
       },
-      "max": 1500000
+      "max": 2000000
     },
     {
       "applicazione": "FD",

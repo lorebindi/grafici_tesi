@@ -243,7 +243,7 @@ def calcola_etichette_assey_app(app, max_value, min_value=0, step=1000000):
                 value += step  # Aggiungi il passo
 
             # Crea le etichette formattate per i tick sull'asse Y
-            yticks_labels = [f'{value:,.0f}'.replace(",", ".") + " t/s" for value in yticks_values]
+            yticks_labels = [f'{value / 1_000_000:.1f}' for value in yticks_values]
 
         case "WC":
             # Cambia step a seconda del max_value
@@ -260,7 +260,7 @@ def calcola_etichette_assey_app(app, max_value, min_value=0, step=1000000):
             # Crea la lista dei valori dei tick sull'asse Y
             yticks_values = [i * step for i in range(min_value // step, max_value // step + 1)]
             # Crea le etichette formattate per i tick sull'asse Y
-            yticks_labels = [f'{i * step:,.0f}'.replace(",", ".") + " MB/s" for i in range(min_value // step, max_value // step + 1)]
+            yticks_labels = [f'{i * step:,.0f}'.replace(",", ".") for i in range(min_value // step, max_value // step + 1)]
 
         case "FD":
             # Cambia step a seconda del max_value
@@ -274,7 +274,7 @@ def calcola_etichette_assey_app(app, max_value, min_value=0, step=1000000):
             # Crea la lista dei valori dei tick sull'asse Y
             yticks_values = [i * step for i in range(min_value // step, max_value // step + 1)]
             # Crea le etichette formattate per i tick sull'asse Y
-            yticks_labels = [f'{i * step:,.0f}'.replace(",", ".") + " t/s" for i in range(min_value // step, max_value // step + 1)]
+            yticks_labels = [f'{value / 1_000_000:.1f}' for value in yticks_values]
 
         case "TM":
             # Cambia step a seconda del max_value
@@ -287,7 +287,7 @@ def calcola_etichette_assey_app(app, max_value, min_value=0, step=1000000):
             # Crea la lista dei valori dei tick sull'asse Y
             yticks_values = [i * step for i in range(min_value // step, max_value // step + 1)]
             # Crea le etichette formattate per i tick sull'asse Y
-            yticks_labels = [f'{i * step:,.0f}'.replace(",", ".") + " t/s" for i in range(min_value // step, max_value // step + 1)]
+            yticks_labels = [f'{value / 1_000:.1f}' for value in yticks_values]
 
     return yticks_values, yticks_labels
 
@@ -295,6 +295,7 @@ def crea_istogramma_scelta_numanode(applicazione, parallelism, batch, ff_queue_l
     if not dati:
         raise ValueError("Il parametro 'dati' è vuoto o non valido.")
     etichette_asse_x = list(dati.keys())
+    etichette_asse_x = [etichetta.replace(' ', '\n', 1) for etichetta in etichette_asse_x]
     #etichette_asse_x = ["Scenario 1", "Scenario 2", "Scenario 3", "Scenario 4", "Scenario 5", "Scenario 6","Scenario 7"]
     medie = [val['media'] for val in dati.values()]  # Estrae il valore 'media' per ogni elemento
     dev_std = [val['dev_std'] for val in dati.values()]  # Estrae il valore 'dev_std' per ogni elemento
@@ -315,14 +316,7 @@ def crea_istogramma_scelta_numanode(applicazione, parallelism, batch, ff_queue_l
         raise ValueError("yticks vuoti")
 
     # Creazione dell'istogramma
-    if parallelism == "1,1,1,1":
-        plt.figure(figsize=(7, 5))
-    if parallelism == "2,2,2,2":
-        plt.figure(figsize=(7, 5))
-    if parallelism == "4,4,4,4":
-        plt.figure(figsize=(7, 5))
-    if parallelism == "8,8,8,8":
-        plt.figure(figsize=(7, 5))
+    plt.figure(figsize=(5, 4))
 
     # Impostiamo i limiti dell'asse X in modo che parta da 0 e arrivi al massimo valore dei dati
     plt.xlim(-0.5,
@@ -408,10 +402,10 @@ def crea_istogramma_scelta_numanode(applicazione, parallelism, batch, ff_queue_l
             has_deviation_symbol = True
 
     # Se ci sono barre di errore, aggiungi la linea nera nella legenda
-    if has_err_bars:
-        error_handle = Line2D([0], [0], color='black', lw=1, label='Deviazione standard')
-        handles.append(error_handle)
-        labels.append(r'$\sigma$ throughput')
+    #if has_err_bars:
+    #    error_handle = Line2D([0], [0], color='black', lw=1, label='Deviazione standard')
+    #    handles.append(error_handle)
+    #    labels.append(r'$\sigma$ throughput')
 
     # Se ci sono simboli di deviazione trascurabile, aggiungi il punto nella legenda
     if has_deviation_symbol:
@@ -425,13 +419,20 @@ def crea_istogramma_scelta_numanode(applicazione, parallelism, batch, ff_queue_l
     # Impostiamo il formato dei numeri sull'asse Y
     plt.gca().yaxis.set_major_formatter(ticker.FuncFormatter(lambda x, pos: '{:,.0f}'.format(x)))
     plt.ylim(bottom=0)
-    plt.yticks(yticks_values, yticks_labels)
+    plt.yticks(yticks_values, yticks_labels, fontsize=12)
 
     # Impostiamo le etichette per l'asse X
-    plt.xticks(range(len(etichette_asse_x)), etichette_asse_x)
-    plt.title(titolo+ "\n Strategy: " + strategy, fontsize=15)
+    plt.xticks(range(len(etichette_asse_x)), etichette_asse_x, fontsize=11)
+    plt.title(titolo+ "\n Strategy: " + strategy, fontsize=13)
     plt.xlabel('NUMAnodes utilizzati', fontsize=11)
-    plt.ylabel('Throughput', fontsize=11)
+    if applicazione == 'SD':
+        plt.ylabel('Throughput (M t/s)', fontsize=11)
+    if applicazione == 'WC':
+        plt.ylabel('Throughput (MB/s)', fontsize=11)
+    if applicazione == 'FD':
+        plt.ylabel('Throughput (M t/s)', fontsize=11)
+    if applicazione == 'TM':
+        plt.ylabel('Throughput (K t/s)', fontsize=11)
 
     # Salvataggio del grafico
     save_path = os.path.join(complete_path, "--p=" + parallelism + "_" + "--b=" + str(batch) + '.png')
@@ -447,7 +448,7 @@ def crea_istogramma_scelta_numanode(applicazione, parallelism, batch, ff_queue_l
 def crea_grafo_linee_ffvsOS(applicazione, parallelism, max_batch, titolo, datiff, datiOS, max_y):
     if not datiff or not datiOS:
         raise ValueError("Il parametro 'dati' è vuoto o non valido.")
-    etichette_asse_x = [str(2 ** i) for i in range(max_batch) if 2 ** i <= max_batch]
+    etichette_asse_x = ['0'] + [str(2 ** i) for i in range(1, max_batch) if 2 ** i <= max_batch]
     #etichette_asse_x = ["Scenario 1", "Scenario 2", "Scenario 3", "Scenario 4", "Scenario 5", "Scenario 6","Scenario 7"]
     medie_ff = [val['media'] for val in datiff.values()]  # Estrae il valore 'media' per ogni elemento
     dev_std_ff = [val['dev_std'] for val in datiff.values()]  # Estrae il valore 'dev_std' per ogni elemento
@@ -459,7 +460,7 @@ def crea_grafo_linee_ffvsOS(applicazione, parallelism, max_batch, titolo, datiff
     save_dir = '/home/lorenzo/Desktop/Grafici_Tesi/ffvsOS'
 
     # Creazione del grafico
-    plt.figure(figsize=(11, 6))
+    plt.figure(figsize=(6, 4))
 
     # Calcola le etichette e i valori dei ticks per l'asse Y
     yticks_values, yticks_labels = calcola_etichette_assey_app(applicazione, max_y)
@@ -487,33 +488,36 @@ def crea_grafo_linee_ffvsOS(applicazione, parallelism, max_batch, titolo, datiff
     # Linea per datiff (FastFlow) con barre di errore
     plt.errorbar(
         etichette_asse_x, medie_ff, yerr=dev_std_ff,
-        label=r'$\sigma$ throughput FastFlow pinning ', marker='s', color='#1B4F72',
+        label=r'$\mu$ throughput FastFlow pinning ', marker='s', color='#1B4F72',
         linestyle='-', linewidth=2, elinewidth=1.5, capsize=0
     )
 
     # Linea per datiOS con barre di errore
     plt.errorbar(
         etichette_asse_x, medie_OS, yerr=dev_std_OS,
-        label=r'$\sigma$ throughput OS scheduler ', marker='s', color='#C41E3A',
+        label=r'$\mu$ throughput OS scheduler ', marker='s', color='#C41E3A',
         linestyle='-', linewidth=2, elinewidth=1, capsize=0
     )
 
     # Linea per datiff (FastFlow)
-    plt.plot(etichette_asse_x, medie_ff, label=r'$\mu$ throughput FastFlow pinning', marker='s', color='#1B4F72', linestyle='-', linewidth=2)
+    #plt.plot(etichette_asse_x, medie_ff, label=r'$\mu$ throughput FastFlow pinning', marker='s', color='#1B4F72', linestyle='-', linewidth=2)
 
     # Linea per datiOS
-    plt.plot(etichette_asse_x, medie_OS, label=r'$\mu$ throughput OS scheduler', marker='s', color='#C41E3A', linestyle='-', linewidth=2)
+    #plt.plot(etichette_asse_x, medie_OS, label=r'$\mu$ throughput OS scheduler', marker='s', color='#C41E3A', linestyle='-', linewidth=2)
 
 
     # Titoli e etichette
     plt.title(titolo, fontsize=16)
     plt.xlabel('Batch Size', fontsize=14)
-    plt.ylabel('Throughput', fontsize=14)
+    if applicazione == "SD":
+        plt.ylabel('Throughput (M t/s)', fontsize=14)
+    if applicazione == "WC":
+        plt.ylabel('Throughput (MB/s)', fontsize=14)
     plt.xticks(fontsize=12)
     plt.yticks(fontsize=12)
 
     # Legenda
-    plt.legend(fontsize=12, loc='upper left')
+    plt.legend(fontsize=10, loc='upper left')
 
     # Griglia
     #plt.grid(visible=True, linestyle='--', alpha=0.6)
@@ -793,11 +797,20 @@ def crea_istogramma_app(applicazione, parallelism, batch, ff_queue_length, titol
     if not dati:
         raise ValueError("Il parametro 'dati' è vuoto o non valido.")
     etichette_asse_x = list(dati.keys())
+    etichette_asse_x = [
+        label.replace('Src-Snk grouping', 'Src-Snk\ngrouping')
+        .replace('Pipeline grouping', 'Pipeline\ngrouping')
+        .replace('A2A grouping', 'A2A\ngrouping')
+        .replace('A2A splitting', 'A2A\nsplitting')
+        .replace('Stage grouping', 'Stage\ngrouping')
+        .replace('Semipipeline grouping', 'Semipipeline\ngrouping')
+        for label in etichette_asse_x]
+
     #etichette_asse_x = ["Scenario 1", "Scenario 2", "Scenario 3", "Scenario 4", "Scenario 5", "Scenario 6","Scenario 7"]
     medie = [val['media'] for val in dati.values()]  # Estrae il valore 'media' per ogni elemento
     dev_std = [val['dev_std'] for val in dati.values()]  # Estrae il valore 'dev_std' per ogni elemento
     # Calcolo del rapporto media/deviazione standard
-    rapporto_soglia = 0.01
+    rapporto_soglia = 0.015
 
     #dati_asse_x = [1_000_000, 2_000_000, 3_000_000, 4_000_000, 5_000_000, 6_000_000, 6_999_999]
     save_dir = '/home/lorenzo/Desktop/Grafici_Tesi/Pinning'
@@ -814,13 +827,13 @@ def crea_istogramma_app(applicazione, parallelism, batch, ff_queue_length, titol
 
     # Creazione dell'istogramma
     if parallelism == "1,1,1,1":
-        plt.figure(figsize=(7, 5))
+        plt.figure(figsize=(5, 4))
     if parallelism == "2,2,2,2":
-        plt.figure(figsize=(8, 5))
+        plt.figure(figsize=(5, 4))
     if parallelism == "4,4,4,4":
-        plt.figure(figsize=(11, 5))
+        plt.figure(figsize=(6, 5))
     if parallelism == "8,8,8,8":
-        plt.figure(figsize=(10, 5))
+        plt.figure(figsize=(6, 5))
 
     # Impostiamo i limiti dell'asse X in modo che parta da 0 e arrivi al massimo valore dei dati
     plt.xlim(-0.5,
@@ -902,10 +915,10 @@ def crea_istogramma_app(applicazione, parallelism, batch, ff_queue_length, titol
             has_deviation_symbol = True
 
     # Se ci sono barre di errore, aggiungi la linea nera nella legenda
-    if has_err_bars:
-        error_handle = Line2D([0], [0], color='black', lw=1, label='Deviazione standard')
-        handles.append(error_handle)
-        labels.append(r'$\sigma$ throughput')
+    #if has_err_bars:
+    #    error_handle = Line2D([0], [0], color='black', lw=1, label='Deviazione standard')
+    #    handles.append(error_handle)
+    #    labels.append(r'$\sigma$ throughput')
 
     # Se ci sono simboli di deviazione trascurabile, aggiungi il punto nella legenda
     if has_deviation_symbol:
@@ -914,18 +927,25 @@ def crea_istogramma_app(applicazione, parallelism, batch, ff_queue_length, titol
         handles.append(symbol_handle)
         labels.append(r'$\sigma$ throughput trascurabile')
 
+
     plt.legend(handles=handles, labels=labels, loc='upper left', fontsize=10)
 
     # Impostiamo il formato dei numeri sull'asse Y
     plt.gca().yaxis.set_major_formatter(ticker.FuncFormatter(lambda x, pos: '{:,.0f}'.format(x)))
     plt.ylim(bottom=0)
-    plt.yticks(yticks_values, yticks_labels)
+    plt.yticks(yticks_values, yticks_labels, fontsize = 11)
 
     # Impostiamo le etichette per l'asse X
-    plt.xticks(range(len(etichette_asse_x)), etichette_asse_x)
-    plt.title(titolo, fontsize=15)
+    plt.xticks(range(len(etichette_asse_x)), etichette_asse_x, fontsize=10)
+    plt.title(titolo, fontsize=12)
     plt.xlabel('Strategie di Pinning', fontsize=11)
-    plt.ylabel('Throughput', fontsize=11)
+    if applicazione == "TM":
+        plt.ylabel('Throughput (K t/s)', fontsize=11)
+    else:
+        if applicazione == "WC":
+            plt.ylabel('Throughput (MB/s)', fontsize=11)
+        else:
+            plt.ylabel('Throughput (M t/s)', fontsize=11)
 
     # Salvataggio del grafico
     save_path = os.path.join(complete_path, "--p=" + parallelism + "_" + "--b=" + str(batch) + '.png')
@@ -1061,9 +1081,9 @@ def crea_istogrammi_pinning_TM():
 def main():
 
     #crea_grafi_linee_WinKey()
-    #crea_istogrammi_pinning_SD()
+    crea_grafi_scelta_numanode()
     #crea_istogrammi_profiling()
-    crea_grafi_linee_ff_queue_length()
+    #crea_grafi_linee_ffvsOS()
 
 # Questa parte è importante: assicura che la funzione main() venga eseguita solo
 # quando il file viene eseguito come script, non quando viene importato come modulo

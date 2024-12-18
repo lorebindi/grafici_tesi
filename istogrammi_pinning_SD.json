@@ -17,7 +17,7 @@
           "dev_std": 34885
         }
       },
-      "max": 7000000
+      "max": 8000000
     },
     {
       "applicazione": "SD",
@@ -36,7 +36,7 @@
           "dev_std": 33109
         }
       },
-      "max": 7000000
+      "max": 8000000
     },
     {
       "applicazione": "SD",
@@ -55,7 +55,7 @@
           "dev_std": 30364
         }
       },
-      "max": 16000000
+      "max": 18000000
     },
     {
       "applicazione": "SD",
@@ -74,7 +74,7 @@
           "dev_std": 102.196
         }
       },
-      "max": 16000000
+      "max": 18000000
     },
     {
       "applicazione": "SD",
@@ -105,7 +105,7 @@
           "dev_std": 17346
         }
       },
-      "max": 9000000
+      "max": 10000000
     },
     {
       "applicazione": "SD",
@@ -198,7 +198,7 @@
           "dev_std": 455388
         }
       },
-      "max": 22000000
+      "max": 30000000
     },
     {
       "applicazione": "SD",
@@ -276,7 +276,7 @@
           "dev_std": 646812
         }
       },
-      "max": 40000000
+      "max": 50000000
     },
     {
       "applicazione": "SD",

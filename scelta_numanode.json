@@ -241,18 +241,22 @@
     {
       "applicazione": "FD",
       "parallelism": "4,4,4",
-      "batch": 0,
+      "batch": 32,
       "ff_queue_length": 32786,
-      "titolo": "Fraud Detection, Parallelism: 4,4,4; Batch: 0",
+      "titolo": "Fraud Detection, Parallelism: 4,4,4; Batch: 32",
       "strategy": "A2A grouping",
       "dati": {
         "NUMAnode 0,1": {
-          "media": 1643474,
-          "dev_std": 18350
+          "media": 1569202,
+          "dev_std": 22810
         },
         "NUMAnode 4,5": {
-          "media": 1614775,
-          "dev_std": 13707
+          "media": 1633597,
+          "dev_std": 13274
+        },
+        "NUMAnode 1,5": {
+          "media": 1458178,
+          "dev_std": 29310
         }
       },
       "max": 3000000

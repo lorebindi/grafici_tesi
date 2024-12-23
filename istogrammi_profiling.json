@@ -29,7 +29,7 @@
       "coppia_test": 1,
       "test": 2,
       "CCX": "CCX2",
-      "titolo": "CCX2: [ssrc-fltr-src-fltr]",
+      "titolo": "CCX2: [src-fltr-src-fltr]",
       "dati": {
         "Accessi totali": 8190633521,
         "Miss totali": 3672486688
@@ -823,7 +823,7 @@
       "CCX": "CCX8",
       "titolo": "CCX-8 [src-src-src-src]",
       "dati": {
-        "Accessi totali": 1919253.036,
+        "Accessi totali": 1919253036,
         "Miss totali": 1696245222
       },
       "max": 4000000000

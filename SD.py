@@ -200,15 +200,16 @@ def json_parse_profiling(nome):
         return []
 
 def calcola_etichette_assey_profiling(max_value, step=1000000000):
+    yticks_values = []
+    yticks_labels = []
 
     if max_value <= 0:
         raise ValueError("Il valore massimo deve essere maggiore di 0")
 
-    # Crea la lista dei valori dei tick sull'asse Y
-    yticks_values = [i * step for i in range(0, max_value // step + 1)]
+    yticks_values = [i * step for i in range(max_value // step + 1)]
+    yticks_labels = [f'{int(value / 1_000_000_000)}' for value in yticks_values]
 
-    # Crea le etichette formattate per i tick sull'asse Y
-    yticks_labels = [f'{i * step:,}' for i in range(0, max_value // step + 1)]
+
 
     return yticks_values, yticks_labels
 
@@ -958,6 +959,171 @@ def crea_istogramma_app(applicazione, parallelism, batch, ff_queue_length, titol
     # Mostra il grafico
     plt.show()
 
+def crea_istogramma_strategie_profiling(applicazione, parallelism, batch, ff_queue_length, titolo, numanode, dati, max_y):
+    if not dati:
+        raise ValueError("Il parametro 'dati' è vuoto o non valido.")
+    etichette_asse_x = list(dati.keys())
+    etichette_asse_x = [
+        label.replace('Src-Snk grouping', 'Src-Snk\ngrouping')
+        .replace('Pipeline grouping', 'Pipeline\ngrouping')
+        .replace('A2A grouping', 'A2A\ngrouping')
+        .replace('A2A splitting', 'A2A\nsplitting')
+        .replace('Stage grouping', 'Stage\ngrouping')
+        .replace('Semipipeline grouping', 'Semipipeline\ngrouping')
+        for label in etichette_asse_x]
+
+    #etichette_asse_x = ["Scenario 1", "Scenario 2", "Scenario 3", "Scenario 4", "Scenario 5", "Scenario 6","Scenario 7"]
+    medie = [val['media'] for val in dati.values()]  # Estrae il valore 'media' per ogni elemento
+    dev_std = [val['dev_std'] for val in dati.values()]  # Estrae il valore 'dev_std' per ogni elemento
+    # Calcolo del rapporto media/deviazione standard
+    rapporto_soglia = 0.015
+
+    #dati_asse_x = [1_000_000, 2_000_000, 3_000_000, 4_000_000, 5_000_000, 6_000_000, 6_999_999]
+    save_dir = '/home/lorenzo/Desktop/Grafici_Tesi/istogrammi_strategie_profiling/'
+
+    # calcola il path completo
+    complete_path = os.path.join(save_dir,applicazione)
+    os.makedirs(complete_path, exist_ok=True)  # Crea la cartella se non esiste
+
+
+    # Calcola le etichette e i valori dei ticks per l'asse Y
+    yticks_values, yticks_labels = calcola_etichette_assey_app(applicazione, max_y)
+    if(yticks_values == [] or yticks_labels == []):
+        raise ValueError("yticks vuoti")
+
+    # Creazione dell'istogramma
+    if parallelism == "1,1,1,1":
+        plt.figure(figsize=(5, 4))
+    if parallelism == "2,2,2,2":
+        plt.figure(figsize=(5, 4))
+    if parallelism == "4,4,4,4":
+        plt.figure(figsize=(6, 5))
+    if parallelism == "8,8,8,8":
+        plt.figure(figsize=(6, 5))
+
+    # Impostiamo i limiti dell'asse X in modo che parta da 0 e arrivi al massimo valore dei dati
+    plt.xlim(-0.5,
+             len(etichette_asse_x) - 0.5)  # L'asse X avrà solo 2 etichette, quindi va da -0.5 a 1.5 per centrare le barre
+
+    # Disegnare le linee orizzontali per ogni valore di yticks_values
+    for ytick in yticks_values:
+        plt.hlines(ytick, -0.5, len(etichette_asse_x) - 0.5, colors='gray', linestyles='--', linewidth=0.6,
+                   zorder=1)  # Linea tratteggiata, zorder basso per metterle sotto le barre
+    # Aggiungere linee a metà tra ogni intervallo
+    for i in range(1, len(yticks_values)):
+        halfway = (yticks_values[i] + yticks_values[i - 1]) / 2  # Calcolare il punto centrale tra i tick
+        plt.hlines(halfway, -0.5, len(etichette_asse_x)-0.5, colors='lightgray', linestyles='--', linewidth=0.8)  # Linea leggera tra i tick
+
+
+    # Creazione delle barre dell'istogramma (due colonne affiancate)
+    #cmap=matplotlib.colormaps['Blues']
+    #colors = cmap(np.linspace(1.0, 0.4, len(dati_asse_x)))  # Evita estremi per miglior visibilità
+    colore_default = '#C41E3A'  # Rosso cardinale/porpora
+    colore_pin = '#1B4F72'  # Blu scuro. Prima: #2A6189
+    colors = [colore_default] + [colore_pin] * (len(medie) - 1)
+
+    # Aggiunta barre
+    bars = plt.bar(
+        range(len(etichette_asse_x)),
+        medie,
+        color=colors,
+        alpha=1,
+        width=0.6,
+        zorder=2
+    )
+
+    # Lista per gli handle e le etichette della legenda
+    handles = []
+    labels = []
+
+    # Aggiungi sempre la linea rossa (media FF) e la linea blu (media custom)
+    bars_handle_1 = Line2D([0], [0], color=colore_default, lw=6, label=r'$\mu$ throughput FF')
+    bars_handle_2 = Line2D([0], [0], color=colore_pin, lw=6, label=r'$\mu$ throughput strategie custom')
+    handles.append(bars_handle_1)
+    handles.append(bars_handle_2)
+    labels.append(r'$\mu$ throughput FastFlow')
+    labels.append(r'$\mu$ throughput strategie custom')
+
+    # Flag per la presenza di simboli o errori
+    has_err_bars = False
+    has_deviation_symbol = False
+
+
+    # Aggiunta delle barre di errore o simboli
+    for i, (media, errore) in enumerate(zip(medie, dev_std)):
+        rapporto_errore = errore / media if media != 0 else np.inf
+
+        if rapporto_errore >= rapporto_soglia:
+            # Barre di errore normali
+            plt.errorbar(
+                i,
+                media,
+                yerr=errore,
+                fmt='none',
+                ecolor='black',
+                capsize=2,
+                elinewidth=0.8,
+                capthick=1.0,
+                zorder=3,
+                linestyle='--'
+            )
+            has_err_bars = True
+        else:
+            # Simbolo per deviazioni trascurabili
+            plt.plot(
+                i,
+                media + 0.02 * media,  # Simbolo leggermente sopra la barra
+                marker='o',
+                color='black',
+                markersize=5,
+                label=r'$\sigma$' + ' prestazioni trascurabile' if not has_deviation_symbol else ''
+            )
+            has_deviation_symbol = True
+
+    # Se ci sono barre di errore, aggiungi la linea nera nella legenda
+    #if has_err_bars:
+    #    error_handle = Line2D([0], [0], color='black', lw=1, label='Deviazione standard')
+    #    handles.append(error_handle)
+    #    labels.append(r'$\sigma$ throughput')
+
+    # Se ci sono simboli di deviazione trascurabile, aggiungi il punto nella legenda
+    if has_deviation_symbol:
+        symbol_handle = Line2D([0], [0], marker='o', color='black', lw=0, markersize=5,
+                               label=r'$\sigma$ prestazioni trascurabile')
+        handles.append(symbol_handle)
+        labels.append(r'$\sigma$ throughput trascurabile')
+
+
+    plt.legend(handles=handles, labels=labels, loc='upper left', fontsize=10)
+
+    # Impostiamo il formato dei numeri sull'asse Y
+    plt.gca().yaxis.set_major_formatter(ticker.FuncFormatter(lambda x, pos: '{:,.0f}'.format(x)))
+    plt.ylim(bottom=0)
+    plt.yticks(yticks_values, yticks_labels, fontsize = 11)
+
+    # Impostiamo le etichette per l'asse X
+    plt.xticks(range(len(etichette_asse_x)), etichette_asse_x, fontsize=10)
+    plt.title(titolo, fontsize=12)
+    plt.xlabel('Strategie di Pinning', fontsize=11)
+    if applicazione == "TM":
+        plt.ylabel('Throughput (K t/s)', fontsize=11)
+    else:
+        if applicazione == "WC":
+            plt.ylabel('Throughput (MB/s)', fontsize=11)
+        else:
+            plt.ylabel('Throughput (M t/s)', fontsize=11)
+
+    # Salvataggio del grafico
+    save_path = os.path.join(complete_path, "--p=" + parallelism + "_" + "--b=" + str(batch) + '.png')
+    plt.tight_layout()
+
+
+    plt.savefig(save_path)
+    print(f"Grafico salvato in: {save_path}")
+
+    # Mostra il grafico
+    plt.show()
+
 def crea_istogramma_ccx(applicazione, numero_coppia, numero_test, CCX, titolo, dati, max_y):
     if not dati:
         raise ValueError("Il parametro 'dati' è vuoto o non valido.")
@@ -974,7 +1140,7 @@ def crea_istogramma_ccx(applicazione, numero_coppia, numero_test, CCX, titolo, d
     yticks_values, yticks_labels = calcola_etichette_assey_profiling(max_y)
 
     # Creazione dell'istogramma
-    plt.figure(figsize=(5, 4))
+    plt.figure(figsize=(4, 3))
 
     # Impostiamo i limiti dell'asse X in modo che parta da 0 e arrivi al massimo valore dei dati
     plt.xlim(-0.5,
@@ -1004,12 +1170,13 @@ def crea_istogramma_ccx(applicazione, numero_coppia, numero_test, CCX, titolo, d
     # Impostiamo il formato dei numeri sull'asse y
     plt.gca().yaxis.set_major_formatter(ticker.FuncFormatter(lambda x, pos: '{:,.0f}'.format(x)))
     plt.ylim(bottom=0)
-    plt.yticks(yticks_values, yticks_labels)
+    plt.ylabel('Miliardi', fontsize=12)
+    plt.yticks(yticks_values, yticks_labels, fontsize = 10)
 
     # Impostiamo le etichette per l'asse X (le categorie)
-    plt.xticks(range(len(etichette_asse_x)), etichette_asse_x)
+    plt.xticks(range(len(etichette_asse_x)), etichette_asse_x, fontsize=10)
     # Aggiungiamo il titolo
-    plt.title(titolo, fontsize=16)
+    plt.title(titolo, fontsize=14)
 
     # Salvataggio del grafico
     save_path = os.path.join(complete_path, 'istogramma_' + CCX + '.png')
@@ -1023,7 +1190,16 @@ def crea_istogramma_ccx(applicazione, numero_coppia, numero_test, CCX, titolo, d
 def crea_istogrammi_profiling():
     grafici = json_parse_profiling('istogrammi_profiling.json')
     for grafico in grafici:
-        crea_istogramma_ccx(grafico["applicazione"], grafico["coppia_test"], grafico["test"], grafico["CCX"], grafico["titolo"], grafico["dati"], grafico["max"])
+        if(grafico["applicazione"] == "FD"):
+            crea_istogramma_ccx(grafico["applicazione"], grafico["coppia_test"], grafico["test"], grafico["CCX"], grafico["titolo"], grafico["dati"], grafico["max"])
+
+def crea_istogrammi_strategie_per_profiling():
+    grafici = json_parse_pinning('istogrammi_strategie_per_profiling.json')
+    for grafico in grafici:
+        if grafico["applicazione"] == "FD":
+            crea_istogramma_strategie_profiling(grafico["applicazione"], grafico["parallelism"], grafico["batch"],
+                                grafico["ff_queue_length"], grafico["titolo"], grafico["numanode"], grafico["dati"],
+                                grafico["max"])
 
 def crea_grafi_linee_ffvsOS():
     grafici = json_parse_ffvsOS('ffvsOS.json')
@@ -1081,9 +1257,10 @@ def crea_istogrammi_pinning_TM():
 def main():
 
     #crea_grafi_linee_WinKey()
-    crea_grafi_scelta_numanode()
+    #crea_istogrammi_profiling()
     #crea_istogrammi_profiling()
     #crea_grafi_linee_ffvsOS()
+    crea_istogrammi_strategie_per_profiling()
 
 # Questa parte è importante: assicura che la funzione main() venga eseguita solo
 # quando il file viene eseguito come script, non quando viene importato come modulo

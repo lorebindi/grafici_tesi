@@ -1,0 +1,418 @@
+{
+  "grafici": [
+    {
+    "applicazione": "SD",
+    "parallelism": "2,2,2,2",
+    "batch": 0,
+    "ff_queue_length": 32786,
+    "titolo": "Spike Detection, Parallelism: 2,2,2,2; Batch: 0",
+    "numanode": "1",
+    "dati": {
+      "Pinning ff": {
+        "media": 3075691,
+        "dev_std": 660019
+      },
+      "Pipeline grouping": {
+        "media": 5094492,
+        "dev_std": 17346
+      },
+      "Pipeline grouping (no keyby)": {
+        "media": 16181310,
+        "dev_std": 329340
+      }
+    },
+    "max": 18000000
+    },
+    {
+      "applicazione": "SD",
+      "parallelism": "2,2,2,2",
+      "batch": 32,
+      "ff_queue_length": 32786,
+      "titolo": "Spike Detection, Parallelism: 2,2,2,2; Batch: 32",
+      "numanode": "1",
+      "dati": {
+        "Pinning ff": {
+          "media": 19192353,
+          "dev_std": 505835
+        },
+        "Pipeline grouping": {
+          "media": 21998665,
+          "dev_std": 54427
+        },
+        "Pipeline grouping (no keyby)": {
+          "media": 23640378,
+          "dev_std": 77936
+        }
+      },
+      "max": 40000000
+    },
+    {
+      "applicazione": "SD",
+      "parallelism": "4,4,4,4",
+      "batch": 0,
+      "ff_queue_length": 32786,
+      "titolo": "Spike Detection, Parallelism: 4,4,4,4; Batch: 0",
+      "numanode": "4,5",
+      "dati": {
+        "Pinning ff": {
+          "media": 5216589,
+          "dev_std": 741025
+        },
+        "Pipeline grouping": {
+          "media": 5215193,
+          "dev_std": 43561
+        },
+        "Pipeline grouping (no keyby)": {
+          "media": 15002889,
+          "dev_std": 1706367
+        }
+      },
+      "max": 18000000
+    },
+    {
+      "applicazione": "SD",
+      "parallelism": "4,4,4,4",
+      "batch": 32,
+      "ff_queue_length": 32786,
+      "titolo": "Spike Detection, Parallelism: 4,4,4,4; Batch: 32",
+      "numanode": "4,5",
+      "dati": {
+        "Pinning ff": {
+          "media": 20807184,
+          "dev_std": 367092
+        },
+        "Pipeline grouping": {
+          "media": 38509559,
+          "dev_std": 314879
+        },
+        "Pipeline grouping (no keyby)": {
+          "media": 35780633,
+          "dev_std": 7653558
+        }
+      },
+      "max": 60000000
+    },
+    {
+      "applicazione": "SD",
+      "parallelism": "8,8,8,8",
+      "batch": 0,
+      "ff_queue_length": 32786,
+      "titolo": "Spike Detection, Parallelism: 8,8,8,8; Batch: 0",
+      "numanode": "5,6,7,8",
+      "dati": {
+        "Pinning ff": {
+          "media": 5112293,
+          "dev_std": 108313
+        },
+        "Pipeline grouping":{
+          "media": 5544098,
+          "dev_std": 837189
+        },
+        "Pipeline grouping (no keyby)": {
+          "media": 47110778,
+          "dev_std": 1833040
+        }
+      },
+      "max": 50000000
+    },
+    {
+      "applicazione": "SD",
+      "parallelism": "8,8,8,8",
+      "batch": 32,
+      "ff_queue_length": 32786,
+      "titolo": "Spike Detection, Parallelism: 8,8,8,8; Batch: 32",
+      "numanode": "5,6,7,8",
+      "dati": {
+        "Pinning ff":{
+          "media": 34078481,
+          "dev_std": 4456902
+        },
+        "Pipeline grouping": {
+          "media": 64682194,
+          "dev_std": 2085558
+        },
+        "Pipeline grouping (no keyby)": {
+          "media": 73680123,
+          "dev_std": 4775749
+        }
+      },
+      "max": 90000000
+    },
+    {
+      "applicazione": "FD",
+      "parallelism": "2,2,2,2",
+      "batch": 0,
+      "ff_queue_length": 32786,
+      "titolo": "Fraud Detection, Parallelism: 2,2,2; Batch: 0",
+      "numanode": "1",
+      "dati": {
+        "Pinning ff":{
+          "media": 741970,
+          "dev_std": 9025
+        },
+        "Pipeline grouping": {
+          "media": 867371,
+          "dev_std": 9734
+        },
+        "Pipeline grouping (no keyby)": {
+          "media": 800845,
+          "dev_std": 13880
+        }
+      },
+      "max": 1500000
+    },
+    {
+      "applicazione": "FD",
+      "parallelism": "2,2,2,2",
+      "batch": 32,
+      "ff_queue_length": 32786,
+      "titolo": "Fraud Detection, Parallelism: 2,2,2; Batch: 32",
+      "numanode": "1",
+      "dati": {
+        "Pinning ff":{
+          "media": 1080005,
+          "dev_std": 10564
+        },
+        "Pipeline grouping":{
+          "media": 1090791,
+          "dev_std": 17793
+        },
+        "Pipeline grouping (no keyby)": {
+          "media": 874402,
+          "dev_std": 15343
+        }
+      },
+      "max": 2000000
+    },
+    {
+      "applicazione": "FD",
+      "parallelism": "4,4,4,4",
+      "batch": 0,
+      "ff_queue_length": 32786,
+      "titolo": "Fraud Detection, Parallelism: 4,4,4; Batch: 0",
+      "numanode": "4,5",
+      "dati": {
+        "Pinning ff":{
+          "media": 1451050,
+          "dev_std": 17588
+        },
+        "Pipeline grouping": {
+          "media": 1491354,
+          "dev_std": 42310
+        },
+        "Pipeline grouping (no keyby)": {
+          "media": 1548891,
+          "dev_std": 40390
+        }
+      },
+      "max": 3000000
+    },
+    {
+      "applicazione": "FD",
+      "parallelism": "4,4,4,4",
+      "batch": 32,
+      "ff_queue_length": 32786,
+      "titolo": "Fraud Detection, Parallelism: 4,4,4; Batch: 32",
+      "numanode": "4,5",
+      "dati": {
+        "Pinning ff": {
+          "media": 2096165,
+          "dev_std": 19007
+        },
+        "Pipeline grouping":{
+          "media": 1963609,
+          "dev_std": 27015
+        },
+        "Pipeline grouping (no keyby)": {
+          "media": 1707941,
+          "dev_std": 60828
+        }
+      },
+      "max": 3000000
+    },
+    {
+      "applicazione": "FD",
+      "parallelism": "8,8,8,8",
+      "batch": 0,
+      "ff_queue_length": 32786,
+      "titolo": "Fraud Detection, Parallelism: 8,8,8; Batch: 0",
+      "numanode": "4,5,6,7",
+      "dati": {
+        "Pinning ff": {
+          "media": 2530677,
+          "dev_std": 147992
+        },
+        "Pipeline grouping": {
+          "media": 2705628,
+          "dev_std": 102327
+        },
+        "Pipeline grouping (no keyby)": {
+          "media": 2715059,
+          "dev_std": 98524
+        }
+      },
+      "max": 4000000
+    },
+    {
+      "applicazione": "FD",
+      "parallelism": "8,8,8,8",
+      "batch": 32,
+      "ff_queue_length": 32786,
+      "titolo": "Fraud Detection, Parallelism: 8,8,8; Batch: 32",
+      "numanode": "4,5,6,7",
+      "dati": {
+        "Pinning ff":{
+          "media": 3540991,
+          "dev_std": 119683
+        },
+        "Pipeline grouping": {
+          "media": 3811647,
+          "dev_std": 31816
+        },
+        "Pipeline grouping (no keyby)": {
+          "media": 2852991,
+          "dev_std": 44221
+        }
+      },
+      "max": 6000000
+    },
+    {
+      "applicazione": "TM",
+      "parallelism": "2,2,2,2",
+      "batch": 0,
+      "ff_queue_length": 32786,
+      "titolo": "Traffic Monitoring, Parallelism: 2,2,2,2; Batch: 0",
+      "numanode": "1",
+      "dati": {
+        "Pinning ff":{
+          "media": 1700,
+          "dev_std": 21
+        },
+        "Pipeline grouping":{
+          "media": 1727,
+          "dev_std": 21
+        },
+        "Pipeline grouping (no keyby)": {
+          "media": 1986,
+          "dev_std": 124
+        }
+      },
+      "max": 3000
+    },
+    {
+      "applicazione": "TM",
+      "parallelism": "2,2,2,2",
+      "batch": 32,
+      "ff_queue_length": 32786,
+      "titolo": "Traffic Monitoring, Parallelism: 2,2,2,2; Batch: 32",
+      "numanode": "1",
+      "dati": {
+        "Pinning ff": {
+          "media": 1457,
+          "dev_std": 27
+        },
+        "Pipeline grouping": {
+          "media": 1471,
+          "dev_std": 49
+        },
+        "Pipeline grouping (no keyby)": {
+          "media": 2432,
+          "dev_std": 87
+        }
+      },
+      "max": 3000
+    },
+    {
+      "applicazione": "TM",
+      "parallelism": "4,4,4,4",
+      "batch": 0,
+      "ff_queue_length": 32786,
+      "titolo": "Traffic Monitoring, Parallelism: 4,4,4,4; Batch: 0",
+      "numanode": "4,5",
+      "dati": {
+        "Pinning ff": {
+          "media": 3468,
+          "dev_std": 28
+        },
+        "Pipeline grouping":{
+          "media": 2974,
+          "dev_std": 567
+        },
+        "Pipeline grouping (no keyby)": {
+          "media": 3734,
+          "dev_std": 734
+        }
+      },
+      "max": 5000
+    },
+    {
+      "applicazione": "TM",
+      "parallelism": "4,4,4,4",
+      "batch": 32,
+      "ff_queue_length": 32786,
+      "titolo": "Traffic Monitoring, Parallelism: 4,4,4,4; Batch: 32",
+      "numanode": "4,5",
+      "dati": {
+        "Pinning ff":{
+          "media": 2981,
+          "dev_std": 28
+        },
+        "Pipeline grouping":{
+          "media": 1758,
+          "dev_std": 977
+        },
+        "Pipeline grouping (no keyby)": {
+          "media": 4887,
+          "dev_std": 420
+        }
+      },
+      "max": 6000
+    },
+    {
+      "applicazione": "TM",
+      "parallelism": "8,8,8,8",
+      "batch": 0,
+      "ff_queue_length": 32786,
+      "titolo": "Traffic Monitoring, Parallelism: 8,8,8,8; Batch: 0",
+      "numanode": "4,5,6,7",
+      "dati": {
+        "Pinning ff":{
+          "media": 3338,
+          "dev_std": 1004
+        },
+        "Pipeline grouping":{
+          "media": 4397,
+          "dev_std": 2146
+        },
+        "Pipeline grouping (no keyby)": {
+          "media": 3221,
+          "dev_std": 826
+        }
+      },
+      "max": 8000
+    },
+    {
+      "applicazione": "TM",
+      "parallelism": "8,8,8,8",
+      "batch": 32,
+      "ff_queue_length": 32786,
+      "titolo": "Traffic Monitoring, Parallelism: 8,8,8,8; Batch: 32",
+      "numanode": "4,5,6,7",
+      "dati": {
+        "Pinning ff": {
+          "media": 1661,
+          "dev_std": 319
+        },
+        "Pipeline grouping":{
+          "media": 1795,
+          "dev_std": 1249
+        },
+        "Pipeline grouping (no keyby)": {
+          "media": 2527,
+          "dev_std": 824
+        }
+      },
+      "max": 4000
+    }
+  ]
+}

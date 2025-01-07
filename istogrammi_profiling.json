@@ -3311,6 +3311,198 @@
         "Miss totali": 46533582
       },
       "max": 13000000000
+    },
+    {
+      "applicazione": "TM",
+      "coppia_test": 7,
+      "test": 1,
+      "CCX": "CCX8",
+      "titolo": "CCX-8 [src-fltm-map-src]",
+      "dati": {
+        "Accessi totali": 656660361,
+        "Miss totali": 266000115
+      },
+      "max": 5000000000
+    },
+    {
+      "applicazione": "TM",
+      "coppia_test": 7,
+      "test": 1,
+      "CCX": "CCX9",
+      "titolo": "CCX-9 [fltm-map-src-fltm]",
+      "dati": {
+        "Accessi totali": 1852679381,
+        "Miss totali": 271435320
+      },
+      "max": 5000000000
+    },
+    {
+      "applicazione": "TM",
+      "coppia_test": 7,
+      "test": 1,
+      "CCX": "CCX10",
+      "titolo": "CCX-10 [map-src-fltm-map]",
+      "dati": {
+        "Accessi totali": 1273498802,
+        "Miss totali": 15480295
+      },
+      "max": 5000000000
+    },
+    {
+      "applicazione": "TM",
+      "coppia_test": 7,
+      "test": 1,
+      "CCX": "CCX11",
+      "titolo": "CCX-11 [src-fltm-map-src]",
+      "dati": {
+        "Accessi totali": 776525185,
+        "Miss totali": 227099105
+      },
+      "max": 5000000000
+    },
+    {
+      "applicazione": "TM",
+      "coppia_test": 7,
+      "test": 1,
+      "CCX": "CCX12",
+      "titolo": "CCX-12 [fltm-map-src-fltm]",
+      "dati": {
+        "Accessi totali": 1339587169,
+        "Miss totali": 474686741
+      },
+      "max": 5000000000
+    },
+    {
+      "applicazione": "TM",
+      "coppia_test": 7,
+      "test": 1,
+      "CCX": "CCX13",
+      "titolo": "CCX-13 [map-src-fltm-map]",
+      "dati": {
+        "Accessi totali": 1244370088,
+        "Miss totali": 12704905
+      },
+      "max": 5000000000
+    },
+    {
+      "applicazione": "TM",
+      "coppia_test": 7,
+      "test": 1,
+      "CCX": "CCX14",
+      "titolo": "CCX-14 [snk-snk-snk-snk]",
+      "dati": {
+        "Accessi totali": 114364984,
+        "Miss totali": 26734451
+      },
+      "max": 5000000000
+    },
+    {
+      "applicazione": "TM",
+      "coppia_test": 7,
+      "test": 1,
+      "CCX": "CCX15",
+      "titolo": "CCX-15 [snk-snk-snk-snk]",
+      "dati": {
+        "Accessi totali": 243350816,
+        "Miss totali": 49456712
+      },
+      "max": 5000000000
+    },
+    {
+      "applicazione": "TM",
+      "coppia_test": 7,
+      "test": 2,
+      "CCX": "CCX8",
+      "titolo": "CCX-8 [src-src-src-src]",
+      "dati": {
+        "Accessi totali": 11023723,
+        "Miss totali": 4468549
+      },
+      "max": 5000000000
+    },
+    {
+      "applicazione": "TM",
+      "coppia_test": 7,
+      "test": 2,
+      "CCX": "CCX9",
+      "titolo": "CCX-9 [src-src-src-src]",
+      "dati": {
+        "Accessi totali": 4396579,
+        "Miss totali": 2555046
+      },
+      "max": 5000000000
+    },
+    {
+      "applicazione": "TM",
+      "coppia_test": 7,
+      "test": 2,
+      "CCX": "CCX10",
+      "titolo": "CCX-10 [fltm-fltm-fltm-fltm]",
+      "dati": {
+        "Accessi totali": 4421846315,
+        "Miss totali": 817920960
+      },
+      "max": 5000000000
+    },
+    {
+      "applicazione": "TM",
+      "coppia_test": 7,
+      "test": 2,
+      "CCX": "CCX11",
+      "titolo": "CCX-11 [fltm-fltm-fltm-fltm]",
+      "dati": {
+        "Accessi totali": 4462522746,
+        "Miss totali": 855615364
+      },
+      "max": 5000000000
+    },
+    {
+      "applicazione": "TM",
+      "coppia_test": 7,
+      "test": 2,
+      "CCX": "CCX12",
+      "titolo": "CCX-12 [map-map-map-map]",
+      "dati": {
+        "Accessi totali": 17300278,
+        "Miss totali": 5279866
+      },
+      "max": 5000000000
+    },
+    {
+      "applicazione": "TM",
+      "coppia_test": 7,
+      "test": 2,
+      "CCX": "CCX13",
+      "titolo": "CCX-13 [map-map-map-map]",
+      "dati": {
+        "Accessi totali": 7643684,
+        "Miss totali": 3204932
+      },
+      "max": 5000000000
+    },
+    {
+      "applicazione": "TM",
+      "coppia_test": 7,
+      "test": 2,
+      "CCX": "CCX14",
+      "titolo": "CCX-14 [snk-snk-snk-snk]",
+      "dati": {
+        "Accessi totali": 56117513,
+        "Miss totali": 15534319
+      },
+      "max": 5000000000
+    },
+    {
+      "applicazione": "TM",
+      "coppia_test": 7,
+      "test": 2,
+      "CCX": "CCX15",
+      "titolo": "CCX-15 [snk-snk-snk-snk]",
+      "dati": {
+        "Accessi totali": 57656858,
+        "Miss totali": 12334948
+      },
+      "max": 5000000000
     }
   ]
 }

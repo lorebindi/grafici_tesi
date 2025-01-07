@@ -111,7 +111,7 @@
           }
         }
       },
-      "max": 7500000,
+      "max": 8500000,
       "min": 1500000
     },
     {
@@ -359,8 +359,62 @@
           }
         }
       },
-      "max": 10500000,
+      "max": 11500000,
       "min": 3500000
+    },
+    {
+      "applicazione": "SD",
+      "parallelism": "8,8,8,8",
+      "batch": 32,
+      "titolo": "Spike Detection, Parallelism: 8,8,8,8; Batch: 32",
+      "dati": {
+        "ff_queue_len=32786": {
+          "Pinning ff": {
+            "media": 34078481,
+            "dev_std": 4456902
+          },
+          "Stage grouping": {
+            "media": 38565241,
+            "dev_std": 1181994
+          },
+          "A2A grouping": {
+            "media": 35086567,
+            "dev_std": 1208191
+          },
+          "Src-Snk grouping": {
+            "media": 64826798,
+            "dev_std": 2143410
+          },
+          "Pipeline grouping": {
+            "media": 64682194,
+            "dev_std": 2085558
+          }
+        },
+        "ff_queue_len=16": {
+          "Pinning ff": {
+            "media": 29976336,
+            "dev_std": 869545
+          },
+          "Stage grouping": {
+            "media": 31028649,
+            "dev_std": 741848
+          },
+          "A2A grouping": {
+            "media": 30615064,
+            "dev_std": 907065
+          },
+          "Src-Snk grouping": {
+            "media": 38747835,
+            "dev_std": 1907061
+          },
+          "Pipeline grouping": {
+            "media": 40100035,
+            "dev_std": 1910429
+          }
+        }
+      },
+      "max": 75000000,
+      "min": 25000000
     },
     {
       "applicazione": "WC",

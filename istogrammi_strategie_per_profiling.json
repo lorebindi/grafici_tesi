@@ -137,6 +137,52 @@
         }
       },
       "max": 3000000
+    },
+    {
+      "applicazione": "TM",
+      "parallelism": "4,4,4,4",
+      "batch": 32,
+      "ff_queue_length": 32786,
+      "titolo": "Traffic Monitoring, Parallelism: 4,4,4,4; Batch: 32",
+      "numanode": "4,5",
+      "dati": {
+        "Pinning ff":{
+          "media": 2981,
+          "dev_std": 28
+        },
+        "Stage grouping": {
+          "media": 2769,
+          "dev_std": 304
+        },
+        "Pipeline grouping":{
+          "media": 1758,
+          "dev_std": 977
+        }
+      },
+      "max": 4000
+    },
+    {
+      "applicazione": "TM",
+      "parallelism": "8,8,8,8",
+      "batch": 0,
+      "ff_queue_length": 32786,
+      "titolo": "Traffic Monitoring, Parallelism: 8,8,8,8; Batch: 0",
+      "numanode": "4,5,6,7",
+      "dati": {
+        "Pinning ff":{
+          "media": 3338,
+          "dev_std": 1004
+        },
+        "Stage grouping": {
+          "media": 4480,
+          "dev_std": 1000
+        },
+        "Semipipeline grouping":{
+          "media": 2938,
+          "dev_std": 371
+        }
+      },
+      "max": 7000
     }
   ]
 }

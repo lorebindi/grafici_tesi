@@ -179,7 +179,10 @@ def json_parse_profiling(nome):
             # Costruisci un dizionario con le informazioni di ogni grafico
             parsed_data.append({
                 "applicazione": grafico.get("applicazione"),
+                "parallelismo": grafico.get("parallelismo"),
+                "batch": grafico.get("batch"),
                 "coppia_test": grafico.get("coppia_test"),
+                "strategia": grafico.get("strategia"),
                 "test": grafico.get("test"),
                 "CCX": grafico.get("CCX"),
                 "titolo": grafico.get("titolo"),
@@ -199,15 +202,32 @@ def json_parse_profiling(nome):
         print(f"Errore sconosciuto: {e}")
         return []
 
-def calcola_etichette_assey_profiling(max_value, step=1000000000):
+def calcola_etichette_assey_profiling(max_value, step=1_000_000_000):
     yticks_values = []
     yticks_labels = []
 
     if max_value <= 0:
         raise ValueError("Il valore massimo deve essere maggiore di 0")
 
+    if(max_value <= 2_000_000_000):
+        step = 500_000_000
+    if (max_value > 2_000_000_000):
+        step = 1_000_000_000
+    if(max_value >= 20_000_000_000):
+        step = 2_000_000_000
+        if(max_value % 2 != 0):
+            max_value += 1_000_000_000
+        max_value += step
+    if(max_value > 24_000_000_000):
+        step = 5_000_000_000
+        if (max_value % 2 != 0):
+            max_value = (max_value // step + 1) * step
+        max_value += step
+
+
+
     yticks_values = [i * step for i in range(max_value // step + 1)]
-    yticks_labels = [f'{int(value / 1_000_000_000)}' for value in yticks_values]
+    yticks_labels = [f'{float(value / 1_000_000_000)}' for value in yticks_values]
 
 
 
@@ -413,7 +433,7 @@ def crea_istogramma_scelta_numanode(applicazione, parallelism, batch, ff_queue_l
         symbol_handle = Line2D([0], [0], marker='o', color='black', lw=0, markersize=5,
                                label=r'$\sigma$ prestazioni trascurabile')
         handles.append(symbol_handle)
-        labels.append(r'$\sigma$ throughput trascurabile')
+        labels.append(r'$\sigma$ negligible')
 
     plt.legend(handles=handles, labels=labels, loc='upper left', fontsize=10)
 
@@ -425,7 +445,7 @@ def crea_istogramma_scelta_numanode(applicazione, parallelism, batch, ff_queue_l
     # Impostiamo le etichette per l'asse X
     plt.xticks(range(len(etichette_asse_x)), etichette_asse_x, fontsize=11)
     plt.title(titolo+ "\n Strategy: " + strategy, fontsize=13)
-    plt.xlabel('NUMAnodes utilizzati', fontsize=11)
+    plt.xlabel('Used NUMA nodes', fontsize=11)
     if applicazione == 'SD':
         plt.ylabel('Throughput (M t/s)', fontsize=11)
     if applicazione == 'WC':
@@ -489,14 +509,14 @@ def crea_grafo_linee_ffvsOS(applicazione, parallelism, max_batch, titolo, datiff
     # Linea per datiff (FastFlow) con barre di errore
     plt.errorbar(
         etichette_asse_x, medie_ff, yerr=dev_std_ff,
-        label='Throughput FastFlow pinning ', marker='s', color='#1B4F72',
+        label='FastFlow pinning throughput', marker='s', color='#1B4F72',
         linestyle='-', linewidth=2, elinewidth=1.5, capsize=0
     )
 
     # Linea per datiOS con barre di errore
     plt.errorbar(
         etichette_asse_x, medie_OS, yerr=dev_std_OS,
-        label='Throughput OS scheduler ', marker='s', color='#C41E3A',
+        label='OS Scheduler throughput ', marker='s', color='#C41E3A',
         linestyle='-', linewidth=2, elinewidth=1, capsize=0
     )
 
@@ -600,10 +620,10 @@ def crea_grafo_linee_WinKey(applicazione, parallelism, batch, titolo, dati, max_
 
     # Titoli e etichette
     plt.title(titolo, fontsize=14)
-    plt.xlabel('Configurazione Key-Window', fontsize=12)
+    plt.xlabel('Key-Window configuration', fontsize=12)
     plt.ylabel('Throughput (M t/s)', fontsize=12)
     plt.xticks(fontsize=10)
-    plt.xticks(range(len(etichette_asse_x)), etichette_asse_x, fontsize=10, rotation=0)
+    plt.xticks(range(len(etichette_asse_x)), etichette_asse_x, fontsize=10, rotation=30)
     plt.yticks(fontsize=10)
 
     # Legenda
@@ -678,14 +698,14 @@ def crea_grafo_linee_copyDataset(applicazione, parallelism, batch, titolo, dati,
         range(len(etichette_asse_x)),
         [d['media'] for d in fullLen_constructor],
         yerr=[d['dev_std'] for d in fullLen_constructor],
-        label='local memory policy',
+        label='Local memory policy',
         marker='s', capsize=2, color=sns_colors[0], linestyle='-', linewidth=1.5
         )
     plt.errorbar(
         range(len(etichette_asse_x)),
         [d['media'] for d in fullLen_operator],
         yerr=[d['dev_std'] for d in fullLen_operator],
-        label='custom dataset allocation',
+        label='Custom dataset allocation',
         marker='s', capsize=2, color=sns_colors[3], linestyle='-', linewidth=1.5
     )
     '''plt.errorbar(
@@ -705,7 +725,7 @@ def crea_grafo_linee_copyDataset(applicazione, parallelism, batch, titolo, dati,
 
     # Titoli e etichette
     plt.title(titolo, fontsize=14)
-    plt.xlabel('Strategie di pinning', fontsize=11)
+    plt.xlabel('Pinning strategies', fontsize=11)
     plt.ylabel('Throughput (M t/s)', fontsize=12)
     plt.xticks(fontsize=11)
     plt.xticks(range(len(etichette_asse_x)), etichette_asse_x, fontsize=10, rotation=0)
@@ -779,20 +799,20 @@ def crea_grafo_linee_ff_queue_length(applicazione, parallelism, batch, titolo, d
         range(len(etichette_asse_x)),
         [d['media'] for d in fullLen],
         yerr=[d['dev_std'] for d in fullLen],
-        label='code ff=32786',
+        label='Queue size = 32786',
         marker='s', capsize=2, color=sns_colors[0], linestyle='-', linewidth=1.5
         )
     plt.errorbar(
         range(len(etichette_asse_x)),
         [d['media'] for d in smallLen],
         yerr=[d['dev_std'] for d in smallLen],
-        label='code ff=16',
+        label='Queue size = 16',
         marker='s', capsize=2, color=sns_colors[3], linestyle='-', linewidth=1.5
     )
 
     # Titoli e etichette
     plt.title(titolo, fontsize=14)
-    plt.xlabel('Strategie di pinning', fontsize=12)
+    plt.xlabel('Pinning strategies', fontsize=12)
     if applicazione == "SD" or applicazione == "FD":
         plt.ylabel('Throughput (M t/s)', fontsize=12)
     if applicazione == "WC":
@@ -900,8 +920,8 @@ def crea_istogramma_app(applicazione, parallelism, batch, ff_queue_length, titol
     bars_handle_2 = Line2D([0], [0], color=colore_pin, lw=6, label=r'$\mu$ throughput strategie custom')
     handles.append(bars_handle_1)
     handles.append(bars_handle_2)
-    labels.append('Throughput FastFlow')
-    labels.append('Throughput strategie custom')
+    labels.append('FastFlow throughput')
+    labels.append('Custom strategies throughput')
 
     # Flag per la presenza di simboli o errori
     has_err_bars = False
@@ -935,7 +955,7 @@ def crea_istogramma_app(applicazione, parallelism, batch, ff_queue_length, titol
                 marker='o',
                 color='black',
                 markersize=5,
-                label=r'$\sigma$' + ' prestazioni trascurabile' if not has_deviation_symbol else ''
+                label=r'$\sigma$' + ' negligible' if not has_deviation_symbol else ''
             )
             has_deviation_symbol = True
 
@@ -948,9 +968,9 @@ def crea_istogramma_app(applicazione, parallelism, batch, ff_queue_length, titol
     # Se ci sono simboli di deviazione trascurabile, aggiungi il punto nella legenda
     if has_deviation_symbol:
         symbol_handle = Line2D([0], [0], marker='o', color='black', lw=0, markersize=5,
-                               label=r'$\sigma$ prestazioni trascurabile')
+                               label=r'$\sigma$ negligible')
         handles.append(symbol_handle)
-        labels.append(r'$\sigma$ throughput trascurabile')
+        labels.append(r'$\sigma$ negligible')
 
 
     plt.legend(handles=handles, labels=labels, loc='upper left', fontsize=10)
@@ -963,7 +983,7 @@ def crea_istogramma_app(applicazione, parallelism, batch, ff_queue_length, titol
     # Impostiamo le etichette per l'asse X
     plt.xticks(range(len(etichette_asse_x)), etichette_asse_x, fontsize=10)
     plt.title(titolo, fontsize=12)
-    plt.xlabel('Strategie di Pinning', fontsize=11)
+    plt.xlabel('Pinning strategies', fontsize=11)
     if applicazione == "TM":
         plt.ylabel('Throughput (K t/s)', fontsize=11)
     else:
@@ -1065,8 +1085,8 @@ def crea_istogramma_strategie_profiling(applicazione, parallelism, batch, ff_que
     bars_handle_2 = Line2D([0], [0], color=colore_pin, lw=6, label=r'$\mu$ throughput strategie custom')
     handles.append(bars_handle_1)
     handles.append(bars_handle_2)
-    labels.append('Throughput FastFlow')
-    labels.append('Throughput strategie custom')
+    labels.append('FastFlow throughput')
+    labels.append('Custom strategies throughput')
 
     # Flag per la presenza di simboli o errori
     has_err_bars = False
@@ -1100,7 +1120,7 @@ def crea_istogramma_strategie_profiling(applicazione, parallelism, batch, ff_que
                 marker='o',
                 color='black',
                 markersize=5,
-                label=r'$\sigma$' + ' prestazioni trascurabile' if not has_deviation_symbol else ''
+                label=r'$\sigma$' + ' negligible' if not has_deviation_symbol else ''
             )
             has_deviation_symbol = True
 
@@ -1113,9 +1133,9 @@ def crea_istogramma_strategie_profiling(applicazione, parallelism, batch, ff_que
     # Se ci sono simboli di deviazione trascurabile, aggiungi il punto nella legenda
     if has_deviation_symbol:
         symbol_handle = Line2D([0], [0], marker='o', color='black', lw=0, markersize=5,
-                               label=r'$\sigma$ prestazioni trascurabile')
+                               label=r'$\sigma$ negligible')
         handles.append(symbol_handle)
-        labels.append(r'$\sigma$ throughput trascurabile')
+        labels.append(r'$\sigma$ negligible')
 
 
     plt.legend(handles=handles, labels=labels, loc='upper left', fontsize=10)
@@ -1128,7 +1148,7 @@ def crea_istogramma_strategie_profiling(applicazione, parallelism, batch, ff_que
     # Impostiamo le etichette per l'asse X
     plt.xticks(range(len(etichette_asse_x)), etichette_asse_x, fontsize=10)
     plt.title(titolo, fontsize=12)
-    plt.xlabel('Strategie di Pinning', fontsize=11)
+    plt.xlabel('Pinning Strategies', fontsize=11)
     if applicazione == "TM":
         plt.ylabel('Throughput (K t/s)', fontsize=11)
     else:
@@ -1231,8 +1251,8 @@ def crea_istogramma_no_KeyBy(applicazione, parallelism, batch, ff_queue_length, 
     bars_handle_2 = Line2D([0], [0], color=colore_pin, lw=6, label=r'$\mu$ throughput strategie custom')
     handles.append(bars_handle_1)
     handles.append(bars_handle_2)
-    labels.append('Throughput no key-by')
-    labels.append('Throughput con key-by')
+    labels.append('No key-by throughput')
+    labels.append('Key-by throughput')
 
     # Flag per la presenza di simboli o errori
     has_err_bars = False
@@ -1266,7 +1286,7 @@ def crea_istogramma_no_KeyBy(applicazione, parallelism, batch, ff_queue_length, 
                 marker='o',
                 color='black',
                 markersize=5,
-                label=r'$\sigma$' + ' prestazioni trascurabile' if not has_deviation_symbol else ''
+                label=r'$\sigma$' + ' negligible' if not has_deviation_symbol else ''
             )
             has_deviation_symbol = True
 
@@ -1281,7 +1301,7 @@ def crea_istogramma_no_KeyBy(applicazione, parallelism, batch, ff_queue_length, 
         symbol_handle = Line2D([0], [0], marker='o', color='black', lw=0, markersize=5,
                                label=r'$\sigma$ prestazioni trascurabile')
         handles.append(symbol_handle)
-        labels.append(r'$\sigma$ throughput trascurabile')
+        labels.append(r'$\sigma$ negligible')
 
 
     plt.legend(handles=handles, labels=labels, loc='upper left', fontsize=10)
@@ -1294,7 +1314,7 @@ def crea_istogramma_no_KeyBy(applicazione, parallelism, batch, ff_queue_length, 
     # Impostiamo le etichette per l'asse X
     plt.xticks(range(len(etichette_asse_x)), etichette_asse_x, fontsize=10)
     plt.title(titolo, fontsize=12)
-    plt.xlabel('Strategie di Pinning', fontsize=11)
+    plt.xlabel('Pinning Strategies', fontsize=11)
     if applicazione == "TM":
         plt.ylabel('Throughput (K t/s)', fontsize=11)
     else:
@@ -1315,62 +1335,80 @@ def crea_istogramma_no_KeyBy(applicazione, parallelism, batch, ff_queue_length, 
     plt.show()
 
 
-def crea_istogramma_ccx(applicazione, numero_coppia, numero_test, CCX, titolo, dati, max_y):
-    if not dati:
-        raise ValueError("Il parametro 'dati' è vuoto o non valido.")
-    etichette_asse_x = dati.keys()
-    #plt.legend(etichette_asse_x)
-    dati_asse_x = dati.values()
+def crea_istogramma_profiling(applicazione, coppia, parallelismo, batch, strategia1, total_accesses1, total_misses1, strategia2, total_accesses2, total_misses2, max_y):
+
+    etichette_asse_x = ["Total accesses", "Total misses"]
     save_dir = '/home/lorenzo/Desktop/Grafici_Tesi/Profiling'
 
     # calcola il path completo
-    complete_path = os.path.join(save_dir, applicazione, "coppia_test_" + str(numero_coppia), str(numero_test))
+    complete_path = os.path.join(save_dir, applicazione, "coppia_test_" + str(coppia))
     os.makedirs(complete_path, exist_ok=True)  # Crea la cartella se non esiste
 
     # Calcola le etichette e i valori dei ticks per l'asse Y
     yticks_values, yticks_labels = calcola_etichette_assey_profiling(max_y)
 
     # Creazione dell'istogramma
-    plt.figure(figsize=(4, 3))
+    plt.figure(figsize=(5, 4))
 
     # Impostiamo i limiti dell'asse X in modo che parta da 0 e arrivi al massimo valore dei dati
-    plt.xlim(-0.5,
-             len(etichette_asse_x) - 0.5)
+    plt.xlim(-0.5, len(etichette_asse_x) - 0.5)
 
     # Disegnare le linee orizzontali per ogni valore di yticks_values
     for ytick in yticks_values:
         plt.hlines(ytick, -0.5, len(etichette_asse_x) - 0.5, colors='gray', linestyles='--', linewidth=0.6,
                    zorder=1)  # Linea tratteggiata, zorder basso per metterle sotto le barre
     # Aggiungere linee a metà tra ogni intervallo
-    for i in range(1, len(yticks_values)):
-        halfway = (yticks_values[i] + yticks_values[i - 1]) / 2  # Calcolare il punto centrale tra i tick
-        plt.hlines(halfway, -0.5, len(etichette_asse_x) - 0.5, colors='lightgray', linestyles='--',
-                   linewidth=0.8)  # Linea leggera tra i tick
+    if(max_y <= 8_000_000_000):
+        for i in range(1, len(yticks_values)):
+            halfway = (yticks_values[i] + yticks_values[i - 1]) / 2  # Calcolare il punto centrale tra i tick
+            plt.hlines(halfway, -0.5, len(etichette_asse_x) - 0.5, colors='lightgray', linestyles='--',
+                       linewidth=0.8)  # Linea leggera tra i tick
 
-    # Creazione delle barre dell'istogramma (due colonne affiancate)
-    bars = plt.bar(range(len(etichette_asse_x)), dati_asse_x, color=['#1B4F72', '#C41E3A'], alpha=1, width=0.7,
-                   zorder=2)  # barre in primo piano
+    # Impostiamo la posizione delle barre
+    bar_width = 0.30  # Larghezza delle barre
+    offset = 0.75  # Distanza tra le due coppie di barre
 
-    '''# Aggiungi linee tratteggiate dalla parte superiore delle barre fino all'asse y
-    for i, bar in enumerate(bars):
-        # Ottieni l'altezza della barra
-        height = bar.get_height()
-        # Disegna la linea tratteggiata verticale che parte dalla parte superiore della barra fino all'asse y
-        plt.hlines(height, -0.5,bar.get_x(), colors='lightgray', linestyles='--', linewidth=0.8) '''
+    #sns_colors = sns.color_palette("deep", 8)
+
+    #blue_palette = plt.cm.Blues  # Scala di blu
+    #red_palette = plt.cm.Reds  # Scala di rosso
+    color1 = '#63993D'
+    color2 = '#204D00'
+
+    # Creazione delle barre per il gruppo 1 (total_accesses1 e total_misses1)
+    plt.bar(0, total_accesses1, width=bar_width, color=color2, alpha=1, zorder=2)  # Total accesses 1
+    plt.bar(0.30, total_accesses2, width=bar_width, color=color1, alpha=1, zorder=2)  # Total misses 1
+
+    # Creazione delle barre per il gruppo 2 (total_accesses2 e total_misses2)
+    plt.bar(0.80, total_misses1, width=bar_width, color=color2, alpha=1, zorder=2)
+    plt.bar(1.10, total_misses2, width=bar_width, color=color1, alpha=1, zorder=2)
 
     # Impostiamo il formato dei numeri sull'asse y
     plt.gca().yaxis.set_major_formatter(ticker.FuncFormatter(lambda x, pos: '{:,.0f}'.format(x)))
     plt.ylim(bottom=0)
-    plt.ylabel('Miliardi', fontsize=12)
+    plt.ylabel('Billions', fontsize=10)
     plt.yticks(yticks_values, yticks_labels, fontsize = 10)
 
-    # Impostiamo le etichette per l'asse X (le categorie)
-    plt.xticks(range(len(etichette_asse_x)), etichette_asse_x, fontsize=10)
+    # Personalizzazione delle etichette sull'asse X
+    plt.xticks([np.mean([0, 0.30]), np.mean([0.80, 1.10])], etichette_asse_x)  # Centra le etichette dei gruppi
     # Aggiungiamo il titolo
-    plt.title(titolo, fontsize=14)
+    if(applicazione == "SD"):
+        plt.title("Spike Detection; " + "Parallelism: " + parallelismo + "; " + "Batch: " + str(batch), fontsize=11)
+    elif (applicazione == "WC"):
+            plt.title("Word Count; " + "Parallelism: " + parallelismo + "; " + "Batch: " + str(batch), fontsize=11)
+    elif (applicazione == "FD"):
+            plt.title("Fraud Detection; " + "Parallelism: " + parallelismo + "; " + "Batch: " + str(batch), fontsize=11)
+    elif (applicazione == "TM"):
+        plt.title("Traffic Monitoring; " + "Parallelism: " + parallelismo + "; " + "Batch: " + str(batch), fontsize=11)
+
+
+    # Aggiungi la legenda per i colori
+    plt.bar(0, 0, color=color2, alpha=1, label=strategia1)  # Barra invisibile per il colore blu
+    plt.bar(0, 0, color=color1, alpha=1, label=strategia2)  # Barra invisibile per il colore blu scuro
+    plt.legend(loc='upper left', ncol=2, fontsize=9)
 
     # Salvataggio del grafico
-    save_path = os.path.join(complete_path, 'istogramma_' + CCX + '.png')
+    save_path = os.path.join(complete_path, 'istogramma_coppia' + str(coppia) + '.png')
     plt.tight_layout()
     plt.savefig(save_path)
     print(f"Grafico salvato in: {save_path}")
@@ -1379,10 +1417,53 @@ def crea_istogramma_ccx(applicazione, numero_coppia, numero_test, CCX, titolo, d
     plt.show()
 
 def crea_istogrammi_profiling():
-    grafici = json_parse_profiling('istogrammi_profiling.json')
-    for grafico in grafici:
-        if(grafico["applicazione"] == "TM"):
-            crea_istogramma_ccx(grafico["applicazione"], grafico["coppia_test"], grafico["test"], grafico["CCX"], grafico["titolo"], grafico["dati"], grafico["max"])
+    grafici = json_parse_profiling('istogrammi_profiling_2.json')
+
+    strategia1 = ""
+    strategia2 = ""
+    total_accesses1 = 0
+    total_accesses2 = 0
+    total_misses1 = 0
+    total_misses2 = 0
+    i = 0
+
+    while i <= len(grafici) :
+        applicazione = grafici[i]['applicazione']
+        parallelismo = grafici[i]['parallelismo']
+        batch = grafici[i]['batch']
+        coppia = grafici[i]['coppia_test']
+        test = grafici[i]['test']
+        j = i
+        while(grafici[j]['applicazione'] == applicazione and grafici[j]['coppia_test'] == coppia and grafici[j]['test'] == test) :
+            if(strategia1 == ""):
+                strategia1 = grafici[j]['strategia']
+            total_accesses1 += grafici[j]['dati']['Total accesses']
+            total_misses1 += grafici[j]['dati']['Total misses']
+            j+=1
+        test = grafici[j]['test']
+        while(grafici[j]['applicazione'] == applicazione and grafici[j]['coppia_test'] == coppia and grafici[j]['test'] == test) :
+            if(strategia2 == ""):
+                strategia2 = grafici[j]['strategia']
+            total_accesses2 += grafici[j]['dati']['Total accesses']
+            total_misses2 += grafici[j]['dati']['Total misses']
+            j+=1
+            if(j == len(grafici)): break;
+
+        max_y = (math.ceil(max(total_accesses1, total_accesses2) / 1_000_000_000) * 1_000_000_000)
+        if(applicazione == "SD" and parallelismo == "2,2,2,2" and batch == 0):
+            max_y += 1_000_000_000
+        if(applicazione == "TM" and parallelismo == "4,4,4,4" and batch == 32):
+            max_y += 1_000_000_000
+        # Chiamata al metodo per creare l'istogramma
+        crea_istogramma_profiling(applicazione, coppia, parallelismo, batch, strategia1, total_accesses1, total_misses1, strategia2, total_accesses2, total_misses2, max_y)
+        total_accesses1 = 0
+        total_accesses2 = 0
+        total_misses1 = 0
+        total_misses2 = 0
+        strategia1 = ""
+        strategia2 = ""
+        i = j
+
 
 def crea_istogrammi_strategie_per_profiling():
     grafici = json_parse_pinning('istogrammi_strategie_per_profiling.json')
@@ -1452,8 +1533,7 @@ def crea_istogrammi_no_KeyBy():
 
 def main():
 
-    #crea_grafi_linee_ffvsOS()
-    crea_istogrammi_no_KeyBy()
+    crea_istogrammi_profiling()
 
 # Questa parte è importante: assicura che la funzione main() venga eseguita solo
 # quando il file viene eseguito come script, non quando viene importato come modulo

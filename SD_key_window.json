@@ -8,7 +8,7 @@
       "dati": {
         "Win=10k": {
           "Key=10k": {
-            "pinning ff": {
+            "Pinning ff": {
               "media": 1881353,
               "dev_std": 44718
             },
@@ -30,7 +30,7 @@
             }
           },
           "Key=50k": {
-            "pinning ff": {
+            "Pinning ff": {
               "media": 1909772,
               "dev_std": 91882
             },
@@ -52,7 +52,7 @@
             }
           },
           "Key=100k": {
-            "pinning ff": {
+            "Pinning ff": {
               "media": 1860693,
               "dev_std": 59649
             },
@@ -76,7 +76,7 @@
         },
         "Win=100k": {
           "Key=10k": {
-            "pinning ff": {
+            "Pinning ff": {
               "media": 1908333,
               "dev_std": 86422
             },
@@ -98,7 +98,7 @@
             }
           },
           "Key=50k": {
-            "pinning ff": {
+            "Pinning ff": {
               "media": 2117378,
               "dev_std": 26082
             },
@@ -120,7 +120,7 @@
             }
           },
           "Key=100k": {
-            "pinning ff": {
+            "Pinning ff": {
               "media": 1917646,
               "dev_std": 106098
             },
@@ -144,7 +144,7 @@
         },
         "Win=500k": {
           "Key=10k": {
-            "pinning ff": {
+            "Pinning ff": {
               "media": 1895613,
               "dev_std": 38226
             },
@@ -166,7 +166,7 @@
             }
           },
           "Key=50k": {
-            "pinning ff": {
+            "Pinning ff": {
               "media": 2071775,
               "dev_std": 83193
             },
@@ -188,7 +188,7 @@
             }
           },
           "Key=100k": {
-            "pinning ff": {
+            "Pinning ff": {
               "media": 2018915,
               "dev_std": 120923
             },
@@ -222,7 +222,7 @@
       "dati": {
         "Win=10k": {
           "Key=10k": {
-            "pinning ff": {
+            "Pinning ff": {
               "media": 4477971,
               "dev_std": 37656
             },
@@ -244,7 +244,7 @@
             }
           },
           "Key=50k": {
-            "pinning ff": {
+            "Pinning ff": {
               "media": 4435537,
               "dev_std": 82578
             },
@@ -266,7 +266,7 @@
             }
           },
           "Key=100k": {
-            "pinning ff": {
+            "Pinning ff": {
               "media": 4465904,
               "dev_std": 93641
             },
@@ -290,7 +290,7 @@
         },
         "Win=100k": {
           "Key=10k": {
-            "pinning ff": {
+            "Pinning ff": {
               "media": 4430318,
               "dev_std": 99523
             },
@@ -312,7 +312,7 @@
             }
           },
           "Key=50k": {
-            "pinning ff": {
+            "Pinning ff": {
               "media": 4527291,
               "dev_std": 64764
             },
@@ -334,7 +334,7 @@
             }
           },
           "Key=100k": {
-            "pinning ff": {
+            "Pinning ff": {
               "media": 4467216,
               "dev_std": 110951
             },
@@ -358,7 +358,7 @@
         },
         "Win=500k": {
           "Key=10k": {
-            "pinning ff": {
+            "Pinning ff": {
               "media": 4481889,
               "dev_std": 83558
             },
@@ -380,7 +380,7 @@
             }
           },
           "Key=50k": {
-            "pinning ff": {
+            "Pinning ff": {
               "media": 4559139,
               "dev_std": 38192
             },
@@ -402,7 +402,7 @@
             }
           },
           "Key=100k": {
-            "pinning ff": {
+            "Pinning ff": {
               "media": 4461120,
               "dev_std": 70823
             },
@@ -436,7 +436,7 @@
       "dati": {
         "Win=10k": {
           "Key=10k": {
-            "pinning ff": {
+            "Pinning ff": {
               "media": 4329368,
               "dev_std": 198642
             },
@@ -466,7 +466,7 @@
             }
           },
           "Key=50k": {
-            "pinning ff": {
+            "Pinning ff": {
               "media": 4235907,
               "dev_std": 63866
             },
@@ -496,7 +496,7 @@
             }
           },
           "Key=100k": {
-            "pinning ff": {
+            "Pinning ff": {
               "media": 4487000,
               "dev_std": 218222
             },
@@ -528,7 +528,7 @@
         },
         "Win=100k": {
           "Key=10k": {
-            "pinning ff": {
+            "Pinning ff": {
               "media": 4306417,
               "dev_std": 140064
             },
@@ -558,7 +558,7 @@
             }
           },
           "Key=50k": {
-            "pinning ff": {
+            "Pinning ff": {
               "media": 4326414,
               "dev_std": 205561
             },
@@ -588,7 +588,7 @@
             }
           },
           "Key=100k": {
-            "pinning ff": {
+            "Pinning ff": {
               "media": 4244979,
               "dev_std": 88789
             },
@@ -620,7 +620,7 @@
         },
         "Win=500k": {
           "Key=10k": {
-            "pinning ff": {
+            "Pinning ff": {
               "media": 4419505,
               "dev_std": 213172
             },
@@ -650,7 +650,7 @@
             }
           },
           "Key=50k": {
-            "pinning ff": {
+            "Pinning ff": {
               "media": 4344203,
               "dev_std": 185903
             },
@@ -680,7 +680,7 @@
             }
           },
           "Key=100k": {
-            "pinning ff": {
+            "Pinning ff": {
               "media": 4353040,
               "dev_std": 216727
             },
@@ -722,7 +722,7 @@
       "dati": {
         "Win=10k": {
           "Key=10k": {
-            "pinning ff": {
+            "Pinning ff": {
               "media": 10929669,
               "dev_std": 114233
             },
@@ -752,7 +752,7 @@
             }
           },
           "Key=50k": {
-            "pinning ff": {
+            "Pinning ff": {
               "media": 10862883,
               "dev_std": 212840
             },
@@ -782,7 +782,7 @@
             }
           },
           "Key=100k": {
-            "pinning ff": {
+            "Pinning ff": {
               "media": 10887081,
               "dev_std": 134844
             },
@@ -814,7 +814,7 @@
         },
         "Win=100k": {
           "Key=10k": {
-            "pinning ff": {
+            "Pinning ff": {
               "media": 10962641,
               "dev_std": 111429
             },
@@ -844,7 +844,7 @@
             }
           },
           "Key=50k": {
-            "pinning ff": {
+            "Pinning ff": {
               "media": 10957209,
               "dev_std": 112284
             },
@@ -874,7 +874,7 @@
             }
           },
           "Key=100k": {
-            "pinning ff": {
+            "Pinning ff": {
               "media": 10848358,
               "dev_std": 259997
             },
@@ -906,7 +906,7 @@
         },
         "Win=500k": {
           "Key=10k": {
-            "pinning ff": {
+            "Pinning ff": {
               "media": 10896823,
               "dev_std": 179548
             },
@@ -936,7 +936,7 @@
             }
           },
           "Key=50k": {
-            "pinning ff": {
+            "Pinning ff": {
               "media": 10966465,
               "dev_std": 194600
             },
@@ -966,7 +966,7 @@
             }
           },
           "Key=100k": {
-            "pinning ff": {
+            "Pinning ff": {
               "media": 10875569,
               "dev_std": 249981
             },
@@ -1008,7 +1008,7 @@
       "dati": {
         "Win=10k": {
           "Key=10k": {
-            "pinning ff": {
+            "Pinning ff": {
               "media": 6005978,
               "dev_std": 719164
             },
@@ -1030,7 +1030,7 @@
             }
           },
           "Key=50k": {
-            "pinning ff": {
+            "Pinning ff": {
               "media": 7174491,
               "dev_std": 1089951
             },
@@ -1052,7 +1052,7 @@
             }
           },
           "Key=100k": {
-            "pinning ff": {
+            "Pinning ff": {
               "media": 5994813,
               "dev_std": 682883
             },
@@ -1076,7 +1076,7 @@
         },
         "Win=100k": {
           "Key=10k": {
-            "pinning ff": {
+            "Pinning ff": {
               "media": 6170290,
               "dev_std": 891033
             },
@@ -1098,7 +1098,7 @@
             }
           },
           "Key=50k": {
-            "pinning ff": {
+            "Pinning ff": {
               "media": 5778501,
               "dev_std": 262104
             },
@@ -1120,7 +1120,7 @@
             }
           },
           "Key=100k": {
-            "pinning ff": {
+            "Pinning ff": {
               "media": 6283448,
               "dev_std": 583084
             },
@@ -1144,7 +1144,7 @@
         },
         "Win=500k": {
           "Key=10k": {
-            "pinning ff": {
+            "Pinning ff": {
               "media": 8198662,
               "dev_std": 121934
             },
@@ -1166,7 +1166,7 @@
             }
           },
           "Key=50k": {
-            "pinning ff": {
+            "Pinning ff": {
               "media": 6013528,
               "dev_std": 435960
             },
@@ -1188,7 +1188,7 @@
             }
           },
           "Key=100k": {
-            "pinning ff": {
+            "Pinning ff": {
               "media": 6489947,
               "dev_std": 1212936
             },
@@ -1222,7 +1222,7 @@
       "dati": {
         "Win=10k": {
           "Key=10k": {
-            "pinning ff": {
+            "Pinning ff": {
               "media": 19900806,
               "dev_std": 3162044
             },
@@ -1244,7 +1244,7 @@
             }
           },
           "Key=50k": {
-            "pinning ff": {
+            "Pinning ff": {
               "media": 19002830,
               "dev_std": 2973117
             },
@@ -1266,7 +1266,7 @@
             }
           },
           "Key=100k": {
-            "pinning ff": {
+            "Pinning ff": {
               "media": 18882682,
               "dev_std": 3149889
             },
@@ -1290,7 +1290,7 @@
         },
         "Win=100k": {
           "Key=10k": {
-            "pinning ff": {
+            "Pinning ff": {
               "media": 19174572,
               "dev_std": 4529902
             },
@@ -1312,7 +1312,7 @@
             }
           },
           "Key=50k": {
-            "pinning ff": {
+            "Pinning ff": {
               "media": 20006300,
               "dev_std": 3299013
             },
@@ -1334,7 +1334,7 @@
             }
           },
           "Key=100k": {
-            "pinning ff": {
+            "Pinning ff": {
               "media": 18258110,
               "dev_std": 3712542
             },
@@ -1358,7 +1358,7 @@
         },
         "Win=500k": {
           "Key=10k": {
-            "pinning ff": {
+            "Pinning ff": {
               "media": 19126647,
               "dev_std": 3669101
             },
@@ -1380,7 +1380,7 @@
             }
           },
           "Key=50k": {
-            "pinning ff": {
+            "Pinning ff": {
               "media": 18796059,
               "dev_std": 3925371
             },
@@ -1402,7 +1402,7 @@
             }
           },
           "Key=100k": {
-            "pinning ff": {
+            "Pinning ff": {
               "media": 19448559,
               "dev_std": 3741956
             },

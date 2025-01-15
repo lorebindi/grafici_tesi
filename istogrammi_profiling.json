@@ -7,8 +7,8 @@
       "CCX": "CCX2",
       "titolo": "CCX2: [src-snk-src-snk]",
       "dati": {
-        "Accessi totali": 4759349124,
-        "Miss totali": 1725725882
+        "Total accesses": 4759349124,
+        "Total misses": 1725725882
       },
       "max": 9000000000
     },
@@ -19,8 +19,8 @@
       "CCX": "CCX3",
       "titolo": "CCX3: [map-fltr-map-fltr]",
       "dati": {
-        "Accessi totali": 8715570168,
-        "Miss totali": 2154544739
+        "Total accesses": 8715570168,
+        "Total misses": 2154544739
       },
       "max": 9000000000
     },
@@ -31,8 +31,8 @@
       "CCX": "CCX2",
       "titolo": "CCX2: [src-fltr-src-fltr]",
       "dati": {
-        "Accessi totali": 8190633521,
-        "Miss totali": 3672486688
+        "Total accesses": 8190633521,
+        "Total misses": 3672486688
       },
       "max": 9000000000
     },
@@ -43,8 +43,8 @@
       "CCX": "CCX3",
       "titolo": "CCX-3 [map-snk-map-snk]",
       "dati": {
-        "Accessi totali": 3427789561,
-        "Miss totali": 1892080676
+        "Total accesses": 3427789561,
+        "Total misses": 1892080676
       },
       "max": 9000000000
     },
@@ -55,8 +55,8 @@
       "CCX": "CCX2",
       "titolo": "CCX-2 [src-map-src-map]",
       "dati": {
-        "Accessi totali": 4032324346,
-        "Miss totali": 1383654777
+        "Total accesses": 4032324346,
+        "Total misses": 1383654777
       },
       "max": 5000000000
     },
@@ -67,8 +67,8 @@
       "CCX": "CCX3",
       "titolo": "CCX-3 [ftr-snk-ftr-snk]",
       "dati": {
-        "Accessi totali": 2379835050,
-        "Miss totali": 1349631322
+        "Total accesses": 2379835050,
+        "Total misses": 1349631322
       },
       "max": 5000000000
     },
@@ -79,8 +79,8 @@
       "CCX": "CCX2",
       "titolo": "CCX-2 [src-fltr-src-fltr]",
       "dati": {
-        "Accessi totali": 4748560418,
-        "Miss totali": 1687941558
+        "Total accesses": 4748560418,
+        "Total misses": 1687941558
       },
       "max": 5000000000
     },
@@ -91,8 +91,8 @@
       "CCX": "CCX3",
       "titolo": "CCX-3 [map-snk-map-snk]",
       "dati": {
-        "Accessi totali": 1904974293,
-        "Miss totali": 1379979797
+        "Total accesses": 1904974293,
+        "Total misses": 1379979797
       },
       "max": 5000000000
     },
@@ -103,8 +103,8 @@
       "CCX": "CCX10",
       "titolo": "CCX-10 [src-map-src-map]",
       "dati": {
-        "Accessi totali": 4326952668,
-        "Miss totali": 2710182173
+        "Total accesses": 4326952668,
+        "Total misses": 2710182173
       },
       "max": 6000000000
     },
@@ -115,8 +115,8 @@
       "CCX": "CCX11",
       "titolo": "CCX-11 [ftr-snk-ftr-snk]",
       "dati": {
-        "Accessi totali": 754596571,
-        "Miss totali": 622044008
+        "Total accesses": 754596571,
+        "Total misses": 622044008
       },
       "max": 5000000000
     },
@@ -127,8 +127,8 @@
       "CCX": "CCX10",
       "titolo": "CCX-10 [src-map-fltr-sink]",
       "dati": {
-        "Accessi totali": 4130927912,
-        "Miss totali": 1951468788
+        "Total accesses": 4130927912,
+        "Total misses": 1951468788
       },
       "max": 5000000000
     },
@@ -139,8 +139,8 @@
       "CCX": "CCX11",
       "titolo": "CCX-11 [src-map-fltr-sink]",
       "dati": {
-        "Accessi totali": 3720984797,
-        "Miss totali": 1672598793
+        "Total accesses": 3720984797,
+        "Total misses": 1672598793
       },
       "max": 5000000000
     },
@@ -151,8 +151,8 @@
       "CCX": "CCX8",
       "titolo": "CCX-8 [fltr-fltr-fltr-fltr]",
       "dati": {
-        "Accessi totali": 5792600025,
-        "Miss totali": 2077050765
+        "Total accesses": 5792600025,
+        "Total misses": 2077050765
       },
       "max": 6000000000
     },
@@ -163,8 +163,8 @@
       "CCX": "CCX9",
       "titolo": "CCX-9 [snk-snk-snk-snk]",
       "dati": {
-        "Accessi totali": 203782342,
-        "Miss totali": 142134532
+        "Total accesses": 203782342,
+        "Total misses": 142134532
       },
       "max": 6000000000
     },
@@ -175,8 +175,8 @@
       "CCX": "CCX10",
       "titolo": "CCX-10 [src-src-src-src]",
       "dati": {
-        "Accessi totali": 3304715158,
-        "Miss totali": 1996315085
+        "Total accesses": 3304715158,
+        "Total misses": 1996315085
       },
       "max": 6000000000
     },
@@ -187,8 +187,8 @@
       "CCX": "CCX11",
       "titolo": "CCX-11 [map-map-map-map]",
       "dati": {
-        "Accessi totali": 2921803794,
-        "Miss totali": 1852173414
+        "Total accesses": 2921803794,
+        "Total misses": 1852173414
       },
       "max": 6000000000
     },
@@ -199,8 +199,8 @@
       "CCX": "CCX8",
       "titolo": "CCX-8 [src-map-fltr-snk]",
       "dati": {
-        "Accessi totali": 2806738427,
-        "Miss totali": 1951822468
+        "Total accesses": 2806738427,
+        "Total misses": 1951822468
       },
       "max": 6000000000
     },
@@ -211,8 +211,8 @@
       "CCX": "CCX9",
       "titolo": "CCX-9 [src-map-fltr-snk]",
       "dati": {
-        "Accessi totali": 2909595618,
-        "Miss totali": 2008868157
+        "Total accesses": 2909595618,
+        "Total misses": 2008868157
       },
       "max": 6000000000
     },
@@ -223,8 +223,8 @@
       "CCX": "CCX10",
       "titolo": "CCX-10 [src-map-fltr-snk]",
       "dati": {
-        "Accessi totali": 3391415770,
-        "Miss totali": 2237214759
+        "Total accesses": 3391415770,
+        "Total misses": 2237214759
       },
       "max": 6000000000
     },
@@ -235,8 +235,8 @@
       "CCX": "CCX11",
       "titolo": "CCX-11 [src-map-fltr-snk]",
       "dati": {
-        "Accessi totali": 3190756478,
-        "Miss totali":2121409745
+        "Total accesses": 3190756478,
+        "Total misses":2121409745
       },
       "max": 6000000000
     },
@@ -247,8 +247,8 @@
       "CCX": "CCX8",
       "titolo": "CCX-8 [map-snk-map-snk]",
       "dati": {
-        "Accessi totali": 1740052182,
-        "Miss totali":1179554173
+        "Total accesses": 1740052182,
+        "Total misses":1179554173
       },
       "max": 5000000000
     },
@@ -259,8 +259,8 @@
       "CCX": "CCX9",
       "titolo": "CCX-9 [map-snk-map-snk]",
       "dati": {
-        "Accessi totali": 1696774664,
-        "Miss totali":1163770536
+        "Total accesses": 1696774664,
+        "Total misses":1163770536
       },
       "max": 5000000000
     },
@@ -271,8 +271,8 @@
       "CCX": "CCX10",
       "titolo": "CCX-10 [src-fltr-src-fltr]",
       "dati": {
-        "Accessi totali": 1477525644,
-        "Miss totali": 1291841957
+        "Total accesses": 1477525644,
+        "Total misses": 1291841957
       },
       "max": 5000000000
     },
@@ -283,8 +283,8 @@
       "CCX": "CCX11",
       "titolo": "CCX-11 [src-fltr-src-fltr]",
       "dati": {
-        "Accessi totali": 1509570731,
-        "Miss totali": 1295021472
+        "Total accesses": 1509570731,
+        "Total misses": 1295021472
       },
       "max": 5000000000
     },
@@ -295,8 +295,8 @@
       "CCX": "CCX8",
       "titolo": "CCX-8 [map-fltr-map-fltr]",
       "dati": {
-        "Accessi totali": 3877522449,
-        "Miss totali": 1563802578
+        "Total accesses": 3877522449,
+        "Total misses": 1563802578
       },
       "max": 5000000000
     },
@@ -307,8 +307,8 @@
       "CCX": "CCX9",
       "titolo": "CCX-9 [map-fltr-map-fltr]",
       "dati": {
-        "Accessi totali": 4051384159,
-        "Miss totali": 1642377652
+        "Total accesses": 4051384159,
+        "Total misses": 1642377652
       },
       "max": 5000000000
     },
@@ -319,8 +319,8 @@
       "CCX": "CCX10",
       "titolo": "CCX-10 [src-snk-src-snk]",
       "dati": {
-        "Accessi totali": 1905753524,
-        "Miss totali": 1619787110
+        "Total accesses": 1905753524,
+        "Total misses": 1619787110
       },
       "max": 5000000000
     },
@@ -331,8 +331,8 @@
       "CCX": "CCX11",
       "titolo": "CCX-11 [src-snk-src-snk]",
       "dati": {
-        "Accessi totali": 1910047290,
-        "Miss totali": 1616569061
+        "Total accesses": 1910047290,
+        "Total misses": 1616569061
       },
       "max": 5000000000
     },
@@ -343,8 +343,8 @@
       "CCX": "CCX8",
       "titolo": "CCX-8 [src-src-src-src]",
       "dati": {
-        "Accessi totali": 2504577751,
-        "Miss totali": 1953955501
+        "Total accesses": 2504577751,
+        "Total misses": 1953955501
       },
       "max": 5000000000
     },
@@ -355,8 +355,8 @@
       "CCX": "CCX9",
       "titolo": "CCX-9 [src-src-src-src]",
       "dati": {
-        "Accessi totali": 2542514534,
-        "Miss totali": 1836734953
+        "Total accesses": 2542514534,
+        "Total misses": 1836734953
       },
       "max": 5000000000
     },
@@ -367,8 +367,8 @@
       "CCX": "CCX10",
       "titolo": "CCX-10 [map-map-map-map]",
       "dati": {
-        "Accessi totali": 1861185273,
-        "Miss totali": 1480336692
+        "Total accesses": 1861185273,
+        "Total misses": 1480336692
       },
       "max": 5000000000
     },
@@ -379,8 +379,8 @@
       "CCX": "CCX11",
       "titolo": "CCX-11 [map-map-map-map]",
       "dati": {
-        "Accessi totali": 1905571485,
-        "Miss totali": 1475354821
+        "Total accesses": 1905571485,
+        "Total misses": 1475354821
       },
       "max": 5000000000
     },
@@ -391,8 +391,8 @@
       "CCX": "CCX12",
       "titolo": "CCX-12 [fltr-fltr-fltr-fltr]",
       "dati": {
-        "Accessi totali": 4515959756,
-        "Miss totali": 3033845059
+        "Total accesses": 4515959756,
+        "Total misses": 3033845059
       },
       "max": 5000000000
     },
@@ -403,8 +403,8 @@
       "CCX": "CCX13",
       "titolo": "CCX-13 [fltr-fltr-fltr-fltr]",
       "dati": {
-        "Accessi totali": 4411478178,
-        "Miss totali": 2951802383
+        "Total accesses": 4411478178,
+        "Total misses": 2951802383
       },
       "max": 5000000000
     },
@@ -415,8 +415,8 @@
       "CCX": "CCX14",
       "titolo": "CCX-14 [snk-snk-snk-snk]",
       "dati": {
-        "Accessi totali": 126973706,
-        "Miss totali": 85235710
+        "Total accesses": 126973706,
+        "Total misses": 85235710
       },
       "max": 5000000000
     },
@@ -427,8 +427,8 @@
       "CCX": "CCX15",
       "titolo": "CCX-15 [snk-snk-snk-snk]",
       "dati": {
-        "Accessi totali": 119371830,
-        "Miss totali": 87486085
+        "Total accesses": 119371830,
+        "Total misses": 87486085
       },
       "max": 5000000000
     },
@@ -439,8 +439,8 @@
       "CCX": "CCX8",
       "titolo": "CCX-8 [src-map-fltr-sink]",
       "dati": {
-        "Accessi totali": 1465246613,
-        "Miss totali": 1120456595
+        "Total accesses": 1465246613,
+        "Total misses": 1120456595
       },
       "max": 5000000000
     },
@@ -451,8 +451,8 @@
       "CCX": "CCX9",
       "titolo": "CCX-9 [src-map-fltr-sink]",
       "dati": {
-        "Accessi totali": 1445359014,
-        "Miss totali": 1070428589
+        "Total accesses": 1445359014,
+        "Total misses": 1070428589
       },
       "max": 5000000000
     },
@@ -463,8 +463,8 @@
       "CCX": "CCX10",
       "titolo": "CCX-10 [src-map-fltr-sink]",
       "dati": {
-        "Accessi totali": 1665294236,
-        "Miss totali": 1220157217
+        "Total accesses": 1665294236,
+        "Total misses": 1220157217
       },
       "max": 5000000000
     },
@@ -475,8 +475,8 @@
       "CCX": "CCX11",
       "titolo": "CCX-11 [src-map-fltr-sink]",
       "dati": {
-        "Accessi totali": 1504041691,
-        "Miss totali": 1110409895
+        "Total accesses": 1504041691,
+        "Total misses": 1110409895
       },
       "max": 5000000000
     },
@@ -487,8 +487,8 @@
       "CCX": "CCX12",
       "titolo": "CCX-12 [src-map-fltr-sink]",
       "dati": {
-        "Accessi totali": 1413782967,
-        "Miss totali": 971090179
+        "Total accesses": 1413782967,
+        "Total misses": 971090179
       },
       "max": 5000000000
     },
@@ -499,8 +499,8 @@
       "CCX": "CCX13",
       "titolo": "CCX-13 [src-map-fltr-sink]",
       "dati": {
-        "Accessi totali": 1451800964,
-        "Miss totali": 1108539044
+        "Total accesses": 1451800964,
+        "Total misses": 1108539044
       },
       "max": 5000000000
     },
@@ -511,8 +511,8 @@
       "CCX": "CCX14",
       "titolo": "CCX-14 [src-map-fltr-sink]",
       "dati": {
-        "Accessi totali": 1742755683,
-        "Miss totali": 1256409733
+        "Total accesses": 1742755683,
+        "Total misses": 1256409733
       },
       "max": 5000000000
     },
@@ -523,8 +523,8 @@
       "CCX": "CCX15",
       "titolo": "CCX-15 [src-map-fltr-sink]",
       "dati": {
-        "Accessi totali": 1505283628,
-        "Miss totali": 1114109931
+        "Total accesses": 1505283628,
+        "Total misses": 1114109931
       },
       "max": 5000000000
     },
@@ -535,8 +535,8 @@
       "CCX": "CCX8",
       "titolo": "CCX-8 [src-src-src-src]",
       "dati": {
-        "Accessi totali": 2361947597,
-        "Miss totali": 1351615396
+        "Total accesses": 2361947597,
+        "Total misses": 1351615396
       },
       "max": 3000000000
     },
@@ -547,8 +547,8 @@
       "CCX": "CCX9",
       "titolo": "CCX-9 [src-src-src-src]",
       "dati": {
-        "Accessi totali": 2408756890,
-        "Miss totali": 1377572810
+        "Total accesses": 2408756890,
+        "Total misses": 1377572810
       },
       "max": 3000000000
     },
@@ -559,8 +559,8 @@
       "CCX": "CCX10",
       "titolo": "CCX-10 [map-map-map-map]",
       "dati": {
-        "Accessi totali": 1584496014,
-        "Miss totali": 1274798440
+        "Total accesses": 1584496014,
+        "Total misses": 1274798440
       },
       "max": 3000000000
     },
@@ -571,8 +571,8 @@
       "CCX": "CCX11",
       "titolo": "CCX-11 [map-map-map-map]",
       "dati": {
-        "Accessi totali": 1641852458,
-        "Miss totali": 1289348204
+        "Total accesses": 1641852458,
+        "Total misses": 1289348204
       },
       "max": 3000000000
     },
@@ -583,8 +583,8 @@
       "CCX": "CCX12",
       "titolo": "CCX-12 [fltr-fltr-fltr-fltr]",
       "dati": {
-        "Accessi totali": 2921965027,
-        "Miss totali": 1725373702
+        "Total accesses": 2921965027,
+        "Total misses": 1725373702
       },
       "max": 3000000000
     },
@@ -595,8 +595,8 @@
       "CCX": "CCX13",
       "titolo": "CCX-13 [fltr-fltr-fltr-fltr]",
       "dati": {
-        "Accessi totali": 2853033264,
-        "Miss totali": 1694018484
+        "Total accesses": 2853033264,
+        "Total misses": 1694018484
       },
       "max": 3000000000
     },
@@ -607,8 +607,8 @@
       "CCX": "CCX14",
       "titolo": "CCX-14 [snk-snk-snk-snk]",
       "dati": {
-        "Accessi totali": 83924056,
-        "Miss totali": 59983625
+        "Total accesses": 83924056,
+        "Total misses": 59983625
       },
       "max": 3000000000
     },
@@ -619,8 +619,8 @@
       "CCX": "CCX15",
       "titolo": "CCX-15 [snk-snk-snk-snk]",
       "dati": {
-        "Accessi totali": 85647425,
-        "Miss totali": 61024423
+        "Total accesses": 85647425,
+        "Total misses": 61024423
       },
       "max": 3000000000
     },
@@ -631,8 +631,8 @@
       "CCX": "CCX8",
       "titolo": "CCX-8 [src-map-fltr-sink]",
       "dati": {
-        "Accessi totali": 1153137245,
-        "Miss totali": 672790850
+        "Total accesses": 1153137245,
+        "Total misses": 672790850
       },
       "max": 3000000000
     },
@@ -643,8 +643,8 @@
       "CCX": "CCX9",
       "titolo": "CCX-9 [src-map-fltr-sink]",
       "dati": {
-        "Accessi totali": 1186480995,
-        "Miss totali": 691914080
+        "Total accesses": 1186480995,
+        "Total misses": 691914080
       },
       "max": 3000000000
     },
@@ -655,8 +655,8 @@
       "CCX": "CCX10",
       "titolo": "CCX-10 [src-map-fltr-sink]",
       "dati": {
-        "Accessi totali": 1293189804,
-        "Miss totali": 735106433
+        "Total accesses": 1293189804,
+        "Total misses": 735106433
       },
       "max": 3000000000
     },
@@ -667,8 +667,8 @@
       "CCX": "CCX11",
       "titolo": "CCX-11 [src-map-fltr-sink]",
       "dati": {
-        "Accessi totali": 1241825742,
-        "Miss totali": 713415080
+        "Total accesses": 1241825742,
+        "Total misses": 713415080
       },
       "max": 3000000000
     },
@@ -679,8 +679,8 @@
       "CCX": "CCX12",
       "titolo": "CCX-12 [src-map-fltr-sink]",
       "dati": {
-        "Accessi totali": 1089647244,
-        "Miss totali": 646359742
+        "Total accesses": 1089647244,
+        "Total misses": 646359742
       },
       "max": 3000000000
     },
@@ -691,8 +691,8 @@
       "CCX": "CCX13",
       "titolo": "CCX-13 [src-map-fltr-sink]",
       "dati": {
-        "Accessi totali": 1209818750,
-        "Miss totali": 703997031
+        "Total accesses": 1209818750,
+        "Total misses": 703997031
       },
       "max": 3000000000
     },
@@ -703,8 +703,8 @@
       "CCX": "CCX14",
       "titolo": "CCX-14 [src-map-fltr-sink]",
       "dati": {
-        "Accessi totali": 1245086688,
-        "Miss totali": 713410802
+        "Total accesses": 1245086688,
+        "Total misses": 713410802
       },
       "max": 3000000000
     },
@@ -715,8 +715,8 @@
       "CCX": "CCX15",
       "titolo": "CCX-15 [src-map-fltr-sink]",
       "dati": {
-        "Accessi totali": 1240149342,
-        "Miss totali": 711952910
+        "Total accesses": 1240149342,
+        "Total misses": 711952910
       },
       "max": 3000000000
     },
@@ -727,8 +727,8 @@
       "CCX": "CCX8",
       "titolo": "CCX-8 [src-sink-src-sink]",
       "dati": {
-        "Accessi totali": 1590011112,
-        "Miss totali": 1118227687
+        "Total accesses": 1590011112,
+        "Total misses": 1118227687
       },
       "max": 4000000000
     },
@@ -739,8 +739,8 @@
       "CCX": "CCX9",
       "titolo": "CCX-9 [src-sink-src-sink]",
       "dati": {
-        "Accessi totali": 1595187082,
-        "Miss totali": 1090032356
+        "Total accesses": 1595187082,
+        "Total misses": 1090032356
       },
       "max": 4000000000
     },
@@ -751,8 +751,8 @@
       "CCX": "CCX10",
       "titolo": "CCX-10 [src-sink-src-sink]",
       "dati": {
-        "Accessi totali": 1551134540,
-        "Miss totali": 1344672127
+        "Total accesses": 1551134540,
+        "Total misses": 1344672127
       },
       "max": 4000000000
     },
@@ -763,8 +763,8 @@
       "CCX": "CCX11",
       "titolo": "CCX-11 [src-sink-src-sink]",
       "dati": {
-        "Accessi totali": 1581286372,
-        "Miss totali": 1339391817
+        "Total accesses": 1581286372,
+        "Total misses": 1339391817
       },
       "max": 4000000000
     },
@@ -775,8 +775,8 @@
       "CCX": "CCX12",
       "titolo": "CCX-12 [map-filter-map-filter]",
       "dati": {
-        "Accessi totali": 3405748323,
-        "Miss totali": 1449914572
+        "Total accesses": 3405748323,
+        "Total misses": 1449914572
       },
       "max": 4000000000
     },
@@ -787,8 +787,8 @@
       "CCX": "CCX13",
       "titolo": "CCX-13 [map-filter-map-filter]",
       "dati": {
-        "Accessi totali": 3689975311,
-        "Miss totali": 1539530973
+        "Total accesses": 3689975311,
+        "Total misses": 1539530973
       },
       "max": 4000000000
     },
@@ -799,8 +799,8 @@
       "CCX": "CCX14",
       "titolo": "CCX-14 [map-filter-map-filter]",
       "dati": {
-        "Accessi totali": 3714332347,
-        "Miss totali": 1906488300
+        "Total accesses": 3714332347,
+        "Total misses": 1906488300
       },
       "max": 4000000000
     },
@@ -811,8 +811,8 @@
       "CCX": "CCX15",
       "titolo": "CCX-15 [map-filter-map-filter]",
       "dati": {
-        "Accessi totali": 3713940014,
-        "Miss totali": 1558329360
+        "Total accesses": 3713940014,
+        "Total misses": 1558329360
       },
       "max": 4000000000
     },
@@ -823,8 +823,8 @@
       "CCX": "CCX8",
       "titolo": "CCX-8 [src-src-src-src]",
       "dati": {
-        "Accessi totali": 1919253036,
-        "Miss totali": 1696245222
+        "Total accesses": 1919253036,
+        "Total misses": 1696245222
       },
       "max": 4000000000
     },
@@ -835,8 +835,8 @@
       "CCX": "CCX9",
       "titolo": "CCX-9 [src-src-src-src]",
       "dati": {
-        "Accessi totali": 1921125884,
-        "Miss totali": 1704193058
+        "Total accesses": 1921125884,
+        "Total misses": 1704193058
       },
       "max": 4000000000
     },
@@ -847,8 +847,8 @@
       "CCX": "CCX10",
       "titolo": "CCX-10 [map-map-map-map]",
       "dati": {
-        "Accessi totali": 3127703803,
-        "Miss totali": 2259255135
+        "Total accesses": 3127703803,
+        "Total misses": 2259255135
       },
       "max": 4000000000
     },
@@ -859,8 +859,8 @@
       "CCX": "CCX11",
       "titolo": "CCX-11 [map-map-map-map]",
       "dati": {
-        "Accessi totali": 3116357849,
-        "Miss totali": 2259350610
+        "Total accesses": 3116357849,
+        "Total misses": 2259350610
       },
       "max": 4000000000
     },
@@ -871,8 +871,8 @@
       "CCX": "CCX12",
       "titolo": "CCX-12 [fltr-fltr-fltr-fltr]",
       "dati": {
-        "Accessi totali": 981555628,
-        "Miss totali": 881281020
+        "Total accesses": 981555628,
+        "Total misses": 881281020
       },
       "max": 4000000000
     },
@@ -883,8 +883,8 @@
       "CCX": "CCX13",
       "titolo": "CCX-13 [fltr-fltr-fltr-fltr]",
       "dati": {
-        "Accessi totali": 842341240,
-        "Miss totali": 804502167
+        "Total accesses": 842341240,
+        "Total misses": 804502167
       },
       "max": 4000000000
     },
@@ -895,8 +895,8 @@
       "CCX": "CCX14",
       "titolo": "CCX-14 [snk-snk-snk-snk]",
       "dati": {
-        "Accessi totali": 22519265,
-        "Miss totali": 15999035
+        "Total accesses": 22519265,
+        "Total misses": 15999035
       },
       "max": 4000000000
     },
@@ -907,8 +907,8 @@
       "CCX": "CCX15",
       "titolo": "CCX-15 [snk-snk-snk-snk]",
       "dati": {
-        "Accessi totali": 27377334,
-        "Miss totali": 18508107
+        "Total accesses": 27377334,
+        "Total misses": 18508107
       },
       "max": 4000000000
     },
@@ -919,8 +919,8 @@
       "CCX": "CCX2",
       "titolo": "CCX-2 [src-src-snk-snk]",
       "dati": {
-        "Accessi totali": 1372104021,
-        "Miss totali": 1253576632
+        "Total accesses": 1372104021,
+        "Total misses": 1253576632
       },
       "max": 7000000000
     },
@@ -931,8 +931,8 @@
       "CCX": "CCX3",
       "titolo": "CCX-3 [fltm-fltm-rdc-rdc]",
       "dati": {
-        "Accessi totali": 6739482172,
-        "Miss totali": 2626348951
+        "Total accesses": 6739482172,
+        "Total misses": 2626348951
       },
       "max": 7000000000
     },
@@ -943,8 +943,8 @@
       "CCX": "CCX2",
       "titolo": "CCX-2 [src-rdc-src-rdc]",
       "dati": {
-        "Accessi totali": 3675712374,
-        "Miss totali": 1825581860
+        "Total accesses": 3675712374,
+        "Total misses": 1825581860
       },
       "max": 7000000000
     },
@@ -955,8 +955,8 @@
       "CCX": "CCX3",
       "titolo": "CCX-3 [fltm-snk-fltm-snk]",
       "dati": {
-        "Accessi totali": 3289491294,
-        "Miss totali": 2020012340
+        "Total accesses": 3289491294,
+        "Total misses": 2020012340
       },
       "max": 7000000000
     },
@@ -967,8 +967,8 @@
       "CCX": "CCX2",
       "titolo": "CCX-2 [src-src-rdc-rdc]",
       "dati": {
-        "Accessi totali": 101808896,
-        "Miss totali": 56862959
+        "Total accesses": 101808896,
+        "Total misses": 56862959
       },
       "max": 5000000000
     },
@@ -979,8 +979,8 @@
       "CCX": "CCX3",
       "titolo": "CCX-3 [fltm-fltm-snk-snk]",
       "dati": {
-        "Accessi totali": 87575004,
-        "Miss totali": 59532327
+        "Total accesses": 87575004,
+        "Total misses": 59532327
       },
       "max": 5000000000
     },
@@ -991,8 +991,8 @@
       "CCX": "CCX2",
       "titolo": "CCX-2 [src-src-fltm-fltm]",
       "dati": {
-        "Accessi totali": 1715864049,
-        "Miss totali": 1103418224
+        "Total accesses": 1715864049,
+        "Total misses": 1103418224
       },
       "max": 5000000000
     },
@@ -1003,8 +1003,8 @@
       "CCX": "CCX3",
       "titolo": "CCX-3 [rdc-rdc-snk-snk]",
       "dati": {
-        "Accessi totali": 4846650004,
-        "Miss totali": 1338944096
+        "Total accesses": 4846650004,
+        "Total misses": 1338944096
       },
       "max": 5000000000
     },
@@ -1015,8 +1015,8 @@
       "CCX": "CCX10",
       "titolo": "CCX-10 [src-rdc-src-rdc]",
       "dati": {
-        "Accessi totali": 1528377383,
-        "Miss totali": 1241525582
+        "Total accesses": 1528377383,
+        "Total misses": 1241525582
       },
       "max": 6000000000
     },
@@ -1027,8 +1027,8 @@
       "CCX": "CCX11",
       "titolo": "CCX-11 [fltm-snk-fltm-snk]",
       "dati": {
-        "Accessi totali": 5978039545,
-        "Miss totali": 3312271305
+        "Total accesses": 5978039545,
+        "Total misses": 3312271305
       },
       "max": 6000000000
     },
@@ -1039,8 +1039,8 @@
       "CCX": "CCX10",
       "titolo": "CCX-10 [src-fltm-rdc-snk]",
       "dati": {
-        "Accessi totali": 3507085205,
-        "Miss totali": 881315163
+        "Total accesses": 3507085205,
+        "Total misses": 881315163
       },
       "max": 6000000000
     },
@@ -1051,8 +1051,8 @@
       "CCX": "CCX11",
       "titolo": "CCX-11 [src-fltm-rdc-snk]",
       "dati": {
-        "Accessi totali": 3513987292,
-        "Miss totali": 897085498
+        "Total accesses": 3513987292,
+        "Total misses": 897085498
       },
       "max": 6000000000
     },
@@ -1063,8 +1063,8 @@
       "CCX": "CCX2",
       "titolo": "CCX-2 [src-rdc-src-rdc]",
       "dati": {
-        "Accessi totali": 2500367330,
-        "Miss totali": 1332511879
+        "Total accesses": 2500367330,
+        "Total misses": 1332511879
       },
       "max": 3000000000
     },
@@ -1075,8 +1075,8 @@
       "CCX": "CCX3",
       "titolo": "CCX-3 [fltm-snk-fltm-snk]",
       "dati": {
-        "Accessi totali": 2295771816,
-        "Miss totali": 1494682773
+        "Total accesses": 2295771816,
+        "Total misses": 1494682773
       },
       "max": 3000000000
     },
@@ -1087,8 +1087,8 @@
       "CCX": "CCX2",
       "titolo": "CCX-2 [src-fltm-src-fltm]",
       "dati": {
-        "Accessi totali": 1957066924,
-        "Miss totali": 955481519
+        "Total accesses": 1957066924,
+        "Total misses": 955481519
       },
       "max": 3000000000
     },
@@ -1099,8 +1099,8 @@
       "CCX": "CCX3",
       "titolo": "CCX-3 [rdc-snk-rdc-snk]",
       "dati": {
-        "Accessi totali": 2846497087,
-        "Miss totali": 908453285
+        "Total accesses": 2846497087,
+        "Total misses": 908453285
       },
       "max": 3000000000
     },
@@ -1111,8 +1111,8 @@
       "CCX": "CCX8",
       "titolo": "CCX-8 [rdc-snk-rdc-snk]",
       "dati": {
-        "Accessi totali": 2900447052,
-        "Miss totali": 1066023483
+        "Total accesses": 2900447052,
+        "Total misses": 1066023483
       },
       "max": 4000000000
     },
@@ -1123,8 +1123,8 @@
       "CCX": "CCX9",
       "titolo": "CCX-9 [rdc-snk-rdc-snk]",
       "dati": {
-        "Accessi totali": 3544606266,
-        "Miss totali": 1138436226
+        "Total accesses": 3544606266,
+        "Total misses": 1138436226
       },
       "max": 4000000000
     },
@@ -1135,8 +1135,8 @@
       "CCX": "CCX10",
       "titolo": "CCX-10 [src-fltm-src-fltm]",
       "dati": {
-        "Accessi totali": 1645382424,
-        "Miss totali": 903291224
+        "Total accesses": 1645382424,
+        "Total misses": 903291224
       },
       "max": 4000000000
     },
@@ -1147,8 +1147,8 @@
       "CCX": "CCX11",
       "titolo": "CCX-11 [src-fltm-src-fltm]",
       "dati": {
-        "Accessi totali": 1716745596,
-        "Miss totali": 845817729
+        "Total accesses": 1716745596,
+        "Total misses": 845817729
       },
       "max": 4000000000
     },
@@ -1159,8 +1159,8 @@
       "CCX": "CCX8",
       "titolo": "CCX-8 [src-map-fltr-snk]",
       "dati": {
-        "Accessi totali": 2480586728,
-        "Miss totali": 1321499749
+        "Total accesses": 2480586728,
+        "Total misses": 1321499749
       },
       "max": 4000000000
     },
@@ -1171,8 +1171,8 @@
       "CCX": "CCX9",
       "titolo": "CCX-9 [src-map-fltr-snk]",
       "dati": {
-        "Accessi totali": 1131691215,
-        "Miss totali": 967207937
+        "Total accesses": 1131691215,
+        "Total misses": 967207937
       },
       "max": 4000000000
     },
@@ -1183,8 +1183,8 @@
       "CCX": "CCX10",
       "titolo": "CCX-10 [src-map-fltr-snk]",
       "dati": {
-        "Accessi totali": 1271367508,
-        "Miss totali": 724173469
+        "Total accesses": 1271367508,
+        "Total misses": 724173469
       },
       "max": 4000000000
     },
@@ -1195,8 +1195,8 @@
       "CCX": "CCX11",
       "titolo": "CCX-11 [src-map-fltr-snk]",
       "dati": {
-        "Accessi totali": 2622213968,
-        "Miss totali": 1318083717
+        "Total accesses": 2622213968,
+        "Total misses": 1318083717
       },
       "max": 4000000000
     },
@@ -1207,8 +1207,8 @@
       "CCX": "CCX8",
       "titolo": "CCX-8 [rdc-snk-rdc-snk]",
       "dati": {
-        "Accessi totali": 1857263082,
-        "Miss totali": 654640782
+        "Total accesses": 1857263082,
+        "Total misses": 654640782
       },
       "max": 3000000000
     },
@@ -1219,8 +1219,8 @@
       "CCX": "CCX9",
       "titolo": "CCX-9 [rdc-snk-rdc-snk]",
       "dati": {
-        "Accessi totali": 2045432127,
-        "Miss totali": 698902795
+        "Total accesses": 2045432127,
+        "Total misses": 698902795
       },
       "max": 3000000000
     },
@@ -1231,8 +1231,8 @@
       "CCX": "CCX10",
       "titolo": "CCX-10 [src-fltm-src-fltm]",
       "dati": {
-        "Accessi totali": 618777268,
-        "Miss totali": 403524735
+        "Total accesses": 618777268,
+        "Total misses": 403524735
       },
       "max": 3000000000
     },
@@ -1243,8 +1243,8 @@
       "CCX": "CCX11",
       "titolo": "CCX-11 [src-fltm-src-fltm]",
       "dati": {
-        "Accessi totali": 684429528,
-        "Miss totali": 428501994
+        "Total accesses": 684429528,
+        "Total misses": 428501994
       },
       "max": 3000000000
     },
@@ -1255,8 +1255,8 @@
       "CCX": "CCX8",
       "titolo": "CCX-8 [src-fltm-rdc-snk]",
       "dati": {
-        "Accessi totali": 1225349194,
-        "Miss totali": 535026155
+        "Total accesses": 1225349194,
+        "Total misses": 535026155
       },
       "max": 3000000000
     },
@@ -1267,8 +1267,8 @@
       "CCX": "CCX9",
       "titolo": "CCX-9 [src-fltm-rdc-snk]",
       "dati": {
-        "Accessi totali": 1508786948,
-        "Miss totali": 614062757
+        "Total accesses": 1508786948,
+        "Total misses": 614062757
       },
       "max": 3000000000
     },
@@ -1279,8 +1279,8 @@
       "CCX": "CCX10",
       "titolo": "CCX-10 [src-fltm-rdc-snk]",
       "dati": {
-        "Accessi totali": 1584012526,
-        "Miss totali": 643901324
+        "Total accesses": 1584012526,
+        "Total misses": 643901324
       },
       "max": 3000000000
     },
@@ -1291,8 +1291,8 @@
       "CCX": "CCX11",
       "titolo": "CCX-11 [src-fltm-rdc-snk]",
       "dati": {
-        "Accessi totali": 1383053030,
-        "Miss totali": 573764094
+        "Total accesses": 1383053030,
+        "Total misses": 573764094
       },
       "max": 3000000000
     },
@@ -1303,8 +1303,8 @@
       "CCX": "CCX8",
       "titolo": "CCX-8 [src-fltm-rdc-src]",
       "dati": {
-        "Accessi totali": 1206772873,
-        "Miss totali": 746292121
+        "Total accesses": 1206772873,
+        "Total misses": 746292121
       },
       "max": 2000000000
     },
@@ -1315,8 +1315,8 @@
       "CCX": "CCX9",
       "titolo": "CCX-9 [rdc-src-fltm-rdc]",
       "dati": {
-        "Accessi totali": 1622115852,
-        "Miss totali": 999358023
+        "Total accesses": 1622115852,
+        "Total misses": 999358023
       },
       "max": 2000000000
     },
@@ -1327,8 +1327,8 @@
       "CCX": "CCX10",
       "titolo": "CCX-10 [rdc-src-fltm-rdc]",
       "dati": {
-        "Accessi totali": 1684891467,
-        "Miss totali": 1049232073
+        "Total accesses": 1684891467,
+        "Total misses": 1049232073
       },
       "max": 2000000000
     },
@@ -1339,8 +1339,8 @@
       "CCX": "CCX11",
       "titolo": "CCX-11 [src-fltm-rdc-src]",
       "dati": {
-        "Accessi totali": 865091177,
-        "Miss totali": 562633701
+        "Total accesses": 865091177,
+        "Total misses": 562633701
       },
       "max": 2000000000
     },
@@ -1351,8 +1351,8 @@
       "CCX": "CCX12",
       "titolo": "CCX-12 [fltm-rdc-src-fltm]",
       "dati": {
-        "Accessi totali": 1670847102,
-        "Miss totali": 1025771141
+        "Total accesses": 1670847102,
+        "Total misses": 1025771141
       },
       "max": 2000000000
     },
@@ -1363,8 +1363,8 @@
       "CCX": "CCX13",
       "titolo": "CCX-13 [rdc-src-fltm-rdc]",
       "dati": {
-        "Accessi totali": 1922823271,
-        "Miss totali": 1160212524
+        "Total accesses": 1922823271,
+        "Total misses": 1160212524
       },
       "max": 2000000000
     },
@@ -1375,8 +1375,8 @@
       "CCX": "CCX14",
       "titolo": "CCX-14 [snk-snk-snk-snk]",
       "dati": {
-        "Accessi totali": 814042485,
-        "Miss totali": 616935812
+        "Total accesses": 814042485,
+        "Total misses": 616935812
       },
       "max": 2000000000
     },
@@ -1387,8 +1387,8 @@
       "CCX": "CCX15",
       "titolo": "CCX-15 [snk-snk-snk-snk]",
       "dati": {
-        "Accessi totali": 760913866,
-        "Miss totali": 581173933
+        "Total accesses": 760913866,
+        "Total misses": 581173933
       },
       "max": 2000000000
     },
@@ -1399,8 +1399,8 @@
       "CCX": "CCX8",
       "titolo": "CCX-8 [src-fltm-rdc-snk]",
       "dati": {
-        "Accessi totali": 1735640824,
-        "Miss totali": 764090326
+        "Total accesses": 1735640824,
+        "Total misses": 764090326
       },
       "max": 2000000000
     },
@@ -1411,8 +1411,8 @@
       "CCX": "CCX9",
       "titolo": "CCX-9 [src-fltm-rdc-snk]",
       "dati": {
-        "Accessi totali": 1982425268,
-        "Miss totali": 807528653
+        "Total accesses": 1982425268,
+        "Total misses": 807528653
       },
       "max": 2000000000
     },
@@ -1423,8 +1423,8 @@
       "CCX": "CCX10",
       "titolo": "CCX-10 [src-fltm-rdc-snk]",
       "dati": {
-        "Accessi totali": 1559934535,
-        "Miss totali": 731962203
+        "Total accesses": 1559934535,
+        "Total misses": 731962203
       },
       "max": 2000000000
     },
@@ -1435,8 +1435,8 @@
       "CCX": "CCX11",
       "titolo": "CCX-11 [src-fltm-rdc-snk]",
       "dati": {
-        "Accessi totali": 1508288281,
-        "Miss totali": 736643029
+        "Total accesses": 1508288281,
+        "Total misses": 736643029
       },
       "max": 2000000000
     },
@@ -1447,8 +1447,8 @@
       "CCX": "CCX12",
       "titolo": "CCX-12 [src-fltm-rdc-snk]",
       "dati": {
-        "Accessi totali": 1070938746,
-        "Miss totali": 581131048
+        "Total accesses": 1070938746,
+        "Total misses": 581131048
       },
       "max": 2000000000
     },
@@ -1459,8 +1459,8 @@
       "CCX": "CCX13",
       "titolo": "CCX-13 [src-fltm-rdc-snk]",
       "dati": {
-        "Accessi totali": 1999208759,
-        "Miss totali": 824316156
+        "Total accesses": 1999208759,
+        "Total misses": 824316156
       },
       "max": 2000000000
     },
@@ -1471,8 +1471,8 @@
       "CCX": "CCX14",
       "titolo": "CCX-14 [src-fltm-rdc-snk]",
       "dati": {
-        "Accessi totali": 1906125009,
-        "Miss totali": 921623094
+        "Total accesses": 1906125009,
+        "Total misses": 921623094
       },
       "max": 2000000000
     },
@@ -1483,8 +1483,8 @@
       "CCX": "CCX15",
       "titolo": "CCX-15 [src-fltm-rdc-snk]",
       "dati": {
-        "Accessi totali": 1423656088,
-        "Miss totali": 707419177
+        "Total accesses": 1423656088,
+        "Total misses": 707419177
       },
       "max": 2000000000
     },
@@ -1495,8 +1495,8 @@
       "CCX": "CCX8",
       "titolo": "CCX-8 [src-rdc-src-rdc]",
       "dati": {
-        "Accessi totali": 2702995166,
-        "Miss totali": 1434085214
+        "Total accesses": 2702995166,
+        "Total misses": 1434085214
       },
       "max": 4000000000
     },
@@ -1507,8 +1507,8 @@
       "CCX": "CCX9",
       "titolo": "CCX-9 [src-rdc-src-rdc]",
       "dati": {
-        "Accessi totali": 2701724127,
-        "Miss totali": 1375945422
+        "Total accesses": 2701724127,
+        "Total misses": 1375945422
       },
       "max": 4000000000
     },
@@ -1519,8 +1519,8 @@
       "CCX": "CCX10",
       "titolo": "CCX-10 [fltm-snk-fltm-snk]",
       "dati": {
-        "Accessi totali": 2213394364,
-        "Miss totali": 1302287361
+        "Total accesses": 2213394364,
+        "Total misses": 1302287361
       },
       "max": 4000000000
     },
@@ -1531,8 +1531,8 @@
       "CCX": "CCX11",
       "titolo": "CCX-11 [fltm-snk-fltm-snk]",
       "dati": {
-        "Accessi totali": 1966842297,
-        "Miss totali": 1236833541
+        "Total accesses": 1966842297,
+        "Total misses": 1236833541
       },
       "max": 4000000000
     },
@@ -1543,8 +1543,8 @@
       "CCX": "CCX12",
       "titolo": "CCX-12 [src-rdc-src-rdc]",
       "dati": {
-        "Accessi totali": 2282419402,
-        "Miss totali": 1202330418
+        "Total accesses": 2282419402,
+        "Total misses": 1202330418
       },
       "max": 4000000000
     },
@@ -1555,8 +1555,8 @@
       "CCX": "CCX13",
       "titolo": "CCX-13 [src-rdc-src-rdc]",
       "dati": {
-        "Accessi totali": 3059877836,
-        "Miss totali": 1602462762
+        "Total accesses": 3059877836,
+        "Total misses": 1602462762
       },
       "max": 4000000000
     },
@@ -1567,8 +1567,8 @@
       "CCX": "CCX14",
       "titolo": "CCX-14 [fltm-snk-fltm-snk]",
       "dati": {
-        "Accessi totali": 2003578810,
-        "Miss totali": 1182272739
+        "Total accesses": 2003578810,
+        "Total misses": 1182272739
       },
       "max": 4000000000
     },
@@ -1579,8 +1579,8 @@
       "CCX": "CCX15",
       "titolo": "CCX-15 [fltm-snk-fltm-snk]",
       "dati": {
-        "Accessi totali": 1898042345,
-        "Miss totali": 1301305687
+        "Total accesses": 1898042345,
+        "Total misses": 1301305687
       },
       "max": 4000000000
     },
@@ -1591,8 +1591,8 @@
       "CCX": "CCX8",
       "titolo": "CCX-8 [src-fltm-rdc-snk]",
       "dati": {
-        "Accessi totali": 2854685247,
-        "Miss totali": 1145497942
+        "Total accesses": 2854685247,
+        "Total misses": 1145497942
       },
       "max": 4000000000
     },
@@ -1603,8 +1603,8 @@
       "CCX": "CCX9",
       "titolo": "CCX-9 [src-fltm-rdc-snk]",
       "dati": {
-        "Accessi totali": 3024744302,
-        "Miss totali": 1035195026
+        "Total accesses": 3024744302,
+        "Total misses": 1035195026
       },
       "max": 4000000000
     },
@@ -1615,8 +1615,8 @@
       "CCX": "CCX10",
       "titolo": "CCX-10 [src-fltm-rdc-snk]",
       "dati": {
-        "Accessi totali": 2742364170,
-        "Miss totali": 1178572298
+        "Total accesses": 2742364170,
+        "Total misses": 1178572298
       },
       "max": 4000000000
     },
@@ -1627,8 +1627,8 @@
       "CCX": "CCX11",
       "titolo": "CCX-11 [src-fltm-rdc-snk]",
       "dati": {
-        "Accessi totali": 2969605906,
-        "Miss totali": 1053873653
+        "Total accesses": 2969605906,
+        "Total misses": 1053873653
       },
       "max": 4000000000
     },
@@ -1639,8 +1639,8 @@
       "CCX": "CCX12",
       "titolo": "CCX-12 [src-fltm-rdc-snk]",
       "dati": {
-        "Accessi totali": 2190495676,
-        "Miss totali": 808331546
+        "Total accesses": 2190495676,
+        "Total misses": 808331546
       },
       "max": 4000000000
     },
@@ -1651,8 +1651,8 @@
       "CCX": "CCX13",
       "titolo": "CCX-13 [src-fltm-rdc-snk]",
       "dati": {
-        "Accessi totali": 3049004695,
-        "Miss totali": 1069389569
+        "Total accesses": 3049004695,
+        "Total misses": 1069389569
       },
       "max": 4000000000
     },
@@ -1663,8 +1663,8 @@
       "CCX": "CCX14",
       "titolo": "CCX-14 [src-fltm-rdc-snk]",
       "dati": {
-        "Accessi totali": 3355884776,
-        "Miss totali": 1438644463
+        "Total accesses": 3355884776,
+        "Total misses": 1438644463
       },
       "max": 4000000000
     },
@@ -1675,8 +1675,8 @@
       "CCX": "CCX15",
       "titolo": "CCX-15 [src-fltm-rdc-snk]",
       "dati": {
-        "Accessi totali": 2618400603,
-        "Miss totali": 1088808229
+        "Total accesses": 2618400603,
+        "Total misses": 1088808229
       },
       "max": 4000000000
     },
@@ -1687,8 +1687,8 @@
       "CCX": "CCX8",
       "titolo": "CCX-8 [src-fltm-src-fltm]",
       "dati": {
-        "Accessi totali": 1072791713,
-        "Miss totali": 521436799
+        "Total accesses": 1072791713,
+        "Total misses": 521436799
       },
       "max": 4000000000
     },
@@ -1699,8 +1699,8 @@
       "CCX": "CCX9",
       "titolo": "CCX-9 [src-fltm-src-fltm]",
       "dati": {
-        "Accessi totali": 1011456199,
-        "Miss totali": 505434439
+        "Total accesses": 1011456199,
+        "Total misses": 505434439
       },
       "max": 4000000000
     },
@@ -1711,8 +1711,8 @@
       "CCX": "CCX10",
       "titolo": "CCX-10 [src-fltm-src-fltm]",
       "dati": {
-        "Accessi totali": 1334573006,
-        "Miss totali": 653663468
+        "Total accesses": 1334573006,
+        "Total misses": 653663468
       },
       "max": 4000000000
     },
@@ -1723,8 +1723,8 @@
       "CCX": "CCX11",
       "titolo": "CCX-11 [src-fltm-src-fltm]",
       "dati": {
-        "Accessi totali": 1327305418,
-        "Miss totali": 679109842
+        "Total accesses": 1327305418,
+        "Total misses": 679109842
       },
       "max": 4000000000
     },
@@ -1735,8 +1735,8 @@
       "CCX": "CCX12",
       "titolo": "CCX-12 [rdc-snk-rdc-snk]",
       "dati": {
-        "Accessi totali": 1850779396,
-        "Miss totali": 	841135493
+        "Total accesses": 1850779396,
+        "Total misses": 	841135493
       },
       "max": 4000000000
     },
@@ -1747,8 +1747,8 @@
       "CCX": "CCX13",
       "titolo": "CCX-13 [rdc-snk-rdc-snk]",
       "dati": {
-        "Accessi totali": 1796563553,
-        "Miss totali": 	814553057
+        "Total accesses": 1796563553,
+        "Total misses": 	814553057
       },
       "max": 4000000000
     },
@@ -1759,8 +1759,8 @@
       "CCX": "CCX14",
       "titolo": "CCX-14 [rdc-snk-rdc-snk]",
       "dati": {
-        "Accessi totali": 1560199375,
-        "Miss totali": 	702602767
+        "Total accesses": 1560199375,
+        "Total misses": 	702602767
       },
       "max": 4000000000
     },
@@ -1771,8 +1771,8 @@
       "CCX": "CCX15",
       "titolo": "CCX-15 [rdc-snk-rdc-snk]",
       "dati": {
-        "Accessi totali": 1913565099,
-        "Miss totali": 	840577777
+        "Total accesses": 1913565099,
+        "Total misses": 	840577777
       },
       "max": 4000000000
     },
@@ -1783,8 +1783,8 @@
       "CCX": "CCX10",
       "titolo": "CCX-10 [src-fltr-src-fltr]",
       "dati": {
-        "Accessi totali": 2108059756,
-        "Miss totali": 	1133882948
+        "Total accesses": 2108059756,
+        "Total misses": 	1133882948
       },
       "max": 3000000000
     },
@@ -1795,8 +1795,8 @@
       "CCX": "CCX11",
       "titolo": "CCX-11 [snk-snk-_-_ ]",
       "dati": {
-        "Accessi totali": 331888872,
-        "Miss totali": 	211662992
+        "Total accesses": 331888872,
+        "Total misses": 	211662992
       },
       "max": 3000000000
     },
@@ -1807,8 +1807,8 @@
       "CCX": "CCX10",
       "titolo": "CCX-10 [src-snk-src-snk]",
       "dati": {
-        "Accessi totali": 1287509631,
-        "Miss totali": 	761354951
+        "Total accesses": 1287509631,
+        "Total misses": 	761354951
       },
       "max": 3000000000
     },
@@ -1819,8 +1819,8 @@
       "CCX": "CCX11",
       "titolo": "CCX-11 [fltr-fltr-_-_ ]",
       "dati": {
-        "Accessi totali": 1095786721,
-        "Miss totali": 	747831527
+        "Total accesses": 1095786721,
+        "Total misses": 	747831527
       },
       "max": 3000000000
     },
@@ -1831,8 +1831,8 @@
       "CCX": "CCX2",
       "titolo": "CCX-2 [src-snk-src-snk]",
       "dati": {
-        "Accessi totali": 868340694,
-        "Miss totali": 	409350877
+        "Total accesses": 868340694,
+        "Total misses": 	409350877
       },
       "max": 2000000000
     },
@@ -1843,8 +1843,8 @@
       "CCX": "CCX3",
       "titolo": "CCX-3 [fltr-fltr-_-_ ]",
       "dati": {
-        "Accessi totali": 1543073301,
-        "Miss totali": 	785305481
+        "Total accesses": 1543073301,
+        "Total misses": 	785305481
       },
       "max": 2000000000
     },
@@ -1855,8 +1855,8 @@
       "CCX": "CCX2",
       "titolo": "CCX-2 [src-fltr-sink-_ ]",
       "dati": {
-        "Accessi totali": 1049925789,
-        "Miss totali": 	467664732
+        "Total accesses": 1049925789,
+        "Total misses": 	467664732
       },
       "max": 2000000000
     },
@@ -1867,8 +1867,8 @@
       "CCX": "CCX3",
       "titolo": "CCX-3 [src-fltr-sink-_ ]",
       "dati": {
-        "Accessi totali": 1059959346,
-        "Miss totali": 	459681858
+        "Total accesses": 1059959346,
+        "Total misses": 	459681858
       },
       "max": 2000000000
     },
@@ -1879,8 +1879,8 @@
       "CCX": "CCX2",
       "titolo": "CCX-2 [src-src-_-_]",
       "dati": {
-        "Accessi totali": 549101358,
-        "Miss totali": 353328787
+        "Total accesses": 549101358,
+        "Total misses": 353328787
       },
       "max": 2000000000
     },
@@ -1891,8 +1891,8 @@
       "CCX": "CCX3",
       "titolo": "CCX-3 [fltr-snk-fltr-snk]",
       "dati": {
-        "Accessi totali": 1090972191,
-        "Miss totali": 732415453
+        "Total accesses": 1090972191,
+        "Total misses": 732415453
       },
       "max": 2000000000
     },
@@ -1903,8 +1903,8 @@
       "CCX": "CCX2",
       "titolo": "CCX-2 [src-snk-src-snk]",
       "dati": {
-        "Accessi totali": 639288317,
-        "Miss totali": 308526161
+        "Total accesses": 639288317,
+        "Total misses": 308526161
       },
       "max": 2000000000
     },
@@ -1915,8 +1915,8 @@
       "CCX": "CCX3",
       "titolo": "CCX-3 [fltr-fltr-_-_ ]",
       "dati": {
-        "Accessi totali": 1065223617,
-        "Miss totali": 706923899
+        "Total accesses": 1065223617,
+        "Total misses": 706923899
       },
       "max": 2000000000
     },
@@ -1927,8 +1927,8 @@
       "CCX": "CCX8",
       "titolo": "CCX-8 [src-src-src-src]",
       "dati": {
-        "Accessi totali": 1630861782,
-        "Miss totali": 1289515836
+        "Total accesses": 1630861782,
+        "Total misses": 1289515836
       },
       "max": 3000000000
     },
@@ -1939,8 +1939,8 @@
       "CCX": "CCX9",
       "titolo": "CCX-9 [_-_-_-_]",
       "dati": {
-        "Accessi totali": 2733345,
-        "Miss totali": 959249
+        "Total accesses": 2733345,
+        "Total misses": 959249
       },
       "max": 3000000000
     },
@@ -1951,8 +1951,8 @@
       "CCX": "CCX10",
       "titolo": "CCX-10 [fltr-fltr-fltr-fltr]",
       "dati": {
-        "Accessi totali": 1531221496,
-        "Miss totali": 967094484
+        "Total accesses": 1531221496,
+        "Total misses": 967094484
       },
       "max": 3000000000
     },
@@ -1963,8 +1963,8 @@
       "CCX": "CCX11",
       "titolo": "CCX-11 [snk-snk-snk-snk]",
       "dati": {
-        "Accessi totali": 608401862,
-        "Miss totali": 413853334
+        "Total accesses": 608401862,
+        "Total misses": 413853334
       },
       "max": 3000000000
     },
@@ -1975,8 +1975,8 @@
       "CCX": "CCX8",
       "titolo": "CCX-8 [snk-snk-snk-snk]",
       "dati": {
-        "Accessi totali": 639115242,
-        "Miss totali": 442590635
+        "Total accesses": 639115242,
+        "Total misses": 442590635
       },
       "max": 3000000000
     },
@@ -1987,8 +1987,8 @@
       "CCX": "CCX9",
       "titolo": "CCX-9 [ _-_-_-_ ]",
       "dati": {
-        "Accessi totali": 2497107,
-        "Miss totali": 815961
+        "Total accesses": 2497107,
+        "Total misses": 815961
       },
       "max": 3000000000
     },
@@ -1999,8 +1999,8 @@
       "CCX": "CCX10",
       "titolo": "CCX-10 [src-fltr-src-fltr]",
       "dati": {
-        "Accessi totali": 1757662925,
-        "Miss totali": 1397101082
+        "Total accesses": 1757662925,
+        "Total misses": 1397101082
       },
       "max": 3000000000
     },
@@ -2011,8 +2011,8 @@
       "CCX": "CCX11",
       "titolo": "CCX-11 [src-fltr-src-fltr]",
       "dati": {
-        "Accessi totali": 1849872921,
-        "Miss totali": 1182462185
+        "Total accesses": 1849872921,
+        "Total misses": 1182462185
       },
       "max": 3000000000
     },
@@ -2023,8 +2023,8 @@
       "CCX": "CCX8",
       "titolo": "CCX-8 [snk-snk-snk-snk]",
       "dati": {
-        "Accessi totali": 1018491421,
-        "Miss totali": 836263957
+        "Total accesses": 1018491421,
+        "Total misses": 836263957
       },
       "max": 3000000000
     },
@@ -2035,8 +2035,8 @@
       "CCX": "CCX9",
       "titolo": "CCX-9 [ _-_-_-_ ]",
       "dati": {
-        "Accessi totali": 5297371,
-        "Miss totali": 1262542
+        "Total accesses": 5297371,
+        "Total misses": 1262542
       },
       "max": 3000000000
     },
@@ -2047,8 +2047,8 @@
       "CCX": "CCX10",
       "titolo": "CCX-10 [src-fltr-src-fltr]",
       "dati": {
-        "Accessi totali": 2003904549,
-        "Miss totali": 1373378070
+        "Total accesses": 2003904549,
+        "Total misses": 1373378070
       },
       "max": 3000000000
     },
@@ -2059,8 +2059,8 @@
       "CCX": "CCX11",
       "titolo": "CCX-11 [src-fltr-src-fltr]",
       "dati": {
-        "Accessi totali": 266239202,
-        "Miss totali": 180888650
+        "Total accesses": 266239202,
+        "Total misses": 180888650
       },
       "max": 3000000000
     },
@@ -2071,8 +2071,8 @@
       "CCX": "CCX8",
       "titolo": "CCX-8 [src-src-src-src]",
       "dati": {
-        "Accessi totali": 257164223,
-        "Miss totali": 177916300
+        "Total accesses": 257164223,
+        "Total misses": 177916300
       },
       "max": 3000000000
     },
@@ -2083,8 +2083,8 @@
       "CCX": "CCX9",
       "titolo": "CCX-9 [ _-_-_-_ ]",
       "dati": {
-        "Accessi totali": 711522,
-        "Miss totali": 355719
+        "Total accesses": 711522,
+        "Total misses": 355719
       },
       "max": 3000000000
     },
@@ -2095,8 +2095,8 @@
       "CCX": "CCX10",
       "titolo": "CCX-10 [fltr-fltr-fltr-fltr]",
       "dati": {
-        "Accessi totali": 1742282685,
-        "Miss totali": 1041543118
+        "Total accesses": 1742282685,
+        "Total misses": 1041543118
       },
       "max": 3000000000
     },
@@ -2107,8 +2107,8 @@
       "CCX": "CCX11",
       "titolo": "CCX-11 [snk-snk-snk-snk]",
       "dati": {
-        "Accessi totali": 1345445708,
-        "Miss totali": 1012404790
+        "Total accesses": 1345445708,
+        "Total misses": 1012404790
       },
       "max": 3000000000
     },
@@ -2119,8 +2119,8 @@
       "CCX": "CCX8",
       "titolo": "CCX-8 [snk-snk-snk-snk]",
       "dati": {
-        "Accessi totali": 150951162,
-        "Miss totali": 99340856
+        "Total accesses": 150951162,
+        "Total misses": 99340856
       },
       "max": 2000000000
     },
@@ -2131,8 +2131,8 @@
       "CCX": "CCX9",
       "titolo": "CCX-9 [ _-_-_-_ ]",
       "dati": {
-        "Accessi totali": 866623,
-        "Miss totali": 555238
+        "Total accesses": 866623,
+        "Total misses": 555238
       },
       "max": 2000000000
     },
@@ -2143,8 +2143,8 @@
       "CCX": "CCX10",
       "titolo": "CCX-10 [src-src-src-src]",
       "dati": {
-        "Accessi totali": 729982305,
-        "Miss totali": 453540746
+        "Total accesses": 729982305,
+        "Total misses": 453540746
       },
       "max": 2000000000
     },
@@ -2155,8 +2155,8 @@
       "CCX": "CCX11",
       "titolo": "CCX-11 [fltr-fltr-fltr-fltr]",
       "dati": {
-        "Accessi totali": 1213407132,
-        "Miss totali": 763400143
+        "Total accesses": 1213407132,
+        "Total misses": 763400143
       },
       "max": 2000000000
     },
@@ -2167,8 +2167,8 @@
       "CCX": "CCX8",
       "titolo": "CCX-8 [src-src-src-src]",
       "dati": {
-        "Accessi totali": 699159001,
-        "Miss totali": 440520928
+        "Total accesses": 699159001,
+        "Total misses": 440520928
       },
       "max": 2000000000
     },
@@ -2179,8 +2179,8 @@
       "CCX": "CCX9",
       "titolo": "CCX-9 [ _-_-_-_ ]",
       "dati": {
-        "Accessi totali": 298062,
-        "Miss totali": 204.995
+        "Total accesses": 298062,
+        "Total misses": 204.995
       },
       "max": 2000000000
     },
@@ -2191,8 +2191,8 @@
       "CCX": "CCX10",
       "titolo": "CCX-10 [fltr-fltr-fltr-fltr]",
       "dati": {
-        "Accessi totali": 1291862540,
-        "Miss totali": 805935664
+        "Total accesses": 1291862540,
+        "Total misses": 805935664
       },
       "max": 2000000000
     },
@@ -2203,8 +2203,8 @@
       "CCX": "CCX11",
       "titolo": "CCX-11 [snk-snk-snk-snk]",
       "dati": {
-        "Accessi totali": 166651645,
-        "Miss totali": 103292760
+        "Total accesses": 166651645,
+        "Total misses": 103292760
       },
       "max": 2000000000
     },
@@ -2215,8 +2215,8 @@
       "CCX": "CCX8",
       "titolo": "CCX-8 [src-fltr-snk-src]",
       "dati": {
-        "Accessi totali": 1353155039,
-        "Miss totali": 882070085
+        "Total accesses": 1353155039,
+        "Total misses": 882070085
       },
       "max": 2000000000
     },
@@ -2227,8 +2227,8 @@
       "CCX": "CCX9",
       "titolo": "CCX-9 [fltr-snk-src-fltr]",
       "dati": {
-        "Accessi totali": 1659781075,
-        "Miss totali": 1004289862
+        "Total accesses": 1659781075,
+        "Total misses": 1004289862
       },
       "max": 2000000000
     },
@@ -2239,8 +2239,8 @@
       "CCX": "CCX10",
       "titolo": "CCX-10 [snk-src-fltr-snk]",
       "dati": {
-        "Accessi totali": 1233443148,
-        "Miss totali": 802227141
+        "Total accesses": 1233443148,
+        "Total misses": 802227141
       },
       "max": 2000000000
     },
@@ -2251,8 +2251,8 @@
       "CCX": "CCX11",
       "titolo": "CCX-11 [src-fltr-snk-src]",
       "dati": {
-        "Accessi totali": 1450873786,
-        "Miss totali": 970252450
+        "Total accesses": 1450873786,
+        "Total misses": 970252450
       },
       "max": 2000000000
     },
@@ -2263,8 +2263,8 @@
       "CCX": "CCX12",
       "titolo": "CCX-12 [fltr-snk-src-fltr]",
       "dati": {
-        "Accessi totali": 1701151833,
-        "Miss totali": 1062113679
+        "Total accesses": 1701151833,
+        "Total misses": 1062113679
       },
       "max": 2000000000
     },
@@ -2275,8 +2275,8 @@
       "CCX": "CCX13",
       "titolo": "CCX-13 [snk-src-fltr-snk]",
       "dati": {
-        "Accessi totali": 1214042689,
-        "Miss totali": 752822999
+        "Total accesses": 1214042689,
+        "Total misses": 752822999
       },
       "max": 2000000000
     },
@@ -2287,8 +2287,8 @@
       "CCX": "CCX8",
       "titolo": "CCX-8 [src-src-src-src]",
       "dati": {
-        "Accessi totali": 1515418607,
-        "Miss totali": 1201755544
+        "Total accesses": 1515418607,
+        "Total misses": 1201755544
       },
       "max": 2000000000
     },
@@ -2299,8 +2299,8 @@
       "CCX": "CCX9",
       "titolo": "CCX-9 [src-src-src-src]",
       "dati": {
-        "Accessi totali": 1512904755,
-        "Miss totali": 1200590914
+        "Total accesses": 1512904755,
+        "Total misses": 1200590914
       },
       "max": 2000000000
     },
@@ -2311,8 +2311,8 @@
       "CCX": "CCX10",
       "titolo": "CCX-10 [fltr-fltr-fltr-fltr]",
       "dati": {
-        "Accessi totali": 1764038191,
-        "Miss totali": 1024527810
+        "Total accesses": 1764038191,
+        "Total misses": 1024527810
       },
       "max": 2000000000
     },
@@ -2323,8 +2323,8 @@
       "CCX": "CCX11",
       "titolo": "CCX-11 [fltr-fltr-fltr-fltr]",
       "dati": {
-        "Accessi totali": 1871019603,
-        "Miss totali": 1095440348
+        "Total accesses": 1871019603,
+        "Total misses": 1095440348
       },
       "max": 2000000000
     },
@@ -2335,8 +2335,8 @@
       "CCX": "CCX12",
       "titolo": "CCX-12 [snk-snk-snk-snk]",
       "dati": {
-        "Accessi totali": 600525906,
-        "Miss totali": 429774706
+        "Total accesses": 600525906,
+        "Total misses": 429774706
       },
       "max": 2000000000
     },
@@ -2347,8 +2347,8 @@
       "CCX": "CCX13",
       "titolo": "CCX-13 [snk-snk-snk-snk]",
       "dati": {
-        "Accessi totali": 594285467,
-        "Miss totali": 427735835
+        "Total accesses": 594285467,
+        "Total misses": 427735835
       },
       "max": 2000000000
     },
@@ -2359,8 +2359,8 @@
       "CCX": "CCX8",
       "titolo": "CCX-8 [src-fltr-src-fltr]",
       "dati": {
-        "Accessi totali": 1210931605,
-        "Miss totali": 668481148
+        "Total accesses": 1210931605,
+        "Total misses": 668481148
       },
       "max": 2000000000
     },
@@ -2371,8 +2371,8 @@
       "CCX": "CCX9",
       "titolo": "CCX-9 [src-fltr-src-fltr]",
       "dati": {
-        "Accessi totali": 1231325389,
-        "Miss totali": 699376100
+        "Total accesses": 1231325389,
+        "Total misses": 699376100
       },
       "max": 2000000000
     },
@@ -2383,8 +2383,8 @@
       "CCX": "CCX10",
       "titolo": "CCX-10 [src-fltr-src-fltr]",
       "dati": {
-        "Accessi totali": 1252513177,
-        "Miss totali": 673686143
+        "Total accesses": 1252513177,
+        "Total misses": 673686143
       },
       "max": 2000000000
     },
@@ -2395,8 +2395,8 @@
       "CCX": "CCX11",
       "titolo": "CCX-11 [src-fltr-src-fltr]",
       "dati": {
-        "Accessi totali": 1247331547,
-        "Miss totali": 699206486
+        "Total accesses": 1247331547,
+        "Total misses": 699206486
       },
       "max": 2000000000
     },
@@ -2407,8 +2407,8 @@
       "CCX": "CCX12",
       "titolo": "CCX-12 [snk-snk-snk-snk]",
       "dati": {
-        "Accessi totali": 355347846,
-        "Miss totali": 235885389
+        "Total accesses": 355347846,
+        "Total misses": 235885389
       },
       "max": 2000000000
     },
@@ -2419,8 +2419,8 @@
       "CCX": "CCX13",
       "titolo": "CCX-13 [snk-snk-snk-snk]",
       "dati": {
-        "Accessi totali": 323468878,
-        "Miss totali": 227055580
+        "Total accesses": 323468878,
+        "Total misses": 227055580
       },
       "max": 2000000000
     },
@@ -2431,8 +2431,8 @@
       "CCX": "CCX8",
       "titolo": "CCX-8 [src-fltr-snk-src]",
       "dati": {
-        "Accessi totali": 950232941,
-        "Miss totali": 514935412
+        "Total accesses": 950232941,
+        "Total misses": 514935412
       },
       "max": 2000000000
     },
@@ -2443,8 +2443,8 @@
       "CCX": "CCX9",
       "titolo": "CCX-9 [fltr-snk-src-fltr]",
       "dati": {
-        "Accessi totali": 1018088420,
-        "Miss totali": 585439901
+        "Total accesses": 1018088420,
+        "Total misses": 585439901
       },
       "max": 2000000000
     },
@@ -2455,8 +2455,8 @@
       "CCX": "CCX10",
       "titolo": "CCX-10 [snk-src-fltr-snk]",
       "dati": {
-        "Accessi totali": 793684218,
-        "Miss totali": 449426511
+        "Total accesses": 793684218,
+        "Total misses": 449426511
       },
       "max": 2000000000
     },
@@ -2467,8 +2467,8 @@
       "CCX": "CCX11",
       "titolo": "CCX-11 [src-fltr-snk-src]",
       "dati": {
-        "Accessi totali": 972782922,
-        "Miss totali": 536951325
+        "Total accesses": 972782922,
+        "Total misses": 536951325
       },
       "max": 2000000000
     },
@@ -2479,8 +2479,8 @@
       "CCX": "CCX12",
       "titolo": "CCX-12 [fltr-snk-src-fltr]",
       "dati": {
-        "Accessi totali": 1015449568,
-        "Miss totali": 559612266
+        "Total accesses": 1015449568,
+        "Total misses": 559612266
       },
       "max": 2000000000
     },
@@ -2491,8 +2491,8 @@
       "CCX": "CCX13",
       "titolo": "CCX-13 [snk-src-fltr-snk]",
       "dati": {
-        "Accessi totali": 754456960,
-        "Miss totali": 427717758
+        "Total accesses": 754456960,
+        "Total misses": 427717758
       },
       "max": 2000000000
     },
@@ -2503,8 +2503,8 @@
       "CCX": "CCX8",
       "titolo": "CCX-8 [src-fltr-src-fltr]",
       "dati": {
-        "Accessi totali": 1444648703,
-        "Miss totali": 1027979144
+        "Total accesses": 1444648703,
+        "Total misses": 1027979144
       },
       "max": 2000000000
     },
@@ -2515,8 +2515,8 @@
       "CCX": "CCX9",
       "titolo": "CCX-9 [src-fltr-src-fltr]",
       "dati": {
-        "Accessi totali": 1683986216,
-        "Miss totali": 1040869010
+        "Total accesses": 1683986216,
+        "Total misses": 1040869010
       },
       "max": 2000000000
     },
@@ -2527,8 +2527,8 @@
       "CCX": "CCX10",
       "titolo": "CCX-10 [src-fltr-src-fltr]",
       "dati": {
-        "Accessi totali": 1338550484,
-        "Miss totali": 970834388
+        "Total accesses": 1338550484,
+        "Total misses": 970834388
       },
       "max": 2000000000
     },
@@ -2539,8 +2539,8 @@
       "CCX": "CCX11",
       "titolo": "CCX-11 [src-fltr-src-fltr]",
       "dati": {
-        "Accessi totali": 1910191644,
-        "Miss totali": 1042034113
+        "Total accesses": 1910191644,
+        "Total misses": 1042034113
       },
       "max": 2000000000
     },
@@ -2551,8 +2551,8 @@
       "CCX": "CCX12",
       "titolo": "CCX-12 [snk-snk-snk-snk]",
       "dati": {
-        "Accessi totali": 420536913,
-        "Miss totali": 309152098
+        "Total accesses": 420536913,
+        "Total misses": 309152098
       },
       "max": 2000000000
     },
@@ -2563,8 +2563,8 @@
       "CCX": "CCX13",
       "titolo": "CCX-13 [snk-snk-snk-snk]",
       "dati": {
-        "Accessi totali": 429121307,
-        "Miss totali": 322128154
+        "Total accesses": 429121307,
+        "Total misses": 322128154
       },
       "max": 2000000000
     },
@@ -2575,8 +2575,8 @@
       "CCX": "CCX8",
       "titolo": "CCX-8 [src-fltr-snk-_ ]",
       "dati": {
-        "Accessi totali": 835509816,
-        "Miss totali": 465319842
+        "Total accesses": 835509816,
+        "Total misses": 465319842
       },
       "max": 2000000000
     },
@@ -2587,8 +2587,8 @@
       "CCX": "CCX9",
       "titolo": "CCX-9 [src-fltr-snk-_ ]",
       "dati": {
-        "Accessi totali": 731889210,
-        "Miss totali": 464487955
+        "Total accesses": 731889210,
+        "Total misses": 464487955
       },
       "max": 2000000000
     },
@@ -2599,8 +2599,8 @@
       "CCX": "CCX10",
       "titolo": "CCX-10 [src-fltr-snk-_ ]",
       "dati": {
-        "Accessi totali": 1069793169,
-        "Miss totali": 488774324
+        "Total accesses": 1069793169,
+        "Total misses": 488774324
       },
       "max": 2000000000
     },
@@ -2611,8 +2611,8 @@
       "CCX": "CCX11",
       "titolo": "CCX-11 [src-fltr-snk-_ ]",
       "dati": {
-        "Accessi totali": 1092202366,
-        "Miss totali": 559146116
+        "Total accesses": 1092202366,
+        "Total misses": 559146116
       },
       "max": 2000000000
     },
@@ -2623,8 +2623,8 @@
       "CCX": "CCX12",
       "titolo": "CCX-12 [src-fltr-snk-_ ]",
       "dati": {
-        "Accessi totali": 768658891,
-        "Miss totali": 463532359
+        "Total accesses": 768658891,
+        "Total misses": 463532359
       },
       "max": 2000000000
     },
@@ -2635,8 +2635,8 @@
       "CCX": "CCX13",
       "titolo": "CCX-13 [src-fltr-snk-_ ]",
       "dati": {
-        "Accessi totali": 666506378,
-        "Miss totali": 444406982
+        "Total accesses": 666506378,
+        "Total misses": 444406982
       },
       "max": 2000000000
     },
@@ -2647,8 +2647,8 @@
       "CCX": "CCX10",
       "titolo": "CCX-10 [src-snk-src-snk]",
       "dati": {
-        "Accessi totali": 62655904,
-        "Miss totali": 11809061
+        "Total accesses": 62655904,
+        "Total misses": 11809061
       },
       "max": 3000000000
     },
@@ -2659,8 +2659,8 @@
       "CCX": "CCX11",
       "titolo": "CCX-11 [fltm-map-fltm-map]",
       "dati": {
-        "Accessi totali": 2503319156,
-        "Miss totali": 27586610
+        "Total accesses": 2503319156,
+        "Total misses": 27586610
       },
       "max": 3000000000
     },
@@ -2671,8 +2671,8 @@
       "CCX": "CCX10",
       "titolo": "CCX-10 [src-map-src-map]",
       "dati": {
-        "Accessi totali": 53364574,
-        "Miss totali": 15169730
+        "Total accesses": 53364574,
+        "Total misses": 15169730
       },
       "max": 3000000000
     },
@@ -2683,8 +2683,8 @@
       "CCX": "CCX11",
       "titolo": "CCX-11 [fltm-snk-fltm-snk]",
       "dati": {
-        "Accessi totali": 2468942127,
-        "Miss totali": 20452878
+        "Total accesses": 2468942127,
+        "Total misses": 20452878
       },
       "max": 3000000000
     },
@@ -2695,8 +2695,8 @@
       "CCX": "CCX10",
       "titolo": "CCX-10 [src-fltm-src-fltm]",
       "dati": {
-        "Accessi totali": 6218788995,
-        "Miss totali": 123495090
+        "Total accesses": 6218788995,
+        "Total misses": 123495090
       },
       "max": 7000000000
     },
@@ -2707,8 +2707,8 @@
       "CCX": "CCX11",
       "titolo": "CCX-11 [map-snk-map-snk]",
       "dati": {
-        "Accessi totali": 119638837,
-        "Miss totali": 21569658
+        "Total accesses": 119638837,
+        "Total misses": 21569658
       },
       "max": 7000000000
     },
@@ -2719,8 +2719,8 @@
       "CCX": "CCX10",
       "titolo": "CCX-10 [src-fltm-map-snk]",
       "dati": {
-        "Accessi totali": 3143412525,
-        "Miss totali": 44638118
+        "Total accesses": 3143412525,
+        "Total misses": 44638118
       },
       "max": 7000000000
     },
@@ -2731,8 +2731,8 @@
       "CCX": "CCX11",
       "titolo": "CCX-11 [src-fltm-map-snk]",
       "dati": {
-        "Accessi totali": 3079665770,
-        "Miss totali": 30298382
+        "Total accesses": 3079665770,
+        "Total misses": 30298382
       },
       "max": 7000000000
     },
@@ -2743,8 +2743,8 @@
       "CCX": "CCX8",
       "titolo": "CCX-8 [src-src-src-src]",
       "dati": {
-        "Accessi totali": 6772005,
-        "Miss totali": 3619097
+        "Total accesses": 6772005,
+        "Total misses": 3619097
       },
       "max": 5000000000
     },
@@ -2755,8 +2755,8 @@
       "CCX": "CCX9",
       "titolo": "CCX-9 [snk-snk-snk-snk]",
       "dati": {
-        "Accessi totali": 2589776,
-        "Miss totali": 1413867
+        "Total accesses": 2589776,
+        "Total misses": 1413867
       },
       "max": 5000000000
     },
@@ -2767,8 +2767,8 @@
       "CCX": "CCX10",
       "titolo": "CCX-10 [fltm-fltm-fltm-fltm]",
       "dati": {
-        "Accessi totali": 4961235716,
-        "Miss totali": 125541606
+        "Total accesses": 4961235716,
+        "Total misses": 125541606
       },
       "max": 5000000000
     },
@@ -2779,8 +2779,8 @@
       "CCX": "CCX11",
       "titolo": "CCX-11 [map-map-map-map]",
       "dati": {
-        "Accessi totali": 23124529,
-        "Miss totali": 7869183
+        "Total accesses": 23124529,
+        "Total misses": 7869183
       },
       "max": 5000000000
     },
@@ -2791,8 +2791,8 @@
       "CCX": "CCX8",
       "titolo": "CCX-8 [src-fltm-map-snk]",
       "dati": {
-        "Accessi totali": 843121945,
-        "Miss totali": 272387508
+        "Total accesses": 843121945,
+        "Total misses": 272387508
       },
       "max": 5000000000
     },
@@ -2803,8 +2803,8 @@
       "CCX": "CCX9",
       "titolo": "CCX-9 [src-fltm-map-snk]",
       "dati": {
-        "Accessi totali": 1215058175,
-        "Miss totali": 12123290
+        "Total accesses": 1215058175,
+        "Total misses": 12123290
       },
       "max": 5000000000
     },
@@ -2815,8 +2815,8 @@
       "CCX": "CCX10",
       "titolo": "CCX-10 [src-fltm-map-snk]",
       "dati": {
-        "Accessi totali": 1209196688,
-        "Miss totali": 19460269
+        "Total accesses": 1209196688,
+        "Total misses": 19460269
       },
       "max": 5000000000
     },
@@ -2827,8 +2827,8 @@
       "CCX": "CCX11",
       "titolo": "CCX-11 [src-fltm-map-snk]",
       "dati": {
-        "Accessi totali": 858674783,
-        "Miss totali": 275724766
+        "Total accesses": 858674783,
+        "Total misses": 275724766
       },
       "max": 5000000000
     },
@@ -2839,8 +2839,8 @@
       "CCX": "CCX8",
       "titolo": "CCX-8 [map-src-fltm-map]",
       "dati": {
-        "Accessi totali": 18360746,
-        "Miss totali": 6493056
+        "Total accesses": 18360746,
+        "Total misses": 6493056
       },
       "max": 7000000000
     },
@@ -2851,8 +2851,8 @@
       "CCX": "CCX9",
       "titolo": "CCX-9 [snk-snk-snk-snk]",
       "dati": {
-        "Accessi totali": 10403865,
-        "Miss totali": 4824660
+        "Total accesses": 10403865,
+        "Total misses": 4824660
       },
       "max": 7000000000
     },
@@ -2863,8 +2863,8 @@
       "CCX": "CCX10",
       "titolo": "CCX-10 [src-fltm-map-src]",
       "dati": {
-        "Accessi totali": 3126724438,
-        "Miss totali": 	1118229020
+        "Total accesses": 3126724438,
+        "Total misses": 	1118229020
       },
       "max": 7000000000
     },
@@ -2875,8 +2875,8 @@
       "CCX": "CCX11",
       "titolo": "CCX-11 [fltm-map-src-fltm]",
       "dati": {
-        "Accessi totali": 6134809594,
-        "Miss totali": 1174587610
+        "Total accesses": 6134809594,
+        "Total misses": 1174587610
       },
       "max": 7000000000
     },
@@ -2887,8 +2887,8 @@
       "CCX": "CCX8",
       "titolo": "CCX-8 [fltm-snk-fltm-snk]",
       "dati": {
-        "Accessi totali": 6044853893,
-        "Miss totali": 46079704
+        "Total accesses": 6044853893,
+        "Total misses": 46079704
       },
       "max": 7000000000
     },
@@ -2899,8 +2899,8 @@
       "CCX": "CCX9",
       "titolo": "CCX-9 [fltm-snk-fltm-snk]",
       "dati": {
-        "Accessi totali": 6082927729,
-        "Miss totali": 63065026
+        "Total accesses": 6082927729,
+        "Total misses": 63065026
       },
       "max": 7000000000
     },
@@ -2911,8 +2911,8 @@
       "CCX": "CCX10",
       "titolo": "CCX-10 [src-map-src-map]",
       "dati": {
-        "Accessi totali": 314029642,
-        "Miss totali": 77521987
+        "Total accesses": 314029642,
+        "Total misses": 77521987
       },
       "max": 7000000000
     },
@@ -2923,8 +2923,8 @@
       "CCX": "CCX11",
       "titolo": "CCX-11 [src-map-src-map]",
       "dati": {
-        "Accessi totali": 204759186,
-        "Miss totali": 49355216
+        "Total accesses": 204759186,
+        "Total misses": 49355216
       },
       "max": 7000000000
     },
@@ -2935,8 +2935,8 @@
       "CCX": "CCX8",
       "titolo": "CCX-8 [src-fltm-map-src]",
       "dati": {
-        "Accessi totali": 591013520,
-        "Miss totali": 252959503
+        "Total accesses": 591013520,
+        "Total misses": 252959503
       },
       "max": 5000000000
     },
@@ -2947,8 +2947,8 @@
       "CCX": "CCX9",
       "titolo": "CCX-9 [fltm-map-src-fltm]",
       "dati": {
-        "Accessi totali": 1163354640,
-        "Miss totali": 496999971
+        "Total accesses": 1163354640,
+        "Total misses": 496999971
       },
       "max": 5000000000
     },
@@ -2959,8 +2959,8 @@
       "CCX": "CCX10",
       "titolo": "CCX-10 [map-src-fltm-map]",
       "dati": {
-        "Accessi totali": 653957340,
-        "Miss totali": 269791757
+        "Total accesses": 653957340,
+        "Total misses": 269791757
       },
       "max": 5000000000
     },
@@ -2971,8 +2971,8 @@
       "CCX": "CCX11",
       "titolo": "CCX-11 [src-fltm-map-src]",
       "dati": {
-        "Accessi totali": 1240981867,
-        "Miss totali": 23018282
+        "Total accesses": 1240981867,
+        "Total misses": 23018282
       },
       "max": 5000000000
     },
@@ -2983,8 +2983,8 @@
       "CCX": "CCX12",
       "titolo": "CCX-12 [fltm-map-src-fltm]",
       "dati": {
-        "Accessi totali": 1173484279,
-        "Miss totali": 497460809
+        "Total accesses": 1173484279,
+        "Total misses": 497460809
       },
       "max": 5000000000
     },
@@ -2995,8 +2995,8 @@
       "CCX": "CCX13",
       "titolo": "CCX-13 [map-src-fltm-map]",
       "dati": {
-        "Accessi totali": 1234193823,
-        "Miss totali": 17348328
+        "Total accesses": 1234193823,
+        "Total misses": 17348328
       },
       "max": 5000000000
     },
@@ -3007,8 +3007,8 @@
       "CCX": "CCX14",
       "titolo": "CCX-14 [snk-snk-snk-snk]",
       "dati": {
-        "Accessi totali": 41674640,
-        "Miss totali": 16886347
+        "Total accesses": 41674640,
+        "Total misses": 16886347
       },
       "max": 5000000000
     },
@@ -3019,8 +3019,8 @@
       "CCX": "CCX15",
       "titolo": "CCX-15 [snk-snk-snk-snk]",
       "dati": {
-        "Accessi totali": 29785896,
-        "Miss totali": 13457915
+        "Total accesses": 29785896,
+        "Total misses": 13457915
       },
       "max": 5000000000
     },
@@ -3031,8 +3031,8 @@
       "CCX": "CCX8",
       "titolo": "CCX-8 [src-src-src-src]",
       "dati": {
-        "Accessi totali": 14138749,
-        "Miss totali": 6161006
+        "Total accesses": 14138749,
+        "Total misses": 6161006
       },
       "max": 5000000000
     },
@@ -3043,8 +3043,8 @@
       "CCX": "CCX9",
       "titolo": "CCX-9 [src-src-src-src]",
       "dati": {
-        "Accessi totali": 25527278,
-        "Miss totali": 8424496
+        "Total accesses": 25527278,
+        "Total misses": 8424496
       },
       "max": 5000000000
     },
@@ -3055,8 +3055,8 @@
       "CCX": "CCX10",
       "titolo": "CCX-10 [fltm-fltm-fltm-fltm]",
       "dati": {
-        "Accessi totali": 4666838300,
-        "Miss totali": 537427459
+        "Total accesses": 4666838300,
+        "Total misses": 537427459
       },
       "max": 5000000000
     },
@@ -3067,8 +3067,8 @@
       "CCX": "CCX11",
       "titolo": "CCX-11 [fltm-fltm-fltm-fltm]",
       "dati": {
-        "Accessi totali": 4620994376,
-        "Miss totali": 581018446
+        "Total accesses": 4620994376,
+        "Total misses": 581018446
       },
       "max": 5000000000
     },
@@ -3079,8 +3079,8 @@
       "CCX": "CCX12",
       "titolo": "CCX-12 [map-map-map-map]",
       "dati": {
-        "Accessi totali": 4840276,
-        "Miss totali": 2224068
+        "Total accesses": 4840276,
+        "Total misses": 2224068
       },
       "max": 5000000000
     },
@@ -3091,8 +3091,8 @@
       "CCX": "CCX13",
       "titolo": "CCX-13 [map-map-map-map]",
       "dati": {
-        "Accessi totali": 23821801,
-        "Miss totali": 8159193
+        "Total accesses": 23821801,
+        "Total misses": 8159193
       },
       "max": 5000000000
     },
@@ -3103,8 +3103,8 @@
       "CCX": "CCX14",
       "titolo": "CCX-14 [snk-snk-snk-snk]",
       "dati": {
-        "Accessi totali": 34241136,
-        "Miss totali": 14489783
+        "Total accesses": 34241136,
+        "Total misses": 14489783
       },
       "max": 5000000000
     },
@@ -3115,8 +3115,8 @@
       "CCX": "CCX15",
       "titolo": "CCX-15 [snk-snk-snk-snk]",
       "dati": {
-        "Accessi totali": 58107525,
-        "Miss totali": 21336127
+        "Total accesses": 58107525,
+        "Total misses": 21336127
       },
       "max": 5000000000
     },
@@ -3127,8 +3127,8 @@
       "CCX": "CCX8",
       "titolo": "CCX-8 [src-fltm-map-snk]",
       "dati": {
-        "Accessi totali": 3079638176,
-        "Miss totali": 30135603
+        "Total accesses": 3079638176,
+        "Total misses": 30135603
       },
       "max": 13000000000
     },
@@ -3139,8 +3139,8 @@
       "CCX": "CCX9",
       "titolo": "CCX-9 [src-fltm-map-snk]",
       "dati": {
-        "Accessi totali": 4278295852,
-        "Miss totali": 1388413923
+        "Total accesses": 4278295852,
+        "Total misses": 1388413923
       },
       "max": 13000000000
     },
@@ -3151,8 +3151,8 @@
       "CCX": "CCX10",
       "titolo": "CCX-10 [src-fltm-map-snk]",
       "dati": {
-        "Accessi totali": 3351300641,
-        "Miss totali": 112910188
+        "Total accesses": 3351300641,
+        "Total misses": 112910188
       },
       "max": 13000000000
     },
@@ -3163,8 +3163,8 @@
       "CCX": "CCX11",
       "titolo": "CCX-11 [src-fltm-map-snk]",
       "dati": {
-        "Accessi totali": 3202972952,
-        "Miss totali": 95614639
+        "Total accesses": 3202972952,
+        "Total misses": 95614639
       },
       "max": 13000000000
     },
@@ -3175,8 +3175,8 @@
       "CCX": "CCX12",
       "titolo": "CCX-12 [src-fltm-map-snk]",
       "dati": {
-        "Accessi totali": 4490345076,
-        "Miss totali": 1486965330
+        "Total accesses": 4490345076,
+        "Total misses": 1486965330
       },
       "max": 13000000000
     },
@@ -3187,8 +3187,8 @@
       "CCX": "CCX13",
       "titolo": "CCX-13 [src-fltm-map-snk]",
       "dati": {
-        "Accessi totali": 4399476377,
-        "Miss totali": 1461104486
+        "Total accesses": 4399476377,
+        "Total misses": 1461104486
       },
       "max": 13000000000
     },
@@ -3199,8 +3199,8 @@
       "CCX": "CCX14",
       "titolo": "CCX-14 [src-fltm-map-snk]",
       "dati": {
-        "Accessi totali": 4347742991,
-        "Miss totali": 1442614690
+        "Total accesses": 4347742991,
+        "Total misses": 1442614690
       },
       "max": 13000000000
     },
@@ -3211,8 +3211,8 @@
       "CCX": "CCX15",
       "titolo": "CCX-15 [src-fltm-map-snk]",
       "dati": {
-        "Accessi totali": 3153293719,
-        "Miss totali": 77254518
+        "Total accesses": 3153293719,
+        "Total misses": 77254518
       },
       "max": 13000000000
     },
@@ -3223,8 +3223,8 @@
       "CCX": "CCX8",
       "titolo": "CCX-8 [src-src-src-src]",
       "dati": {
-        "Accessi totali": 58593730,
-        "Miss totali": 27857053
+        "Total accesses": 58593730,
+        "Total misses": 27857053
       },
       "max": 13000000000
     },
@@ -3235,8 +3235,8 @@
       "CCX": "CCX9",
       "titolo": "CCX-9 [src-src-src-src]",
       "dati": {
-        "Accessi totali": 20954863,
-        "Miss totali": 8749061
+        "Total accesses": 20954863,
+        "Total misses": 8749061
       },
       "max": 13000000000
     },
@@ -3247,8 +3247,8 @@
       "CCX": "CCX10",
       "titolo": "CCX-10 [fltm-fltm-fltm-fltm]",
       "dati": {
-        "Accessi totali": 12298324602,
-        "Miss totali": 259354227
+        "Total accesses": 12298324602,
+        "Total misses": 259354227
       },
       "max": 13000000000
     },
@@ -3259,8 +3259,8 @@
       "CCX": "CCX11",
       "titolo": "CCX-11 [fltm-fltm-fltm-fltm]",
       "dati": {
-        "Accessi totali": 12222455758,
-        "Miss totali": 290371470
+        "Total accesses": 12222455758,
+        "Total misses": 290371470
       },
       "max": 13000000000
     },
@@ -3271,8 +3271,8 @@
       "CCX": "CCX12",
       "titolo": "CCX-12 [map-map-map-map]",
       "dati": {
-        "Accessi totali": 123469142,
-        "Miss totali": 43609648
+        "Total accesses": 123469142,
+        "Total misses": 43609648
       },
       "max": 13000000000
     },
@@ -3283,8 +3283,8 @@
       "CCX": "CCX13",
       "titolo": "CCX-13 [map-map-map-map]",
       "dati": {
-        "Accessi totali": 55197270,
-        "Miss totali": 19958630
+        "Total accesses": 55197270,
+        "Total misses": 19958630
       },
       "max": 13000000000
     },
@@ -3295,8 +3295,8 @@
       "CCX": "CCX14",
       "titolo": "CCX-14 [snk-snk-snk-snk]",
       "dati": {
-        "Accessi totali": 290657140,
-        "Miss totali": 104196302
+        "Total accesses": 290657140,
+        "Total misses": 104196302
       },
       "max": 13000000000
     },
@@ -3307,8 +3307,8 @@
       "CCX": "CCX15",
       "titolo": "CCX-15 [snk-snk-snk-snk]",
       "dati": {
-        "Accessi totali": 121455051,
-        "Miss totali": 46533582
+        "Total accesses": 121455051,
+        "Total misses": 46533582
       },
       "max": 13000000000
     },
@@ -3319,8 +3319,8 @@
       "CCX": "CCX8",
       "titolo": "CCX-8 [src-fltm-map-src]",
       "dati": {
-        "Accessi totali": 656660361,
-        "Miss totali": 266000115
+        "Total accesses": 656660361,
+        "Total misses": 266000115
       },
       "max": 5000000000
     },
@@ -3331,8 +3331,8 @@
       "CCX": "CCX9",
       "titolo": "CCX-9 [fltm-map-src-fltm]",
       "dati": {
-        "Accessi totali": 1852679381,
-        "Miss totali": 271435320
+        "Total accesses": 1852679381,
+        "Total misses": 271435320
       },
       "max": 5000000000
     },
@@ -3343,8 +3343,8 @@
       "CCX": "CCX10",
       "titolo": "CCX-10 [map-src-fltm-map]",
       "dati": {
-        "Accessi totali": 1273498802,
-        "Miss totali": 15480295
+        "Total accesses": 1273498802,
+        "Total misses": 15480295
       },
       "max": 5000000000
     },
@@ -3355,8 +3355,8 @@
       "CCX": "CCX11",
       "titolo": "CCX-11 [src-fltm-map-src]",
       "dati": {
-        "Accessi totali": 776525185,
-        "Miss totali": 227099105
+        "Total accesses": 776525185,
+        "Total misses": 227099105
       },
       "max": 5000000000
     },
@@ -3367,8 +3367,8 @@
       "CCX": "CCX12",
       "titolo": "CCX-12 [fltm-map-src-fltm]",
       "dati": {
-        "Accessi totali": 1339587169,
-        "Miss totali": 474686741
+        "Total accesses": 1339587169,
+        "Total misses": 474686741
       },
       "max": 5000000000
     },
@@ -3379,8 +3379,8 @@
       "CCX": "CCX13",
       "titolo": "CCX-13 [map-src-fltm-map]",
       "dati": {
-        "Accessi totali": 1244370088,
-        "Miss totali": 12704905
+        "Total accesses": 1244370088,
+        "Total misses": 12704905
       },
       "max": 5000000000
     },
@@ -3391,8 +3391,8 @@
       "CCX": "CCX14",
       "titolo": "CCX-14 [snk-snk-snk-snk]",
       "dati": {
-        "Accessi totali": 114364984,
-        "Miss totali": 26734451
+        "Total accesses": 114364984,
+        "Total misses": 26734451
       },
       "max": 5000000000
     },
@@ -3403,8 +3403,8 @@
       "CCX": "CCX15",
       "titolo": "CCX-15 [snk-snk-snk-snk]",
       "dati": {
-        "Accessi totali": 243350816,
-        "Miss totali": 49456712
+        "Total accesses": 243350816,
+        "Total misses": 49456712
       },
       "max": 5000000000
     },
@@ -3415,8 +3415,8 @@
       "CCX": "CCX8",
       "titolo": "CCX-8 [src-src-src-src]",
       "dati": {
-        "Accessi totali": 11023723,
-        "Miss totali": 4468549
+        "Total accesses": 11023723,
+        "Total misses": 4468549
       },
       "max": 5000000000
     },
@@ -3427,8 +3427,8 @@
       "CCX": "CCX9",
       "titolo": "CCX-9 [src-src-src-src]",
       "dati": {
-        "Accessi totali": 4396579,
-        "Miss totali": 2555046
+        "Total accesses": 4396579,
+        "Total misses": 2555046
       },
       "max": 5000000000
     },
@@ -3439,8 +3439,8 @@
       "CCX": "CCX10",
       "titolo": "CCX-10 [fltm-fltm-fltm-fltm]",
       "dati": {
-        "Accessi totali": 4421846315,
-        "Miss totali": 817920960
+        "Total accesses": 4421846315,
+        "Total misses": 817920960
       },
       "max": 5000000000
     },
@@ -3451,8 +3451,8 @@
       "CCX": "CCX11",
       "titolo": "CCX-11 [fltm-fltm-fltm-fltm]",
       "dati": {
-        "Accessi totali": 4462522746,
-        "Miss totali": 855615364
+        "Total accesses": 4462522746,
+        "Total misses": 855615364
       },
       "max": 5000000000
     },
@@ -3463,8 +3463,8 @@
       "CCX": "CCX12",
       "titolo": "CCX-12 [map-map-map-map]",
       "dati": {
-        "Accessi totali": 17300278,
-        "Miss totali": 5279866
+        "Total accesses": 17300278,
+        "Total misses": 5279866
       },
       "max": 5000000000
     },
@@ -3475,8 +3475,8 @@
       "CCX": "CCX13",
       "titolo": "CCX-13 [map-map-map-map]",
       "dati": {
-        "Accessi totali": 7643684,
-        "Miss totali": 3204932
+        "Total accesses": 7643684,
+        "Total misses": 3204932
       },
       "max": 5000000000
     },
@@ -3487,8 +3487,8 @@
       "CCX": "CCX14",
       "titolo": "CCX-14 [snk-snk-snk-snk]",
       "dati": {
-        "Accessi totali": 56117513,
-        "Miss totali": 15534319
+        "Total accesses": 56117513,
+        "Total misses": 15534319
       },
       "max": 5000000000
     },
@@ -3499,8 +3499,8 @@
       "CCX": "CCX15",
       "titolo": "CCX-15 [snk-snk-snk-snk]",
       "dati": {
-        "Accessi totali": 57656858,
-        "Miss totali": 12334948
+        "Total accesses": 57656858,
+        "Total misses": 12334948
       },
       "max": 5000000000
     }

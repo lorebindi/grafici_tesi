@@ -1,0 +1,1024 @@
+{
+  "grafici": [
+    {
+      "applicazione": "SD",
+      "parallelismo": "2,2,2,2",
+      "batch": 0,
+      "coppia_test": 1,
+      "strategia": "Src-Snk grouping",
+      "test": 1,
+      "CCX": "CCX2",
+      "titolo": "CCX2: [src-snk-src-snk]",
+      "dati": {
+        "Total accesses": 4759349124,
+        "Total misses": 1725725882
+      },
+      "max": 9000000000
+    },
+    {
+      "applicazione": "SD",
+      "parallelismo": "2,2,2,2",
+      "batch": 0,
+      "coppia_test": 1,
+      "strategia": "Src-Snk grouping",
+      "test": 1,
+      "CCX": "CCX3",
+      "titolo": "CCX3: [map-fltr-map-fltr]",
+      "dati": {
+        "Total accesses": 8715570168,
+        "Total misses": 2154544739
+      },
+      "max": 9000000000
+    },
+    {
+      "applicazione": "SD",
+      "parallelismo": "2,2,2,2",
+      "batch": 0,
+      "coppia_test": 1,
+      "strategia": "A2A splitting",
+      "test": 2,
+      "CCX": "CCX2",
+      "titolo": "CCX2: [src-fltr-src-fltr]",
+      "dati": {
+        "Total accesses": 8190633521,
+        "Total misses": 3672486688
+      },
+      "max": 9000000000
+    },
+    {
+      "applicazione": "SD",
+      "parallelismo": "2,2,2,2",
+      "batch": 0,
+      "coppia_test": 1,
+      "strategia": "A2A splitting",
+      "test": 2,
+      "CCX": "CCX3",
+      "titolo": "CCX-3 [map-snk-map-snk]",
+      "dati": {
+        "Total accesses": 3427789561,
+        "Total misses": 1892080676
+      },
+      "max": 9000000000
+    },
+    {
+      "applicazione": "SD",
+      "parallelismo": "4,4,4,4",
+      "batch": 0,
+      "coppia_test": 4,
+      "strategia": "Stage grouping",
+      "test": 1,
+      "CCX": "CCX8",
+      "titolo": "CCX-8 [fltr-fltr-fltr-fltr]",
+      "dati": {
+        "Total accesses": 5792600025,
+        "Total misses": 2077050765
+      },
+      "max": 6000000000
+    },
+    {
+      "applicazione": "SD",
+      "parallelismo": "4,4,4,4",
+      "batch": 0,
+      "coppia_test": 4,
+      "strategia": "Stage grouping",
+      "test": 1,
+      "CCX": "CCX9",
+      "titolo": "CCX-9 [snk-snk-snk-snk]",
+      "dati": {
+        "Total accesses": 203782342,
+        "Total misses": 142134532
+      },
+      "max": 6000000000
+    },
+    {
+      "applicazione": "SD",
+      "parallelismo": "4,4,4,4",
+      "batch": 0,
+      "coppia_test": 4,
+      "strategia": "Stage grouping",
+      "test": 1,
+      "CCX": "CCX10",
+      "titolo": "CCX-10 [src-src-src-src]",
+      "dati": {
+        "Total accesses": 3304715158,
+        "Total misses": 1996315085
+      },
+      "max": 6000000000
+    },
+    {
+      "applicazione": "SD",
+      "parallelismo": "4,4,4,4",
+      "batch": 0,
+      "coppia_test": 4,
+      "strategia": "Stage grouping",
+      "test": 1,
+      "CCX": "CCX11",
+      "titolo": "CCX-11 [map-map-map-map]",
+      "dati": {
+        "Total accesses": 2921803794,
+        "Total misses": 1852173414
+      },
+      "max": 6000000000
+    },
+    {
+      "applicazione": "SD",
+      "parallelismo": "4,4,4,4",
+      "batch": 0,
+      "coppia_test": 4,
+      "strategia": "Pipeline grouping",
+      "test": 2,
+      "CCX": "CCX8",
+      "titolo": "CCX-8 [src-map-fltr-snk]",
+      "dati": {
+        "Total accesses": 2806738427,
+        "Total misses": 1951822468
+      },
+      "max": 6000000000
+    },
+    {
+      "applicazione": "SD",
+      "parallelismo": "4,4,4,4",
+      "batch": 0,
+      "coppia_test": 4,
+      "strategia": "Pipeline grouping",
+      "test": 2,
+      "CCX": "CCX9",
+      "titolo": "CCX-9 [src-map-fltr-snk]",
+      "dati": {
+        "Total accesses": 2909595618,
+        "Total misses": 2008868157
+      },
+      "max": 6000000000
+    },
+    {
+      "applicazione": "SD",
+      "parallelismo": "4,4,4,4",
+      "batch": 0,
+      "coppia_test": 4,
+      "strategia": "Pipeline grouping",
+      "test": 2,
+      "CCX": "CCX10",
+      "titolo": "CCX-10 [src-map-fltr-snk]",
+      "dati": {
+        "Total accesses": 3391415770,
+        "Total misses": 2237214759
+      },
+      "max": 6000000000
+    },
+    {
+      "applicazione": "SD",
+      "parallelismo": "4,4,4,4",
+      "batch": 0,
+      "coppia_test": 4,
+      "strategia": "Pipeline grouping",
+      "test": 2,
+      "CCX": "CCX11",
+      "titolo": "CCX-11 [src-map-fltr-snk]",
+      "dati": {
+        "Total accesses": 3190756478,
+        "Total misses":2121409745
+      },
+      "max": 6000000000
+    },
+    {
+      "applicazione": "WC",
+      "parallelismo": "2,2,2,2",
+      "batch": 32,
+      "coppia_test": 3,
+      "strategia": "A2A grouping",
+      "test": 1,
+      "CCX": "CCX10",
+      "titolo": "CCX-10 [src-rdc-src-rdc]",
+      "dati": {
+        "Total accesses": 1528377383,
+        "Total misses": 1241525582
+      },
+      "max": 6000000000
+    },
+    {
+      "applicazione": "WC",
+      "parallelismo": "2,2,2,2",
+      "batch": 32,
+      "coppia_test": 3,
+      "strategia": "A2A grouping",
+      "test": 1,
+      "CCX": "CCX11",
+      "titolo": "CCX-11 [fltm-snk-fltm-snk]",
+      "dati": {
+        "Total accesses": 5978039545,
+        "Total misses": 3312271305
+      },
+      "max": 6000000000
+    },
+    {
+      "applicazione": "WC",
+      "parallelismo": "2,2,2,2",
+      "batch": 32,
+      "coppia_test": 3,
+      "strategia": "Pipeline grouping",
+      "test": 2,
+      "CCX": "CCX10",
+      "titolo": "CCX-10 [src-fltm-rdc-snk]",
+      "dati": {
+        "Total accesses": 3507085205,
+        "Total misses": 881315163
+      },
+      "max": 6000000000
+    },
+    {
+      "applicazione": "WC",
+      "parallelismo": "2,2,2,2",
+      "batch": 32,
+      "coppia_test": 3,
+      "strategia": "Pipeline grouping",
+      "test": 2,
+      "CCX": "CCX11",
+      "titolo": "CCX-11 [src-fltm-rdc-snk]",
+      "dati": {
+        "Total accesses": 3513987292,
+        "Total misses": 897085498
+      },
+      "max": 6000000000
+    },
+    {
+      "applicazione": "WC",
+      "parallelismo": "8,8,8,8",
+      "batch": 0,
+      "coppia_test": 7,
+      "strategia": "Semipipeline grouping",
+      "test": 1,
+      "CCX": "CCX8",
+      "titolo": "CCX-8 [src-fltm-rdc-src]",
+      "dati": {
+        "Total accesses": 1206772873,
+        "Total misses": 746292121
+      },
+      "max": 2000000000
+    },
+    {
+      "applicazione": "WC",
+      "parallelismo": "8,8,8,8",
+      "batch": 0,
+      "coppia_test": 7,
+      "strategia": "Semipipeline grouping",
+      "test": 1,
+      "CCX": "CCX9",
+      "titolo": "CCX-9 [rdc-src-fltm-rdc]",
+      "dati": {
+        "Total accesses": 1622115852,
+        "Total misses": 999358023
+      },
+      "max": 2000000000
+    },
+    {
+      "applicazione": "WC",
+      "parallelismo": "8,8,8,8",
+      "batch": 0,
+      "coppia_test": 7,
+      "strategia": "Semipipeline grouping",
+      "test": 1,
+      "CCX": "CCX10",
+      "titolo": "CCX-10 [rdc-src-fltm-rdc]",
+      "dati": {
+        "Total accesses": 1684891467,
+        "Total misses": 1049232073
+      },
+      "max": 2000000000
+    },
+    {
+      "applicazione": "WC",
+      "parallelismo": "8,8,8,8",
+      "batch": 0,
+      "coppia_test": 7,
+      "strategia": "Semipipeline grouping",
+      "test": 1,
+      "CCX": "CCX11",
+      "titolo": "CCX-11 [src-fltm-rdc-src]",
+      "dati": {
+        "Total accesses": 865091177,
+        "Total misses": 562633701
+      },
+      "max": 2000000000
+    },
+    {
+      "applicazione": "WC",
+      "parallelismo": "8,8,8,8",
+      "batch": 0,
+      "coppia_test": 7,
+      "strategia": "Semipipeline grouping",
+      "test": 1,
+      "CCX": "CCX12",
+      "titolo": "CCX-12 [fltm-rdc-src-fltm]",
+      "dati": {
+        "Total accesses": 1670847102,
+        "Total misses": 1025771141
+      },
+      "max": 2000000000
+    },
+    {
+      "applicazione": "WC",
+      "parallelismo": "8,8,8,8",
+      "batch": 0,
+      "coppia_test": 7,
+      "strategia": "Semipipeline grouping",
+      "test": 1,
+      "CCX": "CCX13",
+      "titolo": "CCX-13 [rdc-src-fltm-rdc]",
+      "dati": {
+        "Total accesses": 1922823271,
+        "Total misses": 1160212524
+      },
+      "max": 2000000000
+    },
+    {
+      "applicazione": "WC",
+      "parallelismo": "8,8,8,8",
+      "batch": 0,
+      "coppia_test": 7,
+      "strategia": "Semipipeline grouping",
+      "test": 1,
+      "CCX": "CCX14",
+      "titolo": "CCX-14 [snk-snk-snk-snk]",
+      "dati": {
+        "Total accesses": 814042485,
+        "Total misses": 616935812
+      },
+      "max": 2000000000
+    },
+    {
+      "applicazione": "WC",
+      "parallelismo": "8,8,8,8",
+      "batch": 0,
+      "coppia_test": 7,
+      "strategia": "Semipipeline grouping",
+      "test": 1,
+      "CCX": "CCX15",
+      "titolo": "CCX-15 [snk-snk-snk-snk]",
+      "dati": {
+        "Total accesses": 760913866,
+        "Total misses": 581173933
+      },
+      "max": 2000000000
+    },
+    {
+      "applicazione": "WC",
+      "parallelismo": "8,8,8,8",
+      "batch": 0,
+      "coppia_test": 7,
+      "strategia": "Pipeline grouping",
+      "test": 2,
+      "CCX": "CCX8",
+      "titolo": "CCX-8 [src-fltm-rdc-snk]",
+      "dati": {
+        "Total accesses": 1735640824,
+        "Total misses": 764090326
+      },
+      "max": 2000000000
+    },
+    {
+      "applicazione": "WC",
+      "parallelismo": "8,8,8,8",
+      "batch": 0,
+      "coppia_test": 7,
+      "strategia": "Pipeline grouping",
+      "test": 2,
+      "CCX": "CCX9",
+      "titolo": "CCX-9 [src-fltm-rdc-snk]",
+      "dati": {
+        "Total accesses": 1982425268,
+        "Total misses": 807528653
+      },
+      "max": 2000000000
+    },
+    {
+      "applicazione": "WC",
+      "parallelismo": "8,8,8,8",
+      "batch": 0,
+      "coppia_test": 7,
+      "strategia": "Pipeline grouping",
+      "test": 2,
+      "CCX": "CCX10",
+      "titolo": "CCX-10 [src-fltm-rdc-snk]",
+      "dati": {
+        "Total accesses": 1559934535,
+        "Total misses": 731962203
+      },
+      "max": 2000000000
+    },
+    {
+      "applicazione": "WC",
+      "parallelismo": "8,8,8,8",
+      "batch": 0,
+      "coppia_test": 7,
+      "strategia": "Pipeline grouping",
+      "test": 2,
+      "CCX": "CCX11",
+      "titolo": "CCX-11 [src-fltm-rdc-snk]",
+      "dati": {
+        "Total accesses": 1508288281,
+        "Total misses": 736643029
+      },
+      "max": 2000000000
+    },
+    {
+      "applicazione": "WC",
+      "parallelismo": "8,8,8,8",
+      "batch": 0,
+      "coppia_test": 7,
+      "strategia": "Pipeline grouping",
+      "test": 2,
+      "CCX": "CCX12",
+      "titolo": "CCX-12 [src-fltm-rdc-snk]",
+      "dati": {
+        "Total accesses": 1070938746,
+        "Total misses": 581131048
+      },
+      "max": 2000000000
+    },
+    {
+      "applicazione": "WC",
+      "parallelismo": "8,8,8,8",
+      "batch": 0,
+      "coppia_test": 7,
+      "strategia": "Pipeline grouping",
+      "test": 2,
+      "CCX": "CCX13",
+      "titolo": "CCX-13 [src-fltm-rdc-snk]",
+      "dati": {
+        "Total accesses": 1999208759,
+        "Total misses": 824316156
+      },
+      "max": 2000000000
+    },
+    {
+      "applicazione": "WC",
+      "parallelismo": "8,8,8,8",
+      "batch": 0,
+      "coppia_test": 7,
+      "strategia": "Pipeline grouping",
+      "test": 2,
+      "CCX": "CCX14",
+      "titolo": "CCX-14 [src-fltm-rdc-snk]",
+      "dati": {
+        "Total accesses": 1906125009,
+        "Total misses": 921623094
+      },
+      "max": 2000000000
+    },
+    {
+      "applicazione": "WC",
+      "parallelismo": "8,8,8,8",
+      "batch": 0,
+      "coppia_test": 7,
+      "strategia": "Pipeline grouping",
+      "test": 2,
+      "CCX": "CCX15",
+      "titolo": "CCX-15 [src-fltm-rdc-snk]",
+      "dati": {
+        "Total accesses": 1423656088,
+        "Total misses": 707419177
+      },
+      "max": 2000000000
+    },
+    {
+      "applicazione": "FD",
+      "parallelismo": "2,2,2",
+      "batch": 32,
+      "coppia_test": 3,
+      "strategia": "A2A splitting",
+      "test": 1,
+      "CCX": "CCX2",
+      "titolo": "CCX-2 [src-src-_-_]",
+      "dati": {
+        "Total accesses": 549101358,
+        "Total misses": 353328787
+      },
+      "max": 2000000000
+    },
+    {
+      "applicazione": "FD",
+      "parallelismo": "2,2,2",
+      "batch": 32,
+      "coppia_test": 3,
+      "strategia": "A2A splitting",
+      "test": 1,
+      "CCX": "CCX3",
+      "titolo": "CCX-3 [fltr-snk-fltr-snk]",
+      "dati": {
+        "Total accesses": 1090972191,
+        "Total misses": 732415453
+      },
+      "max": 2000000000
+    },
+    {
+      "applicazione": "FD",
+      "parallelismo": "2,2,2",
+      "batch": 32,
+      "coppia_test": 3,
+      "strategia": "Src-Snk grouping",
+      "test": 2,
+      "CCX": "CCX2",
+      "titolo": "CCX-2 [src-snk-src-snk]",
+      "dati": {
+        "Total accesses": 639288317,
+        "Total misses": 308526161
+      },
+      "max": 2000000000
+    },
+    {
+      "applicazione": "FD",
+      "parallelismo": "2,2,2",
+      "batch": 32,
+      "coppia_test": 3,
+      "strategia": "Src-Snk grouping",
+      "test": 2,
+      "CCX": "CCX3",
+      "titolo": "CCX-3 [fltr-fltr-_-_ ]",
+      "dati": {
+        "Total accesses": 1065223617,
+        "Total misses": 706923899
+      },
+      "max": 2000000000
+    },
+    {
+      "applicazione": "FD",
+      "parallelismo": "4,4,4",
+      "batch": 32,
+      "strategia": "Stage grouping",
+      "coppia_test": 5,
+      "test": 1,
+      "CCX": "CCX8",
+      "titolo": "CCX-8 [snk-snk-snk-snk]",
+      "dati": {
+        "Total accesses": 1018491421,
+        "Total misses": 836263957
+      },
+      "max": 3000000000
+    },
+    {
+      "applicazione": "FD",
+      "parallelismo": "4,4,4",
+      "batch": 32,
+      "strategia": "Stage grouping",
+      "coppia_test": 5,
+      "test": 1,
+      "CCX": "CCX9",
+      "titolo": "CCX-9 [ _-_-_-_ ]",
+      "dati": {
+        "Total accesses": 5297371,
+        "Total misses": 1262542
+      },
+      "max": 3000000000
+    },
+    {
+      "applicazione": "FD",
+      "parallelismo": "4,4,4",
+      "batch": 32,
+      "strategia": "Stage grouping",
+      "coppia_test": 5,
+      "test": 1,
+      "CCX": "CCX10",
+      "titolo": "CCX-10 [src-fltr-src-fltr]",
+      "dati": {
+        "Total accesses": 2003904549,
+        "Total misses": 1373378070
+      },
+      "max": 3000000000
+    },
+    {
+      "applicazione": "FD",
+      "parallelismo": "4,4,4",
+      "batch": 32,
+      "coppia_test": 5,
+      "strategia": "Stage grouping",
+      "test": 1,
+      "CCX": "CCX11",
+      "titolo": "CCX-11 [src-fltr-src-fltr]",
+      "dati": {
+        "Total accesses": 266239202,
+        "Total misses": 180888650
+      },
+      "max": 3000000000
+    },
+    {
+      "applicazione": "FD",
+      "parallelismo": "4,4,4",
+      "batch": 32,
+      "coppia_test": 5,
+      "strategia": "A2A grouping",
+      "test": 2,
+      "CCX": "CCX8",
+      "titolo": "CCX-8 [src-src-src-src]",
+      "dati": {
+        "Total accesses": 257164223,
+        "Total misses": 177916300
+      },
+      "max": 3000000000
+    },
+    {
+      "applicazione": "FD",
+      "parallelismo": "4,4,4",
+      "batch": 32,
+      "coppia_test": 5,
+      "strategia": "A2A grouping",
+      "test": 2,
+      "CCX": "CCX9",
+      "titolo": "CCX-9 [ _-_-_-_ ]",
+      "dati": {
+        "Total accesses": 711522,
+        "Total misses": 355719
+      },
+      "max": 3000000000
+    },
+    {
+      "applicazione": "FD",
+      "parallelismo": "4,4,4",
+      "batch": 32,
+      "coppia_test": 5,
+      "strategia": "A2A grouping",
+      "test": 2,
+      "CCX": "CCX10",
+      "titolo": "CCX-10 [fltr-fltr-fltr-fltr]",
+      "dati": {
+        "Total accesses": 1742282685,
+        "Total misses": 1041543118
+      },
+      "max": 3000000000
+    },
+    {
+      "applicazione": "FD",
+      "parallelismo": "4,4,4",
+      "batch": 32,
+      "coppia_test": 5,
+      "strategia": "A2A grouping",
+      "test": 2,
+      "CCX": "CCX11",
+      "titolo": "CCX-11 [snk-snk-snk-snk]",
+      "dati": {
+        "Total accesses": 1345445708,
+        "Total misses": 1012404790
+      },
+      "max": 3000000000
+    },
+    {
+      "applicazione": "TM",
+      "parallelismo": "4,4,4,4",
+      "batch": 32,
+      "coppia_test": 3,
+      "strategia": "Stage grouping",
+      "test": 1,
+      "CCX": "CCX8",
+      "titolo": "CCX-8 [src-src-src-src]",
+      "dati": {
+        "Total accesses": 6772005,
+        "Total misses": 3619097
+      },
+      "max": 5000000000
+    },
+    {
+      "applicazione": "TM",
+      "parallelismo": "4,4,4,4",
+      "batch": 32,
+      "coppia_test": 3,
+      "strategia": "Stage grouping",
+      "test": 1,
+      "CCX": "CCX9",
+      "titolo": "CCX-9 [snk-snk-snk-snk]",
+      "dati": {
+        "Total accesses": 2589776,
+        "Total misses": 1413867
+      },
+      "max": 5000000000
+    },
+    {
+      "applicazione": "TM",
+      "parallelismo": "4,4,4,4",
+      "batch": 32,
+      "coppia_test": 3,
+      "strategia": "Stage grouping",
+      "test": 1,
+      "CCX": "CCX10",
+      "titolo": "CCX-10 [fltm-fltm-fltm-fltm]",
+      "dati": {
+        "Total accesses": 4961235716,
+        "Total misses": 125541606
+      },
+      "max": 5000000000
+    },
+    {
+      "applicazione": "TM",
+      "parallelismo": "4,4,4,4",
+      "batch": 32,
+      "coppia_test": 3,
+      "strategia": "Stage grouping",
+      "test": 1,
+      "CCX": "CCX11",
+      "titolo": "CCX-11 [map-map-map-map]",
+      "dati": {
+        "Total accesses": 23124529,
+        "Total misses": 7869183
+      },
+      "max": 5000000000
+    },
+    {
+      "applicazione": "TM",
+      "parallelismo": "4,4,4,4",
+      "batch": 32,
+      "coppia_test": 3,
+      "strategia": "Pipeline grouping",
+      "test": 2,
+      "CCX": "CCX8",
+      "titolo": "CCX-8 [src-fltm-map-snk]",
+      "dati": {
+        "Total accesses": 843121945,
+        "Total misses": 272387508
+      },
+      "max": 5000000000
+    },
+    {
+      "applicazione": "TM",
+      "parallelismo": "4,4,4,4",
+      "batch": 32,
+      "coppia_test": 3,
+      "strategia": "Pipeline grouping",
+      "test": 2,
+      "CCX": "CCX9",
+      "titolo": "CCX-9 [src-fltm-map-snk]",
+      "dati": {
+        "Total accesses": 1215058175,
+        "Total misses": 12123290
+      },
+      "max": 5000000000
+    },
+    {
+      "applicazione": "TM",
+      "parallelismo": "4,4,4,4",
+      "batch": 32,
+      "coppia_test": 3,
+      "strategia": "Pipeline grouping",
+      "test": 2,
+      "CCX": "CCX10",
+      "titolo": "CCX-10 [src-fltm-map-snk]",
+      "dati": {
+        "Total accesses": 1209196688,
+        "Total misses": 19460269
+      },
+      "max": 5000000000
+    },
+    {
+      "applicazione": "TM",
+      "parallelismo": "4,4,4,4",
+      "batch": 32,
+      "coppia_test": 3,
+      "strategia": "Pipeline grouping",
+      "test": 2,
+      "CCX": "CCX11",
+      "titolo": "CCX-11 [src-fltm-map-snk]",
+      "dati": {
+        "Total accesses": 858674783,
+        "Total misses": 275724766
+      },
+      "max": 5000000000
+    },
+    {
+      "applicazione": "TM",
+      "parallelismo": "8,8,8,8",
+      "batch": 0,
+      "coppia_test": 5,
+      "strategia": "Semipipeline grouping",
+      "test": 1,
+      "CCX": "CCX8",
+      "titolo": "CCX-8 [src-fltm-map-src]",
+      "dati": {
+        "Total accesses": 591013520,
+        "Total misses": 252959503
+      },
+      "max": 5000000000
+    },
+    {
+      "applicazione": "TM",
+      "parallelismo": "8,8,8,8",
+      "batch": 0,
+      "coppia_test": 5,
+      "strategia": "Semipipeline grouping",
+      "test": 1,
+      "CCX": "CCX9",
+      "titolo": "CCX-9 [fltm-map-src-fltm]",
+      "dati": {
+        "Total accesses": 1163354640,
+        "Total misses": 496999971
+      },
+      "max": 5000000000
+    },
+    {
+      "applicazione": "TM",
+      "parallelismo": "8,8,8,8",
+      "batch": 0,
+      "coppia_test": 5,
+      "strategia": "Semipipeline grouping",
+      "test": 1,
+      "CCX": "CCX10",
+      "titolo": "CCX-10 [map-src-fltm-map]",
+      "dati": {
+        "Total accesses": 653957340,
+        "Total misses": 269791757
+      },
+      "max": 5000000000
+    },
+    {
+      "applicazione": "TM",
+      "parallelismo": "8,8,8,8",
+      "batch": 0,
+      "coppia_test": 5,
+      "strategia": "Semipipeline grouping",
+      "test": 1,
+      "CCX": "CCX11",
+      "titolo": "CCX-11 [src-fltm-map-src]",
+      "dati": {
+        "Total accesses": 1240981867,
+        "Total misses": 23018282
+      },
+      "max": 5000000000
+    },
+    {
+      "applicazione": "TM",
+      "parallelismo": "8,8,8,8",
+      "batch": 0,
+      "coppia_test": 5,
+      "strategia": "Semipipeline grouping",
+      "test": 1,
+      "CCX": "CCX12",
+      "titolo": "CCX-12 [fltm-map-src-fltm]",
+      "dati": {
+        "Total accesses": 1173484279,
+        "Total misses": 497460809
+      },
+      "max": 5000000000
+    },
+    {
+      "applicazione": "TM",
+      "parallelismo": "8,8,8,8",
+      "batch": 0,
+      "coppia_test": 5,
+      "strategia": "Semipipeline grouping",
+      "test": 1,
+      "CCX": "CCX13",
+      "titolo": "CCX-13 [map-src-fltm-map]",
+      "dati": {
+        "Total accesses": 1234193823,
+        "Total misses": 17348328
+      },
+      "max": 5000000000
+    },
+    {
+      "applicazione": "TM",
+      "parallelismo": "8,8,8,8",
+      "batch": 0,
+      "coppia_test": 5,
+      "strategia": "Semipipeline grouping",
+      "test": 1,
+      "CCX": "CCX14",
+      "titolo": "CCX-14 [snk-snk-snk-snk]",
+      "dati": {
+        "Total accesses": 41674640,
+        "Total misses": 16886347
+      },
+      "max": 5000000000
+    },
+    {
+      "applicazione": "TM",
+      "parallelismo": "8,8,8,8",
+      "batch": 0,
+      "coppia_test": 5,
+      "strategia": "Semipipeline grouping",
+      "test": 1,
+      "CCX": "CCX15",
+      "titolo": "CCX-15 [snk-snk-snk-snk]",
+      "dati": {
+        "Total accesses": 29785896,
+        "Total misses": 13457915
+      },
+      "max": 5000000000
+    },
+    {
+      "applicazione": "TM",
+      "parallelismo": "8,8,8,8",
+      "batch": 0,
+      "coppia_test": 5,
+      "strategia": "Stage grouping",
+      "test": 2,
+      "CCX": "CCX8",
+      "titolo": "CCX-8 [src-src-src-src]",
+      "dati": {
+        "Total accesses": 14138749,
+        "Total misses": 6161006
+      },
+      "max": 5000000000
+    },
+    {
+      "applicazione": "TM",
+      "parallelismo": "8,8,8,8",
+      "batch": 0,
+      "coppia_test": 5,
+      "strategia": "Stage grouping",
+      "test": 2,
+      "CCX": "CCX9",
+      "titolo": "CCX-9 [src-src-src-src]",
+      "dati": {
+        "Total accesses": 25527278,
+        "Total misses": 8424496
+      },
+      "max": 5000000000
+    },
+    {
+      "applicazione": "TM",
+      "parallelismo": "8,8,8,8",
+      "batch": 0,
+      "coppia_test": 5,
+      "strategia": "Stage grouping",
+      "test": 2,
+      "CCX": "CCX10",
+      "titolo": "CCX-10 [fltm-fltm-fltm-fltm]",
+      "dati": {
+        "Total accesses": 4666838300,
+        "Total misses": 537427459
+      },
+      "max": 5000000000
+    },
+    {
+      "applicazione": "TM",
+      "parallelismo": "8,8,8,8",
+      "batch": 0,
+      "coppia_test": 5,
+      "strategia": "Stage grouping",
+      "test": 2,
+      "CCX": "CCX11",
+      "titolo": "CCX-11 [fltm-fltm-fltm-fltm]",
+      "dati": {
+        "Total accesses": 4620994376,
+        "Total misses": 581018446
+      },
+      "max": 5000000000
+    },
+    {
+      "applicazione": "TM",
+      "parallelismo": "8,8,8,8",
+      "batch": 0,
+      "coppia_test": 5,
+      "strategia": "Stage grouping",
+      "test": 2,
+      "CCX": "CCX12",
+      "titolo": "CCX-12 [map-map-map-map]",
+      "dati": {
+        "Total accesses": 4840276,
+        "Total misses": 2224068
+      },
+      "max": 5000000000
+    },
+    {
+      "applicazione": "TM",
+      "parallelismo": "8,8,8,8",
+      "batch": 0,
+      "coppia_test": 5,
+      "strategia": "Stage grouping",
+      "test": 2,
+      "CCX": "CCX13",
+      "titolo": "CCX-13 [map-map-map-map]",
+      "dati": {
+        "Total accesses": 23821801,
+        "Total misses": 8159193
+      },
+      "max": 5000000000
+    },
+    {
+      "applicazione": "TM",
+      "parallelismo": "8,8,8,8",
+      "batch": 0,
+      "coppia_test": 5,
+      "strategia": "Stage grouping",
+      "test": 2,
+      "CCX": "CCX14",
+      "titolo": "CCX-14 [snk-snk-snk-snk]",
+      "dati": {
+        "Total accesses": 34241136,
+        "Total misses": 14489783
+      },
+      "max": 5000000000
+    },
+    {
+      "applicazione": "TM",
+      "parallelismo": "8,8,8,8",
+      "batch": 0,
+      "coppia_test": 5,
+      "strategia": "Stage grouping",
+      "test": 2,
+      "CCX": "CCX15",
+      "titolo": "CCX-15 [snk-snk-snk-snk]",
+      "dati": {
+        "Total accesses": 58107525,
+        "Total misses": 21336127
+      },
+      "max": 5000000000
+    }
+  ]
+}

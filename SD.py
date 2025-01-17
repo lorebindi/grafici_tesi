@@ -1416,6 +1416,69 @@ def crea_istogramma_profiling(applicazione, coppia, parallelismo, batch, strateg
     # Mostra il grafico
     plt.show()
 
+def crea_istogramma_ccx(applicazione, numero_coppia, numero_test, CCX, titolo, dati, max_y):
+    if not dati:
+        raise ValueError("Il parametro 'dati' è vuoto o non valido.")
+    etichette_asse_x = dati.keys()
+    #plt.legend(etichette_asse_x)
+    dati_asse_x = dati.values()
+    save_dir = '/home/lorenzo/Desktop/Grafici_Tesi/Profiling_CCX'
+
+    # calcola il path completo
+    complete_path = os.path.join(save_dir, applicazione, "coppia_test_" + str(numero_coppia), str(numero_test))
+    os.makedirs(complete_path, exist_ok=True)  # Crea la cartella se non esiste
+
+    # Calcola le etichette e i valori dei ticks per l'asse Y
+    yticks_values, yticks_labels = calcola_etichette_assey_profiling(max_y)
+
+    # Creazione dell'istogramma
+    plt.figure(figsize=(4, 3))
+
+    # Impostiamo i limiti dell'asse X in modo che parta da 0 e arrivi al massimo valore dei dati
+    plt.xlim(-0.5,
+             len(etichette_asse_x) - 0.5)
+
+    # Disegnare le linee orizzontali per ogni valore di yticks_values
+    for ytick in yticks_values:
+        plt.hlines(ytick, -0.5, len(etichette_asse_x) - 0.5, colors='gray', linestyles='--', linewidth=0.6,
+                   zorder=1)  # Linea tratteggiata, zorder basso per metterle sotto le barre
+    # Aggiungere linee a metà tra ogni intervallo
+    for i in range(1, len(yticks_values)):
+        halfway = (yticks_values[i] + yticks_values[i - 1]) / 2  # Calcolare il punto centrale tra i tick
+        plt.hlines(halfway, -0.5, len(etichette_asse_x) - 0.5, colors='lightgray', linestyles='--',
+                   linewidth=0.8)  # Linea leggera tra i tick
+
+    # Creazione delle barre dell'istogramma (due colonne affiancate)
+    bars = plt.bar(range(len(etichette_asse_x)), dati_asse_x, color=['#1B4F72', '#C41E3A'], alpha=1, width=0.7,
+                   zorder=2)  # barre in primo piano
+
+    '''# Aggiungi linee tratteggiate dalla parte superiore delle barre fino all'asse y
+    for i, bar in enumerate(bars):
+        # Ottieni l'altezza della barra
+        height = bar.get_height()
+        # Disegna la linea tratteggiata verticale che parte dalla parte superiore della barra fino all'asse y
+        plt.hlines(height, -0.5,bar.get_x(), colors='lightgray', linestyles='--', linewidth=0.8) '''
+
+    # Impostiamo il formato dei numeri sull'asse y
+    plt.gca().yaxis.set_major_formatter(ticker.FuncFormatter(lambda x, pos: '{:,.0f}'.format(x)))
+    plt.ylim(bottom=0)
+    plt.ylabel('Billions', fontsize=12)
+    plt.yticks(yticks_values, yticks_labels, fontsize = 10)
+
+    # Impostiamo le etichette per l'asse X (le categorie)
+    plt.xticks(range(len(etichette_asse_x)), etichette_asse_x, fontsize=10)
+    # Aggiungiamo il titolo
+    plt.title(titolo, fontsize=14)
+
+    # Salvataggio del grafico
+    save_path = os.path.join(complete_path, 'istogramma_' + CCX + '.png')
+    plt.tight_layout()
+    plt.savefig(save_path)
+    print(f"Grafico salvato in: {save_path}")
+
+    # Mostra il grafico
+    plt.show()
+
 def crea_istogrammi_profiling():
     grafici = json_parse_profiling('istogrammi_profiling_2.json')
 
@@ -1427,7 +1490,7 @@ def crea_istogrammi_profiling():
     total_misses2 = 0
     i = 0
 
-    while i <= len(grafici) :
+    while i < len(grafici) :
         applicazione = grafici[i]['applicazione']
         parallelismo = grafici[i]['parallelismo']
         batch = grafici[i]['batch']
@@ -1455,7 +1518,13 @@ def crea_istogrammi_profiling():
         if(applicazione == "TM" and parallelismo == "4,4,4,4" and batch == 32):
             max_y += 1_000_000_000
         # Chiamata al metodo per creare l'istogramma
-        crea_istogramma_profiling(applicazione, coppia, parallelismo, batch, strategia1, total_accesses1, total_misses1, strategia2, total_accesses2, total_misses2, max_y)
+        if((applicazione == "WC" or applicazione == "TM") and parallelismo == "8,8,8,8" and batch == 0):
+            strategia1, strategia2 = strategia2, strategia1
+            total_accesses1, total_accesses2 = total_accesses2, total_accesses1
+            total_misses1, total_misses2 = total_misses2, total_misses1
+            crea_istogramma_profiling(applicazione, coppia, parallelismo, batch, strategia1, total_accesses1, total_misses1, strategia2, total_accesses2, total_misses2, max_y)
+        else:
+            crea_istogramma_profiling(applicazione, coppia, parallelismo, batch, strategia1, total_accesses1, total_misses1, strategia2, total_accesses2, total_misses2, max_y)
         total_accesses1 = 0
         total_accesses2 = 0
         total_misses1 = 0
@@ -1472,6 +1541,11 @@ def crea_istogrammi_strategie_per_profiling():
             crea_istogramma_strategie_profiling(grafico["applicazione"], grafico["parallelism"], grafico["batch"],
                                 grafico["ff_queue_length"], grafico["titolo"], grafico["numanode"], grafico["dati"],
                                 grafico["max"])
+
+def crea_istogrammi_ccx():
+    grafici = json_parse_profiling('istogrammi_profiling.json')
+    for grafico in grafici:
+            crea_istogramma_ccx(grafico["applicazione"], grafico["coppia_test"], grafico["test"], grafico["CCX"], grafico["titolo"], grafico["dati"], grafico["max"])
 
 def crea_grafi_linee_ffvsOS():
     grafici = json_parse_ffvsOS('ffvsOS.json')

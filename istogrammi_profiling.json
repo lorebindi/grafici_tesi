@@ -1013,7 +1013,7 @@
       "coppia_test": 3,
       "test": 1,
       "CCX": "CCX10",
-      "titolo": "CCX-10 [src-rdc-src-rdc]",
+      "titolo": "CCX-10 [src-snk-src-snk]",
       "dati": {
         "Total accesses": 1528377383,
         "Total misses": 1241525582
@@ -1025,7 +1025,7 @@
       "coppia_test": 3,
       "test": 1,
       "CCX": "CCX11",
-      "titolo": "CCX-11 [fltm-snk-fltm-snk]",
+      "titolo": "CCX-11 [fltm-rdc-fltm-rdc]",
       "dati": {
         "Total accesses": 5978039545,
         "Total misses": 3312271305

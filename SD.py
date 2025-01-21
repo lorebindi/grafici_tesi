@@ -1449,8 +1449,13 @@ def crea_istogramma_ccx(applicazione, numero_coppia, numero_test, CCX, titolo, d
                    linewidth=0.8)  # Linea leggera tra i tick
 
     # Creazione delle barre dell'istogramma (due colonne affiancate)
-    bars = plt.bar(range(len(etichette_asse_x)), dati_asse_x, color=['#1B4F72', '#C41E3A'], alpha=1, width=0.7,
-                   zorder=2)  # barre in primo piano
+    if(applicazione == "WC" and numero_coppia == 3) :
+        if(numero_test == 1):
+            bars = plt.bar(range(len(etichette_asse_x)), dati_asse_x, color='#204D00', alpha=1, width=0.7, zorder=2)
+        elif(numero_test == 2):
+            bars = plt.bar(range(len(etichette_asse_x)), dati_asse_x, color='#63993D', alpha=1, width=0.7, zorder=2)
+    else:
+        bars = plt.bar(range(len(etichette_asse_x)), dati_asse_x, color=['#1B4F72', '#C41E3A'], alpha=1, width=0.7, zorder=2)
 
     '''# Aggiungi linee tratteggiate dalla parte superiore delle barre fino all'asse y
     for i, bar in enumerate(bars):
@@ -1537,7 +1542,7 @@ def crea_istogrammi_profiling():
 def crea_istogrammi_strategie_per_profiling():
     grafici = json_parse_pinning('istogrammi_strategie_per_profiling.json')
     for grafico in grafici:
-        #if grafico["applicazione"] == "TM":
+        if grafico["applicazione"] == "WC":
             crea_istogramma_strategie_profiling(grafico["applicazione"], grafico["parallelism"], grafico["batch"],
                                 grafico["ff_queue_length"], grafico["titolo"], grafico["numanode"], grafico["dati"],
                                 grafico["max"])
@@ -1545,6 +1550,7 @@ def crea_istogrammi_strategie_per_profiling():
 def crea_istogrammi_ccx():
     grafici = json_parse_profiling('istogrammi_profiling.json')
     for grafico in grafici:
+        if grafico["applicazione"] == "WC" and grafico["coppia_test"] == 3:
             crea_istogramma_ccx(grafico["applicazione"], grafico["coppia_test"], grafico["test"], grafico["CCX"], grafico["titolo"], grafico["dati"], grafico["max"])
 
 def crea_grafi_linee_ffvsOS():
@@ -1607,7 +1613,7 @@ def crea_istogrammi_no_KeyBy():
 
 def main():
 
-    crea_istogrammi_profiling()
+    crea_istogrammi_ccx()
 
 # Questa parte è importante: assicura che la funzione main() venga eseguita solo
 # quando il file viene eseguito come script, non quando viene importato come modulo

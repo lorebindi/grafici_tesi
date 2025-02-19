@@ -1410,7 +1410,7 @@ def crea_istogramma_profiling(applicazione, coppia, parallelismo, batch, strateg
     # Salvataggio del grafico
     save_path = os.path.join(complete_path, 'istogramma_coppia' + str(coppia) + '.png')
     plt.tight_layout()
-    plt.savefig(save_path)
+    plt.savefig(save_path, dpi=900)
     print(f"Grafico salvato in: {save_path}")
 
     # Mostra il grafico
@@ -1538,7 +1538,6 @@ def crea_istogrammi_profiling():
         strategia2 = ""
         i = j
 
-
 def crea_istogrammi_strategie_per_profiling():
     grafici = json_parse_pinning('istogrammi_strategie_per_profiling.json')
     for grafico in grafici:
@@ -1613,7 +1612,7 @@ def crea_istogrammi_no_KeyBy():
 
 def main():
 
-    crea_istogrammi_strategie_per_profiling()
+    crea_istogrammi_profiling()
 
 # Questa parte è importante: assicura che la funzione main() venga eseguita solo
 # quando il file viene eseguito come script, non quando viene importato come modulo

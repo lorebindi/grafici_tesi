@@ -546,7 +546,7 @@ def crea_grafo_linee_ffvsOS(applicazione, parallelism, max_batch, titolo, datiff
     # Salvataggio del grafico
     save_path = os.path.join(save_dir, f"{applicazione+"_"+parallelism}.png")
     plt.tight_layout()
-    plt.savefig(save_path)
+    plt.savefig(save_path, dpi=900)
     print(f"Grafico salvato in: {save_path}")
 
     # Mostra il grafico
@@ -997,7 +997,7 @@ def crea_istogramma_app(applicazione, parallelism, batch, ff_queue_length, titol
     plt.tight_layout()
 
 
-    plt.savefig(save_path)
+    plt.savefig(save_path, dpi=900)
     print(f"Grafico salvato in: {save_path}")
 
     # Mostra il grafico
@@ -1162,7 +1162,7 @@ def crea_istogramma_strategie_profiling(applicazione, parallelism, batch, ff_que
     plt.tight_layout()
 
 
-    plt.savefig(save_path)
+    plt.savefig(save_path, dpi=900)
     print(f"Grafico salvato in: {save_path}")
 
     # Mostra il grafico
@@ -1542,10 +1542,10 @@ def crea_istogrammi_profiling():
 def crea_istogrammi_strategie_per_profiling():
     grafici = json_parse_pinning('istogrammi_strategie_per_profiling.json')
     for grafico in grafici:
-        if grafico["applicazione"] == "WC":
-            crea_istogramma_strategie_profiling(grafico["applicazione"], grafico["parallelism"], grafico["batch"],
-                                grafico["ff_queue_length"], grafico["titolo"], grafico["numanode"], grafico["dati"],
-                                grafico["max"])
+        #if grafico["applicazione"] == "WC":
+        crea_istogramma_strategie_profiling(grafico["applicazione"], grafico["parallelism"], grafico["batch"],
+            grafico["ff_queue_length"], grafico["titolo"], grafico["numanode"], grafico["dati"],
+            grafico["max"])
 
 def crea_istogrammi_ccx():
     grafici = json_parse_profiling('istogrammi_profiling.json')
@@ -1613,7 +1613,7 @@ def crea_istogrammi_no_KeyBy():
 
 def main():
 
-    crea_istogrammi_ccx()
+    crea_istogrammi_strategie_per_profiling()
 
 # Questa parte è importante: assicura che la funzione main() venga eseguita solo
 # quando il file viene eseguito come script, non quando viene importato come modulo

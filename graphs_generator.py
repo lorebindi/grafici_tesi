@@ -12,7 +12,9 @@ from matplotlib.colors import LinearSegmentedColormap
 from matplotlib.lines import Line2D
 from matplotlib.patches import Patch
 
-def json_parse_scelta_numanode(nome):
+# Systems
+
+def _json_parse_scelta_numanode(nome):
     file_path = os.path.abspath(__file__)
     directory_path = os.path.dirname(file_path)
     file_path = os.path.join(directory_path, nome)
@@ -50,7 +52,7 @@ def json_parse_scelta_numanode(nome):
         print(f"Errore sconosciuto: {e}")
         return []
 
-def json_parse_WinKey(nome):
+def _json_parse_WinKey(nome):
     file_path = os.path.abspath(__file__)
     directory_path = os.path.dirname(file_path)
     file_path = os.path.join(directory_path, nome)
@@ -87,7 +89,7 @@ def json_parse_WinKey(nome):
         print(f"Errore sconosciuto: {e}")
         return []
 
-def json_parse_ffvsOS(nome):
+def _json_parse_ffvsOS(nome):
     file_path = os.path.abspath(__file__)
     directory_path = os.path.dirname(file_path)
     file_path = os.path.join(directory_path, nome)
@@ -124,7 +126,7 @@ def json_parse_ffvsOS(nome):
         print(f"Errore sconosciuto: {e}")
         return []
 
-def json_parse_pinning(nome):
+def _json_parse_pinning(nome):
     file_path = os.path.abspath(__file__)
     directory_path = os.path.dirname(file_path)
     file_path = os.path.join(directory_path, nome)
@@ -162,7 +164,7 @@ def json_parse_pinning(nome):
         print(f"Errore sconosciuto: {e}")
         return []
 
-def json_parse_profiling(nome):
+def _json_parse_profiling(nome):
     file_path = os.path.abspath(__file__)
     directory_path = os.path.dirname(file_path)
     file_path = os.path.join(directory_path, nome)
@@ -202,7 +204,7 @@ def json_parse_profiling(nome):
         print(f"Errore sconosciuto: {e}")
         return []
 
-def calcola_etichette_assey_profiling(max_value, step=1_000_000_000):
+def _calcola_etichette_assey_profiling(max_value, step=1_000_000_000):
     yticks_values = []
     yticks_labels = []
 
@@ -233,7 +235,7 @@ def calcola_etichette_assey_profiling(max_value, step=1_000_000_000):
 
     return yticks_values, yticks_labels
 
-def calcola_etichette_assey_app(app, max_value, min_value=0, step=1000000):
+def _calcola_etichette_assey_app(app, max_value, min_value=0, step=1000000):
     yticks_values = []
     yticks_labels = []
 
@@ -312,7 +314,7 @@ def calcola_etichette_assey_app(app, max_value, min_value=0, step=1000000):
 
     return yticks_values, yticks_labels
 
-def crea_istogramma_scelta_numanode(applicazione, parallelism, batch, ff_queue_length, titolo, strategy, dati, max_y):
+def _crea_istogramma_scelta_numanode(applicazione, parallelism, batch, ff_queue_length, titolo, strategy, dati, max_y):
     if not dati:
         raise ValueError("Il parametro 'dati' è vuoto o non valido.")
     etichette_asse_x = list(dati.keys())
@@ -466,7 +468,7 @@ def crea_istogramma_scelta_numanode(applicazione, parallelism, batch, ff_queue_l
     # Mostra il grafico
     plt.show()
 
-def crea_grafo_linee_ffvsOS(applicazione, parallelism, max_batch, titolo, datiff, datiOS, max_y):
+def _crea_grafo_linee_ffvsOS(applicazione, parallelism, max_batch, titolo, datiff, datiOS, max_y):
     if not datiff or not datiOS:
         raise ValueError("Il parametro 'dati' è vuoto o non valido.")
     etichette_asse_x = ['0'] + [str(2 ** i) for i in range(1, max_batch) if 2 ** i <= max_batch]
@@ -552,7 +554,7 @@ def crea_grafo_linee_ffvsOS(applicazione, parallelism, max_batch, titolo, datiff
     # Mostra il grafico
     plt.show()
 
-def crea_grafo_linee_WinKey(applicazione, parallelism, batch, titolo, dati, max_y, min_y):
+def _crea_grafo_linee_WinKey(applicazione, parallelism, batch, titolo, dati, max_y, min_y):
     if not dati:
         raise ValueError("Il parametro 'dati' è vuoto o non valido.")
     save_dir = '/home/lorenzo/Desktop/Grafici_Tesi/WinKey'
@@ -644,7 +646,7 @@ def crea_grafo_linee_WinKey(applicazione, parallelism, batch, titolo, dati, max_
     # Mostra il grafico
     plt.show()
 
-def crea_grafo_linee_copyDataset(applicazione, parallelism, batch, titolo, dati, max_y, min_y):
+def _crea_grafo_linee_copyDataset(applicazione, parallelism, batch, titolo, dati, max_y, min_y):
     if not dati:
         raise ValueError("Il parametro 'dati' è vuoto o non valido.")
     save_dir = '/home/lorenzo/Desktop/Grafici_Tesi/copyDataset'
@@ -747,7 +749,7 @@ def crea_grafo_linee_copyDataset(applicazione, parallelism, batch, titolo, dati,
     # Mostra il grafico
     plt.show()
 
-def crea_grafo_linee_ff_queue_length(applicazione, parallelism, batch, titolo, dati, max_y, min_y):
+def _crea_grafo_linee_ff_queue_length(applicazione, parallelism, batch, titolo, dati, max_y, min_y):
     if not dati:
         raise ValueError("Il parametro 'dati' è vuoto o non valido.")
     save_dir = '/home/lorenzo/Desktop/Grafici_Tesi/ff_queue_length/'
@@ -838,7 +840,7 @@ def crea_grafo_linee_ff_queue_length(applicazione, parallelism, batch, titolo, d
     # Mostra il grafico
     plt.show()
 
-def crea_istogramma_app(applicazione, parallelism, batch, ff_queue_length, titolo, numanode, dati, max_y):
+def _crea_istogramma_app(applicazione, parallelism, batch, ff_queue_length, titolo, numanode, dati, max_y):
     if not dati:
         raise ValueError("Il parametro 'dati' è vuoto o non valido.")
     etichette_asse_x = list(dati.keys())
@@ -1003,7 +1005,7 @@ def crea_istogramma_app(applicazione, parallelism, batch, ff_queue_length, titol
     # Mostra il grafico
     plt.show()
 
-def crea_istogramma_strategie_profiling(applicazione, parallelism, batch, ff_queue_length, titolo, numanode, dati, max_y):
+def _crea_istogramma_strategie_profiling(applicazione, parallelism, batch, ff_queue_length, titolo, numanode, dati, max_y):
     if not dati:
         raise ValueError("Il parametro 'dati' è vuoto o non valido.")
     etichette_asse_x = list(dati.keys())
@@ -1168,7 +1170,11 @@ def crea_istogramma_strategie_profiling(applicazione, parallelism, batch, ff_que
     # Mostra il grafico
     plt.show()
 
-def crea_istogramma_no_KeyBy(applicazione, parallelism, batch, ff_queue_length, titolo, numanode, dati, max_y):
+
+
+# Functions to call to create the graphs
+
+def _crea_istogramma_no_KeyBy(applicazione, parallelism, batch, ff_queue_length, titolo, numanode, dati, max_y):
     if not dati:
         raise ValueError("Il parametro 'dati' è vuoto o non valido.")
     etichette_asse_x = list(dati.keys())
@@ -1333,7 +1339,6 @@ def crea_istogramma_no_KeyBy(applicazione, parallelism, batch, ff_queue_length, 
 
     # Mostra il grafico
     plt.show()
-
 
 def crea_istogramma_profiling(applicazione, coppia, parallelismo, batch, strategia1, total_accesses1, total_misses1, strategia2, total_accesses2, total_misses2, max_y):
 

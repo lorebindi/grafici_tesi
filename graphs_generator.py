@@ -334,7 +334,7 @@ def _crea_istogramma_scelta_numanode(applicazione, parallelism, batch, ff_queue_
 
 
     # Calcola le etichette e i valori dei ticks per l'asse Y
-    yticks_values, yticks_labels = calcola_etichette_assey_app(applicazione, max_y)
+    yticks_values, yticks_labels = _calcola_etichette_assey_app(applicazione, max_y)
     if(yticks_values == [] or yticks_labels == []):
         raise ValueError("yticks vuoti")
 
@@ -486,7 +486,7 @@ def _crea_grafo_linee_ffvsOS(applicazione, parallelism, max_batch, titolo, datif
     plt.figure(figsize=(6, 4))
 
     # Calcola le etichette e i valori dei ticks per l'asse Y
-    yticks_values, yticks_labels = calcola_etichette_assey_app(applicazione, max_y)
+    yticks_values, yticks_labels = _calcola_etichette_assey_app(applicazione, max_y)
     if(yticks_values == [] or yticks_labels == []):
         raise ValueError("yticks vuoti")
     plt.yticks(yticks_values, yticks_labels, fontsize=12)
@@ -589,7 +589,7 @@ def _crea_grafo_linee_WinKey(applicazione, parallelism, batch, titolo, dati, max
     plt.figure(figsize=(7, 5))
 
     # Calcola le etichette e i valori dei ticks per l'asse Y
-    yticks_values, yticks_labels = calcola_etichette_assey_app(applicazione, max_y, min_y)
+    yticks_values, yticks_labels = _calcola_etichette_assey_app(applicazione, max_y, min_y)
     if(yticks_values == [] or yticks_labels == []):
         raise ValueError("yticks vuoti")
     plt.yticks(yticks_values, yticks_labels, fontsize=12)
@@ -671,7 +671,7 @@ def _crea_grafo_linee_copyDataset(applicazione, parallelism, batch, titolo, dati
     plt.figure(figsize=(6, 4))
 
     # Calcola le etichette e i valori dei ticks per l'asse Y
-    yticks_values, yticks_labels = calcola_etichette_assey_app(applicazione, max_y, min_y)
+    yticks_values, yticks_labels = _calcola_etichette_assey_app(applicazione, max_y, min_y)
     if(yticks_values == [] or yticks_labels == []):
         raise ValueError("yticks vuoti")
     plt.yticks(yticks_values, yticks_labels, fontsize=12)
@@ -772,7 +772,7 @@ def _crea_grafo_linee_ff_queue_length(applicazione, parallelism, batch, titolo, 
     plt.figure(figsize=(6, 4))
 
     # Calcola le etichette e i valori dei ticks per l'asse Y
-    yticks_values, yticks_labels = calcola_etichette_assey_app(applicazione, max_y, min_y)
+    yticks_values, yticks_labels = _calcola_etichette_assey_app(applicazione, max_y, min_y)
     if(yticks_values == [] or yticks_labels == []):
         raise ValueError("yticks vuoti")
     plt.yticks(yticks_values, yticks_labels, fontsize=12)
@@ -868,7 +868,7 @@ def _crea_istogramma_app(applicazione, parallelism, batch, ff_queue_length, tito
 
 
     # Calcola le etichette e i valori dei ticks per l'asse Y
-    yticks_values, yticks_labels = calcola_etichette_assey_app(applicazione, max_y)
+    yticks_values, yticks_labels = _calcola_etichette_assey_app(applicazione, max_y)
     if(yticks_values == [] or yticks_labels == []):
         raise ValueError("yticks vuoti")
 
@@ -1033,7 +1033,7 @@ def _crea_istogramma_strategie_profiling(applicazione, parallelism, batch, ff_qu
 
 
     # Calcola le etichette e i valori dei ticks per l'asse Y
-    yticks_values, yticks_labels = calcola_etichette_assey_app(applicazione, max_y)
+    yticks_values, yticks_labels = _calcola_etichette_assey_app(applicazione, max_y)
     if(yticks_values == [] or yticks_labels == []):
         raise ValueError("yticks vuoti")
 
@@ -1203,7 +1203,7 @@ def _crea_istogramma_no_KeyBy(applicazione, parallelism, batch, ff_queue_length,
 
 
     # Calcola le etichette e i valori dei ticks per l'asse Y
-    yticks_values, yticks_labels = calcola_etichette_assey_app(applicazione, max_y)
+    yticks_values, yticks_labels = _calcola_etichette_assey_app(applicazione, max_y)
     if(yticks_values == [] or yticks_labels == []):
         raise ValueError("yticks vuoti")
 
@@ -1350,7 +1350,7 @@ def crea_istogramma_profiling(applicazione, coppia, parallelismo, batch, strateg
     os.makedirs(complete_path, exist_ok=True)  # Crea la cartella se non esiste
 
     # Calcola le etichette e i valori dei ticks per l'asse Y
-    yticks_values, yticks_labels = calcola_etichette_assey_profiling(max_y)
+    yticks_values, yticks_labels = _calcola_etichette_assey_profiling(max_y)
 
     # Creazione dell'istogramma
     plt.figure(figsize=(5, 4))
@@ -1434,7 +1434,7 @@ def crea_istogramma_ccx(applicazione, numero_coppia, numero_test, CCX, titolo, d
     os.makedirs(complete_path, exist_ok=True)  # Crea la cartella se non esiste
 
     # Calcola le etichette e i valori dei ticks per l'asse Y
-    yticks_values, yticks_labels = calcola_etichette_assey_profiling(max_y)
+    yticks_values, yticks_labels = _calcola_etichette_assey_profiling(max_y)
 
     # Creazione dell'istogramma
     plt.figure(figsize=(4, 3))
@@ -1490,7 +1490,7 @@ def crea_istogramma_ccx(applicazione, numero_coppia, numero_test, CCX, titolo, d
     plt.show()
 
 def crea_istogrammi_profiling():
-    grafici = json_parse_profiling('istogrammi_profiling_2.json')
+    grafici = _json_parse_profiling('istogrammi_profiling_2.json')
 
     strategia1 = ""
     strategia2 = ""
@@ -1544,76 +1544,76 @@ def crea_istogrammi_profiling():
         i = j
 
 def crea_istogrammi_strategie_per_profiling():
-    grafici = json_parse_pinning('istogrammi_strategie_per_profiling.json')
+    grafici = _json_parse_pinning('istogrammi_strategie_per_profiling.json')
     for grafico in grafici:
         #if grafico["applicazione"] == "WC":
-        crea_istogramma_strategie_profiling(grafico["applicazione"], grafico["parallelism"], grafico["batch"],
+        _crea_istogramma_strategie_profiling(grafico["applicazione"], grafico["parallelism"], grafico["batch"],
             grafico["ff_queue_length"], grafico["titolo"], grafico["numanode"], grafico["dati"],
             grafico["max"])
 
 def crea_istogrammi_ccx():
-    grafici = json_parse_profiling('istogrammi_profiling.json')
+    grafici = _json_parse_profiling('istogrammi_profiling.json')
     for grafico in grafici:
         if grafico["applicazione"] == "WC" and grafico["coppia_test"] == 3:
             crea_istogramma_ccx(grafico["applicazione"], grafico["coppia_test"], grafico["test"], grafico["CCX"], grafico["titolo"], grafico["dati"], grafico["max"])
 
 def crea_grafi_linee_ffvsOS():
-    grafici = json_parse_ffvsOS('ffvsOS.json')
+    grafici = _json_parse_ffvsOS('ffvsOS.json')
     for grafico in grafici:
-        crea_grafo_linee_ffvsOS(grafico["applicazione"], grafico["parallelism"], grafico["max_batch"], grafico["titolo"],
+        _crea_grafo_linee_ffvsOS(grafico["applicazione"], grafico["parallelism"], grafico["max_batch"], grafico["titolo"],
                             grafico["dati_ff"], grafico["dati_OS"], grafico["max"])
 
 def crea_grafi_linee_copyDataset():
-    grafici = json_parse_WinKey('copy_of_the_dataset.json')
+    grafici = _json_parse_WinKey('copy_of_the_dataset.json')
     for grafico in grafici:
-        crea_grafo_linee_copyDataset(grafico["applicazione"], grafico["parallelism"], grafico["batch"],
+        _crea_grafo_linee_copyDataset(grafico["applicazione"], grafico["parallelism"], grafico["batch"],
                                 grafico["titolo"], grafico["dati"], grafico["max"], grafico["min"])
 
 def crea_grafi_linee_ff_queue_length():
-    grafici = json_parse_WinKey('ff_queue_lenght.json')
+    grafici = _json_parse_WinKey('ff_queue_lenght.json')
     for grafico in grafici:
-        crea_grafo_linee_ff_queue_length(grafico["applicazione"], grafico["parallelism"], grafico["batch"],
+        _crea_grafo_linee_ff_queue_length(grafico["applicazione"], grafico["parallelism"], grafico["batch"],
                                 grafico["titolo"], grafico["dati"], grafico["max"], grafico["min"])
 
 def crea_grafi_linee_WinKey():
-    grafici = json_parse_WinKey('SD_key_window.json')
+    grafici = _json_parse_WinKey('SD_key_window.json')
     for grafico in grafici:
-        crea_grafo_linee_WinKey(grafico["applicazione"], grafico["parallelism"], grafico["batch"],
+        _crea_grafo_linee_WinKey(grafico["applicazione"], grafico["parallelism"], grafico["batch"],
                                 grafico["titolo"], grafico["dati"], grafico["max"], grafico["min"])
 
 def crea_grafi_scelta_numanode():
-    grafici = json_parse_scelta_numanode('scelta_numanode.json')
+    grafici = _json_parse_scelta_numanode('scelta_numanode.json')
     for grafico in grafici:
-        crea_istogramma_scelta_numanode(grafico["applicazione"], grafico["parallelism"], grafico["batch"], grafico["ff_queue_length"], grafico["titolo"], grafico["strategy"], grafico["dati"], grafico["max"])
+        _crea_istogramma_scelta_numanode(grafico["applicazione"], grafico["parallelism"], grafico["batch"], grafico["ff_queue_length"], grafico["titolo"], grafico["strategy"], grafico["dati"], grafico["max"])
 
 def crea_istogrammi_pinning_SD():
-    grafici = json_parse_pinning('istogrammi_pinning_SD.json')
+    grafici = _json_parse_pinning('istogrammi_pinning_SD.json')
     for grafico in grafici:
         if grafico["applicazione"] == "SD":
-            crea_istogramma_app(grafico["applicazione"], grafico["parallelism"], grafico["batch"], grafico["ff_queue_length"], grafico["titolo"], grafico["numanode"], grafico["dati"], grafico["max"])
+            _crea_istogramma_app(grafico["applicazione"], grafico["parallelism"], grafico["batch"], grafico["ff_queue_length"], grafico["titolo"], grafico["numanode"], grafico["dati"], grafico["max"])
 
 def crea_istogrammi_pinning_WC():
-    grafici = json_parse_pinning('istogrammi_pinning_WC.json')
+    grafici = _json_parse_pinning('istogrammi_pinning_WC.json')
     for grafico in grafici:
         if grafico["applicazione"] == "WC":
-            crea_istogramma_app(grafico["applicazione"], grafico["parallelism"], grafico["batch"], grafico["ff_queue_length"], grafico["titolo"], grafico["numanode"], grafico["dati"], grafico["max"])
+            _crea_istogramma_app(grafico["applicazione"], grafico["parallelism"], grafico["batch"], grafico["ff_queue_length"], grafico["titolo"], grafico["numanode"], grafico["dati"], grafico["max"])
 
 def crea_istogrammi_pinning_FD():
-    grafici = json_parse_pinning('istogrammi_pinning_FD.json')
+    grafici = _json_parse_pinning('istogrammi_pinning_FD.json')
     for grafico in grafici:
         if grafico["applicazione"] == "FD":
-            crea_istogramma_app(grafico["applicazione"], grafico["parallelism"], grafico["batch"], grafico["ff_queue_length"], grafico["titolo"], grafico["numanode"], grafico["dati"], grafico["max"])
+            _crea_istogramma_app(grafico["applicazione"], grafico["parallelism"], grafico["batch"], grafico["ff_queue_length"], grafico["titolo"], grafico["numanode"], grafico["dati"], grafico["max"])
 
 def crea_istogrammi_pinning_TM():
-    grafici = json_parse_pinning('istogrammi_pinning_TM.json')
+    grafici = _json_parse_pinning('istogrammi_pinning_TM.json')
     for grafico in grafici:
         if grafico["applicazione"] == "TM":
-            crea_istogramma_app(grafico["applicazione"], grafico["parallelism"], grafico["batch"], grafico["ff_queue_length"], grafico["titolo"], grafico["numanode"], grafico["dati"], grafico["max"])
+            _crea_istogramma_app(grafico["applicazione"], grafico["parallelism"], grafico["batch"], grafico["ff_queue_length"], grafico["titolo"], grafico["numanode"], grafico["dati"], grafico["max"])
 
 def crea_istogrammi_no_KeyBy():
-    grafici = json_parse_pinning('no_keyby.json')
+    grafici = _json_parse_pinning('no_keyby.json')
     for grafico in grafici:
-        crea_istogramma_no_KeyBy(grafico["applicazione"], grafico["parallelism"], grafico["batch"], grafico["ff_queue_length"], grafico["titolo"], grafico["numanode"], grafico["dati"], grafico["max"])
+        _crea_istogramma_no_KeyBy(grafico["applicazione"], grafico["parallelism"], grafico["batch"], grafico["ff_queue_length"], grafico["titolo"], grafico["numanode"], grafico["dati"], grafico["max"])
 
 def main():
 

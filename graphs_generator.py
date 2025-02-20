@@ -12,7 +12,7 @@ from matplotlib.colors import LinearSegmentedColormap
 from matplotlib.lines import Line2D
 from matplotlib.patches import Patch
 
-# Systems
+# Systems function
 
 def _json_parse_scelta_numanode(nome):
     file_path = os.path.abspath(__file__)

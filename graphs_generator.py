@@ -640,7 +640,7 @@ def _crea_grafo_linee_WinKey(applicazione, parallelism, batch, titolo, dati, max
     # Salvataggio del grafico
     save_path = os.path.join(save_dir, f"{applicazione+"_-p"+parallelism+"_-b"+str(batch)}.png")
     plt.tight_layout()
-    plt.savefig(save_path)
+    plt.savefig(save_path, dpi=900)
     print(f"Grafico salvato in: {save_path}")
 
     # Mostra il grafico
@@ -743,7 +743,7 @@ def _crea_grafo_linee_copyDataset(applicazione, parallelism, batch, titolo, dati
     save_path = os.path.join(save_dir, f"{applicazione+"_-p"+parallelism+"_-b"+str(batch)}.png")
     plt.tight_layout()
     print(f"Grafico salvato in: {save_path}")
-    plt.savefig(save_path)
+    plt.savefig(save_path, dpi=900)
     print(f"Grafico salvato in: {save_path}")
 
     # Mostra il grafico
@@ -834,7 +834,7 @@ def _crea_grafo_linee_ff_queue_length(applicazione, parallelism, batch, titolo, 
     # Salvataggio del grafico
     save_path = os.path.join(save_dir, f"{applicazione+"_-p"+parallelism+"_-b"+str(batch)}.png")
     plt.tight_layout()
-    plt.savefig(save_path)
+    plt.savefig(save_path, dpi=900)
     print(f"Grafico salvato in: {save_path}")
 
     # Mostra il grafico
@@ -1170,10 +1170,6 @@ def _crea_istogramma_strategie_profiling(applicazione, parallelism, batch, ff_qu
     # Mostra il grafico
     plt.show()
 
-
-
-# Functions to call to create the graphs
-
 def _crea_istogramma_no_KeyBy(applicazione, parallelism, batch, ff_queue_length, titolo, numanode, dati, max_y):
     if not dati:
         raise ValueError("Il parametro 'dati' è vuoto o non valido.")
@@ -1334,13 +1330,13 @@ def _crea_istogramma_no_KeyBy(applicazione, parallelism, batch, ff_queue_length,
     plt.tight_layout()
 
 
-    plt.savefig(save_path)
+    plt.savefig(save_path, dpi=900)
     print(f"Grafico salvato in: {save_path}")
 
     # Mostra il grafico
     plt.show()
 
-def crea_istogramma_profiling(applicazione, coppia, parallelismo, batch, strategia1, total_accesses1, total_misses1, strategia2, total_accesses2, total_misses2, max_y):
+def _crea_istogramma_profiling(applicazione, coppia, parallelismo, batch, strategia1, total_accesses1, total_misses1, strategia2, total_accesses2, total_misses2, max_y):
 
     etichette_asse_x = ["Total accesses", "Total misses"]
     save_dir = '/home/lorenzo/Desktop/Grafici_Tesi/Profiling'
@@ -1420,6 +1416,9 @@ def crea_istogramma_profiling(applicazione, coppia, parallelismo, batch, strateg
 
     # Mostra il grafico
     plt.show()
+
+
+# Functions to call to create the graphs
 
 def crea_istogramma_ccx(applicazione, numero_coppia, numero_test, CCX, titolo, dati, max_y):
     if not dati:
@@ -1532,9 +1531,9 @@ def crea_istogrammi_profiling():
             strategia1, strategia2 = strategia2, strategia1
             total_accesses1, total_accesses2 = total_accesses2, total_accesses1
             total_misses1, total_misses2 = total_misses2, total_misses1
-            crea_istogramma_profiling(applicazione, coppia, parallelismo, batch, strategia1, total_accesses1, total_misses1, strategia2, total_accesses2, total_misses2, max_y)
+            _crea_istogramma_profiling(applicazione, coppia, parallelismo, batch, strategia1, total_accesses1, total_misses1, strategia2, total_accesses2, total_misses2, max_y)
         else:
-            crea_istogramma_profiling(applicazione, coppia, parallelismo, batch, strategia1, total_accesses1, total_misses1, strategia2, total_accesses2, total_misses2, max_y)
+            _crea_istogramma_profiling(applicazione, coppia, parallelismo, batch, strategia1, total_accesses1, total_misses1, strategia2, total_accesses2, total_misses2, max_y)
         total_accesses1 = 0
         total_accesses2 = 0
         total_misses1 = 0
@@ -1617,7 +1616,7 @@ def crea_istogrammi_no_KeyBy():
 
 def main():
 
-    crea_istogrammi_profiling()
+    crea_grafi_linee_WinKey()
 
 # Questa parte è importante: assicura che la funzione main() venga eseguita solo
 # quando il file viene eseguito come script, non quando viene importato come modulo

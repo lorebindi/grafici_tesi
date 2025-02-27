@@ -1614,9 +1614,87 @@ def crea_istogrammi_no_KeyBy():
     for grafico in grafici:
         _crea_istogramma_no_KeyBy(grafico["applicazione"], grafico["parallelism"], grafico["batch"], grafico["ff_queue_length"], grafico["titolo"], grafico["numanode"], grafico["dati"], grafico["max"])
 
+def best_strategy_for(applicazione):
+    grafici = sorted(
+        [item for item in _json_parse_pinning('istogrammi_pinning_' + applicazione + '.json')
+         if item["applicazione"] == applicazione and item["parallelism"] != "1,1,1,1" and item["ff_queue_length"] > 16],
+        key=lambda x: (int(x["parallelism"].split(",")[0]), int(x["batch"]))
+    )
+
+    # Inizializziamo un dizionario con le variabili
+    variabili = {
+        "pinning_ff": 0,
+        "pipeline_grouping": 0,
+        "a2a_grouping": 0,
+        "a2a_splitting": 0,
+        "src_snk_grouping": 0,
+        "stage_grouping": 0,
+        "semipipeline_grouping": 0
+    }
+
+    for grafico in grafici:
+        # Troviamo la chiave con il valore massimo in grafico["dati"]
+        max_key = max(grafico["dati"], key=lambda k: grafico["dati"][k]["media"])
+        print("Parallelismo: " + grafico["parallelism"] + ", Batch: " + str(grafico["batch"]) + ", Best Strategy: " + max_key)
+
+        # Aggiungiamo 1 alla variabile corrispondente
+        if max_key == "A2A grouping":
+            variabili["a2a_grouping"] += 1
+        elif max_key == "Src-Snk grouping":
+            variabili["src_snk_grouping"] += 1
+        elif max_key == "Semipipeline grouping":
+            variabili["semipipeline_grouping"] += 1
+        elif max_key == "A2A splitting":
+            variabili["a2a_splitting"] += 1
+        elif max_key == "Stage grouping":
+            variabili["stage_grouping"] += 1
+        elif max_key == "Pipeline grouping":
+            variabili["pipeline_grouping"] += 1
+        elif max_key == "Pinning ff":
+            variabili["pinning_ff"] += 1
+
+    # Ora ordiniamo il dizionario per valore decrescente
+    variabili_ordinate = sorted(variabili.items(), key=lambda x: x[1], reverse=True)
+
+    # Stampiamo i risultati
+    print("\nRisultati -------------------------------------------------\n")
+    for nome, valore in variabili_ordinate:
+        if(valore > 0):
+            print(f"{nome}: {valore}")
+
+    # Crea un dizionario per accumulare i valori delle medie per ogni strategia
+    strategie = {}
+    # Itera sui grafici
+    for grafico in grafici:
+        # Itera su ciascuna strategia all'interno di "dati"
+        for strategia, valori in grafico["dati"].items():
+            # Escludi "Stage grouping" e "Semipipeline grouping" perché non esistono per tutti i parallelismi
+            if strategia in ["Stage grouping", "Semipipeline grouping"]:
+                continue
+
+            # Aggiungi il valore alla lista della strategia
+            if strategia not in strategie:
+                strategie[strategia] = []
+
+            strategie[strategia].append(valori["media"])
+
+    # Calcola la media per ogni strategia
+    strategie_medie = {strategia: sum(valori) / len(valori) for strategia, valori in strategie.items()}
+
+    # Trova la strategia con la media più alta
+    strategia_migliore = max(strategie_medie, key=strategie_medie.get)
+
+    # Mostra il risultato
+    if(applicazione == "WC"):
+        print(f"\nLa strategia con il throughput medio migliore è: {strategia_migliore}, valore medio: {round(strategie_medie[strategia_migliore],4)} MB/s.")
+    else:
+        print(
+            f"\nLa strategia con il throughput medio migliore è: {strategia_migliore}, valore medio: {format(int(strategie_medie[strategia_migliore]), ",").replace(",", ".")} t/s.")
+
+
 def main():
 
-    crea_grafi_linee_WinKey()
+    best_strategy_for("TM")
 
 # Questa parte è importante: assicura che la funzione main() venga eseguita solo
 # quando il file viene eseguito come script, non quando viene importato come modulo

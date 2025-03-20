@@ -127,6 +127,14 @@
         "Pipeline grouping": {
           "media": 1491354,
           "dev_std": 42310
+        },
+        "A2A splitting": {
+          "media": 1510557,
+          "dev_std": 211099
+        },
+        "Semipipeline grouping": {
+          "media": 1614775,
+          "dev_std": 13707
         }
       },
       "max": 3000000
@@ -158,6 +166,14 @@
         "Pipeline grouping":{
           "media": 1963609,
           "dev_std": 27015
+        },
+        "A2A splitting": {
+          "media": 1850519,
+          "dev_std": 234776
+        },
+        "Semipipeline grouping": {
+          "media": 2016457,
+          "dev_std": 28538
         }
       },
       "max": 3000000
@@ -189,6 +205,14 @@
         "Pipeline grouping": {
           "media": 2705628,
           "dev_std": 102327
+        },
+        "A2A splitting": {
+          "media": 3139632,
+          "dev_std": 234085
+        },
+        "Semipipeline grouping": {
+          "media": 2713523,
+          "dev_std": 107101
         }
       },
       "max": 4000000
@@ -220,6 +244,14 @@
         "Pipeline grouping": {
           "media": 3811647,
           "dev_std": 31816
+        },
+        "A2A splitting": {
+          "media": 3665852,
+          "dev_std": 188843
+        },
+        "Semipipeline grouping": {
+          "media": 3349334,
+          "dev_std": 429099
         }
       },
       "max": 5000000

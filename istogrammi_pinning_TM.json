@@ -186,6 +186,10 @@
           "media": 4397,
           "dev_std": 2146
         },
+        "A2A splitting": {
+          "media": 3145,
+          "dev_std": 833
+        },
         "Semipipeline grouping":{
           "media": 2938,
           "dev_std": 371
@@ -216,6 +220,10 @@
         "Pipeline grouping":{
           "media": 1795,
           "dev_std": 1249
+        },
+        "A2A splitting": {
+          "media": 2472,
+          "dev_std": 694
         },
         "Semipipeline grouping": {
           "media": 1319,

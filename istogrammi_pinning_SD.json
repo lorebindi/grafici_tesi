@@ -305,6 +305,14 @@
         "Pipeline grouping":{
           "media": 5544098,
           "dev_std": 837189
+        },
+        "A2A splitting": {
+          "media": 8554380,
+          "dev_std": 17864
+        },
+        "Semipipeline grouping": {
+          "media": 7929254,
+          "dev_std": 106113
         }
       },
       "max": 12000000
@@ -336,6 +344,14 @@
         "Pipeline grouping": {
           "media": 64682194,
           "dev_std": 2085558
+        },
+        "A2A splitting": {
+          "media": 33998372,
+          "dev_std": 1178828
+        },
+        "Semipipeline grouping": {
+          "media": 36886994,
+          "dev_std": 1140145
         }
       },
       "max": 70000000

@@ -833,8 +833,8 @@
       "titolo": "Traffic Monitoring, Parallelism: 2,2,2,2",
       "dati_ff": {
         "batch0": {
-          "media": 0,
-          "dev_std": 0
+          "media": 1700,
+          "dev_std": 21
         },
         "batch2": {
           "media": 0,
@@ -859,8 +859,8 @@
       },
       "dati_OS": {
         "batch0": {
-          "media": 0,
-          "dev_std": 0
+          "media": 2140,
+          "dev_std": 24
         },
         "batch2": {
           "media": 0,
@@ -892,8 +892,8 @@
       "titolo": "Traffic Monitoring, Parallelism: 4,4,4,4",
       "dati_ff": {
         "batch0": {
-          "media": 0,
-          "dev_std": 0
+          "media": 3468,
+          "dev_std": 28
         },
         "batch2": {
           "media": 0,
@@ -918,8 +918,8 @@
       },
       "dati_OS": {
         "batch0": {
-          "media": 0,
-          "dev_std": 0
+          "media": 4277,
+          "dev_std": 43
         },
         "batch2": {
           "media": 0,
@@ -951,8 +951,8 @@
       "titolo": "Traffic Monitoring, Parallelism: 8,8,8,8",
       "dati_ff": {
         "batch0": {
-          "media": 0,
-          "dev_std": 0
+          "media": 3338,
+          "dev_std": 1004
         },
         "batch2": {
           "media": 0,
@@ -977,8 +977,8 @@
       },
       "dati_OS": {
         "batch0": {
-          "media": 0,
-          "dev_std": 0
+          "media": 8486,
+          "dev_std": 60
         },
         "batch2": {
           "media": 0,
@@ -1010,8 +1010,8 @@
       "titolo": "Traffic Monitoring, Parallelism: 16,16,16,16",
       "dati_ff": {
         "batch0": {
-          "media": 0,
-          "dev_std": 0
+          "media": 4358,
+          "dev_std": 787
         },
         "batch2": {
           "media": 0,
@@ -1036,8 +1036,8 @@
       },
       "dati_OS": {
         "batch0": {
-          "media": 0,
-          "dev_std": 0
+          "media": 16893,
+          "dev_std": 215
         },
         "batch2": {
           "media": 0,

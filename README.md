@@ -10,7 +10,8 @@ Cosa contengono i file `.json`:
 - `istogrammi_pinning_WC.json`: contiene media e deviazione standard dei throughput delle diverse strategie di pinning al variare del parallelismo e del batch solo dell'applicazione WordCount.
 - `istogrammi_pinning_FD.json`: contiene media e deviazione standard dei throughput delle diverse strategie di pinning al variare del parallelismo e del batch solo dell'applicazione FraudDetection.
 - `istogrammi_pinning_TM.json`: contiene media e deviazione standard dei throughput delle diverse strategie di pinning al variare del parallelismo e del batch solo dell'applicazione Traffic monitoring.
-- `istogrammi_profiling.json`: contiene gli accessi e i miss totali per ogni CCX coinvolto da ciascuna strategia di pinning.
+- `istogrammi_profiling.json`: contiene gli accessi e i miss totali per ogni CCX coinvolto da ciascun test di profiling effettuato.
+- `istogrammi_profiling_2.json`: contiene SOLO un sottoinsieme dei test di profiling con informazioni aggiuntive come parallelismo, batch e strategia di pinning oltre ad ccessi e i miss totali per ogni CCX coinvolto.
 - `istogrammi_strategie_per_profiling.json`: contiene il sottoinsieme dei dati di `istogrammi_pinning_SD.json`, `istogrammi_pinning_WC.json`, `istogrammi_pinning_FD.json`, `istogrammi_pinning_TM.json`, che sono coinvolti nelle coppie di strategie previste per il profiling.
 - `noKeyBy.json`: contiene la media e la deviazione standard del throughput delle applicazioni senza collegamento KeyBy al variare del grado di parallelismo e della dimensione del batch.
 - `ff_queue_lenght.json`: contiene la media e la deviazione standard del throughput delle applicazioni con dimensione delle code fastflow pari a 16 elementi al variare del grado di parallelismo e della dimensione del batch.

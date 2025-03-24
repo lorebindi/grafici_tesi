@@ -183,6 +183,7 @@ def _json_parse_profiling(nome):
                 "applicazione": grafico.get("applicazione"),
                 "parallelismo": grafico.get("parallelismo"),
                 "batch": grafico.get("batch"),
+                "ff_queue_len": grafico.get("ff_queue_length"),
                 "coppia_test": grafico.get("coppia_test"),
                 "strategia": grafico.get("strategia"),
                 "test": grafico.get("test"),
@@ -1336,7 +1337,7 @@ def _crea_istogramma_no_KeyBy(applicazione, parallelism, batch, ff_queue_length,
     # Mostra il grafico
     plt.show()
 
-def _crea_istogramma_profiling(applicazione, coppia, parallelismo, batch, strategia1, total_accesses1, total_misses1, strategia2, total_accesses2, total_misses2, max_y):
+def _crea_istogramma_profiling(applicazione, coppia, parallelismo, batch, ff_queue_len, strategia1, total_accesses1, total_misses1, strategia2, total_accesses2, total_misses2, max_y):
 
     etichette_asse_x = ["Total accesses", "Total misses"]
     save_dir = '/home/lorenzo/Desktop/Grafici_Tesi/Profiling'
@@ -1394,13 +1395,13 @@ def _crea_istogramma_profiling(applicazione, coppia, parallelismo, batch, strate
     plt.xticks([np.mean([0, 0.30]), np.mean([0.80, 1.10])], etichette_asse_x)  # Centra le etichette dei gruppi
     # Aggiungiamo il titolo
     if(applicazione == "SD"):
-        plt.title("Spike Detection; " + "Parallelism: " + parallelismo + "; " + "Batch: " + str(batch), fontsize=11)
+        plt.title("Spike Detection; " + "Parallelism: " + parallelismo + "; " + "Batch: " + str(batch) + "\n ff_queue_len: " + str(ff_queue_len), fontsize=11)
     elif (applicazione == "WC"):
-            plt.title("Word Count; " + "Parallelism: " + parallelismo + "; " + "Batch: " + str(batch), fontsize=11)
+            plt.title("Word Count; " + "Parallelism: " + parallelismo + "; " + "Batch: " + str(batch) + "\n ff_queue_len: " + str(ff_queue_len), fontsize=11)
     elif (applicazione == "FD"):
-            plt.title("Fraud Detection; " + "Parallelism: " + parallelismo + "; " + "Batch: " + str(batch), fontsize=11)
+            plt.title("Fraud Detection; " + "Parallelism: " + parallelismo + "; " + "Batch: " + str(batch) + "\n ff_queue_len: " + str(ff_queue_len), fontsize=11)
     elif (applicazione == "TM"):
-        plt.title("Traffic Monitoring; " + "Parallelism: " + parallelismo + "; " + "Batch: " + str(batch), fontsize=11)
+        plt.title("Traffic Monitoring; " + "Parallelism: " + parallelismo + "; " + "Batch: " + str(batch) + "\n ff_queue_len: " + str(ff_queue_len), fontsize=11)
 
 
     # Aggiungi la legenda per i colori
@@ -1411,16 +1412,13 @@ def _crea_istogramma_profiling(applicazione, coppia, parallelismo, batch, strate
     # Salvataggio del grafico
     save_path = os.path.join(complete_path, 'istogramma_coppia' + str(coppia) + '.png')
     plt.tight_layout()
-    plt.savefig(save_path, dpi=900)
+    plt.savefig(save_path, dpi=300)
     print(f"Grafico salvato in: {save_path}")
 
     # Mostra il grafico
     plt.show()
 
-
-# Functions to call to create the graphs
-
-def crea_istogramma_ccx(applicazione, numero_coppia, numero_test, CCX, titolo, dati, max_y):
+def crea_istogramma_ccx(applicazione, parallelismo, batch, ff_queue_len, numero_coppia, numero_test, strategia, CCX, titolo, dati, max_y):
     if not dati:
         raise ValueError("Il parametro 'dati' è vuoto o non valido.")
     etichette_asse_x = dati.keys()
@@ -1453,13 +1451,13 @@ def crea_istogramma_ccx(applicazione, numero_coppia, numero_test, CCX, titolo, d
                    linewidth=0.8)  # Linea leggera tra i tick
 
     # Creazione delle barre dell'istogramma (due colonne affiancate)
-    if(applicazione == "WC" and numero_coppia == 3) :
+    '''if(applicazione == "WC" and numero_coppia == 3) :
         if(numero_test == 1):
             bars = plt.bar(range(len(etichette_asse_x)), dati_asse_x, color='#204D00', alpha=1, width=0.7, zorder=2)
         elif(numero_test == 2):
             bars = plt.bar(range(len(etichette_asse_x)), dati_asse_x, color='#63993D', alpha=1, width=0.7, zorder=2)
-    else:
-        bars = plt.bar(range(len(etichette_asse_x)), dati_asse_x, color=['#1B4F72', '#C41E3A'], alpha=1, width=0.7, zorder=2)
+    else:'''
+    bars = plt.bar(range(len(etichette_asse_x)), dati_asse_x, color=['#1B4F72', '#C41E3A'], alpha=1, width=0.7, zorder=2)
 
     '''# Aggiungi linee tratteggiate dalla parte superiore delle barre fino all'asse y
     for i, bar in enumerate(bars):
@@ -1478,18 +1476,23 @@ def crea_istogramma_ccx(applicazione, numero_coppia, numero_test, CCX, titolo, d
     plt.xticks(range(len(etichette_asse_x)), etichette_asse_x, fontsize=10)
     # Aggiungiamo il titolo
     plt.title(titolo, fontsize=14)
+    plt.suptitle("A="+ applicazione +", P="+parallelismo+ ", B="+str(batch)+ ", ff_queue_len="+ str(ff_queue_len) + ",\n S="+ strategia, fontsize=10)
 
     # Salvataggio del grafico
     save_path = os.path.join(complete_path, 'istogramma_' + CCX + '.png')
     plt.tight_layout()
-    plt.savefig(save_path)
+    plt.savefig(save_path, dpi=300)
     print(f"Grafico salvato in: {save_path}")
 
     # Mostra il grafico
     plt.show()
 
+
+# Functions to call to create the graphs
+
+
 def crea_istogrammi_profiling():
-    grafici = _json_parse_profiling('istogrammi_profiling_2.json')
+    grafici = _json_parse_profiling('istogrammi_profiling.json')
 
     strategia1 = ""
     strategia2 = ""
@@ -1505,6 +1508,7 @@ def crea_istogrammi_profiling():
         batch = grafici[i]['batch']
         coppia = grafici[i]['coppia_test']
         test = grafici[i]['test']
+        ff_queue_len = grafici[i]['ff_queue_len']
         j = i
         while(grafici[j]['applicazione'] == applicazione and grafici[j]['coppia_test'] == coppia and grafici[j]['test'] == test) :
             if(strategia1 == ""):
@@ -1521,19 +1525,16 @@ def crea_istogrammi_profiling():
             j+=1
             if(j == len(grafici)): break;
 
-        max_y = (math.ceil(max(total_accesses1, total_accesses2) / 1_000_000_000) * 1_000_000_000)
-        if(applicazione == "SD" and parallelismo == "2,2,2,2" and batch == 0):
-            max_y += 1_000_000_000
-        if(applicazione == "TM" and parallelismo == "4,4,4,4" and batch == 32):
-            max_y += 1_000_000_000
+        max_y = (math.ceil(max(total_accesses1, total_accesses2) / 1_000_000_000) * 1_000_000_000)+2_000_000_000
+
         # Chiamata al metodo per creare l'istogramma
         if((applicazione == "WC" or applicazione == "TM") and parallelismo == "8,8,8,8" and batch == 0):
             strategia1, strategia2 = strategia2, strategia1
             total_accesses1, total_accesses2 = total_accesses2, total_accesses1
             total_misses1, total_misses2 = total_misses2, total_misses1
-            _crea_istogramma_profiling(applicazione, coppia, parallelismo, batch, strategia1, total_accesses1, total_misses1, strategia2, total_accesses2, total_misses2, max_y)
+            _crea_istogramma_profiling(applicazione, coppia, parallelismo, batch, ff_queue_len, strategia1, total_accesses1, total_misses1, strategia2, total_accesses2, total_misses2, max_y)
         else:
-            _crea_istogramma_profiling(applicazione, coppia, parallelismo, batch, strategia1, total_accesses1, total_misses1, strategia2, total_accesses2, total_misses2, max_y)
+            _crea_istogramma_profiling(applicazione, coppia, parallelismo, batch, ff_queue_len, strategia1, total_accesses1, total_misses1, strategia2, total_accesses2, total_misses2, max_y)
         total_accesses1 = 0
         total_accesses2 = 0
         total_misses1 = 0
@@ -1553,8 +1554,8 @@ def crea_istogrammi_strategie_per_profiling():
 def crea_istogrammi_ccx():
     grafici = _json_parse_profiling('istogrammi_profiling.json')
     for grafico in grafici:
-        if grafico["applicazione"] == "WC" and grafico["coppia_test"] == 3:
-            crea_istogramma_ccx(grafico["applicazione"], grafico["coppia_test"], grafico["test"], grafico["CCX"], grafico["titolo"], grafico["dati"], grafico["max"])
+        #if grafico["applicazione"] == "WC":
+        crea_istogramma_ccx(grafico["applicazione"], grafico["parallelismo"], grafico["batch"], grafico["ff_queue_len"], grafico["coppia_test"], grafico["test"], grafico["strategia"], grafico["CCX"], grafico["titolo"], grafico["dati"], grafico["max"])
 
 def crea_grafi_linee_ffvsOS():
     grafici = _json_parse_ffvsOS('ffvsOS.json')
@@ -1694,8 +1695,7 @@ def best_strategy_for(applicazione):
 
 def main():
 
-    best_strategy_for("TM")
-
+    crea_istogrammi_profiling()
 # Questa parte è importante: assicura che la funzione main() venga eseguita solo
 # quando il file viene eseguito come script, non quando viene importato come modulo
 if __name__ == "__main__":

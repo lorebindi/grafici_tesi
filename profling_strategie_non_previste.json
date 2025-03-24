@@ -1,0 +1,793 @@
+{
+  "grafici": [
+
+    {
+      "applicazione": "WC",
+      "parallelismo": "2,2,2,2",
+      "batch": 0,
+      "ff_queue_length": 16,
+      "coppia_test": 2,
+      "test": 1,
+      "strategia": "A2A splitting 2",
+      "CCX": "CCX2",
+      "titolo": "CCX-2 [src-fltm-src-fltm]",
+      "dati": {
+        "Total accesses": 1715864049,
+        "Total misses": 1103418224
+      },
+      "max": 7000000000
+    },
+    {
+      "applicazione": "WC",
+      "parallelismo": "2,2,2,2",
+      "batch": 0,
+      "ff_queue_length": 16,
+      "coppia_test": 2,
+      "test": 1,
+      "strategia": "A2A splitting 2",
+      "CCX": "CCX3",
+      "titolo": "CCX-3 [map-snk-map-snk]",
+      "dati": {
+        "Total accesses": 4846650004,
+        "Total misses": 1338944096
+      },
+      "max": 7000000000
+    },
+   {
+      "applicazione": "WC",
+      "parallelismo": "2,2,2,2",
+      "batch": 0,
+      "ff_queue_length": 16,
+      "coppia_test": 2,
+      "test": 2,
+      "strategia": "A2A splitting",
+      "CCX": "CCX2",
+      "titolo": "CCX-2 [src-rdc-src-rdc]",
+      "dati": {
+        "Total accesses": 101808896,
+        "Total misses": 56862959
+      },
+      "max": 7000000000
+    },
+    {
+      "applicazione": "WC",
+      "parallelismo": "2,2,2,2",
+      "batch": 0,
+      "ff_queue_length": 16,
+      "coppia_test": 2,
+      "test": 2,
+      "strategia": "A2A splitting",
+      "CCX": "CCX3",
+      "titolo": "CCX-3 [fltm-snk-fltm-snk]",
+      "dati": {
+        "Total accesses": 87575004,
+        "Total misses": 59532327
+      },
+      "max": 7000000000
+    },
+        {
+      "applicazione": "WC",
+      "parallelismo": "2,2,2,2",
+      "batch": 32,
+      "ff_queue_length": 16,
+      "coppia_test": 4,
+      "test": 1,
+      "strategia": "A2A splitting",
+      "CCX": "CCX2",
+      "titolo": "CCX-2 [src-rdc-src-rdc]",
+      "dati": {
+        "Total accesses": 2500367330,
+        "Total misses": 1332511879
+      },
+      "max": 3000000000
+    },
+    {
+      "applicazione": "WC",
+      "parallelismo": "2,2,2,2",
+      "batch": 32,
+      "ff_queue_length": 16,
+      "coppia_test": 4,
+      "test": 1,
+      "strategia": "A2A splitting",
+      "CCX": "CCX3",
+      "titolo": "CCX-3 [fltm-snk-fltm-snk]",
+      "dati": {
+        "Total accesses": 2295771816,
+        "Total misses": 1494682773
+      },
+      "max": 3000000000
+    },
+    {
+      "applicazione": "WC",
+      "parallelismo": "2,2,2,2",
+      "batch": 32,
+      "ff_queue_length": 16,
+      "coppia_test": 4,
+      "test": 2,
+      "strategia": "A2A splitting 2",
+      "CCX": "CCX2",
+      "titolo": "CCX-2 [src-fltm-src-fltm]",
+      "dati": {
+        "Total accesses": 1957066924,
+        "Total misses": 955481519
+      },
+      "max": 3000000000
+    },
+    {
+      "applicazione": "WC",
+      "parallelismo": "2,2,2,2",
+      "batch": 32,
+      "ff_queue_length": 16,
+      "coppia_test": 4,
+      "test": 2,
+      "strategia": "A2A splitting 2",
+      "CCX": "CCX3",
+      "titolo": "CCX-3 [rdc-snk-rdc-snk]",
+      "dati": {
+        "Total accesses": 2846497087,
+        "Total misses": 908453285
+      },
+      "max": 3000000000
+    },
+    {
+      "applicazione": "WC",
+      "parallelismo": "4,4,4,4",
+      "batch": 0,
+      "ff_queue_length": 32786,
+      "coppia_test": 5,
+      "test": 1,
+      "strategia": "A2A splitting 2",
+      "CCX": "CCX8",
+      "titolo": "CCX-8 [rdc-snk-rdc-snk]",
+      "dati": {
+        "Total accesses": 2900447052,
+        "Total misses": 1066023483
+      },
+      "max": 4000000000
+    },
+    {
+      "applicazione": "WC",
+      "parallelismo": "4,4,4,4",
+      "batch": 0,
+      "ff_queue_length": 32786,
+      "coppia_test": 5,
+      "test": 1,
+      "strategia": "A2A splitting 2",
+      "CCX": "CCX9",
+      "titolo": "CCX-9 [rdc-snk-rdc-snk]",
+      "dati": {
+        "Total accesses": 3544606266,
+        "Total misses": 1138436226
+      },
+      "max": 4000000000
+    },
+    {
+      "applicazione": "WC",
+      "parallelismo": "4,4,4,4",
+      "batch": 0,
+      "ff_queue_length": 32786,
+      "coppia_test": 5,
+      "test": 1,
+      "strategia": "A2A splitting 2",
+      "CCX": "CCX10",
+      "titolo": "CCX-10 [src-fltm-src-fltm]",
+      "dati": {
+        "Total accesses": 1645382424,
+        "Total misses": 903291224
+      },
+      "max": 4000000000
+    },
+    {
+      "applicazione": "WC",
+      "parallelismo": "4,4,4,4",
+      "batch": 0,
+      "ff_queue_length": 32786,
+      "coppia_test": 5,
+      "test": 1,
+      "strategia": "A2A splitting 2",
+      "CCX": "CCX11",
+      "titolo": "CCX-11 [src-fltm-src-fltm]",
+      "dati": {
+        "Total accesses": 1716745596,
+        "Total misses": 845817729
+      },
+      "max": 4000000000
+    },
+    {
+      "applicazione": "WC",
+      "parallelismo": "4,4,4,4",
+      "batch": 0,
+      "ff_queue_length": 32786,
+      "coppia_test": 5,
+      "test": 2,
+      "strategia": "Semipipeline grouping",
+      "CCX": "CCX8",
+      "titolo": "CCX-8 [src-map-fltr-snk]",
+      "dati": {
+        "Total accesses": 2480586728,
+        "Total misses": 1321499749
+      },
+      "max": 4000000000
+    },
+    {
+      "applicazione": "WC",
+      "parallelismo": "4,4,4,4",
+      "batch": 0,
+      "ff_queue_length": 32786,
+      "coppia_test": 5,
+      "test": 2,
+      "strategia": "Semipipeline grouping",
+      "CCX": "CCX9",
+      "titolo": "CCX-9 [src-map-fltr-snk]",
+      "dati": {
+        "Total accesses": 1131691215,
+        "Total misses": 967207937
+      },
+      "max": 4000000000
+    },
+    {
+      "applicazione": "WC",
+      "parallelismo": "4,4,4,4",
+      "batch": 0,
+      "ff_queue_length": 32786,
+      "coppia_test": 5,
+      "test": 2,
+      "strategia": "Semipipeline grouping",
+      "CCX": "CCX10",
+      "titolo": "CCX-10 [src-map-fltr-snk]",
+      "dati": {
+        "Total accesses": 1271367508,
+        "Total misses": 724173469
+      },
+      "max": 4000000000
+    },
+    {
+      "applicazione": "WC",
+      "parallelismo": "4,4,4,4",
+      "batch": 0,
+      "ff_queue_length": 32786,
+      "coppia_test": 5,
+      "test": 2,
+      "strategia": "Semipipeline grouping",
+      "CCX": "CCX11",
+      "titolo": "CCX-11 [src-map-fltr-snk]",
+      "dati": {
+        "Total accesses": 2622213968,
+        "Total misses": 1318083717
+      },
+      "max": 4000000000
+    },
+    {
+      "applicazione": "WC",
+      "parallelismo": "4,4,4,4",
+      "batch": 0,
+      "ff_queue_length": 16,
+      "coppia_test": 6,
+      "test": 1,
+      "strategia": "A2A splitting 2",
+      "CCX": "CCX8",
+      "titolo": "CCX-8 [rdc-snk-rdc-snk]",
+      "dati": {
+        "Total accesses": 1857263082,
+        "Total misses": 654640782
+      },
+      "max": 3000000000
+    },
+    {
+      "applicazione": "WC",
+      "parallelismo": "4,4,4,4",
+      "batch": 0,
+      "ff_queue_length": 16,
+      "coppia_test": 6,
+      "test": 1,
+      "strategia": "A2A splitting 2",
+      "CCX": "CCX9",
+      "titolo": "CCX-9 [rdc-snk-rdc-snk]",
+      "dati": {
+        "Total accesses": 2045432127,
+        "Total misses": 698902795
+      },
+      "max": 3000000000
+    },
+    {
+      "applicazione": "WC",
+      "parallelismo": "4,4,4,4",
+      "batch": 0,
+      "ff_queue_length": 16,
+      "coppia_test": 6,
+      "test": 1,
+      "strategia": "A2A splitting 2",
+      "CCX": "CCX10",
+      "titolo": "CCX-10 [src-fltm-src-fltm]",
+      "dati": {
+        "Total accesses": 618777268,
+        "Total misses": 403524735
+      },
+      "max": 3000000000
+    },
+    {
+      "applicazione": "WC",
+      "parallelismo": "4,4,4,4",
+      "batch": 0,
+      "ff_queue_length": 16,
+      "coppia_test": 6,
+      "test": 1,
+      "strategia": "A2A splitting 2",
+      "CCX": "CCX11",
+      "titolo": "CCX-11 [src-fltm-src-fltm]",
+      "dati": {
+        "Total accesses": 684429528,
+        "Total misses": 428501994
+      },
+      "max": 3000000000
+    },
+    {
+      "applicazione": "WC",
+      "parallelismo": "4,4,4,4",
+      "batch": 0,
+      "ff_queue_length": 16,
+      "coppia_test": 6,
+      "test": 2,
+      "strategia": "Pipeline grouping",
+      "CCX": "CCX8",
+      "titolo": "CCX-8 [src-fltm-rdc-snk]",
+      "dati": {
+        "Total accesses": 1225349194,
+        "Total misses": 535026155
+      },
+      "max": 3000000000
+    },
+    {
+      "applicazione": "WC",
+      "parallelismo": "4,4,4,4",
+      "batch": 0,
+      "ff_queue_length": 16,
+      "coppia_test": 6,
+      "test": 2,
+      "strategia": "Pipeline grouping",
+      "CCX": "CCX9",
+      "titolo": "CCX-9 [src-fltm-rdc-snk]",
+      "dati": {
+        "Total accesses": 1508786948,
+        "Total misses": 614062757
+      },
+      "max": 3000000000
+    },
+    {
+      "applicazione": "WC",
+      "parallelismo": "4,4,4,4",
+      "batch": 0,
+      "ff_queue_length": 16,
+      "coppia_test": 6,
+      "test": 2,
+      "strategia": "Pipeline grouping",
+      "CCX": "CCX10",
+      "titolo": "CCX-10 [src-fltm-rdc-snk]",
+      "dati": {
+        "Total accesses": 1584012526,
+        "Total misses": 643901324
+      },
+      "max": 3000000000
+    },
+    {
+      "applicazione": "WC",
+      "parallelismo": "4,4,4,4",
+      "batch": 0,
+      "ff_queue_length": 16,
+      "coppia_test": 6,
+      "test": 2,
+      "strategia": "Pipeline grouping",
+      "CCX": "CCX11",
+      "titolo": "CCX-11 [src-fltm-rdc-snk]",
+      "dati": {
+        "Total accesses": 1383053030,
+        "Total misses": 573764094
+      },
+      "max": 3000000000
+    },
+    {
+      "applicazione": "WC",
+      "parallelismo": "8,8,8,8",
+      "batch": 32,
+      "ff_queue_length": 16,
+      "coppia_test": 9,
+      "test": 1,
+      "strategia": "A2A splitting 2",
+      "CCX": "CCX8",
+      "titolo": "CCX-8 [src-fltm-src-fltm]",
+      "dati": {
+        "Total accesses": 1072791713,
+        "Total misses": 521436799
+      },
+      "max": 4000000000
+    },
+    {
+      "applicazione": "WC",
+      "parallelismo": "8,8,8,8",
+      "batch": 32,
+      "ff_queue_length": 16,
+      "coppia_test": 9,
+      "test": 1,
+      "strategia": "A2A splitting 2",
+      "CCX": "CCX9",
+      "titolo": "CCX-9 [src-fltm-src-fltm]",
+      "dati": {
+        "Total accesses": 1011456199,
+        "Total misses": 505434439
+      },
+      "max": 4000000000
+    },
+    {
+      "applicazione": "WC",
+      "parallelismo": "8,8,8,8",
+      "batch": 32,
+      "ff_queue_length": 16,
+      "coppia_test": 9,
+      "test": 1,
+      "strategia": "A2A splitting 2",
+      "CCX": "CCX10",
+      "titolo": "CCX-10 [src-fltm-src-fltm]",
+      "dati": {
+        "Total accesses": 1334573006,
+        "Total misses": 653663468
+      },
+      "max": 4000000000
+    },
+    {
+      "applicazione": "WC",
+      "parallelismo": "8,8,8,8",
+      "batch": 32,
+      "ff_queue_length": 16,
+      "coppia_test": 9,
+      "test": 1,
+      "strategia": "A2A splitting 2",
+      "CCX": "CCX11",
+      "titolo": "CCX-11 [src-fltm-src-fltm]",
+      "dati": {
+        "Total accesses": 1327305418,
+        "Total misses": 679109842
+      },
+      "max": 4000000000
+    },
+    {
+      "applicazione": "WC",
+      "parallelismo": "8,8,8,8",
+      "batch": 32,
+      "ff_queue_length": 16,
+      "coppia_test": 9,
+      "test": 1,
+      "strategia": "A2A splitting 2",
+      "CCX": "CCX12",
+      "titolo": "CCX-12 [rdc-snk-rdc-snk]",
+      "dati": {
+        "Total accesses": 1850779396,
+        "Total misses": 	841135493
+      },
+      "max": 4000000000
+    },
+    {
+      "applicazione": "WC",
+      "parallelismo": "8,8,8,8",
+      "batch": 32,
+      "ff_queue_length": 16,
+      "coppia_test": 9,
+      "test": 1,
+      "strategia": "A2A splitting 2",
+      "CCX": "CCX13",
+      "titolo": "CCX-13 [rdc-snk-rdc-snk]",
+      "dati": {
+        "Total accesses": 1796563553,
+        "Total misses": 	814553057
+      },
+      "max": 4000000000
+    },
+    {
+      "applicazione": "WC",
+      "parallelismo": "8,8,8,8",
+      "batch": 32,
+      "ff_queue_length": 16,
+      "coppia_test": 9,
+      "test": 1,
+      "strategia": "A2A splitting 2",
+      "CCX": "CCX14",
+      "titolo": "CCX-14 [rdc-snk-rdc-snk]",
+      "dati": {
+        "Total accesses": 1560199375,
+        "Total misses": 	702602767
+      },
+      "max": 4000000000
+    },
+    {
+      "applicazione": "WC",
+      "parallelismo": "8,8,8,8",
+      "batch": 32,
+      "ff_queue_length": 16,
+      "coppia_test": 9,
+      "test": 1,
+      "strategia": "A2A splitting 2",
+      "CCX": "CCX15",
+      "titolo": "CCX-15 [rdc-snk-rdc-snk]",
+      "dati": {
+        "Total accesses": 1913565099,
+        "Total misses": 	840577777
+      },
+      "max": 4000000000
+    },
+    {
+      "applicazione": "WC",
+      "parallelismo": "8,8,8,8",
+      "batch": 32,
+      "ff_queue_length": 16,
+      "coppia_test": 9,
+      "test": 2,
+      "strategia": "Src-Snk grouping",
+      "CCX": "CCX8",
+      "titolo": "CCX-8 [src-snk-src-snk]",
+      "dati": {
+        "Total accesses": 569773311,
+        "Total misses": 465802628
+      },
+      "max": 4000000000
+    },
+    {
+      "applicazione": "WC",
+      "parallelismo": "8,8,8,8",
+      "batch": 32,
+      "ff_queue_length": 16,
+      "coppia_test": 9,
+      "test": 2,
+      "strategia": "Src-Snk grouping",
+      "CCX": "CCX9",
+      "titolo": "CCX-9 [src-snk-src-snk]",
+      "dati": {
+        "Total accesses": 566140303,
+        "Total misses": 432348021
+      },
+      "max": 4000000000
+    },
+    {
+      "applicazione": "WC",
+      "parallelismo": "8,8,8,8",
+      "batch": 32,
+      "ff_queue_length": 16,
+      "coppia_test": 9,
+      "test": 2,
+      "strategia": "Src-Snk grouping",
+      "CCX": "CCX10",
+      "titolo": "CCX-10 [src-snk-src-snk]",
+      "dati": {
+        "Total accesses": 3037814902,
+        "Total misses": 1534718048
+      },
+      "max": 4000000000
+    },
+    {
+      "applicazione": "WC",
+      "parallelismo": "8,8,8,8",
+      "batch": 32,
+      "ff_queue_length": 16,
+      "coppia_test": 9,
+      "test": 2,
+      "strategia": "Src-Snk grouping",
+      "CCX": "CCX11",
+      "titolo": "CCX-11 [src-snk-src-snk]",
+      "dati": {
+        "Total accesses": 2933350663,
+        "Total misses": 1580046654
+      },
+      "max": 4000000000
+    },
+    {
+      "applicazione": "WC",
+      "parallelismo": "8,8,8,8",
+      "batch": 32,
+      "ff_queue_length": 16,
+      "coppia_test": 9,
+      "test": 2,
+      "strategia": "Src-Snk grouping",
+      "CCX": "CCX12",
+      "titolo": "CCX-12 [fltm-rdc-fltm-rdc]",
+      "dati": {
+        "Total accesses": 488957980,
+        "Total misses": 390191704
+      },
+      "max": 4000000000
+    },
+    {
+      "applicazione": "WC",
+      "parallelismo": "8,8,8,8",
+      "batch": 32,
+      "ff_queue_length": 16,
+      "coppia_test": 9,
+      "test": 2,
+      "strategia": "Src-Snk grouping",
+      "CCX": "CCX13",
+      "titolo": "CCX-13 [fltm-rdc-fltm-rdc]",
+      "dati": {
+        "Total accesses": 579360908,
+        "Total misses": 474388429
+      },
+      "max": 4000000000
+    },
+    {
+      "applicazione": "WC",
+      "parallelismo": "8,8,8,8",
+      "batch": 32,
+      "ff_queue_length": 16,
+      "coppia_test": 9,
+      "test": 2,
+      "strategia": "Src-Snk grouping",
+      "CCX": "CCX14",
+      "titolo": "CCX-14 [fltm-rdc-fltm-rdc]",
+      "dati": {
+        "Total accesses": 2774414403,
+        "Total misses": 1487621040
+      },
+      "max": 4000000000
+    },
+    {
+      "applicazione": "WC",
+      "parallelismo": "8,8,8,8",
+      "batch": 32,
+      "ff_queue_length": 16,
+      "coppia_test": 9,
+      "test": 2,
+      "strategia": "Src-Snk grouping",
+      "CCX": "CCX15",
+      "titolo": "CCX-15 [fltm-rdc-fltm-rdc]",
+      "dati": {
+        "Total accesses": 3060843090,
+        "Total misses": 1636959641
+      },
+      "max": 4000000000
+    },
+    {
+      "applicazione": "FD",
+      "coppia_test": 6,
+      "test": 1,
+      "CCX": "CCX8",
+      "titolo": "CCX-8 [snk-snk-snk-snk]",
+      "dati": {
+        "Total accesses": 150951162,
+        "Total misses": 99340856
+      },
+      "max": 2000000000
+    },
+    {
+      "applicazione": "FD",
+      "coppia_test": 6,
+      "test": 1,
+      "CCX": "CCX9",
+      "titolo": "CCX-9 [ _-_-_-_ ]",
+      "dati": {
+        "Total accesses": 866623,
+        "Total misses": 555238
+      },
+      "max": 2000000000
+    },
+    {
+      "applicazione": "FD",
+      "coppia_test": 6,
+      "test": 1,
+      "CCX": "CCX10",
+      "titolo": "CCX-10 [src-src-src-src]",
+      "dati": {
+        "Total accesses": 729982305,
+        "Total misses": 453540746
+      },
+      "max": 2000000000
+    },
+    {
+      "applicazione": "FD",
+      "coppia_test": 6,
+      "test": 1,
+      "CCX": "CCX11",
+      "titolo": "CCX-11 [fltr-fltr-fltr-fltr]",
+      "dati": {
+        "Total accesses": 1213407132,
+        "Total misses": 763400143
+      },
+      "max": 2000000000
+    },
+    {
+      "applicazione": "FD",
+      "coppia_test": 6,
+      "test": 2,
+      "CCX": "CCX8",
+      "titolo": "CCX-8 [src-src-src-src]",
+      "dati": {
+        "Total accesses": 699159001,
+        "Total misses": 440520928
+      },
+      "max": 2000000000
+    },
+    {
+      "applicazione": "FD",
+      "coppia_test": 6,
+      "test": 2,
+      "CCX": "CCX9",
+      "titolo": "CCX-9 [ _-_-_-_ ]",
+      "dati": {
+        "Total accesses": 298062,
+        "Total misses": 204.995
+      },
+      "max": 2000000000
+    },
+    {
+      "applicazione": "FD",
+      "coppia_test": 6,
+      "test": 2,
+      "CCX": "CCX10",
+      "titolo": "CCX-10 [fltr-fltr-fltr-fltr]",
+      "dati": {
+        "Total accesses": 1291862540,
+        "Total misses": 805935664
+      },
+      "max": 2000000000
+    },
+    {
+      "applicazione": "FD",
+      "coppia_test": 6,
+      "test": 2,
+      "CCX": "CCX11",
+      "titolo": "CCX-11 [snk-snk-snk-snk]",
+      "dati": {
+        "Total accesses": 166651645,
+        "Total misses": 103292760
+      },
+      "max": 2000000000
+    },
+    {
+      "applicazione": "TM",
+      "parallelismo": "2,2,2,2",
+      "batch": 32,
+      "ff_queue_length": 32786,
+      "coppia_test": 2,
+      "test": 1,
+      "strategia": "",
+      "CCX": "CCX10",
+      "titolo": "CCX-10 [src-fltm-src-fltm]",
+      "dati": {
+        "Total accesses": 6218788995,
+        "Total misses": 123495090
+      },
+      "max": 7000000000
+    },
+    {
+      "applicazione": "TM",
+      "coppia_test": 2,
+      "test": 1,
+      "CCX": "CCX11",
+      "titolo": "CCX-11 [map-snk-map-snk]",
+      "dati": {
+        "Total accesses": 119638837,
+        "Total misses": 21569658
+      },
+      "max": 7000000000
+    },
+    {
+      "applicazione": "TM",
+      "coppia_test": 2,
+      "test": 2,
+      "CCX": "CCX10",
+      "titolo": "CCX-10 [src-fltm-map-snk]",
+      "dati": {
+        "Total accesses": 3143412525,
+        "Total misses": 44638118
+      },
+      "max": 7000000000
+    },
+    {
+      "applicazione": "TM",
+      "coppia_test": 2,
+      "test": 2,
+      "CCX": "CCX11",
+      "titolo": "CCX-11 [src-fltm-map-snk]",
+      "dati": {
+        "Total accesses": 3079665770,
+        "Total misses": 30298382
+      },
+      "max": 7000000000
+    }
+  ]
+}
